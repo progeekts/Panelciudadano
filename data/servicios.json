@@ -1,0 +1,42 @@
+{
+  "ultima_revision": "2026-09-16T18:03:16.374254+00:00",
+  "revision": "completa",
+  "fuentes_ok": [
+    "GitHub",
+    "Cloudflare"
+  ],
+  "fuentes_error": [],
+  "total": 2,
+  "items": [
+    {
+      "id": "cloudflare-9tgkg3ww89kf",
+      "tipo": "servicio",
+      "servicio": "Cloudflare",
+      "titulo": "Issues with 1.1.1.1 public resolver on .tn queries",
+      "resumen": "The issue has been identified and a fix is being implemented.",
+      "estado": "Identificada",
+      "impacto": "Menor",
+      "fecha": "2026-09-16T15:08:18.000Z",
+      "actualizado": "2026-09-16T15:23:16.000Z",
+      "ambito": "Según el proveedor",
+      "fuente": "Cloudflare Status",
+      "url": "https://www.cloudflarestatus.com/incidents/9tgkg3ww89kf",
+      "verificado": true
+    },
+    {
+      "id": "cloudflare-9g65dxfbcjln",
+      "tipo": "servicio",
+      "servicio": "Cloudflare",
+      "titulo": "Incorrect geo location for some Cloudflare WARP users",
+      "resumen": "We are continuing to work on a fix for this issue.",
+      "estado": "Identificada",
+      "impacto": "Menor",
+      "fecha": "2026-08-27T18:46:19.000Z",
+      "actualizado": "2026-09-01T08:29:56.000Z",
+      "ambito": "Según el proveedor",
+      "fuente": "Cloudflare Status",
+      "url": "https://www.cloudflarestatus.com/incidents/9g65dxfbcjln",
+      "verificado": true
+    }
+  ]
+}
