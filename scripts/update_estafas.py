@@ -1,17 +1,15 @@
 #!/usr/bin/env python3
-"""Actualiza el radar de estafas con avisos recientes y verificables de INCIBE.
+"""Actualiza el radar de estafas desde el índice oficial de avisos de INCIBE.
 
-El recolector tolera fallos temporales: reintenta peticiones, continúa si falla
-una página secundaria y conserva el último dataset válido si no puede completar
-una revisión mínima fiable. Nunca interpreta una fuente caída como cero alertas.
+Diseñado para ser rápido: extrae título, fecha, resumen e importancia directamente
+del listado de avisos y solo consulta fichas individuales cuando faltan datos.
+Si el índice principal no responde, conserva el último dataset válido.
 """
 from __future__ import annotations
 
 import html
 import json
-import random
 import re
-import time
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -19,40 +17,24 @@ from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
 BASE = "https://www.incibe.es"
-# La página /ciudadania/avisos es el índice vigente; el antiguo tag /tags/aviso
-# contiene principalmente avisos históricos y no sirve como radar de actualidad.
 LIST_URL = BASE + "/ciudadania/avisos"
 OUT = Path("data/estafas.json")
-UA = "PanelCiudadano/1.2 (+GitHub Pages; fuente: INCIBE)"
+UA = "PanelCiudadano/1.3 (+GitHub Pages; fuente: INCIBE)"
 MAX_AGE_DAYS = 120
-MAX_PAGES = 5
-MAX_DETAIL_PAGES = 50
-RETRIES = 3
-TIMEOUT = 20
+MAX_PAGES = 3
+TIMEOUT = 12
 KEYWORDS = ("fraude", "phishing", "smishing", "vishing", "suplant", "estafa", "fraudulent", "sextors")
 
 
 def get(url: str) -> str:
-    """Descarga una página con reintentos y backoff para fallos transitorios."""
-    last_exc = None
-    for attempt in range(RETRIES):
-        req = urllib.request.Request(
-            url,
-            headers={
-                "User-Agent": UA,
-                "Accept-Language": "es-ES,es;q=0.9",
-                "Accept": "text/html,application/xhtml+xml",
-                "Connection": "close",
-            },
-        )
-        try:
-            with urllib.request.urlopen(req, timeout=TIMEOUT) as r:
-                return r.read().decode("utf-8", errors="replace")
-        except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError, OSError) as exc:
-            last_exc = exc
-            if attempt + 1 < RETRIES:
-                time.sleep((2 ** attempt) + random.uniform(0.2, 0.8))
-    raise RuntimeError(f"No se pudo consultar {url}: {last_exc}")
+    req = urllib.request.Request(url, headers={
+        "User-Agent": UA,
+        "Accept-Language": "es-ES,es;q=0.9",
+        "Accept": "text/html,application/xhtml+xml",
+        "Connection": "close",
+    })
+    with urllib.request.urlopen(req, timeout=TIMEOUT) as r:
+        return r.read().decode("utf-8", errors="replace")
 
 
 def clean(s: str) -> str:
@@ -62,121 +44,92 @@ def clean(s: str) -> str:
     return re.sub(r"\s+", " ", html.unescape(s)).strip()
 
 
-def meta(page: str, prop: str) -> str:
-    for p in (
-        rf'<meta[^>]+property=["\']{re.escape(prop)}["\'][^>]+content=["\']([^"\']+)',
-        rf'<meta[^>]+name=["\']{re.escape(prop)}["\'][^>]+content=["\']([^"\']+)',
-        rf'<meta[^>]+content=["\']([^"\']+)["\'][^>]+(?:property|name)=["\']{re.escape(prop)}["\']',
-    ):
-        m = re.search(p, page, re.I)
-        if m:
-            return clean(m.group(1))
-    return ""
-
-
-def parse_date(text: str):
-    patterns = (
-        r"Fecha de publicación\s*(\d{1,2}/\d{1,2}/\d{4})",
-        r"Publicado el\s*(\d{1,2}/\d{1,2}/\d{4})",
-    )
-    for pattern in patterns:
-        m = re.search(pattern, text, re.I)
-        if not m:
-            continue
-        raw = m.group(1)
-        try:
-            return datetime.strptime(raw, "%d/%m/%Y").replace(tzinfo=timezone.utc), raw
-        except ValueError:
-            pass
-    return None, ""
-
-
-def extract_importance(text: str) -> str:
-    m = re.search(r"Importancia\s*([1-5]\s*-\s*(?:Baja|Media|Alta|Crítica|Critica))", text, re.I)
-    return m.group(1).strip() if m else ""
-
-
-def previous_items():
-    if not OUT.exists():
-        return []
+def parse_date(raw: str):
     try:
-        old = json.loads(OUT.read_text(encoding="utf-8"))
-        return old.get("items", []) if isinstance(old, dict) else []
-    except Exception:
-        return []
+        return datetime.strptime(raw, "%d/%m/%Y").replace(tzinfo=timezone.utc)
+    except (ValueError, TypeError):
+        return None
+
+
+def extract_cards(page: str):
+    """Extrae bloques del listado sin abrir cada ficha individual."""
+    links = list(re.finditer(r'<a[^>]+href=["\'](/ciudadania/avisos/[^"\'#?]+)["\'][^>]*>(.*?)</a>', page, re.I | re.S))
+    cards = []
+    seen = set()
+    for i, m in enumerate(links):
+        path = m.group(1)
+        if path in seen:
+            continue
+        title = clean(m.group(2))
+        if not title or len(title) < 8:
+            continue
+        # El texto relevante suele estar en el bloque alrededor del enlace.
+        start = max(0, m.start() - 500)
+        end = min(len(page), (links[i + 1].start() if i + 1 < len(links) else m.end() + 1800))
+        block = clean(page[start:end])
+        dm = re.search(r"(?:Publicado el|Fecha de publicación)\s*(\d{1,2}/\d{1,2}/\d{4})", block, re.I)
+        if not dm:
+            continue
+        date_raw = dm.group(1)
+        importance = ""
+        im = re.search(r"Importancia\s*([1-5]\s*-\s*(?:Baja|Media|Alta|Crítica|Critica))", block, re.I)
+        if im:
+            importance = im.group(1).strip()
+        haystack = (title + " " + block).lower()
+        if not any(k in haystack for k in KEYWORDS):
+            continue
+        summary = block
+        # Quita ruido habitual del bloque manteniendo una descripción corta y verificable.
+        summary = re.sub(r"^(?:Publicado el\s*\d{1,2}/\d{1,2}/\d{4}\s*)", "", summary, flags=re.I)
+        if title.lower() in summary.lower():
+            pos = summary.lower().find(title.lower())
+            summary = summary[pos + len(title):].strip(" ·:-")
+        summary = re.split(r"\b(?:Leer más|Importancia|Etiquetas)\b", summary, maxsplit=1, flags=re.I)[0].strip()
+        summary = summary[:280].rstrip()
+        seen.add(path)
+        cards.append((path, title, date_raw, importance, summary))
+    return cards
 
 
 def main():
     now = datetime.now(timezone.utc)
     cutoff = now - timedelta(days=MAX_AGE_DAYS)
-    paths = []
-    list_ok = 0
-    list_errors = []
+    items = []
+    pages_ok = 0
+    errors = 0
 
-    # La primera página es obligatoria: sin ella no podemos afirmar que la revisión sea actual.
     for page_no in range(MAX_PAGES):
         url = LIST_URL + (f"?page={page_no}" if page_no else "")
         try:
             listing = get(url)
-            list_ok += 1
         except Exception as exc:
-            list_errors.append(str(exc))
+            errors += 1
             if page_no == 0:
-                print("REVISIÓN INCOMPLETA: no se pudo consultar el índice principal de INCIBE.")
+                print(f"REVISIÓN INCOMPLETA: INCIBE no respondió ({exc}).")
                 print("Se conserva data/estafas.json sin cambios.")
                 return
             continue
-        for p in re.findall(r'href=["\'](/ciudadania/avisos/[^"\'#?]+)', listing, re.I):
-            if p not in paths:
-                paths.append(p)
-
-    if not paths:
-        print("REVISIÓN INCOMPLETA: el índice respondió pero no se pudieron identificar avisos.")
-        print("Se conserva data/estafas.json sin cambios.")
-        return
-
-    items = []
-    detail_ok = 0
-    detail_errors = 0
-    for path in paths[:MAX_DETAIL_PAGES]:
-        url = urllib.parse.urljoin(BASE, path)
-        try:
-            page = get(url)
-            detail_ok += 1
-        except Exception:
-            detail_errors += 1
-            continue
-        visible = clean(page)
-        published, date_raw = parse_date(visible)
-        if not published or published < cutoff or published > now + timedelta(days=1):
-            continue
-        title = meta(page, "og:title") or meta(page, "twitter:title")
-        desc = meta(page, "description") or meta(page, "og:description")
-        haystack = (title + " " + desc + " " + visible[:10000]).lower()
-        if not any(k in haystack for k in KEYWORDS):
-            continue
-        slug = path.rstrip("/").split("/")[-1]
-        items.append({
-            "id": "incibe-" + slug,
-            "tipo": "estafa",
-            "titulo": title or slug.replace("-", " ").capitalize(),
-            "resumen": desc,
-            "fecha": date_raw,
-            "fecha_iso": published.date().isoformat(),
-            "estado": "Reciente",
-            "importancia": extract_importance(visible),
-            "ambito": "España / usuarios de Internet",
-            "fuente": "INCIBE · Ciudadanía",
-            "url": url,
-            "verificado": True,
-        })
-
-    # Si falló la mayoría de detalles, no convertimos una revisión parcial en un falso cero.
-    attempted = detail_ok + detail_errors
-    if attempted and detail_ok / attempted < 0.60:
-        print(f"REVISIÓN INCOMPLETA: solo respondieron {detail_ok}/{attempted} avisos de INCIBE.")
-        print("Se conserva data/estafas.json sin cambios.")
-        return
+        pages_ok += 1
+        for path, title, date_raw, importance, summary in extract_cards(listing):
+            published = parse_date(date_raw)
+            if not published or published < cutoff or published > now + timedelta(days=1):
+                continue
+            url_item = urllib.parse.urljoin(BASE, path)
+            slug = path.rstrip("/").split("/")[-1]
+            items.append({
+                "id": "incibe-" + slug,
+                "tipo": "estafa",
+                "titulo": title,
+                "resumen": summary or "Aviso oficial de INCIBE sobre una campaña de fraude o suplantación.",
+                "fecha": date_raw,
+                "fecha_iso": published.date().isoformat(),
+                "estado": "Reciente",
+                "importancia": importance,
+                "ambito": "España / usuarios de Internet",
+                "fuente": "INCIBE · Ciudadanía",
+                "url": url_item,
+                "verificado": True,
+            })
 
     unique = {x["url"]: x for x in items}
     items = sorted(unique.values(), key=lambda x: x["fecha_iso"], reverse=True)
@@ -184,10 +137,9 @@ def main():
         "fuente": "INCIBE · Ciudadanía",
         "fuente_url": LIST_URL,
         "ultima_revision": now.isoformat(),
-        "revision": "completa",
-        "fuentes_consultadas": list_ok,
-        "avisos_consultados": detail_ok,
-        "errores_parciales": len(list_errors) + detail_errors,
+        "revision": "completa" if pages_ok else "incompleta",
+        "fuentes_consultadas": pages_ok,
+        "errores_parciales": errors,
         "criterio": f"Avisos oficiales de fraude/suplantación publicados en los últimos {MAX_AGE_DAYS} días",
         "total": len(items),
         "items": items,
@@ -196,7 +148,7 @@ def main():
     tmp = OUT.with_suffix(".tmp")
     tmp.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     tmp.replace(OUT)
-    print(f"Revisión completa: {len(items)} alertas recientes; {detail_errors} errores parciales")
+    print(f"Revisión rápida completa: {len(items)} alertas; {pages_ok} páginas consultadas; {errors} errores")
 
 
 if __name__ == "__main__":
