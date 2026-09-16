@@ -1,9 +1,9 @@
 {
-  "ultima_revision": "2026-09-16T20:14:50.025972+00:00",
+  "ultima_revision": "2026-09-16T21:13:58.660009+00:00",
   "revision": "parcial",
   "cobertura": {
     "fuentes_configuradas": 28,
-    "fuentes_respondieron": 23,
+    "fuentes_respondieron": 24,
     "territorial": {
       "Global": {
         "configuradas": 4,
@@ -11,7 +11,7 @@
       },
       "España": {
         "configuradas": 8,
-        "respondieron": 7
+        "respondieron": 8
       },
       "Cataluña": {
         "configuradas": 1,
@@ -124,8 +124,8 @@
     },
     {
       "fuente": "SEPE",
-      "estado": "error",
-      "detalle": "URLError",
+      "estado": "ok",
+      "detalle": "Sede oficial accesible",
       "ambito": "España"
     },
     {
@@ -245,7 +245,7 @@
     {
       "fuente": "Gobierno de La Rioja",
       "estado": "error",
-      "detalle": "URLError",
+      "detalle": "TimeoutError",
       "ambito": "La Rioja"
     }
   ],
@@ -257,6 +257,7 @@
     "Administraciones Públicas (AGE)",
     "Generalitat de Catalunya",
     "ENAIRE Sede electrónica",
+    "SEPE",
     "Punto de Acceso General",
     "Agencia Tributaria (AEAT)",
     "Seguridad Social",
@@ -276,10 +277,6 @@
   ],
   "fuentes_error": [
     {
-      "servicio": "SEPE",
-      "error": "URLError"
-    },
-    {
       "servicio": "Gobierno de Cantabria",
       "error": "URLError"
     },
@@ -293,14 +290,14 @@
     },
     {
       "servicio": "Gobierno de La Rioja",
-      "error": "URLError"
+      "error": "TimeoutError"
     }
   ],
   "cambios": {
     "nuevas": 0,
     "desaparecidas_detectadas": 0
   },
-  "total": 4,
+  "total": 3,
   "items": [
     {
       "id": "cloudflare-9g65dxfbcjln",
@@ -315,21 +312,6 @@
       "ambito": "Global",
       "fuente": "Cloudflare Status",
       "url": "https://www.cloudflarestatus.com/incidents/9g65dxfbcjln",
-      "verificado": true
-    },
-    {
-      "id": "digitalocean-grb2v0td1nq5",
-      "tipo": "servicio",
-      "servicio": "DigitalOcean",
-      "titulo": "Support Portal Service Disruption",
-      "resumen": "The Support Portal and ticket creation are now accessible. Our upstream provider has applied a fix, and we've verified ticket creation and review are working as expected. We'll continue monitoring for the next 2 hours to confirm full stability and will post a final update once the incident is closed. If you're still unable to access the portal, please use our Support Contact form as a backup: https://www.digitalocean.com/company/contact/support\nWe apologize for the disruption and appreciate your patience.",
-      "estado": "Monitorizando",
-      "impacto": "Menor",
-      "fecha": "2026-09-16T09:48:19.081Z",
-      "actualizado": "2026-09-16T14:07:22.711Z",
-      "ambito": "Global",
-      "fuente": "DigitalOcean Status",
-      "url": "https://stspg.io/n6hr8jd64qjl",
       "verificado": true
     },
     {
