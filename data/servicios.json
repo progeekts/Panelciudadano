@@ -1,10 +1,77 @@
 {
-  "ultima_revision": "2026-09-16T20:09:08.191862+00:00",
-  "revision": "parcial",
+  "ultima_revision": "2026-09-16T20:12:24.347678+00:00",
+  "revision": "completa",
   "cobertura": {
-    "fuentes_configuradas": 11,
-    "fuentes_respondieron": 9
+    "fuentes_configuradas": 13,
+    "fuentes_respondieron": 13
   },
+  "salud_fuentes": [
+    {
+      "fuente": "GitHub",
+      "estado": "ok",
+      "detalle": "API oficial de estado respondió"
+    },
+    {
+      "fuente": "Cloudflare",
+      "estado": "ok",
+      "detalle": "API oficial de estado respondió"
+    },
+    {
+      "fuente": "Atlassian",
+      "estado": "ok",
+      "detalle": "API oficial de estado respondió"
+    },
+    {
+      "fuente": "DigitalOcean",
+      "estado": "ok",
+      "detalle": "API oficial de estado respondió"
+    },
+    {
+      "fuente": "Administraciones Públicas (AGE)",
+      "estado": "ok",
+      "detalle": "Sede oficial accesible"
+    },
+    {
+      "fuente": "Generalitat de Catalunya",
+      "estado": "ok",
+      "detalle": "Sede oficial accesible"
+    },
+    {
+      "fuente": "ENAIRE Sede electrónica",
+      "estado": "ok",
+      "detalle": "Sede oficial accesible"
+    },
+    {
+      "fuente": "SEPE",
+      "estado": "ok",
+      "detalle": "Sede oficial accesible"
+    },
+    {
+      "fuente": "Punto de Acceso General",
+      "estado": "ok",
+      "detalle": "Sede oficial accesible"
+    },
+    {
+      "fuente": "Agencia Tributaria (AEAT)",
+      "estado": "ok",
+      "detalle": "Sede oficial accesible"
+    },
+    {
+      "fuente": "Seguridad Social",
+      "estado": "ok",
+      "detalle": "Sede oficial accesible"
+    },
+    {
+      "fuente": "DGT",
+      "estado": "ok",
+      "detalle": "Sede oficial accesible"
+    },
+    {
+      "fuente": "Ministerio de Transportes",
+      "estado": "ok",
+      "detalle": "Sede oficial accesible"
+    }
+  ],
   "fuentes_ok": [
     "GitHub",
     "Cloudflare",
@@ -13,21 +80,16 @@
     "Administraciones Públicas (AGE)",
     "Generalitat de Catalunya",
     "ENAIRE Sede electrónica",
+    "SEPE",
     "Punto de Acceso General",
-    "Sede Ministerio de Transportes"
+    "Agencia Tributaria (AEAT)",
+    "Seguridad Social",
+    "DGT",
+    "Ministerio de Transportes"
   ],
-  "fuentes_error": [
-    {
-      "servicio": "Fastly",
-      "error": "HTTPError"
-    },
-    {
-      "servicio": "GitLab",
-      "error": "HTTPError"
-    }
-  ],
+  "fuentes_error": [],
   "cambios": {
-    "nuevas": 2,
+    "nuevas": 0,
     "desaparecidas_detectadas": 0
   },
   "total": 4,
