@@ -29,10 +29,11 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A data/servicios.json
-          if git diff --cached --quiet -- data/servicios.json; then
+          git add -A data/servicios.json data/historico_servicios.json
+          if git diff --cached --quiet -- data/servicios.json data/historico_servicios.json; then
             echo "Sin cambios en servicios"
             exit 0
           fi
-          git commit -m "Datos: actualizar servicios digitales"
+          git commit -m "Datos: actualizar servicios e histórico"
+          git pull --rebase origin main
           git push
