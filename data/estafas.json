@@ -1,0 +1,56 @@
+{
+  "fuente": "INCIBE · Ciudadanía",
+  "fuente_url": "https://www.incibe.es/ciudadania/tags/aviso",
+  "ultima_revision": "2026-09-16T17:27:07.136782+00:00",
+  "total": 4,
+  "items": [
+    {
+      "id": "incibe-detectado-nuevo-metodo-de-fraude-en-tiendas-de-compraventa-como-wallapop-y",
+      "tipo": "estafa",
+      "titulo": "Detectado nuevo metodo de fraude en tiendas de compraventa como wallapop y",
+      "resumen": "Se ha detectado un nuevo método de fraude, cuyo origen se encuentra en un contacto interesado en compr",
+      "fecha": "06/09/2022",
+      "importancia": "3 - Media Recursos Afectados Todos los usuarios con cuenta e",
+      "ambito": "España / usuarios de Internet",
+      "fuente": "INCIBE · Ciudadanía",
+      "url": "https://www.incibe.es/ciudadania/avisos/detectado-nuevo-metodo-de-fraude-en-tiendas-de-compraventa-como-wallapop-y",
+      "verificado": true
+    },
+    {
+      "id": "incibe-detectada-una-campana-de-intento-de-fraude-traves-de-aplicaciones-de",
+      "tipo": "estafa",
+      "titulo": "Detectada una campana de intento de fraude traves de aplicaciones de",
+      "resumen": "Se han detectado varios casos de intentos de fraude, cuyo origen se encuentra en un contacto interesad",
+      "fecha": "04/03/2020",
+      "importancia": "3 - Media Recursos Afectados Todos los usuarios con cuenta e",
+      "ambito": "España / usuarios de Internet",
+      "fuente": "INCIBE · Ciudadanía",
+      "url": "https://www.incibe.es/ciudadania/avisos/detectada-una-campana-de-intento-de-fraude-traves-de-aplicaciones-de",
+      "verificado": true
+    },
+    {
+      "id": "incibe-el-fraude-de-los-anuncios-con-imagenes-de-famosos",
+      "tipo": "estafa",
+      "titulo": "El fraude de los anuncios con imagenes de famosos",
+      "resumen": "En las últimas semanas se ha detectado un aumento de anuncios fraudulentos en los que se utilizan la i",
+      "fecha": "02/09/2019",
+      "importancia": "3 - Media Recursos Afectados En este tipo de fraude son vari",
+      "ambito": "España / usuarios de Internet",
+      "fuente": "INCIBE · Ciudadanía",
+      "url": "https://www.incibe.es/ciudadania/avisos/el-fraude-de-los-anuncios-con-imagenes-de-famosos",
+      "verificado": true
+    },
+    {
+      "id": "incibe-phishing-movistar-sobre-factura-movil",
+      "tipo": "estafa",
+      "titulo": "Phishing movistar sobre factura movil",
+      "resumen": "Se ha detectado una campaña tipo phishing, a través de correo electrónico,",
+      "fecha": "26/02/2018",
+      "importancia": "3 - Media Recursos Afectados Cualquier usuario o cliente de ",
+      "ambito": "España / usuarios de Internet",
+      "fuente": "INCIBE · Ciudadanía",
+      "url": "https://www.incibe.es/ciudadania/avisos/phishing-movistar-sobre-factura-movil",
+      "verificado": true
+    }
+  ]
+}
