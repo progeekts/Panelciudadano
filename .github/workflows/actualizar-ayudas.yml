@@ -1,0 +1,42 @@
+name: Actualizar radar de ayudas
+
+on:
+  workflow_dispatch:
+  schedule:
+    # 07:15 y 19:15 UTC. La web muestra la hora real de revisión guardada en los datos.
+    - cron: '15 7,19 * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: actualizar-ayudas
+  cancel-in-progress: false
+
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Descargar repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Consultar BDNS
+        run: python scripts/update_ayudas.py
+
+      - name: Publicar cambios si existen
+        run: |
+          if git diff --quiet -- data/ayudas.json; then
+            echo "Sin cambios en ayudas"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/ayudas.json
+          git commit -m "Datos: actualizar ayudas BDNS"
+          git push
