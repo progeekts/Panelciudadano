@@ -1,10 +1,10 @@
 {
   "fuente": "SNPSAP / BDNS",
   "fuente_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/inicio",
-  "ultima_revision": "2026-09-16T18:42:30.202876+00:00",
+  "ultima_revision": "2026-09-16T18:49:28.994800+00:00",
   "total": 100,
-  "enriquecidas": 0,
-  "criterio_estado": "El estado del plazo solo se muestra cuando la BDNS aporta fechas interpretables; en otro caso se indica No determinado.",
+  "con_metadatos": 0,
+  "criterio_estado": "La BDNS incluye convocatorias abiertas, cerradas, resueltas e instrumentales. Panel Ciudadano no afirma que una convocatoria esté abierta salvo que disponga de un plazo inequívoco.",
   "items": [
     {
       "id": "bdns-1131536",
