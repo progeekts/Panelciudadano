@@ -1,18 +1,36 @@
 {
-  "ultima_revision": "2026-09-16T20:03:57.804501+00:00",
-  "revision": "completa",
+  "ultima_revision": "2026-09-16T20:09:08.191862+00:00",
+  "revision": "parcial",
+  "cobertura": {
+    "fuentes_configuradas": 11,
+    "fuentes_respondieron": 9
+  },
   "fuentes_ok": [
     "GitHub",
     "Cloudflare",
+    "Atlassian",
+    "DigitalOcean",
     "Administraciones Públicas (AGE)",
-    "Generalitat de Catalunya"
+    "Generalitat de Catalunya",
+    "ENAIRE Sede electrónica",
+    "Punto de Acceso General",
+    "Sede Ministerio de Transportes"
   ],
-  "fuentes_error": [],
+  "fuentes_error": [
+    {
+      "servicio": "Fastly",
+      "error": "HTTPError"
+    },
+    {
+      "servicio": "GitLab",
+      "error": "HTTPError"
+    }
+  ],
   "cambios": {
-    "nuevas": 0,
-    "desaparecidas_detectadas": 1
+    "nuevas": 2,
+    "desaparecidas_detectadas": 0
   },
-  "total": 2,
+  "total": 4,
   "items": [
     {
       "id": "cloudflare-9g65dxfbcjln",
@@ -24,9 +42,24 @@
       "impacto": "Menor",
       "fecha": "2026-08-27T18:46:19.000Z",
       "actualizado": "2026-09-01T08:29:56.000Z",
-      "ambito": "Según el proveedor",
+      "ambito": "Global",
       "fuente": "Cloudflare Status",
       "url": "https://www.cloudflarestatus.com/incidents/9g65dxfbcjln",
+      "verificado": true
+    },
+    {
+      "id": "digitalocean-grb2v0td1nq5",
+      "tipo": "servicio",
+      "servicio": "DigitalOcean",
+      "titulo": "Support Portal Service Disruption",
+      "resumen": "The Support Portal and ticket creation are now accessible. Our upstream provider has applied a fix, and we've verified ticket creation and review are working as expected. We'll continue monitoring for the next 2 hours to confirm full stability and will post a final update once the incident is closed. If you're still unable to access the portal, please use our Support Contact form as a backup: https://www.digitalocean.com/company/contact/support\nWe apologize for the disruption and appreciate your patience.",
+      "estado": "Monitorizando",
+      "impacto": "Menor",
+      "fecha": "2026-09-16T09:48:19.081Z",
+      "actualizado": "2026-09-16T14:07:22.711Z",
+      "ambito": "Global",
+      "fuente": "DigitalOcean Status",
+      "url": "https://stspg.io/n6hr8jd64qjl",
       "verificado": true
     },
     {
@@ -42,6 +75,21 @@
       "ambito": "España",
       "fuente": "Sede de Administraciones Públicas",
       "url": "https://sede.administracionespublicas.gob.es/ayuda/",
+      "verificado": true
+    },
+    {
+      "id": "enaire-sede-mantenimiento",
+      "tipo": "servicio",
+      "servicio": "ENAIRE",
+      "titulo": "Sede electrónica de ENAIRE en mantenimiento",
+      "resumen": "La propia sede electrónica informa de labores de mantenimiento y de indisponibilidad temporal.",
+      "estado": "Mantenimiento",
+      "impacto": "Tramitación electrónica",
+      "fecha": "",
+      "actualizado": "",
+      "ambito": "España",
+      "fuente": "Sede electrónica de ENAIRE",
+      "url": "https://servicios-enaire.sede.gob.es/",
       "verificado": true
     }
   ]
