@@ -1,75 +1,252 @@
 {
-  "ultima_revision": "2026-09-16T20:12:24.347678+00:00",
-  "revision": "completa",
+  "ultima_revision": "2026-09-16T20:14:50.025972+00:00",
+  "revision": "parcial",
   "cobertura": {
-    "fuentes_configuradas": 13,
-    "fuentes_respondieron": 13
+    "fuentes_configuradas": 28,
+    "fuentes_respondieron": 23,
+    "territorial": {
+      "Global": {
+        "configuradas": 4,
+        "respondieron": 4
+      },
+      "España": {
+        "configuradas": 8,
+        "respondieron": 7
+      },
+      "Cataluña": {
+        "configuradas": 1,
+        "respondieron": 1
+      },
+      "Andalucía": {
+        "configuradas": 1,
+        "respondieron": 1
+      },
+      "Aragón": {
+        "configuradas": 1,
+        "respondieron": 1
+      },
+      "Asturias": {
+        "configuradas": 1,
+        "respondieron": 1
+      },
+      "Illes Balears": {
+        "configuradas": 1,
+        "respondieron": 1
+      },
+      "Canarias": {
+        "configuradas": 1,
+        "respondieron": 1
+      },
+      "Cantabria": {
+        "configuradas": 1,
+        "respondieron": 0
+      },
+      "Castilla y León": {
+        "configuradas": 1,
+        "respondieron": 1
+      },
+      "Castilla-La Mancha": {
+        "configuradas": 1,
+        "respondieron": 0
+      },
+      "Comunitat Valenciana": {
+        "configuradas": 1,
+        "respondieron": 1
+      },
+      "Galicia": {
+        "configuradas": 1,
+        "respondieron": 1
+      },
+      "Comunidad de Madrid": {
+        "configuradas": 1,
+        "respondieron": 0
+      },
+      "Región de Murcia": {
+        "configuradas": 1,
+        "respondieron": 1
+      },
+      "Navarra": {
+        "configuradas": 1,
+        "respondieron": 1
+      },
+      "País Vasco": {
+        "configuradas": 1,
+        "respondieron": 1
+      },
+      "La Rioja": {
+        "configuradas": 1,
+        "respondieron": 0
+      }
+    }
   },
   "salud_fuentes": [
     {
       "fuente": "GitHub",
       "estado": "ok",
-      "detalle": "API oficial de estado respondió"
+      "detalle": "API oficial de estado respondió",
+      "ambito": "Global"
     },
     {
       "fuente": "Cloudflare",
       "estado": "ok",
-      "detalle": "API oficial de estado respondió"
+      "detalle": "API oficial de estado respondió",
+      "ambito": "Global"
     },
     {
       "fuente": "Atlassian",
       "estado": "ok",
-      "detalle": "API oficial de estado respondió"
+      "detalle": "API oficial de estado respondió",
+      "ambito": "Global"
     },
     {
       "fuente": "DigitalOcean",
       "estado": "ok",
-      "detalle": "API oficial de estado respondió"
+      "detalle": "API oficial de estado respondió",
+      "ambito": "Global"
     },
     {
       "fuente": "Administraciones Públicas (AGE)",
       "estado": "ok",
-      "detalle": "Sede oficial accesible"
+      "detalle": "Sede oficial accesible",
+      "ambito": "España"
     },
     {
       "fuente": "Generalitat de Catalunya",
       "estado": "ok",
-      "detalle": "Sede oficial accesible"
+      "detalle": "Sede oficial accesible",
+      "ambito": "Cataluña"
     },
     {
       "fuente": "ENAIRE Sede electrónica",
       "estado": "ok",
-      "detalle": "Sede oficial accesible"
+      "detalle": "Sede oficial accesible",
+      "ambito": "España"
     },
     {
       "fuente": "SEPE",
-      "estado": "ok",
-      "detalle": "Sede oficial accesible"
+      "estado": "error",
+      "detalle": "URLError",
+      "ambito": "España"
     },
     {
       "fuente": "Punto de Acceso General",
       "estado": "ok",
-      "detalle": "Sede oficial accesible"
+      "detalle": "Sede oficial accesible",
+      "ambito": "España"
     },
     {
       "fuente": "Agencia Tributaria (AEAT)",
       "estado": "ok",
-      "detalle": "Sede oficial accesible"
+      "detalle": "Sede oficial accesible",
+      "ambito": "España"
     },
     {
       "fuente": "Seguridad Social",
       "estado": "ok",
-      "detalle": "Sede oficial accesible"
+      "detalle": "Sede oficial accesible",
+      "ambito": "España"
     },
     {
       "fuente": "DGT",
       "estado": "ok",
-      "detalle": "Sede oficial accesible"
+      "detalle": "Sede oficial accesible",
+      "ambito": "España"
     },
     {
       "fuente": "Ministerio de Transportes",
       "estado": "ok",
-      "detalle": "Sede oficial accesible"
+      "detalle": "Sede oficial accesible",
+      "ambito": "España"
+    },
+    {
+      "fuente": "Junta de Andalucía",
+      "estado": "ok",
+      "detalle": "Sede oficial accesible",
+      "ambito": "Andalucía"
+    },
+    {
+      "fuente": "Gobierno de Aragón",
+      "estado": "ok",
+      "detalle": "Sede oficial accesible",
+      "ambito": "Aragón"
+    },
+    {
+      "fuente": "Principado de Asturias",
+      "estado": "ok",
+      "detalle": "Sede oficial accesible",
+      "ambito": "Asturias"
+    },
+    {
+      "fuente": "Govern de les Illes Balears",
+      "estado": "ok",
+      "detalle": "Sede oficial accesible",
+      "ambito": "Illes Balears"
+    },
+    {
+      "fuente": "Gobierno de Canarias",
+      "estado": "ok",
+      "detalle": "Sede oficial accesible",
+      "ambito": "Canarias"
+    },
+    {
+      "fuente": "Gobierno de Cantabria",
+      "estado": "error",
+      "detalle": "URLError",
+      "ambito": "Cantabria"
+    },
+    {
+      "fuente": "Junta de Castilla y León",
+      "estado": "ok",
+      "detalle": "Sede oficial accesible",
+      "ambito": "Castilla y León"
+    },
+    {
+      "fuente": "Junta de Castilla-La Mancha",
+      "estado": "error",
+      "detalle": "HTTPError",
+      "ambito": "Castilla-La Mancha"
+    },
+    {
+      "fuente": "Generalitat Valenciana",
+      "estado": "ok",
+      "detalle": "Sede oficial accesible",
+      "ambito": "Comunitat Valenciana"
+    },
+    {
+      "fuente": "Xunta de Galicia",
+      "estado": "ok",
+      "detalle": "Sede oficial accesible",
+      "ambito": "Galicia"
+    },
+    {
+      "fuente": "Comunidad de Madrid",
+      "estado": "error",
+      "detalle": "HTTPError",
+      "ambito": "Comunidad de Madrid"
+    },
+    {
+      "fuente": "Región de Murcia",
+      "estado": "ok",
+      "detalle": "Sede oficial accesible",
+      "ambito": "Región de Murcia"
+    },
+    {
+      "fuente": "Gobierno de Navarra",
+      "estado": "ok",
+      "detalle": "Sede oficial accesible",
+      "ambito": "Navarra"
+    },
+    {
+      "fuente": "Gobierno Vasco",
+      "estado": "ok",
+      "detalle": "Sede oficial accesible",
+      "ambito": "País Vasco"
+    },
+    {
+      "fuente": "Gobierno de La Rioja",
+      "estado": "error",
+      "detalle": "URLError",
+      "ambito": "La Rioja"
     }
   ],
   "fuentes_ok": [
@@ -80,14 +257,45 @@
     "Administraciones Públicas (AGE)",
     "Generalitat de Catalunya",
     "ENAIRE Sede electrónica",
-    "SEPE",
     "Punto de Acceso General",
     "Agencia Tributaria (AEAT)",
     "Seguridad Social",
     "DGT",
-    "Ministerio de Transportes"
+    "Ministerio de Transportes",
+    "Junta de Andalucía",
+    "Gobierno de Aragón",
+    "Principado de Asturias",
+    "Govern de les Illes Balears",
+    "Gobierno de Canarias",
+    "Junta de Castilla y León",
+    "Generalitat Valenciana",
+    "Xunta de Galicia",
+    "Región de Murcia",
+    "Gobierno de Navarra",
+    "Gobierno Vasco"
   ],
-  "fuentes_error": [],
+  "fuentes_error": [
+    {
+      "servicio": "SEPE",
+      "error": "URLError"
+    },
+    {
+      "servicio": "Gobierno de Cantabria",
+      "error": "URLError"
+    },
+    {
+      "servicio": "Junta de Castilla-La Mancha",
+      "error": "HTTPError"
+    },
+    {
+      "servicio": "Comunidad de Madrid",
+      "error": "HTTPError"
+    },
+    {
+      "servicio": "Gobierno de La Rioja",
+      "error": "URLError"
+    }
+  ],
   "cambios": {
     "nuevas": 0,
     "desaparecidas_detectadas": 0
