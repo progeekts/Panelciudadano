@@ -1,12 +1,14 @@
 {
-  "ultima_revision": "2026-09-16T18:03:16.374254+00:00",
+  "ultima_revision": "2026-09-16T18:11:12.574613+00:00",
   "revision": "completa",
   "fuentes_ok": [
     "GitHub",
-    "Cloudflare"
+    "Cloudflare",
+    "Administraciones Públicas (AGE)",
+    "Generalitat de Catalunya"
   ],
   "fuentes_error": [],
-  "total": 2,
+  "total": 3,
   "items": [
     {
       "id": "cloudflare-9tgkg3ww89kf",
@@ -36,6 +38,21 @@
       "ambito": "Según el proveedor",
       "fuente": "Cloudflare Status",
       "url": "https://www.cloudflarestatus.com/incidents/9g65dxfbcjln",
+      "verificado": true
+    },
+    {
+      "id": "age-correo-consultas",
+      "tipo": "servicio",
+      "servicio": "Administraciones Públicas",
+      "titulo": "Incidencia en el sistema de correo de consultas de Administraciones Públicas",
+      "resumen": "La sede oficial avisa de problemas que pueden afectar a la recepción y envío de comunicaciones relacionadas con consultas.",
+      "estado": "Activa",
+      "impacto": "No indicado",
+      "fecha": "",
+      "actualizado": "",
+      "ambito": "España",
+      "fuente": "Sede de Administraciones Públicas",
+      "url": "https://sede.administracionespublicas.gob.es/ayuda/",
       "verificado": true
     }
   ]
