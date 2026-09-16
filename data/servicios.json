@@ -1,5 +1,5 @@
 {
-  "ultima_revision": "2026-09-16T21:13:58.660009+00:00",
+  "ultima_revision": "2026-09-16T23:47:27.486253+00:00",
   "revision": "parcial",
   "cobertura": {
     "fuentes_configuradas": 28,
@@ -245,7 +245,7 @@
     {
       "fuente": "Gobierno de La Rioja",
       "estado": "error",
-      "detalle": "TimeoutError",
+      "detalle": "URLError",
       "ambito": "La Rioja"
     }
   ],
@@ -290,7 +290,7 @@
     },
     {
       "servicio": "Gobierno de La Rioja",
-      "error": "TimeoutError"
+      "error": "URLError"
     }
   ],
   "cambios": {
