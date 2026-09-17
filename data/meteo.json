@@ -1,5 +1,5 @@
 {
-  "ultima_revision": "2026-09-17T08:46:32.534922+00:00",
+  "ultima_revision": "2026-09-17T08:47:59.637998+00:00",
   "revision": "completa",
   "fuente_principal": "Agencia Estatal de Meteorología (AEMET)",
   "nota": "Estado de avisos meteorológicos adversos obtenido del canal oficial CAP. Solo se publican avisos CAP con severidad Moderate, Severe o Extreme; los mensajes Minor sin aviso se excluyen.",
