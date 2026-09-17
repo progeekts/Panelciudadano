@@ -1,5 +1,5 @@
 {
-  "ultima_revision": "2026-09-17T14:53:23.229953+00:00",
+  "ultima_revision": "2026-09-17T18:57:36.733295+00:00",
   "revision": "completa",
   "revision_fuentes_incidentes": "completa",
   "salud_auxiliar": "parcial",
@@ -418,12 +418,28 @@
     }
   ],
   "cambios": {
-    "nuevas": 0,
+    "nuevas": 1,
     "resueltas_detectadas": 0,
     "retiradas_monitor": 0
   },
-  "total": 3,
+  "total": 4,
   "items": [
+    {
+      "id": "cloudflare-rhmpng7klcqw",
+      "fuente_clave": "cloudflare",
+      "tipo": "servicio",
+      "servicio": "Cloudflare",
+      "titulo": "Network Performance Issues in Ashburn, VA, United States",
+      "resumen": "A fix has been implemented and we are monitoring the results.",
+      "estado": "Monitorizando",
+      "impacto": "Menor",
+      "fecha": "2026-09-17T18:29:43.000Z",
+      "actualizado": "2026-09-17T18:32:36.000Z",
+      "ambito": "Global",
+      "fuente": "Cloudflare Status",
+      "url": "https://www.cloudflarestatus.com/incidents/rhmpng7klcqw",
+      "verificado": true
+    },
     {
       "id": "cloudflare-823rbdm2k25x",
       "fuente_clave": "cloudflare",
