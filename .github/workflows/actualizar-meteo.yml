@@ -1,0 +1,48 @@
+name: Actualizar avisos meteorológicos
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '12,42 * * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: panel-datos-main
+  cancel-in-progress: false
+
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar repositorio
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Consultar avisos oficiales AEMET
+        run: python scripts/update_meteo.py
+      - name: Publicar cambios si existen
+        run: |
+          if git diff --quiet -- data/meteo.json; then
+            echo "Sin cambios"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/meteo.json
+          git commit -m "Datos: actualizar avisos meteorológicos AEMET"
+          for i in 1 2 3; do
+            if git pull --rebase origin main && git push; then
+              exit 0
+            fi
+            git rebase --abort 2>/dev/null || true
+            echo "Reintentando publicación ($i/3)…"
+            sleep 3
+          done
+          echo "No se pudo publicar tras 3 intentos"
+          exit 1
