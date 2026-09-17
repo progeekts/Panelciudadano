@@ -19,15 +19,12 @@ jobs:
     steps:
       - name: Descargar repositorio
         uses: actions/checkout@v4
-
       - name: Configurar Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-
       - name: Consultar alertas oficiales
         run: python scripts/update_estafas.py
-
       - name: Publicar cambios si existen
         run: |
           git config user.name "github-actions[bot]"
@@ -38,4 +35,13 @@ jobs:
             exit 0
           fi
           git commit -m "Datos: actualizar alertas de estafas"
-          git push
+          for i in 1 2 3; do
+            if git pull --rebase origin main && git push; then
+              exit 0
+            fi
+            git rebase --abort 2>/dev/null || true
+            echo "Reintentando publicación ($i/3)…"
+            sleep 3
+          done
+          echo "No se pudo publicar tras 3 intentos"
+          exit 1
