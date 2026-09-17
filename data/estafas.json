@@ -1,11 +1,13 @@
 {
   "fuente": "INCIBE · Ciudadanía",
   "fuente_url": "https://www.incibe.es/ciudadania/avisos",
-  "ultima_revision": "2026-09-16T22:16:51.387881+00:00",
+  "ultima_revision": "2026-09-17T12:44:37.941382+00:00",
   "revision": "completa",
+  "paginas_previstas": 3,
   "fuentes_consultadas": 3,
   "errores_parciales": 0,
   "criterio": "Avisos oficiales de fraude/suplantación publicados en los últimos 120 días",
+  "nota_estado": "“Reciente” indica fecha de publicación reciente; no afirma que la campaña siga activa.",
   "total": 4,
   "items": [
     {
