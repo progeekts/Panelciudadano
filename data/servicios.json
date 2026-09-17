@@ -1,9 +1,13 @@
 {
-  "ultima_revision": "2026-09-17T07:24:50.514613+00:00",
-  "revision": "parcial",
+  "ultima_revision": "2026-09-17T07:30:40.462710+00:00",
+  "revision": "completa",
+  "revision_fuentes_incidentes": "completa",
+  "salud_auxiliar": "parcial",
   "cobertura": {
     "fuentes_configuradas": 30,
-    "fuentes_respondieron": 24,
+    "fuentes_respondieron": 25,
+    "fuentes_incidentes": 8,
+    "fuentes_incidentes_ok": 8,
     "territorial": {
       "Global": {
         "configuradas": 4,
@@ -11,7 +15,7 @@
       },
       "España": {
         "configuradas": 8,
-        "respondieron": 7
+        "respondieron": 8
       },
       "Cataluña": {
         "configuradas": 1,
@@ -89,184 +93,274 @@
   },
   "salud_fuentes": [
     {
+      "clave": "github",
       "fuente": "GitHub",
       "estado": "ok",
       "detalle": "API oficial de estado respondió",
-      "ambito": "Global"
+      "ambito": "Global",
+      "tipo": "incidencias",
+      "critica_para_resolucion": true
     },
     {
+      "clave": "cloudflare",
       "fuente": "Cloudflare",
       "estado": "ok",
       "detalle": "API oficial de estado respondió",
-      "ambito": "Global"
+      "ambito": "Global",
+      "tipo": "incidencias",
+      "critica_para_resolucion": true
     },
     {
+      "clave": "atlassian",
       "fuente": "Atlassian",
       "estado": "ok",
       "detalle": "API oficial de estado respondió",
-      "ambito": "Global"
+      "ambito": "Global",
+      "tipo": "incidencias",
+      "critica_para_resolucion": true
     },
     {
+      "clave": "digitalocean",
       "fuente": "DigitalOcean",
       "estado": "ok",
       "detalle": "API oficial de estado respondió",
-      "ambito": "Global"
+      "ambito": "Global",
+      "tipo": "incidencias",
+      "critica_para_resolucion": true
     },
     {
+      "clave": "age",
       "fuente": "Administraciones Públicas (AGE)",
       "estado": "ok",
-      "detalle": "Sede oficial accesible",
-      "ambito": "España"
+      "detalle": "Fuente oficial accesible",
+      "ambito": "España",
+      "tipo": "incidencias",
+      "critica_para_resolucion": true
     },
     {
+      "clave": "gencat",
       "fuente": "Generalitat de Catalunya",
       "estado": "ok",
-      "detalle": "Sede oficial accesible",
-      "ambito": "Cataluña"
+      "detalle": "Fuente oficial accesible",
+      "ambito": "Cataluña",
+      "tipo": "incidencias",
+      "critica_para_resolucion": true
     },
     {
+      "clave": "enaire",
       "fuente": "ENAIRE Sede electrónica",
       "estado": "ok",
-      "detalle": "Sede oficial accesible",
-      "ambito": "España"
+      "detalle": "Fuente oficial accesible",
+      "ambito": "España",
+      "tipo": "auxiliar",
+      "critica_para_resolucion": false
     },
     {
+      "clave": "sepe",
       "fuente": "SEPE",
       "estado": "ok",
-      "detalle": "Sede oficial accesible",
-      "ambito": "España"
+      "detalle": "Fuente oficial accesible",
+      "ambito": "España",
+      "tipo": "incidencias",
+      "critica_para_resolucion": true
     },
     {
+      "clave": "melilla",
       "fuente": "Ciudad Autónoma de Melilla",
       "estado": "ok",
-      "detalle": "Sede oficial accesible",
-      "ambito": "Melilla"
+      "detalle": "Fuente oficial accesible",
+      "ambito": "Melilla",
+      "tipo": "incidencias",
+      "critica_para_resolucion": true
     },
     {
+      "clave": "pag",
       "fuente": "Punto de Acceso General",
       "estado": "ok",
-      "detalle": "Sede oficial accesible",
-      "ambito": "España"
+      "detalle": "Fuente oficial accesible",
+      "ambito": "España",
+      "tipo": "auxiliar",
+      "critica_para_resolucion": false
     },
     {
+      "clave": "aeat",
       "fuente": "Agencia Tributaria (AEAT)",
       "estado": "ok",
-      "detalle": "Sede oficial accesible",
-      "ambito": "España"
+      "detalle": "Fuente oficial accesible",
+      "ambito": "España",
+      "tipo": "auxiliar",
+      "critica_para_resolucion": false
     },
     {
+      "clave": "seg-social",
       "fuente": "Seguridad Social",
       "estado": "ok",
-      "detalle": "Sede oficial accesible",
-      "ambito": "España"
+      "detalle": "Fuente oficial accesible",
+      "ambito": "España",
+      "tipo": "auxiliar",
+      "critica_para_resolucion": false
     },
     {
+      "clave": "dgt",
       "fuente": "DGT",
-      "estado": "error",
-      "detalle": "URLError",
-      "ambito": "España"
+      "estado": "ok",
+      "detalle": "Fuente oficial accesible",
+      "ambito": "España",
+      "tipo": "auxiliar",
+      "critica_para_resolucion": false
     },
     {
+      "clave": "transportes",
       "fuente": "Ministerio de Transportes",
       "estado": "ok",
-      "detalle": "Sede oficial accesible",
-      "ambito": "España"
+      "detalle": "Fuente oficial accesible",
+      "ambito": "España",
+      "tipo": "auxiliar",
+      "critica_para_resolucion": false
     },
     {
+      "clave": "andalucia",
       "fuente": "Junta de Andalucía",
       "estado": "ok",
-      "detalle": "Sede oficial accesible",
-      "ambito": "Andalucía"
+      "detalle": "Fuente oficial accesible",
+      "ambito": "Andalucía",
+      "tipo": "auxiliar",
+      "critica_para_resolucion": false
     },
     {
+      "clave": "aragon",
       "fuente": "Gobierno de Aragón",
       "estado": "ok",
-      "detalle": "Sede oficial accesible",
-      "ambito": "Aragón"
+      "detalle": "Fuente oficial accesible",
+      "ambito": "Aragón",
+      "tipo": "auxiliar",
+      "critica_para_resolucion": false
     },
     {
+      "clave": "asturias",
       "fuente": "Principado de Asturias",
       "estado": "ok",
-      "detalle": "Sede oficial accesible",
-      "ambito": "Asturias"
+      "detalle": "Fuente oficial accesible",
+      "ambito": "Asturias",
+      "tipo": "auxiliar",
+      "critica_para_resolucion": false
     },
     {
+      "clave": "balears",
       "fuente": "Govern de les Illes Balears",
       "estado": "ok",
-      "detalle": "Sede oficial accesible",
-      "ambito": "Illes Balears"
+      "detalle": "Fuente oficial accesible",
+      "ambito": "Illes Balears",
+      "tipo": "auxiliar",
+      "critica_para_resolucion": false
     },
     {
+      "clave": "canarias",
       "fuente": "Gobierno de Canarias",
       "estado": "ok",
-      "detalle": "Sede oficial accesible",
-      "ambito": "Canarias"
+      "detalle": "Fuente oficial accesible",
+      "ambito": "Canarias",
+      "tipo": "auxiliar",
+      "critica_para_resolucion": false
     },
     {
+      "clave": "cantabria",
       "fuente": "Gobierno de Cantabria",
       "estado": "error",
       "detalle": "URLError",
-      "ambito": "Cantabria"
+      "ambito": "Cantabria",
+      "tipo": "auxiliar",
+      "critica_para_resolucion": false
     },
     {
+      "clave": "castilla-leon",
       "fuente": "Junta de Castilla y León",
       "estado": "ok",
-      "detalle": "Sede oficial accesible",
-      "ambito": "Castilla y León"
+      "detalle": "Fuente oficial accesible",
+      "ambito": "Castilla y León",
+      "tipo": "auxiliar",
+      "critica_para_resolucion": false
     },
     {
+      "clave": "castilla-mancha",
       "fuente": "Junta de Castilla-La Mancha",
       "estado": "error",
       "detalle": "HTTPError",
-      "ambito": "Castilla-La Mancha"
+      "ambito": "Castilla-La Mancha",
+      "tipo": "auxiliar",
+      "critica_para_resolucion": false
     },
     {
+      "clave": "gva",
       "fuente": "Generalitat Valenciana",
       "estado": "ok",
-      "detalle": "Sede oficial accesible",
-      "ambito": "Comunitat Valenciana"
+      "detalle": "Fuente oficial accesible",
+      "ambito": "Comunitat Valenciana",
+      "tipo": "auxiliar",
+      "critica_para_resolucion": false
     },
     {
+      "clave": "galicia",
       "fuente": "Xunta de Galicia",
       "estado": "ok",
-      "detalle": "Sede oficial accesible",
-      "ambito": "Galicia"
+      "detalle": "Fuente oficial accesible",
+      "ambito": "Galicia",
+      "tipo": "auxiliar",
+      "critica_para_resolucion": false
     },
     {
+      "clave": "madrid",
       "fuente": "Comunidad de Madrid",
       "estado": "error",
       "detalle": "HTTPError",
-      "ambito": "Comunidad de Madrid"
+      "ambito": "Comunidad de Madrid",
+      "tipo": "auxiliar",
+      "critica_para_resolucion": false
     },
     {
+      "clave": "murcia",
       "fuente": "Región de Murcia",
       "estado": "ok",
-      "detalle": "Sede oficial accesible",
-      "ambito": "Región de Murcia"
+      "detalle": "Fuente oficial accesible",
+      "ambito": "Región de Murcia",
+      "tipo": "auxiliar",
+      "critica_para_resolucion": false
     },
     {
+      "clave": "navarra",
       "fuente": "Gobierno de Navarra",
       "estado": "ok",
-      "detalle": "Sede oficial accesible",
-      "ambito": "Navarra"
+      "detalle": "Fuente oficial accesible",
+      "ambito": "Navarra",
+      "tipo": "auxiliar",
+      "critica_para_resolucion": false
     },
     {
+      "clave": "euskadi",
       "fuente": "Gobierno Vasco",
       "estado": "ok",
-      "detalle": "Sede oficial accesible",
-      "ambito": "País Vasco"
+      "detalle": "Fuente oficial accesible",
+      "ambito": "País Vasco",
+      "tipo": "auxiliar",
+      "critica_para_resolucion": false
     },
     {
+      "clave": "rioja",
       "fuente": "Gobierno de La Rioja",
       "estado": "error",
       "detalle": "URLError",
-      "ambito": "La Rioja"
+      "ambito": "La Rioja",
+      "tipo": "auxiliar",
+      "critica_para_resolucion": false
     },
     {
+      "clave": "ceuta",
       "fuente": "Ciudad Autónoma de Ceuta",
       "estado": "error",
       "detalle": "URLError",
-      "ambito": "Ceuta"
+      "ambito": "Ceuta",
+      "tipo": "auxiliar",
+      "critica_para_resolucion": false
     }
   ],
   "fuentes_ok": [
@@ -282,6 +376,7 @@
     "Punto de Acceso General",
     "Agencia Tributaria (AEAT)",
     "Seguridad Social",
+    "DGT",
     "Ministerio de Transportes",
     "Junta de Andalucía",
     "Gobierno de Aragón",
@@ -297,38 +392,40 @@
   ],
   "fuentes_error": [
     {
-      "servicio": "DGT",
-      "error": "URLError"
-    },
-    {
       "servicio": "Gobierno de Cantabria",
-      "error": "URLError"
+      "error": "URLError",
+      "tipo": "auxiliar"
     },
     {
       "servicio": "Junta de Castilla-La Mancha",
-      "error": "HTTPError"
+      "error": "HTTPError",
+      "tipo": "auxiliar"
     },
     {
       "servicio": "Comunidad de Madrid",
-      "error": "HTTPError"
+      "error": "HTTPError",
+      "tipo": "auxiliar"
     },
     {
       "servicio": "Gobierno de La Rioja",
-      "error": "URLError"
+      "error": "URLError",
+      "tipo": "auxiliar"
     },
     {
       "servicio": "Ciudad Autónoma de Ceuta",
-      "error": "URLError"
+      "error": "URLError",
+      "tipo": "auxiliar"
     }
   ],
   "cambios": {
     "nuevas": 0,
-    "desaparecidas_detectadas": 0
+    "resueltas_detectadas": 1
   },
-  "total": 4,
+  "total": 3,
   "items": [
     {
       "id": "cloudflare-823rbdm2k25x",
+      "fuente_clave": "cloudflare",
       "tipo": "servicio",
       "servicio": "Cloudflare",
       "titulo": "Replicate Pruna issue",
@@ -344,6 +441,7 @@
     },
     {
       "id": "cloudflare-9g65dxfbcjln",
+      "fuente_clave": "cloudflare",
       "tipo": "servicio",
       "servicio": "Cloudflare",
       "titulo": "Incorrect geo location for some Cloudflare WARP users",
@@ -359,6 +457,7 @@
     },
     {
       "id": "age-correo-consultas",
+      "fuente_clave": "age",
       "tipo": "servicio",
       "servicio": "Administraciones Públicas",
       "titulo": "Incidencia en el sistema de correo de consultas de Administraciones Públicas",
@@ -370,21 +469,6 @@
       "ambito": "España",
       "fuente": "Sede de Administraciones Públicas",
       "url": "https://sede.administracionespublicas.gob.es/ayuda/",
-      "verificado": true
-    },
-    {
-      "id": "enaire-sede-mantenimiento",
-      "tipo": "servicio",
-      "servicio": "ENAIRE",
-      "titulo": "Sede electrónica de ENAIRE en mantenimiento",
-      "resumen": "La propia sede electrónica informa de labores de mantenimiento y de indisponibilidad temporal.",
-      "estado": "Mantenimiento",
-      "impacto": "Tramitación electrónica",
-      "fecha": "",
-      "actualizado": "",
-      "ambito": "España",
-      "fuente": "Sede electrónica de ENAIRE",
-      "url": "https://servicios-enaire.sede.gob.es/",
       "verificado": true
     }
   ]
