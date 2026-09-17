@@ -1,0 +1,43 @@
+name: Actualizar alertas alimentarias
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '25 8,20 * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: actualizar-alimentacion
+  cancel-in-progress: false
+
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - name: Descargar repositorio
+        uses: actions/checkout@v4
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Consultar alertas oficiales AESAN
+        run: python scripts/update_alimentacion.py
+      - name: Publicar cambios si existen
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A data/alimentacion.json
+          if git diff --cached --quiet -- data/alimentacion.json; then
+            echo "Sin cambios en alertas alimentarias"
+            exit 0
+          fi
+          git commit -m "Datos: actualizar alertas alimentarias AESAN"
+          for i in 1 2 3; do
+            if git pull --rebase origin main && git push; then exit 0; fi
+            git rebase --abort 2>/dev/null || true
+            sleep 3
+          done
+          exit 1
