@@ -1,9 +1,9 @@
 {
-  "ultima_revision": "2026-09-16T23:47:27.486253+00:00",
+  "ultima_revision": "2026-09-17T04:44:18.490101+00:00",
   "revision": "parcial",
   "cobertura": {
     "fuentes_configuradas": 28,
-    "fuentes_respondieron": 24,
+    "fuentes_respondieron": 23,
     "territorial": {
       "Global": {
         "configuradas": 4,
@@ -11,7 +11,7 @@
       },
       "España": {
         "configuradas": 8,
-        "respondieron": 8
+        "respondieron": 7
       },
       "Cataluña": {
         "configuradas": 1,
@@ -148,8 +148,8 @@
     },
     {
       "fuente": "DGT",
-      "estado": "ok",
-      "detalle": "Sede oficial accesible",
+      "estado": "error",
+      "detalle": "TimeoutError",
       "ambito": "España"
     },
     {
@@ -261,7 +261,6 @@
     "Punto de Acceso General",
     "Agencia Tributaria (AEAT)",
     "Seguridad Social",
-    "DGT",
     "Ministerio de Transportes",
     "Junta de Andalucía",
     "Gobierno de Aragón",
@@ -276,6 +275,10 @@
     "Gobierno Vasco"
   ],
   "fuentes_error": [
+    {
+      "servicio": "DGT",
+      "error": "TimeoutError"
+    },
     {
       "servicio": "Gobierno de Cantabria",
       "error": "URLError"
@@ -294,11 +297,26 @@
     }
   ],
   "cambios": {
-    "nuevas": 0,
+    "nuevas": 1,
     "desaparecidas_detectadas": 0
   },
-  "total": 3,
+  "total": 4,
   "items": [
+    {
+      "id": "cloudflare-823rbdm2k25x",
+      "tipo": "servicio",
+      "servicio": "Cloudflare",
+      "titulo": "Replicate Pruna issue",
+      "resumen": "Some Pruna models may not be able to scale up and are therefore either experiencing long queue times or entirely unavailable. We are working with Pruna to resolve the issue.",
+      "estado": "Identificada",
+      "impacto": "Menor",
+      "fecha": "2026-09-17T01:09:40.000Z",
+      "actualizado": "2026-09-17T01:09:56.000Z",
+      "ambito": "Global",
+      "fuente": "Cloudflare Status",
+      "url": "https://www.cloudflarestatus.com/incidents/823rbdm2k25x",
+      "verificado": true
+    },
     {
       "id": "cloudflare-9g65dxfbcjln",
       "tipo": "servicio",
