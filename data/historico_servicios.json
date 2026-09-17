@@ -1,5 +1,5 @@
 {
-  "ultima_revision": "2026-09-17T07:30:40.462710+00:00",
+  "ultima_revision": "2026-09-17T09:56:32.134187+00:00",
   "nota": "Una incidencia solo se marca como resuelta cuando su propia fuente oficial ha sido revisada correctamente y deja de publicarla. resuelto_detectado es la detección de Panel Ciudadano, no necesariamente la hora exacta oficial.",
   "total": 5,
   "items": [
@@ -18,7 +18,7 @@
       "url": "https://www.cloudflarestatus.com/incidents/823rbdm2k25x",
       "verificado": true,
       "primera_deteccion": "2026-09-17T04:44:18.490101+00:00",
-      "ultima_deteccion": "2026-09-17T07:30:40.462710+00:00",
+      "ultima_deteccion": "2026-09-17T09:56:32.134187+00:00",
       "ultima_modificacion_detectada": "2026-09-17T04:44:18.490101+00:00",
       "resuelto_detectado": "",
       "estado_historico": "activo",
@@ -82,7 +82,7 @@
       "url": "https://www.cloudflarestatus.com/incidents/9g65dxfbcjln",
       "verificado": true,
       "primera_deteccion": "2026-09-16T20:03:57.804501+00:00",
-      "ultima_deteccion": "2026-09-17T07:30:40.462710+00:00",
+      "ultima_deteccion": "2026-09-17T09:56:32.134187+00:00",
       "ultima_modificacion_detectada": "2026-09-16T20:03:57.804501+00:00",
       "resuelto_detectado": "",
       "estado_historico": "activo",
@@ -104,7 +104,7 @@
       "url": "https://sede.administracionespublicas.gob.es/ayuda/",
       "verificado": true,
       "primera_deteccion": "2026-09-16T20:03:57.804501+00:00",
-      "ultima_deteccion": "2026-09-17T07:30:40.462710+00:00",
+      "ultima_deteccion": "2026-09-17T09:56:32.134187+00:00",
       "ultima_modificacion_detectada": "2026-09-16T20:03:57.804501+00:00",
       "resuelto_detectado": "",
       "estado_historico": "activo",
