@@ -1,5 +1,5 @@
 {
-  "ultima_revision": "2026-09-17T18:57:36.733295+00:00",
+  "ultima_revision": "2026-09-17T22:05:22.652895+00:00",
   "revision": "completa",
   "revision_fuentes_incidentes": "completa",
   "salud_auxiliar": "parcial",
@@ -418,44 +418,12 @@
     }
   ],
   "cambios": {
-    "nuevas": 1,
-    "resueltas_detectadas": 0,
+    "nuevas": 0,
+    "resueltas_detectadas": 2,
     "retiradas_monitor": 0
   },
-  "total": 4,
+  "total": 2,
   "items": [
-    {
-      "id": "cloudflare-rhmpng7klcqw",
-      "fuente_clave": "cloudflare",
-      "tipo": "servicio",
-      "servicio": "Cloudflare",
-      "titulo": "Network Performance Issues in Ashburn, VA, United States",
-      "resumen": "A fix has been implemented and we are monitoring the results.",
-      "estado": "Monitorizando",
-      "impacto": "Menor",
-      "fecha": "2026-09-17T18:29:43.000Z",
-      "actualizado": "2026-09-17T18:32:36.000Z",
-      "ambito": "Global",
-      "fuente": "Cloudflare Status",
-      "url": "https://www.cloudflarestatus.com/incidents/rhmpng7klcqw",
-      "verificado": true
-    },
-    {
-      "id": "cloudflare-823rbdm2k25x",
-      "fuente_clave": "cloudflare",
-      "tipo": "servicio",
-      "servicio": "Cloudflare",
-      "titulo": "Replicate Pruna issue",
-      "resumen": "Some Pruna models may not be able to scale up and are therefore either experiencing long queue times or entirely unavailable. We are working with Pruna to resolve the issue.",
-      "estado": "Identificada",
-      "impacto": "Menor",
-      "fecha": "2026-09-17T01:09:40.000Z",
-      "actualizado": "2026-09-17T01:09:56.000Z",
-      "ambito": "Global",
-      "fuente": "Cloudflare Status",
-      "url": "https://www.cloudflarestatus.com/incidents/823rbdm2k25x",
-      "verificado": true
-    },
     {
       "id": "cloudflare-9g65dxfbcjln",
       "fuente_clave": "cloudflare",
