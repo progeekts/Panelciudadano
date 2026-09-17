@@ -35,5 +35,13 @@ jobs:
             exit 0
           fi
           git commit -m "Datos: actualizar servicios e histórico"
-          git pull --rebase origin main
-          git push
+          for i in 1 2 3; do
+            if git pull --rebase origin main && git push; then
+              exit 0
+            fi
+            git rebase --abort 2>/dev/null || true
+            echo "Reintentando publicación ($i/3)…"
+            sleep 3
+          done
+          echo "No se pudo publicar tras 3 intentos"
+          exit 1
