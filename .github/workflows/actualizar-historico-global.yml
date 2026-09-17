@@ -19,7 +19,7 @@ jobs:
         run: python scripts/update_historico_global.py
       - name: Publicar cambios
         run: |
-          if git diff --quiet -- data/historico_global.json; then
+          if git diff --quiet -- data/historico_global.json && [ -z "$(git ls-files --others --exclude-standard -- data/historico_global.json)" ]; then
             echo "Sin cambios"
             exit 0
           fi
