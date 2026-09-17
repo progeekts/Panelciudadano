@@ -1,0 +1,156 @@
+{
+  "ultima_revision": "2026-09-17T08:37:16.325654+00:00",
+  "revision": "completa",
+  "fuente_principal": "Agencia Española de Medicamentos y Productos Sanitarios (AEMPS)",
+  "nota": "Avisos oficiales de seguridad y retirada. Panel Ciudadano no infiere que sigan activos ni sustituye las recomendaciones de la ficha oficial.",
+  "salud_fuentes": [
+    {
+      "fuente": "Alertas farmacéuticas",
+      "estado": "ok",
+      "detectadas": 10
+    },
+    {
+      "fuente": "Seguridad de productos sanitarios",
+      "estado": "ok",
+      "detectadas": 0
+    },
+    {
+      "fuente": "Medicamentos ilegales",
+      "estado": "ok",
+      "detectadas": 0
+    }
+  ],
+  "total": 10,
+  "items": [
+    {
+      "id": "aemps-d269453473",
+      "tipo": "salud",
+      "categoria": "farmaceutica",
+      "categoria_nombre": "Alertas farmacéuticas",
+      "titulo": "OCULOTECT 50 mg/ml COLIRIO EN SOLUCION , 1 frasco de 10 ml (NR: 61982, CN: 755215)",
+      "fecha": "2026-06-04",
+      "referencia": "R_21/2026",
+      "ambito": "España",
+      "fuente": "Agencia Española de Medicamentos y Productos Sanitarios (AEMPS)",
+      "url": "https://www.aemps.gob.es/informa/oculotect-50-mg-ml-colirio-en-solucion-1-frasco-de-10-ml-nr-61982-cn-755215",
+      "verificado": true
+    },
+    {
+      "id": "aemps-27bd781a36",
+      "tipo": "salud",
+      "categoria": "farmaceutica",
+      "categoria_nombre": "Alertas farmacéuticas",
+      "titulo": "ORAMORPH 2 MG/ML SOLUCION ORAL , 1 frasco de 100 ml (NR: 62039, CN: 821934)",
+      "fecha": "2026-06-01",
+      "referencia": "R_20/2026",
+      "ambito": "España",
+      "fuente": "Agencia Española de Medicamentos y Productos Sanitarios (AEMPS)",
+      "url": "https://www.aemps.gob.es/informa/oramorph-2-mg-ml-solucion-oral-1-frasco-de-100-ml-nr-62039-cn-821934",
+      "verificado": true
+    },
+    {
+      "id": "aemps-9ed7f4609a",
+      "tipo": "salud",
+      "categoria": "farmaceutica",
+      "categoria_nombre": "Alertas farmacéuticas",
+      "titulo": "Solución cardiopléjica, varias presentaciones",
+      "fecha": "2026-06-01",
+      "referencia": "R_19/2026",
+      "ambito": "España",
+      "fuente": "Agencia Española de Medicamentos y Productos Sanitarios (AEMPS)",
+      "url": "https://www.aemps.gob.es/informa/solucion-cardioplejica-varias-presentaciones",
+      "verificado": true
+    },
+    {
+      "id": "aemps-fdb50c9e6e",
+      "tipo": "salud",
+      "categoria": "farmaceutica",
+      "categoria_nombre": "Alertas farmacéuticas",
+      "titulo": "EMULIQUEN LAXANTE, varias presentaciones",
+      "fecha": "2026-05-06",
+      "referencia": "R_18/2026",
+      "ambito": "España",
+      "fuente": "Agencia Española de Medicamentos y Productos Sanitarios (AEMPS)",
+      "url": "https://www.aemps.gob.es/informa/emuliquen-laxante-varias-presentaciones",
+      "verificado": true
+    },
+    {
+      "id": "aemps-0ef228f1ce",
+      "tipo": "salud",
+      "categoria": "farmaceutica",
+      "categoria_nombre": "Alertas farmacéuticas",
+      "titulo": "Allergovit 123 Parietaria 100% suspensión inyectable, en su formato de Mantenimiento de 2 viales, concentración B (10.000 UT/ml)",
+      "fecha": "2026-04-17",
+      "referencia": "R_17/2026",
+      "ambito": "España",
+      "fuente": "Agencia Española de Medicamentos y Productos Sanitarios (AEMPS)",
+      "url": "https://www.aemps.gob.es/informa/allergovit-123-parietaria-100-suspension-inyectable-en-su-formato-de-mantenimiento-de-2-viales-concentracion-b-10-000-ut-ml",
+      "verificado": true
+    },
+    {
+      "id": "aemps-4d23b6a5d1",
+      "tipo": "salud",
+      "categoria": "farmaceutica",
+      "categoria_nombre": "Alertas farmacéuticas",
+      "titulo": "OMNIPAQUE 300 mg, OMNIPAQUE 350 mg Iodo /ml SOLUCION INYECTABLE y VISIPAQUE 320 mg /ml SOLUCION INYECTABLE",
+      "fecha": "2026-03-26",
+      "referencia": "R_16/2026",
+      "ambito": "España",
+      "fuente": "Agencia Española de Medicamentos y Productos Sanitarios (AEMPS)",
+      "url": "https://www.aemps.gob.es/informa/omnipaque-300-mg-omnipaque-350-mg-iodo-ml-solucion-inyectable-y-visipaque-320-mg-ml-solucion-inyectable",
+      "verificado": true
+    },
+    {
+      "id": "aemps-5ab64affc6",
+      "tipo": "salud",
+      "categoria": "farmaceutica",
+      "categoria_nombre": "Alertas farmacéuticas",
+      "titulo": "UROGRAFIN 370 MG IODO/ML SOLUCION INYECTABLE Y PARA PERFUSION, varias presentaciones",
+      "fecha": "2026-03-23",
+      "referencia": "R_15/2026",
+      "ambito": "España",
+      "fuente": "Agencia Española de Medicamentos y Productos Sanitarios (AEMPS)",
+      "url": "https://www.aemps.gob.es/informa/urografin-370-mg-iodo-ml-solucion-inyectable-y-para-perfusion-varias-presentaciones",
+      "verificado": true
+    },
+    {
+      "id": "aemps-c12c45be85",
+      "tipo": "salud",
+      "categoria": "farmaceutica",
+      "categoria_nombre": "Alertas farmacéuticas",
+      "titulo": "GASTROGRAFIN 370 MG IODO/ML SOLUCIÓN ORAL Y RECTAL , 1 frasco de 100 mi (NR: 36270, CN: 909622)",
+      "fecha": "2026-03-23",
+      "referencia": "R_14/2026",
+      "ambito": "España",
+      "fuente": "Agencia Española de Medicamentos y Productos Sanitarios (AEMPS)",
+      "url": "https://www.aemps.gob.es/informa/gastrografin-370-mg-iodo-ml-solucion-oral-y-rectal-1-frasco-de-100-mi-nr-36270-cn-909622",
+      "verificado": true
+    },
+    {
+      "id": "aemps-fcc9ca379e",
+      "tipo": "salud",
+      "categoria": "farmaceutica",
+      "categoria_nombre": "Alertas farmacéuticas",
+      "titulo": "CUROSURF 240, 1 vial de 3 ml (NR: 59600, CN: 778191)",
+      "fecha": "2026-03-19",
+      "referencia": "R_13/2026",
+      "ambito": "España",
+      "fuente": "Agencia Española de Medicamentos y Productos Sanitarios (AEMPS)",
+      "url": "https://www.aemps.gob.es/informa/curosurf-240-1-vial-de-3-ml-nr-59600-cn-778191",
+      "verificado": true
+    },
+    {
+      "id": "aemps-b9537a3339",
+      "tipo": "salud",
+      "categoria": "farmaceutica",
+      "categoria_nombre": "Alertas farmacéuticas",
+      "titulo": "IKERVIS 1 mg/ml colirio en emulsion 30 envases unidosis de 0,3 ml (NR: 115990001, CN: 707966)",
+      "fecha": "2026-03-06",
+      "referencia": "R_12/2026",
+      "ambito": "España",
+      "fuente": "Agencia Española de Medicamentos y Productos Sanitarios (AEMPS)",
+      "url": "https://www.aemps.gob.es/informa/ikervis-1-mg-ml-colirio-en-emulsion-30-envases-unidosis-de-03-ml-nr-115990001-cn-707966",
+      "verificado": true
+    }
+  ]
+}
