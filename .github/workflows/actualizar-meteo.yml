@@ -28,7 +28,9 @@ jobs:
         run: python scripts/update_meteo.py
       - name: Publicar cambios si existen
         run: |
-          if git diff --quiet -- data/meteo.json; then
+          if git status --porcelain -- data/meteo.json | grep -q .; then
+            echo "Hay datos meteorológicos nuevos o modificados"
+          else
             echo "Sin cambios"
             exit 0
           fi
