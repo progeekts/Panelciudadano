@@ -1,6 +1,6 @@
 {
-  "ultima_revision": "2026-09-17T09:56:32.134187+00:00",
-  "nota": "Una incidencia solo se marca como resuelta cuando su propia fuente oficial ha sido revisada correctamente y deja de publicarla. resuelto_detectado es la detección de Panel Ciudadano, no necesariamente la hora exacta oficial.",
+  "ultima_revision": "2026-09-17T10:31:37.812481+00:00",
+  "nota": "Resuelto significa que la propia fuente oficial fue revisada correctamente y dejó de publicar la incidencia. Retirado significa que Panel Ciudadano dejó de usar ese detector por falta de una señal temporal suficientemente fiable; no implica resolución del servicio.",
   "total": 5,
   "items": [
     {
@@ -18,7 +18,7 @@
       "url": "https://www.cloudflarestatus.com/incidents/823rbdm2k25x",
       "verificado": true,
       "primera_deteccion": "2026-09-17T04:44:18.490101+00:00",
-      "ultima_deteccion": "2026-09-17T09:56:32.134187+00:00",
+      "ultima_deteccion": "2026-09-17T10:31:37.812481+00:00",
       "ultima_modificacion_detectada": "2026-09-17T04:44:18.490101+00:00",
       "resuelto_detectado": "",
       "estado_historico": "activo",
@@ -64,8 +64,10 @@
       "ultima_deteccion": "2026-09-17T07:24:50.514613+00:00",
       "ultima_modificacion_detectada": "2026-09-16T20:09:08.191862+00:00",
       "resuelto_detectado": "",
-      "estado_historico": "activo",
-      "fingerprint": "Sede electrónica de ENAIRE en mantenimiento|La propia sede electrónica informa de labores de mantenimiento y de indisponibilidad temporal.|Mantenimiento|Tramitación electrónica|"
+      "estado_historico": "retirado",
+      "fingerprint": "Sede electrónica de ENAIRE en mantenimiento|La propia sede electrónica informa de labores de mantenimiento y de indisponibilidad temporal.|Mantenimiento|Tramitación electrónica|",
+      "retirado_detectado": "2026-09-17T10:31:37.812481+00:00",
+      "motivo_retirada": "Retirado del monitor porque la señal disponible no aporta una vigencia temporal suficientemente fiable."
     },
     {
       "id": "cloudflare-9g65dxfbcjln",
@@ -82,7 +84,7 @@
       "url": "https://www.cloudflarestatus.com/incidents/9g65dxfbcjln",
       "verificado": true,
       "primera_deteccion": "2026-09-16T20:03:57.804501+00:00",
-      "ultima_deteccion": "2026-09-17T09:56:32.134187+00:00",
+      "ultima_deteccion": "2026-09-17T10:31:37.812481+00:00",
       "ultima_modificacion_detectada": "2026-09-16T20:03:57.804501+00:00",
       "resuelto_detectado": "",
       "estado_historico": "activo",
@@ -104,7 +106,7 @@
       "url": "https://sede.administracionespublicas.gob.es/ayuda/",
       "verificado": true,
       "primera_deteccion": "2026-09-16T20:03:57.804501+00:00",
-      "ultima_deteccion": "2026-09-17T09:56:32.134187+00:00",
+      "ultima_deteccion": "2026-09-17T10:31:37.812481+00:00",
       "ultima_modificacion_detectada": "2026-09-16T20:03:57.804501+00:00",
       "resuelto_detectado": "",
       "estado_historico": "activo",
