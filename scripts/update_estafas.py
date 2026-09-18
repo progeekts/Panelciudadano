@@ -1,14 +1,21 @@
 #!/usr/bin/env python3
 """Radar conservador de avisos oficiales de fraude de INCIBE."""
 from __future__ import annotations
-import html,json,re,urllib.parse,urllib.request
+import html,json,re,time,urllib.parse,urllib.request
 from datetime import datetime,timezone,timedelta
 from pathlib import Path
-BASE='https://www.incibe.es';LIST_URL=BASE+'/ciudadania/avisos';OUT=Path('data/estafas.json');UA='PanelCiudadano/1.4 (+GitHub Pages; fuente: INCIBE)';MAX_AGE_DAYS=120;MAX_PAGES=3;TIMEOUT=12
+BASE='https://www.incibe.es';LIST_URL=BASE+'/ciudadania/avisos';OUT=Path('data/estafas.json');UA='Mozilla/5.0 (compatible; PanelCiudadano/1.5; +https://github.com/progeekts/Panelciudadano)';MAX_AGE_DAYS=120;MAX_PAGES=3;TIMEOUT=12
 KEYWORDS=('fraude','phishing','smishing','vishing','suplant','estafa','fraudulent','sextors')
-def get(url):
- req=urllib.request.Request(url,headers={'User-Agent':UA,'Accept-Language':'es-ES,es;q=0.9','Accept':'text/html,application/xhtml+xml','Connection':'close'})
- with urllib.request.urlopen(req,timeout=TIMEOUT) as r:return r.read().decode('utf-8',errors='replace')
+def get(url,retries=2):
+ last=None
+ for attempt in range(retries+1):
+  try:
+   req=urllib.request.Request(url,headers={'User-Agent':UA,'Accept-Language':'es-ES,es;q=0.9','Accept':'text/html,application/xhtml+xml','Cache-Control':'no-cache','Connection':'close'})
+   with urllib.request.urlopen(req,timeout=TIMEOUT) as r:return r.read().decode('utf-8',errors='replace')
+  except Exception as exc:
+   last=exc
+   if attempt<retries:time.sleep(1.2*(attempt+1))
+ raise last
 def clean(s):
  s=re.sub(r'<script\b[^>]*>.*?</script>',' ',s,flags=re.I|re.S);s=re.sub(r'<style\b[^>]*>.*?</style>',' ',s,flags=re.I|re.S);s=re.sub(r'<[^>]+>',' ',s);return re.sub(r'\s+',' ',html.unescape(s)).strip()
 def parse_date(raw):
@@ -37,6 +44,7 @@ def preserve(now,reason):
  OUT.parent.mkdir(parents=True,exist_ok=True);tmp=OUT.with_suffix('.tmp');tmp.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n',encoding='utf-8');tmp.replace(OUT)
 def detail_info(page):
  t=clean(page)
+ # Las etiquetas de la ficha oficial son estables; trabajamos sobre el texto visible ya limpio.
  def grab(label,next_labels):
   nxt='|'.join(re.escape(x) for x in next_labels)
   m=re.search(re.escape(label)+r'\\s+(.+?)(?=\\s+(?:'+nxt+r')\\s+|$)',t,re.I)
@@ -69,7 +77,7 @@ def main():
    if not published or published<cutoff or published>now+timedelta(days=1):continue
    url_item=urllib.parse.urljoin(BASE,path);slug=path.rstrip('/').split('/')[-1];explicit='';info={}
    try:
-    detail_page=get(url_item);explicit=detail_state(detail_page);info=detail_info(detail_page)
+    time.sleep(.35);detail_page=get(url_item);explicit=detail_state(detail_page);info=detail_info(detail_page)
    except Exception:pass
    items.append({'id':'incibe-'+slug,'tipo':'estafa','titulo':title,'resumen':info.get('descripcion') or summary or 'Aviso oficial de INCIBE sobre una campaña de fraude o suplantación.','descripcion':info.get('descripcion',''),'afectados':info.get('afectados',''),'solucion':info.get('solucion',''),'identificador_incibe':info.get('identificador',''),'fecha':date_raw,'fecha_iso':published.date().isoformat(),'estado':explicit or 'Publicada','importancia':info.get('importancia') or importance,'ambito':'España / usuarios de Internet','fuente':'INCIBE · Ciudadanía','url':url_item,'verificado':True})
  # Si el parser deja de reconocer por completo una portada accesible, no convertirlo en "cero alertas".
