@@ -12,37 +12,21 @@ def get(url):
  req=urllib.request.Request(url,headers={'User-Agent':UA,'Accept-Language':'es-ES,es;q=0.9'});return urllib.request.urlopen(req,timeout=15).read().decode('utf-8',errors='replace')
 def detail(page):
  t=clean(re.sub(r'<script\\b[^>]*>.*?</script>|<style\\b[^>]*>.*?</style>',' ',page,flags=re.I|re.S))
- end=re.search(r'\\barrow_back\\s+Volver a todos\\b',t,re.I)
- if end:t=t[:end.start()]
- # La ficha AESAN es semiestructurada: primero aislamos el bloque de productos.
- start=re.search(r'(?:Los datos(?: actualizados)? de los productos? implicados son|Los datos del producto implicado son)\\s*:',t,re.I)
- product_block=''
- if start:
-  tail=t[start.end():]
-  stop=re.search(r'\\s+(?:Según la información disponible|Esta información ha sido trasladada|Como medida de precaución|Se recomienda)\\b',tail,re.I)
-  product_block=tail[:stop.start()] if stop else tail
- def chunks(block):
-  marks=list(re.finditer(r'Nombre del producto\\s*:\\s*',block,re.I));out=[]
-  for i,m in enumerate(marks):
-   out.append(block[m.end():marks[i+1].start() if i+1<len(marks) else len(block)])
-  return out
- products=[];lots=[]
- for ch in chunks(product_block):
-  pm=re.search(r'^(.*?)(?=\\s+(?:Nombre de marca(?: comercial)?|Marca(?: comercial)?|Aspecto del producto|N[uú]mero(?:s)? de lote(?:s)?|Fecha de|EAN|C[oó]digo de barras|Peso de unidad|Temperatura)\\s*:)',ch,re.I|re.S)
-  if pm:products.append(re.sub(r'\\s+',' ',pm.group(1)).strip(' .'))
-  lm=re.search(r'N[uú]mero(?:s)? de lote(?:s)?\\s*:\\s*(.*?)(?=\\s+(?:Fecha de consumo preferente|Fecha de caducidad|C[oó]digo de barras|EAN|Peso de unidad|Temperatura|Se adjunt)\\s*:|\\s+Se adjunt|$)',ch,re.I|re.S)
-  if lm:lots.append(re.sub(r'\\s+',' ',lm.group(1)).strip(' .:'))
- def first(pattern,limit):
-  m=re.search(pattern,t,re.I|re.S)
-  return re.sub(r'\\s+',' ',m.group(1)).strip()[:limit] if m else ''
- dist=first(r'(Según la información disponible, la distribución.*?)(?=\\s+(?:Esta información ha sido trasladada|Como medida de precaución|Se recomienda)\\b)',1100)
- rec=first(r'((?:Como medida de precaución,\\s*)?[Ss]e recomienda.*?)(?=\\s+(?:EL CONSUMO|Puede ampliar|arrow_back|$))',1000)
- return {
-  'producto':' · '.join(dict.fromkeys(x for x in products if x))[:1400],
-  'lotes':' · '.join(dict.fromkeys(x for x in lots if x))[:1400],
-  'distribucion':dist,
-  'medidas':rec
- }
+ # Estrategia tolerante: AESAN cambia puntuación/maquetación; buscamos etiquetas visibles sin exigir ':'.
+ def vals(label,stops,limit=1400):
+  pat=r'(?:'+label+r')\\s*:?[ ]*(.*?)(?=\\s+(?:'+stops+r')\\s*:?[ ]|$)'
+  out=[re.sub(r'\\s+',' ',x).strip(' .:') for x in re.findall(pat,t,re.I|re.S)]
+  return ' · '.join(dict.fromkeys(x for x in out if x))[:limit]
+ product=vals(r'Nombre del producto',r'Nombre de marca(?: comercial)?|Marca(?: comercial)?|Aspecto del producto(?: y tipo de envase)?|N[uú]mero(?:s)? de lote(?:s)?|Fecha de consumo preferente|Fecha de caducidad|C[oó]digo de barras|EAN|Peso de unidad(?:/vol)?|Temperatura|Se adjunt',1400)
+ lots=vals(r'N[uú]mero(?:s)? de lote(?:s)?',r'Fecha de consumo preferente|Fecha de caducidad|C[oó]digo de barras|EAN|Peso de unidad(?:/vol)?|Temperatura|Se adjunt|Nombre del producto',1400)
+ dist=''
+ m=re.search(r'(Según la información disponible, la distribución.*?)(?=\\s+(?:Esta información ha sido trasladada|Como medida de precaución|Se recomienda|Puede ampliar|arrow_back)\\b)',t,re.I|re.S)
+ if m:dist=re.sub(r'\\s+',' ',m.group(1)).strip()[:1100]
+ rec=''
+ # Preferimos la última recomendación, que suele ser la instrucción operativa al consumidor.
+ candidates=re.findall(r'((?:Como medida de precaución,\\s*)?[Ss]e recomienda.{15,700}?)(?=\\s+(?:EL CONSUMO|Puede ampliar|arrow_back|La Agencia Española|Según la información|Esta información)|$)',t,re.I|re.S)
+ if candidates:rec=re.sub(r'\\s+',' ',candidates[-1]).strip()[:900]
+ return {'producto':product,'lotes':lots,'distribucion':dist,'medidas':rec}
 def clean(s):return re.sub(r'\s+',' ',html.unescape(re.sub(r'<[^>]+>',' ',s))).strip()
 def iso_date(t):
  m=re.search(r'(\d{1,2})\s+(enero|febrero|marzo|abril|mayo|junio|julio|agosto|septiembre|octubre|noviembre|diciembre)\s+(\d{4})',t,re.I);return f'{int(m.group(3)):04d}-{MONTHS[m.group(2).lower()]:02d}-{int(m.group(1)):02d}' if m else ''
