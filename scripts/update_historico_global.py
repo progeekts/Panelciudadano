@@ -106,7 +106,9 @@ def main():
         if sig in seen:continue
         seen.add(sig);unique.append(e)
 
-    semantic_changed=bool(events) or set(current)!=set(prev) or any((prev.get(k,{}).get('estado'),prev.get(k,{}).get('huella'),prev.get(k,{}).get('fin_deteccion'))!=(v.get('estado'),v.get('huella'),v.get('fin_deteccion')) for k,v in current.items())
+    old_sigs={(e.get('clave'),e.get('evento'),e.get('momento_detectado')) for e in oldevents}
+    has_new_event=any((e.get('clave'),e.get('evento'),e.get('momento_detectado')) not in old_sigs for e in events)
+    semantic_changed=has_new_event or set(current)!=set(prev) or any((prev.get(k,{}).get('estado'),prev.get(k,{}).get('huella'),prev.get(k,{}).get('fin_deteccion'))!=(v.get('estado'),v.get('huella'),v.get('fin_deteccion')) for k,v in current.items())
     if not semantic_changed and OUT.exists():
         return
     result={'ultima_revision':now,'fuentes_revision':revisions,
