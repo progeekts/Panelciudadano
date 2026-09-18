@@ -43,18 +43,18 @@ def preserve(now,reason):
  data['ultima_revision']=now.isoformat();data['revision']='error';data['nota_revision']='No se pudo validar la revisión de INCIBE; se conservan los últimos datos válidos.';data['error_revision']=reason
  OUT.parent.mkdir(parents=True,exist_ok=True);tmp=OUT.with_suffix('.tmp');tmp.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n',encoding='utf-8');tmp.replace(OUT)
 def detail_info(page):
- def section(label,next_labels):
-  nxt='|'.join(re.escape(x) for x in next_labels)
-  m=re.search(r'>\\s*'+re.escape(label)+r'\\s*<(.+?)(?=>\\s*(?:'+nxt+r')\\s*<)',page,re.I|re.S)
-  return clean(m.group(1)) if m else ''
- def short_field(label,next_labels):
-  return section(label,next_labels)[:700]
+ t=clean(page)
+ labels=['Identificador','Importancia','Recursos Afectados','Descripción','Solución','Detalle']
+ def between(label,next_labels):
+  end='|'.join(re.escape(x) for x in next_labels)
+  m=re.search(r'\\b'+re.escape(label)+r'\\b\\s*(.*?)(?=\\s*\\b(?:'+end+r')\\b|$)',t,re.I|re.S)
+  return re.sub(r'\\s+',' ',m.group(1)).strip() if m else ''
  return {
-  'identificador':short_field('Identificador',['Importancia','Recursos Afectados','Descripción']),
-  'importancia':short_field('Importancia',['Recursos Afectados','Descripción']),
-  'afectados':section('Recursos Afectados',['Descripción','Solución'])[:1000],
-  'descripcion':section('Descripción',['Solución','Detalle'])[:1800],
-  'solucion':section('Solución',['Detalle'])[:2400],
+  'identificador':between('Identificador',['Importancia','Recursos Afectados','Descripción'])[:120],
+  'importancia':between('Importancia',['Recursos Afectados','Descripción'])[:120],
+  'afectados':between('Recursos Afectados',['Descripción','Solución'])[:1000],
+  'descripcion':between('Descripción',['Solución','Detalle'])[:1800],
+  'solucion':between('Solución',['Detalle'])[:2400],
  }
 def detail_state(page):
  t=clean(page).lower()
