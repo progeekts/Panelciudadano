@@ -1,6 +1,15 @@
 name: Actualizar histórico global
 on:
   workflow_dispatch:
+  workflow_run:
+    workflows:
+      - Actualizar radar de ayudas
+      - Actualizar radar de estafas
+      - Actualizar servicios digitales
+      - Actualizar alertas alimentarias
+      - Actualizar alertas sanitarias
+      - Actualizar avisos meteorológicos
+    types: [completed]
   schedule:
     - cron: '50 7,20 * * *'
 permissions:
@@ -10,6 +19,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   actualizar:
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
