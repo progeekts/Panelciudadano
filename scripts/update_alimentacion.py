@@ -12,16 +12,20 @@ def get(url):
  req=urllib.request.Request(url,headers={'User-Agent':UA,'Accept-Language':'es-ES,es;q=0.9'});return urllib.request.urlopen(req,timeout=15).read().decode('utf-8',errors='replace')
 def detail(page):
  t=clean(re.sub(r'<script\\b[^>]*>.*?</script>|<style\\b[^>]*>.*?</style>',' ',page,flags=re.I|re.S))
- def pick(patterns,limit=1400):
-  for p in patterns:
-   m=re.search(p,t,re.I|re.S)
-   if m:return re.sub(r'\\s+',' ',m.group(1)).strip()[:limit]
-  return ''
+ def field(label,stops,limit=1400):
+  m=re.search(re.escape(label)+r'\\s*:\\s*(.*?)(?=\\s+(?:'+ '|'.join(stops) +r')\\s*:|$)',t,re.I|re.S)
+  return re.sub(r'\\s+',' ',m.group(1)).strip()[:limit] if m else ''
+ products=re.findall(r'Nombre del producto\\s*:\\s*(.*?)(?=\\s+Nombre de marca\\s*:)',t,re.I|re.S)
+ lots=re.findall(r'(?:Número de lotes?|Lotes?)\\s*:\\s*(.*?)(?=\\s+(?:Fecha de consumo preferente|Fecha de caducidad|Peso|Temperatura|Nombre del producto)\\s*:)',t,re.I|re.S)
+ dist=''
+ m=re.search(r'(Según la información disponible, la distribución.*?)(?=\\s+(?:Esta información|Se recomienda)|$)',t,re.I|re.S)
+ if m:dist=re.sub(r'\\s+',' ',m.group(1)).strip()[:1400]
+ recs=re.findall(r'(Se recomienda.*?)(?=\\s+(?:La Agencia|Los datos|Según la información|Esta información|Se recomienda)|$)',t,re.I|re.S)
  return {
-  'producto':pick([r'(?:datos del producto|producto afectado|nombre del producto)\\s*[:.-]?\\s*(.*?)(?=\\s+(?:marca|lote|número de lote|peso|fecha|distribución|medidas|recomendaciones)\\b)'],700),
-  'lotes':pick([r'(?:lotes? afectados?|número de lote)\\s*[:.-]?\\s*(.*?)(?=\\s+(?:fecha|caducidad|consumo preferente|distribución|medidas|recomendaciones)\\b)'],900),
-  'distribucion':pick([r'(?:distribución|distribuido)\\s*[:.-]?\\s*(.*?)(?=\\s+(?:medidas|recomendaciones|información|como medida)\\b)'],1200),
-  'medidas':pick([r'(?:medidas adoptadas|medidas|recomendaciones)\\s*[:.-]?\\s*(.*?)(?=\\s+(?:información adicional|fuente|fecha)\\b|$)'],1600)
+  'producto':' · '.join(dict.fromkeys(re.sub(r'\\s+',' ',x).strip() for x in products if x.strip()))[:1200],
+  'lotes':' · '.join(dict.fromkeys(re.sub(r'\\s+',' ',x).strip() for x in lots if x.strip()))[:1200],
+  'distribucion':dist,
+  'medidas':' '.join(dict.fromkeys(x.strip() for x in recs if x.strip()))[:1800]
  }
 def clean(s):return re.sub(r'\s+',' ',html.unescape(re.sub(r'<[^>]+>',' ',s))).strip()
 def iso_date(t):
