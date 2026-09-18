@@ -1,8 +1,8 @@
 {
-  "ultima_revision": "2026-09-18T11:06:05.679699+00:00",
+  "ultima_revision": "2026-09-18T12:22:59.463447+00:00",
   "fuentes_revision": {
     "ayudas": "2026-09-18T09:04:42.813976+00:00",
-    "estafas": "2026-09-18T09:43:33.313442+00:00",
+    "estafas": "2026-09-18T12:20:22.995332+00:00",
     "alimentacion": "2026-09-18T10:11:43.800997+00:00",
     "salud": "2026-09-18T10:08:39.405731+00:00",
     "meteo": "2026-09-18T09:43:50.027960+00:00",
@@ -10,7 +10,7 @@
   },
   "criterio": "Histórico de cambios detectados. Solo se asigna un estado terminal cuando la fuente o el módulo permiten afirmarlo de forma conservadora.",
   "total_registros": 495,
-  "total_eventos": 877,
+  "total_eventos": 882,
   "registros": [
     {
       "clave": "ayudas:bdns-930252",
@@ -1516,11 +1516,11 @@
       "url": "https://www.incibe.es/ciudadania/avisos/campana-de-smishing-suplantando-la-seguridad-social",
       "ambito": "España / usuarios de Internet",
       "estado": "publicada",
-      "huella": "5abf8d7dde14434a2ddb",
-      "ultima_deteccion": "2026-09-18T09:05:41.901215+00:00",
+      "huella": "64f8a1e8373583e7e3a9",
+      "ultima_deteccion": "2026-09-18T12:22:59.463447+00:00",
       "fecha_fuente": "19/08/2026",
       "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:05:41.901215+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T12:22:59.463447+00:00"
     },
     {
       "clave": "estafas:incibe-suplantan-hoteles-traves-de-whatsapp-y-otros-medios-para-solicitar-la",
@@ -1531,11 +1531,11 @@
       "url": "https://www.incibe.es/ciudadania/avisos/suplantan-hoteles-traves-de-whatsapp-y-otros-medios-para-solicitar-la",
       "ambito": "España / usuarios de Internet",
       "estado": "publicada",
-      "huella": "7ee437803203e91162ed",
-      "ultima_deteccion": "2026-09-18T09:05:41.901215+00:00",
+      "huella": "77560ab48a4d957e7700",
+      "ultima_deteccion": "2026-09-18T12:22:59.463447+00:00",
       "fecha_fuente": "31/07/2026",
       "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:05:41.901215+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T12:22:59.463447+00:00"
     },
     {
       "clave": "estafas:incibe-suplantan-la-policia-nacional-la-guardia-civil-y-incibe-traves-de-notificaciones",
@@ -1546,11 +1546,11 @@
       "url": "https://www.incibe.es/ciudadania/avisos/suplantan-la-policia-nacional-la-guardia-civil-y-incibe-traves-de-notificaciones",
       "ambito": "España / usuarios de Internet",
       "estado": "publicada",
-      "huella": "bd7e780699fd5390a8b1",
-      "ultima_deteccion": "2026-09-18T09:05:41.901215+00:00",
+      "huella": "62cc359bc925c68dd37d",
+      "ultima_deteccion": "2026-09-18T12:22:59.463447+00:00",
       "fecha_fuente": "10/07/2026",
       "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:05:41.901215+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T12:22:59.463447+00:00"
     },
     {
       "clave": "estafas:incibe-la-agencia-tributaria-no-ha-emitido-ninguna-comunicacion-dirigida-usted",
@@ -1561,11 +1561,11 @@
       "url": "https://www.incibe.es/ciudadania/avisos/la-agencia-tributaria-no-ha-emitido-ninguna-comunicacion-dirigida-usted",
       "ambito": "España / usuarios de Internet",
       "estado": "publicada",
-      "huella": "41389d8caedc018fb8ac",
-      "ultima_deteccion": "2026-09-18T09:05:41.901215+00:00",
+      "huella": "671fd486190dd2bd05ab",
+      "ultima_deteccion": "2026-09-18T12:22:59.463447+00:00",
       "fecha_fuente": "26/05/2026",
       "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:05:41.901215+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T12:22:59.463447+00:00"
     },
     {
       "clave": "alimentacion:aesan-b66dd02111",
@@ -3094,8 +3094,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-05-15",
       "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T11:06:05.679699+00:00",
-      "fin_deteccion": "2026-09-18T11:06:05.679699+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T12:22:59.463447+00:00",
+      "fin_deteccion": "2026-09-18T12:22:59.463447+00:00"
     },
     {
       "clave": "meteo:aemet-dcd3ac2579df",
@@ -7320,6 +7320,61 @@
     }
   ],
   "eventos": [
+    {
+      "clave": "estafas:incibe-campana-de-smishing-suplantando-la-seguridad-social",
+      "tipo": "estafas",
+      "evento": "actualizado",
+      "etiqueta": "Actualizada",
+      "momento_detectado": "2026-09-18T12:22:59.463447+00:00",
+      "fecha_fuente": "19/08/2026",
+      "titulo": "Campaña de smishing suplantando a la Seguridad Social",
+      "url": "https://www.incibe.es/ciudadania/avisos/campana-de-smishing-suplantando-la-seguridad-social",
+      "detalle_cambio": "La ficha oficial presenta cambios respecto a la revisión anterior"
+    },
+    {
+      "clave": "estafas:incibe-suplantan-hoteles-traves-de-whatsapp-y-otros-medios-para-solicitar-la",
+      "tipo": "estafas",
+      "evento": "actualizado",
+      "etiqueta": "Actualizada",
+      "momento_detectado": "2026-09-18T12:22:59.463447+00:00",
+      "fecha_fuente": "31/07/2026",
+      "titulo": "Suplantan a hoteles a través de WhatsApp y otros medios para solicitar la confirmación de reservas mediante enlaces fraudulentos",
+      "url": "https://www.incibe.es/ciudadania/avisos/suplantan-hoteles-traves-de-whatsapp-y-otros-medios-para-solicitar-la",
+      "detalle_cambio": "La ficha oficial presenta cambios respecto a la revisión anterior"
+    },
+    {
+      "clave": "estafas:incibe-suplantan-la-policia-nacional-la-guardia-civil-y-incibe-traves-de-notificaciones",
+      "tipo": "estafas",
+      "evento": "actualizado",
+      "etiqueta": "Actualizada",
+      "momento_detectado": "2026-09-18T12:22:59.463447+00:00",
+      "fecha_fuente": "10/07/2026",
+      "titulo": "Suplantan a la Policía Nacional, a la Guardia Civil y a INCIBE a través de notificaciones falsas por consumir contenido pornográfico",
+      "url": "https://www.incibe.es/ciudadania/avisos/suplantan-la-policia-nacional-la-guardia-civil-y-incibe-traves-de-notificaciones",
+      "detalle_cambio": "La ficha oficial presenta cambios respecto a la revisión anterior"
+    },
+    {
+      "clave": "estafas:incibe-la-agencia-tributaria-no-ha-emitido-ninguna-comunicacion-dirigida-usted",
+      "tipo": "estafas",
+      "evento": "actualizado",
+      "etiqueta": "Actualizada",
+      "momento_detectado": "2026-09-18T12:22:59.463447+00:00",
+      "fecha_fuente": "26/05/2026",
+      "titulo": "La Agencia Tributaria NO ha emitido ninguna comunicación dirigida a usted",
+      "url": "https://www.incibe.es/ciudadania/avisos/la-agencia-tributaria-no-ha-emitido-ninguna-comunicacion-dirigida-usted",
+      "detalle_cambio": "La ficha oficial presenta cambios respecto a la revisión anterior"
+    },
+    {
+      "clave": "alimentacion:aesan-eee4ce86fa",
+      "tipo": "alimentacion",
+      "evento": "sustituida_actualizacion",
+      "etiqueta": "Sustituida por actualización",
+      "momento_detectado": "2026-09-18T12:22:59.463447+00:00",
+      "fecha_fuente": "2026-05-15",
+      "titulo": "Ampliación de información sobre la alerta por presencia de Listeria monocytogenes en queso fresco de vaca procedente de España (Ref. ES2026/271)",
+      "url": "https://www.aesan.gob.es/alertas/2026_38_Ampliacion_2",
+      "detalle_cambio": "Sustituida en el panel por una publicación posterior de AESAN"
+    },
     {
       "clave": "alimentacion:aesan-eee4ce86fa",
       "tipo": "alimentacion",
