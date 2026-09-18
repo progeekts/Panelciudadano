@@ -1,12 +1,12 @@
 {
-  "ultima_revision": "2026-09-17T22:56:57.055873+00:00",
+  "ultima_revision": "2026-09-18T09:03:40.816455+00:00",
   "revision": "completa",
   "fuente_principal": "Agencia Española de Seguridad Alimentaria y Nutrición (AESAN)",
   "cobertura": [
     "Alertas de interés para toda la población",
     "Alertas para personas con alergias o intolerancias"
   ],
-  "nota": "Publicaciones oficiales recientes. No se infiere que una retirada siga activa: la ficha oficial determina las medidas vigentes.",
+  "nota": "Publicaciones oficiales recientes. Cuando AESAN publica una ampliación con la misma referencia, el panel muestra la versión más reciente. No se infiere una retirada o finalización sin evidencia oficial.",
   "salud_fuentes": [
     {
       "fuente": "Interés para toda la población",
