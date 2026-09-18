@@ -1,16 +1,16 @@
 {
-  "ultima_revision": "2026-09-18T13:17:18.899268+00:00",
+  "ultima_revision": "2026-09-18T14:28:10.354928+00:00",
   "fuentes_revision": {
     "ayudas": "2026-09-18T09:04:42.813976+00:00",
     "estafas": "2026-09-18T12:20:22.995332+00:00",
     "alimentacion": "2026-09-18T13:16:33.965948+00:00",
     "salud": "2026-09-18T12:23:48.424925+00:00",
-    "meteo": "2026-09-18T09:43:50.027960+00:00",
+    "meteo": "2026-09-18T14:27:58.208232+00:00",
     "servicios": "2026-09-18T11:04:44.333526+00:00"
   },
   "criterio": "Histórico de cambios detectados. Solo se asigna un estado terminal cuando la fuente o el módulo permiten afirmarlo de forma conservadora.",
   "total_registros": 495,
-  "total_eventos": 927,
+  "total_eventos": 909,
   "registros": [
     {
       "clave": "ayudas:bdns-930252",
@@ -24,7 +24,8 @@
       "huella": "9c89a67231ac75d14683",
       "ultima_deteccion": "2026-09-18T09:04:53.691260+00:00",
       "fecha_fuente": "2026-09-17",
-      "primera_deteccion": "2026-09-18T09:04:53.691260+00:00"
+      "primera_deteccion": "2026-09-18T09:04:53.691260+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930251",
@@ -38,7 +39,8 @@
       "huella": "b537f9c69ef3fd8f030e",
       "ultima_deteccion": "2026-09-18T09:04:53.691260+00:00",
       "fecha_fuente": "2026-09-17",
-      "primera_deteccion": "2026-09-18T09:04:53.691260+00:00"
+      "primera_deteccion": "2026-09-18T09:04:53.691260+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930250",
@@ -52,7 +54,8 @@
       "huella": "dd95ba03baf524f24341",
       "ultima_deteccion": "2026-09-18T09:04:53.691260+00:00",
       "fecha_fuente": "2026-09-17",
-      "primera_deteccion": "2026-09-18T09:04:53.691260+00:00"
+      "primera_deteccion": "2026-09-18T09:04:53.691260+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930249",
@@ -66,7 +69,8 @@
       "huella": "5367d41d786b47fd430c",
       "ultima_deteccion": "2026-09-18T09:04:53.691260+00:00",
       "fecha_fuente": "2026-09-17",
-      "primera_deteccion": "2026-09-18T09:04:53.691260+00:00"
+      "primera_deteccion": "2026-09-18T09:04:53.691260+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930248",
@@ -80,7 +84,8 @@
       "huella": "d3dd292df860252ba3bf",
       "ultima_deteccion": "2026-09-18T09:04:53.691260+00:00",
       "fecha_fuente": "2026-09-17",
-      "primera_deteccion": "2026-09-18T09:04:53.691260+00:00"
+      "primera_deteccion": "2026-09-18T09:04:53.691260+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930246",
@@ -95,7 +100,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930245",
@@ -110,7 +116,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930244",
@@ -125,7 +132,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930243",
@@ -140,7 +148,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930242",
@@ -155,7 +164,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930241",
@@ -170,7 +180,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930240",
@@ -185,7 +196,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930239",
@@ -200,7 +212,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930238",
@@ -215,7 +228,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930237",
@@ -230,7 +244,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930236",
@@ -245,7 +260,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930235",
@@ -260,7 +276,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930234",
@@ -275,7 +292,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930233",
@@ -290,7 +308,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930232",
@@ -305,7 +324,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930231",
@@ -320,7 +340,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930229",
@@ -335,7 +356,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930228",
@@ -350,7 +372,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930227",
@@ -365,7 +388,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930226",
@@ -380,7 +404,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930225",
@@ -395,7 +420,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930223",
@@ -410,7 +436,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930222",
@@ -425,7 +452,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930221",
@@ -440,7 +468,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930220",
@@ -455,7 +484,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930219",
@@ -470,7 +500,8 @@
       "ultima_deteccion": "2026-09-18T09:04:53.691260+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:04:53.691260+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:04:53.691260+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930218",
@@ -485,7 +516,8 @@
       "ultima_deteccion": "2026-09-18T09:04:53.691260+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:04:53.691260+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:04:53.691260+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930217",
@@ -500,7 +532,8 @@
       "ultima_deteccion": "2026-09-18T09:04:53.691260+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:04:53.691260+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:04:53.691260+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930216",
@@ -515,7 +548,8 @@
       "ultima_deteccion": "2026-09-18T09:04:53.691260+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:04:53.691260+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:04:53.691260+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930215",
@@ -530,7 +564,8 @@
       "ultima_deteccion": "2026-09-18T09:04:53.691260+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:04:53.691260+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:04:53.691260+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930214",
@@ -545,7 +580,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930213",
@@ -560,7 +596,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930212",
@@ -575,7 +612,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930211",
@@ -590,7 +628,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930210",
@@ -605,7 +644,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930208",
@@ -620,7 +660,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930207",
@@ -635,7 +676,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930206",
@@ -650,7 +692,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930205",
@@ -665,7 +708,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930203",
@@ -680,7 +724,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930201",
@@ -695,7 +740,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930200",
@@ -710,7 +756,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930198",
@@ -725,7 +772,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930197",
@@ -740,7 +788,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930195",
@@ -755,7 +804,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930194",
@@ -770,7 +820,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930193",
@@ -785,7 +836,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930192",
@@ -800,7 +852,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930191",
@@ -815,7 +868,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930190",
@@ -830,7 +884,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930189",
@@ -845,7 +900,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930188",
@@ -860,7 +916,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930187",
@@ -875,7 +932,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930186",
@@ -890,7 +948,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930185",
@@ -905,7 +964,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930184",
@@ -920,7 +980,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930183",
@@ -935,7 +996,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930182",
@@ -950,7 +1012,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930181",
@@ -965,7 +1028,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930180",
@@ -980,7 +1044,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930178",
@@ -995,7 +1060,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930177",
@@ -1010,7 +1076,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930176",
@@ -1025,7 +1092,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930175",
@@ -1040,7 +1108,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930174",
@@ -1055,7 +1124,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930173",
@@ -1070,7 +1140,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930172",
@@ -1085,7 +1156,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930171",
@@ -1100,7 +1172,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930170",
@@ -1115,7 +1188,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930169",
@@ -1130,7 +1204,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930168",
@@ -1145,7 +1220,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930167",
@@ -1160,7 +1236,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930166",
@@ -1175,7 +1252,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930165",
@@ -1190,7 +1268,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930164",
@@ -1205,7 +1284,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930163",
@@ -1220,7 +1300,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930162",
@@ -1235,7 +1316,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930161",
@@ -1250,7 +1332,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930160",
@@ -1265,7 +1348,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930159",
@@ -1280,7 +1364,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930158",
@@ -1295,7 +1380,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930157",
@@ -1310,7 +1396,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930156",
@@ -1325,7 +1412,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930154",
@@ -1340,7 +1428,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930152",
@@ -1355,7 +1444,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930151",
@@ -1370,7 +1460,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930150",
@@ -1385,7 +1476,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930149",
@@ -1400,7 +1492,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930148",
@@ -1415,7 +1508,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930147",
@@ -1430,7 +1524,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930146",
@@ -1445,7 +1540,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930145",
@@ -1460,7 +1556,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930144",
@@ -1475,7 +1572,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930143",
@@ -1490,7 +1588,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930142",
@@ -1505,7 +1604,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-17",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": ""
     },
     {
       "clave": "estafas:incibe-campana-de-smishing-suplantando-la-seguridad-social",
@@ -1520,7 +1620,8 @@
       "ultima_deteccion": "2026-09-18T12:22:59.463447+00:00",
       "fecha_fuente": "19/08/2026",
       "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T12:22:59.463447+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T12:22:59.463447+00:00",
+      "referencia": ""
     },
     {
       "clave": "estafas:incibe-suplantan-hoteles-traves-de-whatsapp-y-otros-medios-para-solicitar-la",
@@ -1535,7 +1636,8 @@
       "ultima_deteccion": "2026-09-18T12:22:59.463447+00:00",
       "fecha_fuente": "31/07/2026",
       "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T12:22:59.463447+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T12:22:59.463447+00:00",
+      "referencia": ""
     },
     {
       "clave": "estafas:incibe-suplantan-la-policia-nacional-la-guardia-civil-y-incibe-traves-de-notificaciones",
@@ -1550,7 +1652,8 @@
       "ultima_deteccion": "2026-09-18T12:22:59.463447+00:00",
       "fecha_fuente": "10/07/2026",
       "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T12:22:59.463447+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T12:22:59.463447+00:00",
+      "referencia": ""
     },
     {
       "clave": "estafas:incibe-la-agencia-tributaria-no-ha-emitido-ninguna-comunicacion-dirigida-usted",
@@ -1565,7 +1668,8 @@
       "ultima_deteccion": "2026-09-18T12:22:59.463447+00:00",
       "fecha_fuente": "26/05/2026",
       "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T12:22:59.463447+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T12:22:59.463447+00:00",
+      "referencia": ""
     },
     {
       "clave": "alimentacion:aesan-b66dd02111",
@@ -1580,7 +1684,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-11",
       "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": "ES2026/517"
     },
     {
       "clave": "alimentacion:aesan-95f5539fcd",
@@ -1595,7 +1700,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-08-17",
       "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": "ES2026/478"
     },
     {
       "clave": "alimentacion:aesan-ee55391540",
@@ -1610,7 +1716,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-08-10",
       "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": "ES2026/485"
     },
     {
       "clave": "alimentacion:aesan-3d570cc3dc",
@@ -1625,7 +1732,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-08-07",
       "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": "ES2026/482"
     },
     {
       "clave": "alimentacion:aesan-1f2e8a9c87",
@@ -1640,7 +1748,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-08-05",
       "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": "ES2026/481"
     },
     {
       "clave": "alimentacion:aesan-8145906c38",
@@ -1655,7 +1764,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-08-04",
       "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": "ES2026/477"
     },
     {
       "clave": "alimentacion:aesan-c3ba80ea62",
@@ -1670,7 +1780,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-07-31",
       "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": "ES2026/469"
     },
     {
       "clave": "alimentacion:aesan-fed50cda6a",
@@ -1685,7 +1796,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-07-31",
       "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": "ES2026/473"
     },
     {
       "clave": "alimentacion:aesan-c66ff7c880",
@@ -1700,7 +1812,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-07-10",
       "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": "ES2026/431"
     },
     {
       "clave": "alimentacion:aesan-2928f4701b",
@@ -1715,7 +1828,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-07-03",
       "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": "ES2026/406"
     },
     {
       "clave": "alimentacion:aesan-32e21d3a3b",
@@ -1730,7 +1844,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-06-29",
       "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": "ES2026/240"
     },
     {
       "clave": "alimentacion:aesan-d6f0a64d16",
@@ -1745,7 +1860,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-06-26",
       "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": "ES2026/358"
     },
     {
       "clave": "alimentacion:aesan-1108c5a030",
@@ -1760,7 +1876,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-06-23",
       "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": "ES2026/369"
     },
     {
       "clave": "alimentacion:aesan-d94ae19802",
@@ -1775,7 +1892,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-06-23",
       "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": "ES2026/382"
     },
     {
       "clave": "alimentacion:aesan-09b065345b",
@@ -1790,7 +1908,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-06-15",
       "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": "ES2026/350"
     },
     {
       "clave": "alimentacion:aesan-4143d559a5",
@@ -1805,7 +1924,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-06-15",
       "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": "ES2026/349"
     },
     {
       "clave": "alimentacion:aesan-6f948c56a2",
@@ -1820,7 +1940,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-06-05",
       "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": "ES2026/332"
     },
     {
       "clave": "alimentacion:aesan-9d19d93457",
@@ -1835,7 +1956,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-06-05",
       "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": "ES2026/327"
     },
     {
       "clave": "alimentacion:aesan-4f7dbbdc32",
@@ -1850,7 +1972,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-06-02",
       "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": "ES2026/300"
     },
     {
       "clave": "alimentacion:aesan-188cd33cfe",
@@ -1865,7 +1988,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-05-30",
       "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": "ES2026/323"
     },
     {
       "clave": "alimentacion:aesan-15e36adebe",
@@ -1880,7 +2004,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-05-29",
       "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": "ES2026/322"
     },
     {
       "clave": "alimentacion:aesan-80a316afb4",
@@ -1895,7 +2020,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-05-29",
       "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": "ES2026/312"
     },
     {
       "clave": "alimentacion:aesan-089c2afe42",
@@ -1910,7 +2036,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-05-19",
       "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": "ES2026/271"
     },
     {
       "clave": "alimentacion:aesan-b32e5b9cc9",
@@ -1925,7 +2052,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-05-11",
       "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": "ES2026/266"
     },
     {
       "clave": "alimentacion:aesan-0b18a9333c",
@@ -1940,7 +2068,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-05-07",
       "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": "ES2026/263"
     },
     {
       "clave": "alimentacion:aesan-e5464d68dc",
@@ -1955,7 +2084,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-04-16",
       "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": "ES2026/212"
     },
     {
       "clave": "alimentacion:aesan-143c38d26b",
@@ -1970,7 +2100,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-04-14",
       "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": "ES2026/206"
     },
     {
       "clave": "alimentacion:aesan-2098bb41cf",
@@ -1985,7 +2116,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-04-10",
       "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": "ES2026/181"
     },
     {
       "clave": "salud:aemps-d269453473",
@@ -2000,7 +2132,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-06-04",
       "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": "R_21/2026"
     },
     {
       "clave": "salud:aemps-27bd781a36",
@@ -2015,7 +2148,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-06-01",
       "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": "R_20/2026"
     },
     {
       "clave": "salud:aemps-9ed7f4609a",
@@ -2030,7 +2164,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-06-01",
       "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": "R_19/2026"
     },
     {
       "clave": "salud:aemps-fdb50c9e6e",
@@ -2045,7 +2180,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-05-06",
       "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": "R_18/2026"
     },
     {
       "clave": "salud:aemps-0ef228f1ce",
@@ -2060,7 +2196,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-04-17",
       "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": "R_17/2026"
     },
     {
       "clave": "salud:aemps-4d23b6a5d1",
@@ -2075,7 +2212,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-03-26",
       "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": "R_16/2026"
     },
     {
       "clave": "salud:aemps-5ab64affc6",
@@ -2090,7 +2228,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-03-23",
       "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": "R_15/2026"
     },
     {
       "clave": "salud:aemps-c12c45be85",
@@ -2105,7 +2244,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-03-23",
       "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": "R_14/2026"
     },
     {
       "clave": "salud:aemps-fcc9ca379e",
@@ -2120,7 +2260,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-03-19",
       "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": "R_13/2026"
     },
     {
       "clave": "salud:aemps-b9537a3339",
@@ -2135,94 +2276,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-03-06",
       "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
-    },
-    {
-      "clave": "meteo:aemet-82e0e02fd6a4",
-      "tipo": "meteo",
-      "id": "aemet-82e0e02fd6a4",
-      "titulo": "Aviso de lluvias de nivel naranja",
-      "fuente": "Agencia Estatal de Meteorología (AEMET)",
-      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260918070018_AFAZ645301PRP11810.xml",
-      "ambito": "Ibiza y Formentera",
-      "estado": "aviso_vigente",
-      "huella": "6f04be20a702c4c9937c",
-      "ultima_deteccion": "2026-09-18T09:04:20.646434+00:00",
-      "fecha_fuente": "2026-09-18T09:00:00+02:00",
-      "primera_deteccion": "2026-09-18T09:04:20.646434+00:00"
-    },
-    {
-      "clave": "meteo:aemet-fa31a0ed16be",
-      "tipo": "meteo",
-      "id": "aemet-fa31a0ed16be",
-      "titulo": "Aviso de lluvias de nivel naranja",
-      "fuente": "Agencia Estatal de Meteorología (AEMET)",
-      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260918070018_AFAZ645401PRP11810.xml",
-      "ambito": "Sierra Tramontana",
-      "estado": "aviso_vigente",
-      "huella": "e11bafdb14636d2ca936",
-      "ultima_deteccion": "2026-09-18T09:04:20.646434+00:00",
-      "fecha_fuente": "2026-09-18T09:00:00+02:00",
-      "primera_deteccion": "2026-09-18T09:04:20.646434+00:00"
-    },
-    {
-      "clave": "meteo:aemet-9323d9f38b3e",
-      "tipo": "meteo",
-      "id": "aemet-9323d9f38b3e",
-      "titulo": "Aviso de lluvias de nivel naranja",
-      "fuente": "Agencia Estatal de Meteorología (AEMET)",
-      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260918070018_AFAZ645404PRP11810.xml",
-      "ambito": "Sur de Mallorca",
-      "estado": "aviso_vigente",
-      "huella": "b6d7bc338c267ebc4ee4",
-      "ultima_deteccion": "2026-09-18T09:04:20.646434+00:00",
-      "fecha_fuente": "2026-09-18T09:00:00+02:00",
-      "primera_deteccion": "2026-09-18T09:04:20.646434+00:00"
-    },
-    {
-      "clave": "meteo:aemet-09713911a6e4",
-      "tipo": "meteo",
-      "id": "aemet-09713911a6e4",
-      "titulo": "Aviso de tormentas de nivel naranja",
-      "fuente": "Agencia Estatal de Meteorología (AEMET)",
-      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260917090943_AFAZ645301TOTO1810.xml",
-      "ambito": "Ibiza y Formentera",
-      "estado": "aviso_vigente",
-      "huella": "574ff669f62fe5986c40",
-      "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
-      "fecha_fuente": "2026-09-18T02:00:00+02:00",
-      "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
-    },
-    {
-      "clave": "meteo:aemet-5ab787940af3",
-      "tipo": "meteo",
-      "id": "aemet-5ab787940af3",
-      "titulo": "Aviso de tormentas de nivel naranja",
-      "fuente": "Agencia Estatal de Meteorología (AEMET)",
-      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260917090943_AFAZ645401TOTO1810.xml",
-      "ambito": "Sierra Tramontana",
-      "estado": "aviso_vigente",
-      "huella": "300a6cac3e7a30c9e1d9",
-      "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
-      "fecha_fuente": "2026-09-18T02:00:00+02:00",
-      "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
-    },
-    {
-      "clave": "meteo:aemet-a0714a817264",
-      "tipo": "meteo",
-      "id": "aemet-a0714a817264",
-      "titulo": "Aviso de tormentas de nivel naranja",
-      "fuente": "Agencia Estatal de Meteorología (AEMET)",
-      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260917090943_AFAZ645404TOTO1810.xml",
-      "ambito": "Sur de Mallorca",
-      "estado": "aviso_vigente",
-      "huella": "74a9e4296606c891d4bb",
-      "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
-      "fecha_fuente": "2026-09-18T02:00:00+02:00",
-      "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": "R_12/2026"
     },
     {
       "clave": "meteo:aemet-5458c4992c7a",
@@ -2236,7 +2291,8 @@
       "huella": "5f894470ff4418c8fc88",
       "ultima_deteccion": "2026-09-18T09:44:04.096849+00:00",
       "fecha_fuente": "2026-09-20T00:00:00+02:00",
-      "primera_deteccion": "2026-09-18T09:44:04.096849+00:00"
+      "primera_deteccion": "2026-09-18T09:44:04.096849+00:00",
+      "referencia": "2.49.0.0.724.0.ES.20260918093124.611102VIRM20221789723884"
     },
     {
       "clave": "meteo:aemet-fe6cee80b2b9",
@@ -2250,7 +2306,8 @@
       "huella": "333be0c476ea3cac74d6",
       "ultima_deteccion": "2026-09-18T09:44:04.096849+00:00",
       "fecha_fuente": "2026-09-20T00:00:00+02:00",
-      "primera_deteccion": "2026-09-18T09:44:04.096849+00:00"
+      "primera_deteccion": "2026-09-18T09:44:04.096849+00:00",
+      "referencia": "2.49.0.0.724.0.ES.20260918093124.611103VIRM20221789723884"
     },
     {
       "clave": "meteo:aemet-458ca518055b",
@@ -2264,7 +2321,8 @@
       "huella": "e2322d193b76543fccfc",
       "ultima_deteccion": "2026-09-18T09:44:04.096849+00:00",
       "fecha_fuente": "2026-09-20T00:00:00+02:00",
-      "primera_deteccion": "2026-09-18T09:44:04.096849+00:00"
+      "primera_deteccion": "2026-09-18T09:44:04.096849+00:00",
+      "referencia": "2.49.0.0.724.0.ES.20260918093124.611104VIRM20221789723884"
     },
     {
       "clave": "meteo:aemet-8286bfacfd89",
@@ -2278,7 +2336,8 @@
       "huella": "6229f054d13aa09e2567",
       "ultima_deteccion": "2026-09-18T09:44:04.096849+00:00",
       "fecha_fuente": "2026-09-20T00:00:00+02:00",
-      "primera_deteccion": "2026-09-18T09:44:04.096849+00:00"
+      "primera_deteccion": "2026-09-18T09:44:04.096849+00:00",
+      "referencia": "2.49.0.0.724.0.ES.20260918093124.611103COCO20221789723884"
     },
     {
       "clave": "meteo:aemet-59826be4d8b1",
@@ -2292,7 +2351,8 @@
       "huella": "90d8a282247ca2035850",
       "ultima_deteccion": "2026-09-18T09:44:04.096849+00:00",
       "fecha_fuente": "2026-09-20T00:00:00+02:00",
-      "primera_deteccion": "2026-09-18T09:44:04.096849+00:00"
+      "primera_deteccion": "2026-09-18T09:44:04.096849+00:00",
+      "referencia": "2.49.0.0.724.0.ES.20260918093124.611104COCO20221789723884"
     },
     {
       "clave": "meteo:aemet-0e8e817332b5",
@@ -2306,7 +2366,8 @@
       "huella": "f42faa4722eb054803bf",
       "ultima_deteccion": "2026-09-18T09:04:20.646434+00:00",
       "fecha_fuente": "2026-09-19T06:00:00+02:00",
-      "primera_deteccion": "2026-09-18T09:04:20.646434+00:00"
+      "primera_deteccion": "2026-09-18T09:04:20.646434+00:00",
+      "referencia": "2.49.0.0.724.0.ES.20260918083135.611103COCO19221789720295"
     },
     {
       "clave": "meteo:aemet-96d90f3ca8ed",
@@ -2320,7 +2381,8 @@
       "huella": "712bf9ccff75ffb739d1",
       "ultima_deteccion": "2026-09-18T09:04:20.646434+00:00",
       "fecha_fuente": "2026-09-19T06:00:00+02:00",
-      "primera_deteccion": "2026-09-18T09:04:20.646434+00:00"
+      "primera_deteccion": "2026-09-18T09:04:20.646434+00:00",
+      "referencia": "2.49.0.0.724.0.ES.20260918083135.611104COCO19221789720295"
     },
     {
       "clave": "meteo:aemet-4d40e593548c",
@@ -2334,7 +2396,8 @@
       "huella": "f62e8be35758c2052090",
       "ultima_deteccion": "2026-09-18T09:04:20.646434+00:00",
       "fecha_fuente": "2026-09-19T12:00:00+02:00",
-      "primera_deteccion": "2026-09-18T09:04:20.646434+00:00"
+      "primera_deteccion": "2026-09-18T09:04:20.646434+00:00",
+      "referencia": "2.49.0.0.724.0.ES.20260918083135.611104VIRM19221789720295"
     },
     {
       "clave": "meteo:aemet-fa88799d55f8",
@@ -2348,7 +2411,8 @@
       "huella": "85435d920d9d14657fbf",
       "ultima_deteccion": "2026-09-18T09:44:04.096849+00:00",
       "fecha_fuente": "2026-09-19T03:00:00+02:00",
-      "primera_deteccion": "2026-09-18T09:44:04.096849+00:00"
+      "primera_deteccion": "2026-09-18T09:44:04.096849+00:00",
+      "referencia": "2.49.0.0.724.0.ES.20260918090139.770301PRP119131789722099"
     },
     {
       "clave": "meteo:aemet-600aaee2bb93",
@@ -2362,7 +2426,8 @@
       "huella": "938eb80c9a8383baf3dd",
       "ultima_deteccion": "2026-09-18T09:44:04.096849+00:00",
       "fecha_fuente": "2026-09-19T03:00:00+02:00",
-      "primera_deteccion": "2026-09-18T09:44:04.096849+00:00"
+      "primera_deteccion": "2026-09-18T09:44:04.096849+00:00",
+      "referencia": "2.49.0.0.724.0.ES.20260918090139.770303PRP119131789722099"
     },
     {
       "clave": "meteo:aemet-29346a0bc027",
@@ -2376,7 +2441,8 @@
       "huella": "d89bfb4e9adc63808c01",
       "ultima_deteccion": "2026-09-18T09:44:04.096849+00:00",
       "fecha_fuente": "2026-09-19T03:00:00+02:00",
-      "primera_deteccion": "2026-09-18T09:44:04.096849+00:00"
+      "primera_deteccion": "2026-09-18T09:44:04.096849+00:00",
+      "referencia": "2.49.0.0.724.0.ES.20260918090139.774604PRP119131789722099"
     },
     {
       "clave": "meteo:aemet-df4ec038e3c6",
@@ -2390,7 +2456,8 @@
       "huella": "dbbd77822cc525a1c527",
       "ultima_deteccion": "2026-09-18T09:44:04.096849+00:00",
       "fecha_fuente": "2026-09-19T03:00:00+02:00",
-      "primera_deteccion": "2026-09-18T09:44:04.096849+00:00"
+      "primera_deteccion": "2026-09-18T09:44:04.096849+00:00",
+      "referencia": "2.49.0.0.724.0.ES.20260918090139.770303TOTO19131789722099"
     },
     {
       "clave": "meteo:aemet-832f9d769ef2",
@@ -2404,7 +2471,8 @@
       "huella": "4110acca9f5eb79cb599",
       "ultima_deteccion": "2026-09-18T09:04:20.646434+00:00",
       "fecha_fuente": "2026-09-19T03:00:00+02:00",
-      "primera_deteccion": "2026-09-18T09:04:20.646434+00:00"
+      "primera_deteccion": "2026-09-18T09:04:20.646434+00:00",
+      "referencia": "2.49.0.0.724.0.ES.20260918082951.733004PRP119131789720191"
     },
     {
       "clave": "meteo:aemet-3ffe697eb026",
@@ -2418,7 +2486,8 @@
       "huella": "afa9f8e692f7501ce049",
       "ultima_deteccion": "2026-09-18T09:04:20.646434+00:00",
       "fecha_fuente": "2026-09-19T03:00:00+02:00",
-      "primera_deteccion": "2026-09-18T09:04:20.646434+00:00"
+      "primera_deteccion": "2026-09-18T09:04:20.646434+00:00",
+      "referencia": "2.49.0.0.724.0.ES.20260918082951.733005PRP119131789720191"
     },
     {
       "clave": "meteo:aemet-7db5b5fd0001",
@@ -2432,7 +2501,8 @@
       "huella": "f6685ec07a38fb4952fc",
       "ultima_deteccion": "2026-09-18T09:04:20.646434+00:00",
       "fecha_fuente": "2026-09-19T03:00:00+02:00",
-      "primera_deteccion": "2026-09-18T09:04:20.646434+00:00"
+      "primera_deteccion": "2026-09-18T09:04:20.646434+00:00",
+      "referencia": "2.49.0.0.724.0.ES.20260918082951.733004TOTO19131789720191"
     },
     {
       "clave": "meteo:aemet-a897aaad0fa5",
@@ -2446,7 +2516,8 @@
       "huella": "61151a4fc00f5c0db480",
       "ultima_deteccion": "2026-09-18T09:04:20.646434+00:00",
       "fecha_fuente": "2026-09-19T03:00:00+02:00",
-      "primera_deteccion": "2026-09-18T09:04:20.646434+00:00"
+      "primera_deteccion": "2026-09-18T09:04:20.646434+00:00",
+      "referencia": "2.49.0.0.724.0.ES.20260918082951.733005TOTO19131789720191"
     },
     {
       "clave": "meteo:aemet-63a1d727f117",
@@ -2460,7 +2531,8 @@
       "huella": "4b5fd48cbf182d939bc2",
       "ultima_deteccion": "2026-09-18T09:04:20.646434+00:00",
       "fecha_fuente": "2026-09-18T14:00:00+02:00",
-      "primera_deteccion": "2026-09-18T09:04:20.646434+00:00"
+      "primera_deteccion": "2026-09-18T09:04:20.646434+00:00",
+      "referencia": "2.49.0.0.724.0.ES.20260918061553.733001PRP118181789712153"
     },
     {
       "clave": "meteo:aemet-db65587c98b7",
@@ -2474,7 +2546,8 @@
       "huella": "a6f29cb898e46ff53394",
       "ultima_deteccion": "2026-09-18T09:04:20.646434+00:00",
       "fecha_fuente": "2026-09-18T14:00:00+02:00",
-      "primera_deteccion": "2026-09-18T09:04:20.646434+00:00"
+      "primera_deteccion": "2026-09-18T09:04:20.646434+00:00",
+      "referencia": "2.49.0.0.724.0.ES.20260918061553.733002PRP118181789712153"
     },
     {
       "clave": "meteo:aemet-2bb911dc529a",
@@ -2488,7 +2561,8 @@
       "huella": "1f69d4a4c917e11c5670",
       "ultima_deteccion": "2026-09-18T09:04:20.646434+00:00",
       "fecha_fuente": "2026-09-18T14:00:00+02:00",
-      "primera_deteccion": "2026-09-18T09:04:20.646434+00:00"
+      "primera_deteccion": "2026-09-18T09:04:20.646434+00:00",
+      "referencia": "2.49.0.0.724.0.ES.20260918061532.611801PRP118181789712132"
     },
     {
       "clave": "meteo:aemet-a64f647e1b8a",
@@ -2502,7 +2576,8 @@
       "huella": "7b45dfb702a77aea258f",
       "ultima_deteccion": "2026-09-18T09:04:20.646434+00:00",
       "fecha_fuente": "2026-09-18T14:00:00+02:00",
-      "primera_deteccion": "2026-09-18T09:04:20.646434+00:00"
+      "primera_deteccion": "2026-09-18T09:04:20.646434+00:00",
+      "referencia": "2.49.0.0.724.0.ES.20260918060218.770302PRP118181789711338"
     },
     {
       "clave": "meteo:aemet-6c189fd1073b",
@@ -2517,7 +2592,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-18T14:00:00+02:00",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": "2.49.0.0.724.0.ES.20260917170134.770303PRP118181789664494"
     },
     {
       "clave": "meteo:aemet-630ecfa86732",
@@ -2532,7 +2608,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-18T14:00:00+02:00",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": "2.49.0.0.724.0.ES.20260917164709.733003PRP118181789663629"
     },
     {
       "clave": "meteo:aemet-3c3440d2d419",
@@ -2547,7 +2624,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-18T14:00:00+02:00",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": "2.49.0.0.724.0.ES.20260917164709.733004PRP118181789663629"
     },
     {
       "clave": "meteo:aemet-f3804074a3f2",
@@ -2562,7 +2640,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-18T14:00:00+02:00",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": "2.49.0.0.724.0.ES.20260917164709.733005PRP118181789663629"
     },
     {
       "clave": "meteo:aemet-39211715154e",
@@ -2577,7 +2656,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-18T14:00:00+02:00",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": "2.49.0.0.724.0.ES.20260917092114.610401PRP118181789636874"
     },
     {
       "clave": "meteo:aemet-f06677af24dd",
@@ -2592,7 +2672,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-18T14:00:00+02:00",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": "2.49.0.0.724.0.ES.20260917092114.610402PRP118181789636874"
     },
     {
       "clave": "meteo:aemet-12cf61a18edb",
@@ -2607,7 +2688,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-18T14:00:00+02:00",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": "2.49.0.0.724.0.ES.20260917092114.610403PRP118181789636874"
     },
     {
       "clave": "meteo:aemet-45e37e2b0c6e",
@@ -2622,7 +2704,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-18T14:00:00+02:00",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": "2.49.0.0.724.0.ES.20260917092114.611802PRP118181789636874"
     },
     {
       "clave": "meteo:aemet-af31a09dded9",
@@ -2637,7 +2720,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-18T14:00:00+02:00",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": "2.49.0.0.724.0.ES.20260917092114.611803PRP118181789636874"
     },
     {
       "clave": "meteo:aemet-a2afce9527ea",
@@ -2651,7 +2735,8 @@
       "huella": "3274f1efd5f8443d6e77",
       "ultima_deteccion": "2026-09-18T09:04:20.646434+00:00",
       "fecha_fuente": "2026-09-18T12:00:00+02:00",
-      "primera_deteccion": "2026-09-18T09:04:20.646434+00:00"
+      "primera_deteccion": "2026-09-18T09:04:20.646434+00:00",
+      "referencia": "2.49.0.0.724.0.ES.20260918070018.645301PRP118161789714818"
     },
     {
       "clave": "meteo:aemet-96a714ada79f",
@@ -2665,7 +2750,8 @@
       "huella": "66b0b5e4ac0dfa524d64",
       "ultima_deteccion": "2026-09-18T09:04:20.646434+00:00",
       "fecha_fuente": "2026-09-18T12:00:00+02:00",
-      "primera_deteccion": "2026-09-18T09:04:20.646434+00:00"
+      "primera_deteccion": "2026-09-18T09:04:20.646434+00:00",
+      "referencia": "2.49.0.0.724.0.ES.20260918070018.645401PRP118161789714818"
     },
     {
       "clave": "meteo:aemet-6d7b86b69609",
@@ -2679,7 +2765,8 @@
       "huella": "1b7705d697ccb1148343",
       "ultima_deteccion": "2026-09-18T09:04:20.646434+00:00",
       "fecha_fuente": "2026-09-18T12:00:00+02:00",
-      "primera_deteccion": "2026-09-18T09:04:20.646434+00:00"
+      "primera_deteccion": "2026-09-18T09:04:20.646434+00:00",
+      "referencia": "2.49.0.0.724.0.ES.20260918070018.645404PRP118161789714818"
     },
     {
       "clave": "meteo:aemet-f0b819282382",
@@ -2693,7 +2780,8 @@
       "huella": "33e38ee9de31baf1b621",
       "ultima_deteccion": "2026-09-18T09:04:20.646434+00:00",
       "fecha_fuente": "2026-09-18T12:00:00+02:00",
-      "primera_deteccion": "2026-09-18T09:04:20.646434+00:00"
+      "primera_deteccion": "2026-09-18T09:04:20.646434+00:00",
+      "referencia": "2.49.0.0.724.0.ES.20260918070018.645301TOTO18161789714818"
     },
     {
       "clave": "meteo:aemet-ec24db442307",
@@ -2707,7 +2795,8 @@
       "huella": "6e04d799d401e1634892",
       "ultima_deteccion": "2026-09-18T09:04:20.646434+00:00",
       "fecha_fuente": "2026-09-18T12:00:00+02:00",
-      "primera_deteccion": "2026-09-18T09:04:20.646434+00:00"
+      "primera_deteccion": "2026-09-18T09:04:20.646434+00:00",
+      "referencia": "2.49.0.0.724.0.ES.20260918070018.645401TOTO18161789714818"
     },
     {
       "clave": "meteo:aemet-9cd8284a41d4",
@@ -2721,7 +2810,104 @@
       "huella": "d5298a2853960fda22b4",
       "ultima_deteccion": "2026-09-18T09:04:20.646434+00:00",
       "fecha_fuente": "2026-09-18T12:00:00+02:00",
-      "primera_deteccion": "2026-09-18T09:04:20.646434+00:00"
+      "primera_deteccion": "2026-09-18T09:04:20.646434+00:00",
+      "referencia": "2.49.0.0.724.0.ES.20260918070018.645404TOTO18161789714818"
+    },
+    {
+      "clave": "meteo:aemet-82e0e02fd6a4",
+      "tipo": "meteo",
+      "id": "aemet-82e0e02fd6a4",
+      "titulo": "Aviso de lluvias de nivel naranja",
+      "fuente": "Agencia Estatal de Meteorología (AEMET)",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260918070018_AFAZ645301PRP11810.xml",
+      "ambito": "Ibiza y Formentera",
+      "estado": "expirado_detectado",
+      "huella": "6f04be20a702c4c9937c",
+      "ultima_deteccion": "2026-09-18T09:04:20.646434+00:00",
+      "fecha_fuente": "2026-09-18T09:00:00+02:00",
+      "primera_deteccion": "2026-09-18T09:04:20.646434+00:00",
+      "fin_deteccion": "2026-09-18T14:28:10.354928+00:00",
+      "ultima_modificacion_detectada": "2026-09-18T14:28:10.354928+00:00"
+    },
+    {
+      "clave": "meteo:aemet-fa31a0ed16be",
+      "tipo": "meteo",
+      "id": "aemet-fa31a0ed16be",
+      "titulo": "Aviso de lluvias de nivel naranja",
+      "fuente": "Agencia Estatal de Meteorología (AEMET)",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260918070018_AFAZ645401PRP11810.xml",
+      "ambito": "Sierra Tramontana",
+      "estado": "expirado_detectado",
+      "huella": "e11bafdb14636d2ca936",
+      "ultima_deteccion": "2026-09-18T09:04:20.646434+00:00",
+      "fecha_fuente": "2026-09-18T09:00:00+02:00",
+      "primera_deteccion": "2026-09-18T09:04:20.646434+00:00",
+      "fin_deteccion": "2026-09-18T14:28:10.354928+00:00",
+      "ultima_modificacion_detectada": "2026-09-18T14:28:10.354928+00:00"
+    },
+    {
+      "clave": "meteo:aemet-9323d9f38b3e",
+      "tipo": "meteo",
+      "id": "aemet-9323d9f38b3e",
+      "titulo": "Aviso de lluvias de nivel naranja",
+      "fuente": "Agencia Estatal de Meteorología (AEMET)",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260918070018_AFAZ645404PRP11810.xml",
+      "ambito": "Sur de Mallorca",
+      "estado": "expirado_detectado",
+      "huella": "b6d7bc338c267ebc4ee4",
+      "ultima_deteccion": "2026-09-18T09:04:20.646434+00:00",
+      "fecha_fuente": "2026-09-18T09:00:00+02:00",
+      "primera_deteccion": "2026-09-18T09:04:20.646434+00:00",
+      "fin_deteccion": "2026-09-18T14:28:10.354928+00:00",
+      "ultima_modificacion_detectada": "2026-09-18T14:28:10.354928+00:00"
+    },
+    {
+      "clave": "meteo:aemet-09713911a6e4",
+      "tipo": "meteo",
+      "id": "aemet-09713911a6e4",
+      "titulo": "Aviso de tormentas de nivel naranja",
+      "fuente": "Agencia Estatal de Meteorología (AEMET)",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260917090943_AFAZ645301TOTO1810.xml",
+      "ambito": "Ibiza y Formentera",
+      "estado": "expirado_detectado",
+      "huella": "574ff669f62fe5986c40",
+      "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
+      "fecha_fuente": "2026-09-18T02:00:00+02:00",
+      "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
+      "ultima_modificacion_detectada": "2026-09-18T14:28:10.354928+00:00",
+      "fin_deteccion": "2026-09-18T14:28:10.354928+00:00"
+    },
+    {
+      "clave": "meteo:aemet-5ab787940af3",
+      "tipo": "meteo",
+      "id": "aemet-5ab787940af3",
+      "titulo": "Aviso de tormentas de nivel naranja",
+      "fuente": "Agencia Estatal de Meteorología (AEMET)",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260917090943_AFAZ645401TOTO1810.xml",
+      "ambito": "Sierra Tramontana",
+      "estado": "expirado_detectado",
+      "huella": "300a6cac3e7a30c9e1d9",
+      "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
+      "fecha_fuente": "2026-09-18T02:00:00+02:00",
+      "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
+      "ultima_modificacion_detectada": "2026-09-18T14:28:10.354928+00:00",
+      "fin_deteccion": "2026-09-18T14:28:10.354928+00:00"
+    },
+    {
+      "clave": "meteo:aemet-a0714a817264",
+      "tipo": "meteo",
+      "id": "aemet-a0714a817264",
+      "titulo": "Aviso de tormentas de nivel naranja",
+      "fuente": "Agencia Estatal de Meteorología (AEMET)",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260917090943_AFAZ645404TOTO1810.xml",
+      "ambito": "Sur de Mallorca",
+      "estado": "expirado_detectado",
+      "huella": "74a9e4296606c891d4bb",
+      "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
+      "fecha_fuente": "2026-09-18T02:00:00+02:00",
+      "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
+      "ultima_modificacion_detectada": "2026-09-18T14:28:10.354928+00:00",
+      "fin_deteccion": "2026-09-18T14:28:10.354928+00:00"
     },
     {
       "clave": "meteo:aemet-63e4ebf83bc8",
@@ -2731,12 +2917,13 @@
       "fuente": "Agencia Estatal de Meteorología (AEMET)",
       "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260917085707_AFAZ690804PRP11813.xml",
       "ambito": "Litoral de Barcelona",
-      "estado": "aviso_vigente",
+      "estado": "expirado_detectado",
       "huella": "2233e189b5acf1f76558",
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-18T03:00:00+02:00",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T14:28:10.354928+00:00",
+      "fin_deteccion": "2026-09-18T14:28:10.354928+00:00"
     },
     {
       "clave": "meteo:aemet-79d33eb0f1f9",
@@ -2746,12 +2933,13 @@
       "fuente": "Agencia Estatal de Meteorología (AEMET)",
       "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260917085707_AFAZ694303PRP11813.xml",
       "ambito": "Litoral norte de Tarragona",
-      "estado": "aviso_vigente",
+      "estado": "expirado_detectado",
       "huella": "1d1aa3b894f68c24c285",
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-18T03:00:00+02:00",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T14:28:10.354928+00:00",
+      "fin_deteccion": "2026-09-18T14:28:10.354928+00:00"
     },
     {
       "clave": "meteo:aemet-fee4e41bc321",
@@ -2761,11 +2949,13 @@
       "fuente": "Agencia Estatal de Meteorología (AEMET)",
       "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260918093608_AFAZ770301PRP11812.xml",
       "ambito": "Litoral norte de Alicante",
-      "estado": "aviso_vigente",
+      "estado": "expirado_detectado",
       "huella": "3f102693a048c5c2e194",
       "ultima_deteccion": "2026-09-18T09:44:04.096849+00:00",
       "fecha_fuente": "2026-09-18T11:00:00+02:00",
-      "primera_deteccion": "2026-09-18T09:44:04.096849+00:00"
+      "primera_deteccion": "2026-09-18T09:44:04.096849+00:00",
+      "fin_deteccion": "2026-09-18T14:28:10.354928+00:00",
+      "ultima_modificacion_detectada": "2026-09-18T14:28:10.354928+00:00"
     },
     {
       "clave": "meteo:aemet-36d28d956758",
@@ -2775,12 +2965,13 @@
       "fuente": "Agencia Estatal de Meteorología (AEMET)",
       "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260917090943_AFAZ645402PRP11810.xml",
       "ambito": "Norte y nordeste de Mallorca",
-      "estado": "aviso_vigente",
+      "estado": "expirado_detectado",
       "huella": "4d0020e2cfdb8e848b4d",
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-18T02:00:00+02:00",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T14:28:10.354928+00:00",
+      "fin_deteccion": "2026-09-18T14:28:10.354928+00:00"
     },
     {
       "clave": "meteo:aemet-17074228d698",
@@ -2790,12 +2981,13 @@
       "fuente": "Agencia Estatal de Meteorología (AEMET)",
       "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260917090943_AFAZ645403PRP11810.xml",
       "ambito": "Interior de Mallorca",
-      "estado": "aviso_vigente",
+      "estado": "expirado_detectado",
       "huella": "9d46fee85a4e512b69cc",
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-18T02:00:00+02:00",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T14:28:10.354928+00:00",
+      "fin_deteccion": "2026-09-18T14:28:10.354928+00:00"
     },
     {
       "clave": "meteo:aemet-06730be7446d",
@@ -2805,12 +2997,13 @@
       "fuente": "Agencia Estatal de Meteorología (AEMET)",
       "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260917090943_AFAZ645405PRP11810.xml",
       "ambito": "Levante mallorquín",
-      "estado": "aviso_vigente",
+      "estado": "expirado_detectado",
       "huella": "6fa078620ba7864813ed",
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-18T02:00:00+02:00",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T14:28:10.354928+00:00",
+      "fin_deteccion": "2026-09-18T14:28:10.354928+00:00"
     },
     {
       "clave": "meteo:aemet-df04de0e3a09",
@@ -2820,12 +3013,13 @@
       "fuente": "Agencia Estatal de Meteorología (AEMET)",
       "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260917090943_AFAZ645301PRP21810.xml",
       "ambito": "Ibiza y Formentera",
-      "estado": "aviso_vigente",
+      "estado": "expirado_detectado",
       "huella": "f727c13f98a895ea62d9",
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-18T02:00:00+02:00",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T14:28:10.354928+00:00",
+      "fin_deteccion": "2026-09-18T14:28:10.354928+00:00"
     },
     {
       "clave": "meteo:aemet-6aecc725d98c",
@@ -2835,12 +3029,13 @@
       "fuente": "Agencia Estatal de Meteorología (AEMET)",
       "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260917090943_AFAZ645401PRP21810.xml",
       "ambito": "Sierra Tramontana",
-      "estado": "aviso_vigente",
+      "estado": "expirado_detectado",
       "huella": "8c2e9ede4860a87bb0d4",
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-18T02:00:00+02:00",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T14:28:10.354928+00:00",
+      "fin_deteccion": "2026-09-18T14:28:10.354928+00:00"
     },
     {
       "clave": "meteo:aemet-0fdf8d5f0d42",
@@ -2850,12 +3045,13 @@
       "fuente": "Agencia Estatal de Meteorología (AEMET)",
       "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260917090943_AFAZ645404PRP21810.xml",
       "ambito": "Sur de Mallorca",
-      "estado": "aviso_vigente",
+      "estado": "expirado_detectado",
       "huella": "ef31e71a50f041a5a965",
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-18T02:00:00+02:00",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T14:28:10.354928+00:00",
+      "fin_deteccion": "2026-09-18T14:28:10.354928+00:00"
     },
     {
       "clave": "meteo:aemet-180c75494ea9",
@@ -2865,12 +3061,13 @@
       "fuente": "Agencia Estatal de Meteorología (AEMET)",
       "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260917090943_AFAZ645402TOTO1810.xml",
       "ambito": "Norte y nordeste de Mallorca",
-      "estado": "aviso_vigente",
+      "estado": "expirado_detectado",
       "huella": "215e8866923b75bcafd8",
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-18T02:00:00+02:00",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T14:28:10.354928+00:00",
+      "fin_deteccion": "2026-09-18T14:28:10.354928+00:00"
     },
     {
       "clave": "meteo:aemet-73febbaabb63",
@@ -2880,12 +3077,13 @@
       "fuente": "Agencia Estatal de Meteorología (AEMET)",
       "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260917090943_AFAZ645403TOTO1810.xml",
       "ambito": "Interior de Mallorca",
-      "estado": "aviso_vigente",
+      "estado": "expirado_detectado",
       "huella": "6c5963e8e4780957d59b",
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-18T02:00:00+02:00",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T14:28:10.354928+00:00",
+      "fin_deteccion": "2026-09-18T14:28:10.354928+00:00"
     },
     {
       "clave": "meteo:aemet-67f07bbd85a1",
@@ -2895,12 +3093,13 @@
       "fuente": "Agencia Estatal de Meteorología (AEMET)",
       "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260917090943_AFAZ645405TOTO1810.xml",
       "ambito": "Levante mallorquín",
-      "estado": "aviso_vigente",
+      "estado": "expirado_detectado",
       "huella": "e08df65ff35724dd76ae",
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-09-18T02:00:00+02:00",
       "primera_deteccion": "2026-09-17T23:08:37.603449+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T14:28:10.354928+00:00",
+      "fin_deteccion": "2026-09-18T14:28:10.354928+00:00"
     },
     {
       "clave": "alimentacion:aesan-86c41ed14d",
@@ -7334,290 +7533,202 @@
   ],
   "eventos": [
     {
-      "clave": "alimentacion:aesan-86c41ed14d",
-      "tipo": "alimentacion",
-      "evento": "sustituida_actualizacion",
-      "etiqueta": "Sustituida por actualización",
-      "momento_detectado": "2026-09-18T13:17:18.899268+00:00",
-      "fecha_fuente": "2026-08-26",
-      "titulo": "Advertencia por presencia de gluten: gluten no declarado en salsas etiquetadas \"sin gluten\" procedentes de España. (Ref. ES2026/517 )",
-      "url": "https://www.aesan.gob.es/alertas/2026_65",
-      "detalle_cambio": "Sustituida en el panel por una publicación posterior de AESAN"
+      "clave": "meteo:aemet-82e0e02fd6a4",
+      "tipo": "meteo",
+      "evento": "expirado_detectado",
+      "etiqueta": "Dejó de estar vigente",
+      "momento_detectado": "2026-09-18T14:28:10.354928+00:00",
+      "fecha_fuente": "2026-09-18T09:00:00+02:00",
+      "titulo": "Aviso de lluvias de nivel naranja",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260918070018_AFAZ645301PRP11810.xml",
+      "detalle_cambio": "Ya no figura en el conjunto vigente validado por el módulo AEMET"
     },
     {
-      "clave": "alimentacion:aesan-cb6a216d7f",
-      "tipo": "alimentacion",
-      "evento": "sustituida_actualizacion",
-      "etiqueta": "Sustituida por actualización",
-      "momento_detectado": "2026-09-18T13:17:18.899268+00:00",
-      "fecha_fuente": "2026-07-29",
-      "titulo": "Alerta por presencia de Salmonella spp. en salchichón procedente de España (Ref. ES2026/469)",
-      "url": "https://www.aesan.gob.es/alertas/2026_55",
-      "detalle_cambio": "Sustituida en el panel por una publicación posterior de AESAN"
+      "clave": "meteo:aemet-fa31a0ed16be",
+      "tipo": "meteo",
+      "evento": "expirado_detectado",
+      "etiqueta": "Dejó de estar vigente",
+      "momento_detectado": "2026-09-18T14:28:10.354928+00:00",
+      "fecha_fuente": "2026-09-18T09:00:00+02:00",
+      "titulo": "Aviso de lluvias de nivel naranja",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260918070018_AFAZ645401PRP11810.xml",
+      "detalle_cambio": "Ya no figura en el conjunto vigente validado por el módulo AEMET"
     },
     {
-      "clave": "alimentacion:aesan-14b3ea0a78",
-      "tipo": "alimentacion",
-      "evento": "sustituida_actualizacion",
-      "etiqueta": "Sustituida por actualización",
-      "momento_detectado": "2026-09-18T13:17:18.899268+00:00",
-      "fecha_fuente": "2026-06-25",
-      "titulo": "Ampliación de información sobre la alerta por presencia de Salmonella spp. en moringa ecológica procedente de Alemania (Ref. ES2026/240)",
-      "url": "https://www.aesan.gob.es/alertas/2026_33_ampliacion_6",
-      "detalle_cambio": "Sustituida en el panel por una publicación posterior de AESAN"
+      "clave": "meteo:aemet-9323d9f38b3e",
+      "tipo": "meteo",
+      "evento": "expirado_detectado",
+      "etiqueta": "Dejó de estar vigente",
+      "momento_detectado": "2026-09-18T14:28:10.354928+00:00",
+      "fecha_fuente": "2026-09-18T09:00:00+02:00",
+      "titulo": "Aviso de lluvias de nivel naranja",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260918070018_AFAZ645404PRP11810.xml",
+      "detalle_cambio": "Ya no figura en el conjunto vigente validado por el módulo AEMET"
     },
     {
-      "clave": "alimentacion:aesan-b8c4ada616",
-      "tipo": "alimentacion",
-      "evento": "sustituida_actualizacion",
-      "etiqueta": "Sustituida por actualización",
-      "momento_detectado": "2026-09-18T13:17:18.899268+00:00",
-      "fecha_fuente": "2026-06-19",
-      "titulo": "Ampliación de información sobre la alerta por presencia de Salmonella spp. en moringa ecológica procedente de Alemania (Ref. ES2026/240)",
-      "url": "https://www.aesan.gob.es/alertas/2026_33_ampliacion_5",
-      "detalle_cambio": "Sustituida en el panel por una publicación posterior de AESAN"
+      "clave": "meteo:aemet-09713911a6e4",
+      "tipo": "meteo",
+      "evento": "expirado_detectado",
+      "etiqueta": "Dejó de estar vigente",
+      "momento_detectado": "2026-09-18T14:28:10.354928+00:00",
+      "fecha_fuente": "2026-09-18T02:00:00+02:00",
+      "titulo": "Aviso de tormentas de nivel naranja",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260917090943_AFAZ645301TOTO1810.xml",
+      "detalle_cambio": "Ya no figura en el conjunto vigente validado por el módulo AEMET"
     },
     {
-      "clave": "alimentacion:aesan-e9af7a9b75",
-      "tipo": "alimentacion",
-      "evento": "sustituida_actualizacion",
-      "etiqueta": "Sustituida por actualización",
-      "momento_detectado": "2026-09-18T13:17:18.899268+00:00",
-      "fecha_fuente": "2026-06-17",
-      "titulo": "Advertencia para personas con alergia o intolerancia a los componentes de la leche: Presencia de leche en crema de cacao con avellana ecológica procedente de Italia (Ref. ES2026/358)",
-      "url": "https://www.aesan.gob.es/alertas/2026_49",
-      "detalle_cambio": "Sustituida en el panel por una publicación posterior de AESAN"
+      "clave": "meteo:aemet-5ab787940af3",
+      "tipo": "meteo",
+      "evento": "expirado_detectado",
+      "etiqueta": "Dejó de estar vigente",
+      "momento_detectado": "2026-09-18T14:28:10.354928+00:00",
+      "fecha_fuente": "2026-09-18T02:00:00+02:00",
+      "titulo": "Aviso de tormentas de nivel naranja",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260917090943_AFAZ645401TOTO1810.xml",
+      "detalle_cambio": "Ya no figura en el conjunto vigente validado por el módulo AEMET"
     },
     {
-      "clave": "alimentacion:aesan-4075fd939b",
-      "tipo": "alimentacion",
-      "evento": "sustituida_actualizacion",
-      "etiqueta": "Sustituida por actualización",
-      "momento_detectado": "2026-09-18T13:17:18.899268+00:00",
-      "fecha_fuente": "2026-06-04",
-      "titulo": "Ampliación de información sobre la alerta por presencia de almendra no declarada en postre procedente de España (Ref. ES2026/327)",
-      "url": "https://www.aesan.gob.es/alertas/2026_Ampliacion_45_2",
-      "detalle_cambio": "Sustituida en el panel por una publicación posterior de AESAN"
+      "clave": "meteo:aemet-a0714a817264",
+      "tipo": "meteo",
+      "evento": "expirado_detectado",
+      "etiqueta": "Dejó de estar vigente",
+      "momento_detectado": "2026-09-18T14:28:10.354928+00:00",
+      "fecha_fuente": "2026-09-18T02:00:00+02:00",
+      "titulo": "Aviso de tormentas de nivel naranja",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260917090943_AFAZ645404TOTO1810.xml",
+      "detalle_cambio": "Ya no figura en el conjunto vigente validado por el módulo AEMET"
     },
     {
-      "clave": "alimentacion:aesan-f1edff383e",
-      "tipo": "alimentacion",
-      "evento": "sustituida_actualizacion",
-      "etiqueta": "Sustituida por actualización",
-      "momento_detectado": "2026-09-18T13:17:18.899268+00:00",
-      "fecha_fuente": "2026-06-03",
-      "titulo": "Ampliación de información sobre la alerta por presencia de almendra no declarada en postre procedente de España (Ref. ES2026/327)",
-      "url": "https://www.aesan.gob.es/alertas/2026_Ampliacion_45",
-      "detalle_cambio": "Sustituida en el panel por una publicación posterior de AESAN"
+      "clave": "meteo:aemet-63e4ebf83bc8",
+      "tipo": "meteo",
+      "evento": "expirado_detectado",
+      "etiqueta": "Dejó de estar vigente",
+      "momento_detectado": "2026-09-18T14:28:10.354928+00:00",
+      "fecha_fuente": "2026-09-18T03:00:00+02:00",
+      "titulo": "Aviso de lluvias de nivel amarillo",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260917085707_AFAZ690804PRP11813.xml",
+      "detalle_cambio": "Ya no figura en el conjunto vigente validado por el módulo AEMET"
     },
     {
-      "clave": "alimentacion:aesan-e7b4fab756",
-      "tipo": "alimentacion",
-      "evento": "sustituida_actualizacion",
-      "etiqueta": "Sustituida por actualización",
-      "momento_detectado": "2026-09-18T13:17:18.899268+00:00",
-      "fecha_fuente": "2026-06-02",
-      "titulo": "Advertencia para personas con alergia a las almendras: presencia de almendras no declaradas en postre procedente de España (Ref. ES2026/327)",
-      "url": "https://www.aesan.gob.es/alertas/2026_45",
-      "detalle_cambio": "Sustituida en el panel por una publicación posterior de AESAN"
+      "clave": "meteo:aemet-79d33eb0f1f9",
+      "tipo": "meteo",
+      "evento": "expirado_detectado",
+      "etiqueta": "Dejó de estar vigente",
+      "momento_detectado": "2026-09-18T14:28:10.354928+00:00",
+      "fecha_fuente": "2026-09-18T03:00:00+02:00",
+      "titulo": "Aviso de lluvias de nivel amarillo",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260917085707_AFAZ694303PRP11813.xml",
+      "detalle_cambio": "Ya no figura en el conjunto vigente validado por el módulo AEMET"
     },
     {
-      "clave": "alimentacion:aesan-baea4be4e3",
-      "tipo": "alimentacion",
-      "evento": "sustituida_actualizacion",
-      "etiqueta": "Sustituida por actualización",
-      "momento_detectado": "2026-09-18T13:17:18.899268+00:00",
-      "fecha_fuente": "2026-05-27",
-      "titulo": "Corrección de errores sobre la alerta por presencia de Salmonella spp. en moringa ecológica procedente de Alemania (Ref. ES2026/240)",
-      "url": "https://www.aesan.gob.es/alertas/2026_33_ampliacion_4",
-      "detalle_cambio": "Sustituida en el panel por una publicación posterior de AESAN"
+      "clave": "meteo:aemet-fee4e41bc321",
+      "tipo": "meteo",
+      "evento": "expirado_detectado",
+      "etiqueta": "Dejó de estar vigente",
+      "momento_detectado": "2026-09-18T14:28:10.354928+00:00",
+      "fecha_fuente": "2026-09-18T11:00:00+02:00",
+      "titulo": "Aviso de lluvias de nivel amarillo",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260918093608_AFAZ770301PRP11812.xml",
+      "detalle_cambio": "Ya no figura en el conjunto vigente validado por el módulo AEMET"
     },
     {
-      "clave": "alimentacion:aesan-a2f2498bc7",
-      "tipo": "alimentacion",
-      "evento": "sustituida_actualizacion",
-      "etiqueta": "Sustituida por actualización",
-      "momento_detectado": "2026-09-18T13:17:18.899268+00:00",
-      "fecha_fuente": "2026-05-25",
-      "titulo": "Ampliación de información sobre la alerta por presencia de Salmonella spp. en moringa ecológica procedente de Alemania (Ref. ES2026/240)",
-      "url": "https://www.aesan.gob.es/alertas/2026_33_ampliacion_3",
-      "detalle_cambio": "Sustituida en el panel por una publicación posterior de AESAN"
+      "clave": "meteo:aemet-36d28d956758",
+      "tipo": "meteo",
+      "evento": "expirado_detectado",
+      "etiqueta": "Dejó de estar vigente",
+      "momento_detectado": "2026-09-18T14:28:10.354928+00:00",
+      "fecha_fuente": "2026-09-18T02:00:00+02:00",
+      "titulo": "Aviso de lluvias de nivel amarillo",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260917090943_AFAZ645402PRP11810.xml",
+      "detalle_cambio": "Ya no figura en el conjunto vigente validado por el módulo AEMET"
     },
     {
-      "clave": "alimentacion:aesan-9e5faf6929",
-      "tipo": "alimentacion",
-      "evento": "sustituida_actualizacion",
-      "etiqueta": "Sustituida por actualización",
-      "momento_detectado": "2026-09-18T13:17:18.899268+00:00",
-      "fecha_fuente": "2026-05-22",
-      "titulo": "Ampliación de información sobre la alerta por presencia de Salmonella spp. en moringa ecológica procedente de Alemania (Ref. ES2026/240)",
-      "url": "https://www.aesan.gob.es/alertas/2026_33_ampliacion_2",
-      "detalle_cambio": "Sustituida en el panel por una publicación posterior de AESAN"
+      "clave": "meteo:aemet-17074228d698",
+      "tipo": "meteo",
+      "evento": "expirado_detectado",
+      "etiqueta": "Dejó de estar vigente",
+      "momento_detectado": "2026-09-18T14:28:10.354928+00:00",
+      "fecha_fuente": "2026-09-18T02:00:00+02:00",
+      "titulo": "Aviso de lluvias de nivel amarillo",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260917090943_AFAZ645403PRP11810.xml",
+      "detalle_cambio": "Ya no figura en el conjunto vigente validado por el módulo AEMET"
     },
     {
-      "clave": "alimentacion:aesan-eee4ce86fa",
-      "tipo": "alimentacion",
-      "evento": "sustituida_actualizacion",
-      "etiqueta": "Sustituida por actualización",
-      "momento_detectado": "2026-09-18T13:17:18.899268+00:00",
-      "fecha_fuente": "2026-05-15",
-      "titulo": "Ampliación de información sobre la alerta por presencia de Listeria monocytogenes en queso fresco de vaca procedente de España (Ref. ES2026/271)",
-      "url": "https://www.aesan.gob.es/alertas/2026_38_Ampliacion_2",
-      "detalle_cambio": "Sustituida en el panel por una publicación posterior de AESAN"
+      "clave": "meteo:aemet-06730be7446d",
+      "tipo": "meteo",
+      "evento": "expirado_detectado",
+      "etiqueta": "Dejó de estar vigente",
+      "momento_detectado": "2026-09-18T14:28:10.354928+00:00",
+      "fecha_fuente": "2026-09-18T02:00:00+02:00",
+      "titulo": "Aviso de lluvias de nivel amarillo",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260917090943_AFAZ645405PRP11810.xml",
+      "detalle_cambio": "Ya no figura en el conjunto vigente validado por el módulo AEMET"
     },
     {
-      "clave": "alimentacion:aesan-314c5c382b",
-      "tipo": "alimentacion",
-      "evento": "sustituida_actualizacion",
-      "etiqueta": "Sustituida por actualización",
-      "momento_detectado": "2026-09-18T13:17:18.899268+00:00",
-      "fecha_fuente": "2026-05-15",
-      "titulo": "Ampliación de información sobre la alerta por presencia de Listeria monocytogenes en queso fresco de vaca procedente de España (Ref. ES2026/271)",
-      "url": "https://www.aesan.gob.es/alertas/2026_38_Ampliacion",
-      "detalle_cambio": "Sustituida en el panel por una publicación posterior de AESAN"
+      "clave": "meteo:aemet-df04de0e3a09",
+      "tipo": "meteo",
+      "evento": "expirado_detectado",
+      "etiqueta": "Dejó de estar vigente",
+      "momento_detectado": "2026-09-18T14:28:10.354928+00:00",
+      "fecha_fuente": "2026-09-18T02:00:00+02:00",
+      "titulo": "Aviso de lluvias de nivel amarillo",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260917090943_AFAZ645301PRP21810.xml",
+      "detalle_cambio": "Ya no figura en el conjunto vigente validado por el módulo AEMET"
     },
     {
-      "clave": "alimentacion:aesan-86c41ed14d",
-      "tipo": "alimentacion",
-      "evento": "sustituida_actualizacion",
-      "etiqueta": "Sustituida por actualización",
-      "momento_detectado": "2026-09-18T13:12:39.929090+00:00",
-      "fecha_fuente": "2026-08-26",
-      "titulo": "Advertencia por presencia de gluten: gluten no declarado en salsas etiquetadas \"sin gluten\" procedentes de España. (Ref. ES2026/517 )",
-      "url": "https://www.aesan.gob.es/alertas/2026_65",
-      "detalle_cambio": "Sustituida en el panel por una publicación posterior de AESAN"
+      "clave": "meteo:aemet-6aecc725d98c",
+      "tipo": "meteo",
+      "evento": "expirado_detectado",
+      "etiqueta": "Dejó de estar vigente",
+      "momento_detectado": "2026-09-18T14:28:10.354928+00:00",
+      "fecha_fuente": "2026-09-18T02:00:00+02:00",
+      "titulo": "Aviso de lluvias de nivel amarillo",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260917090943_AFAZ645401PRP21810.xml",
+      "detalle_cambio": "Ya no figura en el conjunto vigente validado por el módulo AEMET"
     },
     {
-      "clave": "alimentacion:aesan-cb6a216d7f",
-      "tipo": "alimentacion",
-      "evento": "sustituida_actualizacion",
-      "etiqueta": "Sustituida por actualización",
-      "momento_detectado": "2026-09-18T13:12:39.929090+00:00",
-      "fecha_fuente": "2026-07-29",
-      "titulo": "Alerta por presencia de Salmonella spp. en salchichón procedente de España (Ref. ES2026/469)",
-      "url": "https://www.aesan.gob.es/alertas/2026_55",
-      "detalle_cambio": "Sustituida en el panel por una publicación posterior de AESAN"
+      "clave": "meteo:aemet-0fdf8d5f0d42",
+      "tipo": "meteo",
+      "evento": "expirado_detectado",
+      "etiqueta": "Dejó de estar vigente",
+      "momento_detectado": "2026-09-18T14:28:10.354928+00:00",
+      "fecha_fuente": "2026-09-18T02:00:00+02:00",
+      "titulo": "Aviso de lluvias de nivel amarillo",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260917090943_AFAZ645404PRP21810.xml",
+      "detalle_cambio": "Ya no figura en el conjunto vigente validado por el módulo AEMET"
     },
     {
-      "clave": "alimentacion:aesan-14b3ea0a78",
-      "tipo": "alimentacion",
-      "evento": "sustituida_actualizacion",
-      "etiqueta": "Sustituida por actualización",
-      "momento_detectado": "2026-09-18T13:12:39.929090+00:00",
-      "fecha_fuente": "2026-06-25",
-      "titulo": "Ampliación de información sobre la alerta por presencia de Salmonella spp. en moringa ecológica procedente de Alemania (Ref. ES2026/240)",
-      "url": "https://www.aesan.gob.es/alertas/2026_33_ampliacion_6",
-      "detalle_cambio": "Sustituida en el panel por una publicación posterior de AESAN"
+      "clave": "meteo:aemet-180c75494ea9",
+      "tipo": "meteo",
+      "evento": "expirado_detectado",
+      "etiqueta": "Dejó de estar vigente",
+      "momento_detectado": "2026-09-18T14:28:10.354928+00:00",
+      "fecha_fuente": "2026-09-18T02:00:00+02:00",
+      "titulo": "Aviso de tormentas de nivel amarillo",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260917090943_AFAZ645402TOTO1810.xml",
+      "detalle_cambio": "Ya no figura en el conjunto vigente validado por el módulo AEMET"
     },
     {
-      "clave": "alimentacion:aesan-b8c4ada616",
-      "tipo": "alimentacion",
-      "evento": "sustituida_actualizacion",
-      "etiqueta": "Sustituida por actualización",
-      "momento_detectado": "2026-09-18T13:12:39.929090+00:00",
-      "fecha_fuente": "2026-06-19",
-      "titulo": "Ampliación de información sobre la alerta por presencia de Salmonella spp. en moringa ecológica procedente de Alemania (Ref. ES2026/240)",
-      "url": "https://www.aesan.gob.es/alertas/2026_33_ampliacion_5",
-      "detalle_cambio": "Sustituida en el panel por una publicación posterior de AESAN"
+      "clave": "meteo:aemet-73febbaabb63",
+      "tipo": "meteo",
+      "evento": "expirado_detectado",
+      "etiqueta": "Dejó de estar vigente",
+      "momento_detectado": "2026-09-18T14:28:10.354928+00:00",
+      "fecha_fuente": "2026-09-18T02:00:00+02:00",
+      "titulo": "Aviso de tormentas de nivel amarillo",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260917090943_AFAZ645403TOTO1810.xml",
+      "detalle_cambio": "Ya no figura en el conjunto vigente validado por el módulo AEMET"
     },
     {
-      "clave": "alimentacion:aesan-e9af7a9b75",
-      "tipo": "alimentacion",
-      "evento": "sustituida_actualizacion",
-      "etiqueta": "Sustituida por actualización",
-      "momento_detectado": "2026-09-18T13:12:39.929090+00:00",
-      "fecha_fuente": "2026-06-17",
-      "titulo": "Advertencia para personas con alergia o intolerancia a los componentes de la leche: Presencia de leche en crema de cacao con avellana ecológica procedente de Italia (Ref. ES2026/358)",
-      "url": "https://www.aesan.gob.es/alertas/2026_49",
-      "detalle_cambio": "Sustituida en el panel por una publicación posterior de AESAN"
-    },
-    {
-      "clave": "alimentacion:aesan-4075fd939b",
-      "tipo": "alimentacion",
-      "evento": "sustituida_actualizacion",
-      "etiqueta": "Sustituida por actualización",
-      "momento_detectado": "2026-09-18T13:12:39.929090+00:00",
-      "fecha_fuente": "2026-06-04",
-      "titulo": "Ampliación de información sobre la alerta por presencia de almendra no declarada en postre procedente de España (Ref. ES2026/327)",
-      "url": "https://www.aesan.gob.es/alertas/2026_Ampliacion_45_2",
-      "detalle_cambio": "Sustituida en el panel por una publicación posterior de AESAN"
-    },
-    {
-      "clave": "alimentacion:aesan-f1edff383e",
-      "tipo": "alimentacion",
-      "evento": "sustituida_actualizacion",
-      "etiqueta": "Sustituida por actualización",
-      "momento_detectado": "2026-09-18T13:12:39.929090+00:00",
-      "fecha_fuente": "2026-06-03",
-      "titulo": "Ampliación de información sobre la alerta por presencia de almendra no declarada en postre procedente de España (Ref. ES2026/327)",
-      "url": "https://www.aesan.gob.es/alertas/2026_Ampliacion_45",
-      "detalle_cambio": "Sustituida en el panel por una publicación posterior de AESAN"
-    },
-    {
-      "clave": "alimentacion:aesan-e7b4fab756",
-      "tipo": "alimentacion",
-      "evento": "sustituida_actualizacion",
-      "etiqueta": "Sustituida por actualización",
-      "momento_detectado": "2026-09-18T13:12:39.929090+00:00",
-      "fecha_fuente": "2026-06-02",
-      "titulo": "Advertencia para personas con alergia a las almendras: presencia de almendras no declaradas en postre procedente de España (Ref. ES2026/327)",
-      "url": "https://www.aesan.gob.es/alertas/2026_45",
-      "detalle_cambio": "Sustituida en el panel por una publicación posterior de AESAN"
-    },
-    {
-      "clave": "alimentacion:aesan-baea4be4e3",
-      "tipo": "alimentacion",
-      "evento": "sustituida_actualizacion",
-      "etiqueta": "Sustituida por actualización",
-      "momento_detectado": "2026-09-18T13:12:39.929090+00:00",
-      "fecha_fuente": "2026-05-27",
-      "titulo": "Corrección de errores sobre la alerta por presencia de Salmonella spp. en moringa ecológica procedente de Alemania (Ref. ES2026/240)",
-      "url": "https://www.aesan.gob.es/alertas/2026_33_ampliacion_4",
-      "detalle_cambio": "Sustituida en el panel por una publicación posterior de AESAN"
-    },
-    {
-      "clave": "alimentacion:aesan-a2f2498bc7",
-      "tipo": "alimentacion",
-      "evento": "sustituida_actualizacion",
-      "etiqueta": "Sustituida por actualización",
-      "momento_detectado": "2026-09-18T13:12:39.929090+00:00",
-      "fecha_fuente": "2026-05-25",
-      "titulo": "Ampliación de información sobre la alerta por presencia de Salmonella spp. en moringa ecológica procedente de Alemania (Ref. ES2026/240)",
-      "url": "https://www.aesan.gob.es/alertas/2026_33_ampliacion_3",
-      "detalle_cambio": "Sustituida en el panel por una publicación posterior de AESAN"
-    },
-    {
-      "clave": "alimentacion:aesan-9e5faf6929",
-      "tipo": "alimentacion",
-      "evento": "sustituida_actualizacion",
-      "etiqueta": "Sustituida por actualización",
-      "momento_detectado": "2026-09-18T13:12:39.929090+00:00",
-      "fecha_fuente": "2026-05-22",
-      "titulo": "Ampliación de información sobre la alerta por presencia de Salmonella spp. en moringa ecológica procedente de Alemania (Ref. ES2026/240)",
-      "url": "https://www.aesan.gob.es/alertas/2026_33_ampliacion_2",
-      "detalle_cambio": "Sustituida en el panel por una publicación posterior de AESAN"
-    },
-    {
-      "clave": "alimentacion:aesan-eee4ce86fa",
-      "tipo": "alimentacion",
-      "evento": "sustituida_actualizacion",
-      "etiqueta": "Sustituida por actualización",
-      "momento_detectado": "2026-09-18T13:12:39.929090+00:00",
-      "fecha_fuente": "2026-05-15",
-      "titulo": "Ampliación de información sobre la alerta por presencia de Listeria monocytogenes en queso fresco de vaca procedente de España (Ref. ES2026/271)",
-      "url": "https://www.aesan.gob.es/alertas/2026_38_Ampliacion_2",
-      "detalle_cambio": "Sustituida en el panel por una publicación posterior de AESAN"
-    },
-    {
-      "clave": "alimentacion:aesan-314c5c382b",
-      "tipo": "alimentacion",
-      "evento": "sustituida_actualizacion",
-      "etiqueta": "Sustituida por actualización",
-      "momento_detectado": "2026-09-18T13:12:39.929090+00:00",
-      "fecha_fuente": "2026-05-15",
-      "titulo": "Ampliación de información sobre la alerta por presencia de Listeria monocytogenes en queso fresco de vaca procedente de España (Ref. ES2026/271)",
-      "url": "https://www.aesan.gob.es/alertas/2026_38_Ampliacion",
-      "detalle_cambio": "Sustituida en el panel por una publicación posterior de AESAN"
+      "clave": "meteo:aemet-67f07bbd85a1",
+      "tipo": "meteo",
+      "evento": "expirado_detectado",
+      "etiqueta": "Dejó de estar vigente",
+      "momento_detectado": "2026-09-18T14:28:10.354928+00:00",
+      "fecha_fuente": "2026-09-18T02:00:00+02:00",
+      "titulo": "Aviso de tormentas de nivel amarillo",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260917090943_AFAZ645405TOTO1810.xml",
+      "detalle_cambio": "Ya no figura en el conjunto vigente validado por el módulo AEMET"
     },
     {
       "clave": "alimentacion:aesan-86c41ed14d",
@@ -7738,28 +7849,6 @@
       "fecha_fuente": "2026-05-22",
       "titulo": "Ampliación de información sobre la alerta por presencia de Salmonella spp. en moringa ecológica procedente de Alemania (Ref. ES2026/240)",
       "url": "https://www.aesan.gob.es/alertas/2026_33_ampliacion_2",
-      "detalle_cambio": "Sustituida en el panel por una publicación posterior de AESAN"
-    },
-    {
-      "clave": "alimentacion:aesan-eee4ce86fa",
-      "tipo": "alimentacion",
-      "evento": "sustituida_actualizacion",
-      "etiqueta": "Sustituida por actualización",
-      "momento_detectado": "2026-09-18T13:10:53.427739+00:00",
-      "fecha_fuente": "2026-05-15",
-      "titulo": "Ampliación de información sobre la alerta por presencia de Listeria monocytogenes en queso fresco de vaca procedente de España (Ref. ES2026/271)",
-      "url": "https://www.aesan.gob.es/alertas/2026_38_Ampliacion_2",
-      "detalle_cambio": "Sustituida en el panel por una publicación posterior de AESAN"
-    },
-    {
-      "clave": "alimentacion:aesan-314c5c382b",
-      "tipo": "alimentacion",
-      "evento": "sustituida_actualizacion",
-      "etiqueta": "Sustituida por actualización",
-      "momento_detectado": "2026-09-18T13:10:53.427739+00:00",
-      "fecha_fuente": "2026-05-15",
-      "titulo": "Ampliación de información sobre la alerta por presencia de Listeria monocytogenes en queso fresco de vaca procedente de España (Ref. ES2026/271)",
-      "url": "https://www.aesan.gob.es/alertas/2026_38_Ampliacion",
       "detalle_cambio": "Sustituida en el panel por una publicación posterior de AESAN"
     },
     {
@@ -7782,50 +7871,6 @@
       "fecha_fuente": "2026-05-15",
       "titulo": "Ampliación de información sobre la alerta por presencia de Listeria monocytogenes en queso fresco de vaca procedente de España (Ref. ES2026/271)",
       "url": "https://www.aesan.gob.es/alertas/2026_38_Ampliacion",
-      "detalle_cambio": "Sustituida en el panel por una publicación posterior de AESAN"
-    },
-    {
-      "clave": "alimentacion:aesan-eee4ce86fa",
-      "tipo": "alimentacion",
-      "evento": "sustituida_actualizacion",
-      "etiqueta": "Sustituida por actualización",
-      "momento_detectado": "2026-09-18T13:03:50.559614+00:00",
-      "fecha_fuente": "2026-05-15",
-      "titulo": "Ampliación de información sobre la alerta por presencia de Listeria monocytogenes en queso fresco de vaca procedente de España (Ref. ES2026/271)",
-      "url": "https://www.aesan.gob.es/alertas/2026_38_Ampliacion_2",
-      "detalle_cambio": "Sustituida en el panel por una publicación posterior de AESAN"
-    },
-    {
-      "clave": "alimentacion:aesan-eee4ce86fa",
-      "tipo": "alimentacion",
-      "evento": "sustituida_actualizacion",
-      "etiqueta": "Sustituida por actualización",
-      "momento_detectado": "2026-09-18T13:01:28.654186+00:00",
-      "fecha_fuente": "2026-05-15",
-      "titulo": "Ampliación de información sobre la alerta por presencia de Listeria monocytogenes en queso fresco de vaca procedente de España (Ref. ES2026/271)",
-      "url": "https://www.aesan.gob.es/alertas/2026_38_Ampliacion_2",
-      "detalle_cambio": "Sustituida en el panel por una publicación posterior de AESAN"
-    },
-    {
-      "clave": "alimentacion:aesan-eee4ce86fa",
-      "tipo": "alimentacion",
-      "evento": "sustituida_actualizacion",
-      "etiqueta": "Sustituida por actualización",
-      "momento_detectado": "2026-09-18T12:24:00.649556+00:00",
-      "fecha_fuente": "2026-05-15",
-      "titulo": "Ampliación de información sobre la alerta por presencia de Listeria monocytogenes en queso fresco de vaca procedente de España (Ref. ES2026/271)",
-      "url": "https://www.aesan.gob.es/alertas/2026_38_Ampliacion_2",
-      "detalle_cambio": "Sustituida en el panel por una publicación posterior de AESAN"
-    },
-    {
-      "clave": "alimentacion:aesan-eee4ce86fa",
-      "tipo": "alimentacion",
-      "evento": "sustituida_actualizacion",
-      "etiqueta": "Sustituida por actualización",
-      "momento_detectado": "2026-09-18T12:23:16.152934+00:00",
-      "fecha_fuente": "2026-05-15",
-      "titulo": "Ampliación de información sobre la alerta por presencia de Listeria monocytogenes en queso fresco de vaca procedente de España (Ref. ES2026/271)",
-      "url": "https://www.aesan.gob.es/alertas/2026_38_Ampliacion_2",
       "detalle_cambio": "Sustituida en el panel por una publicación posterior de AESAN"
     },
     {
@@ -7871,50 +7916,6 @@
       "titulo": "La Agencia Tributaria NO ha emitido ninguna comunicación dirigida a usted",
       "url": "https://www.incibe.es/ciudadania/avisos/la-agencia-tributaria-no-ha-emitido-ninguna-comunicacion-dirigida-usted",
       "detalle_cambio": "La ficha oficial presenta cambios respecto a la revisión anterior"
-    },
-    {
-      "clave": "alimentacion:aesan-eee4ce86fa",
-      "tipo": "alimentacion",
-      "evento": "sustituida_actualizacion",
-      "etiqueta": "Sustituida por actualización",
-      "momento_detectado": "2026-09-18T12:22:59.463447+00:00",
-      "fecha_fuente": "2026-05-15",
-      "titulo": "Ampliación de información sobre la alerta por presencia de Listeria monocytogenes en queso fresco de vaca procedente de España (Ref. ES2026/271)",
-      "url": "https://www.aesan.gob.es/alertas/2026_38_Ampliacion_2",
-      "detalle_cambio": "Sustituida en el panel por una publicación posterior de AESAN"
-    },
-    {
-      "clave": "alimentacion:aesan-eee4ce86fa",
-      "tipo": "alimentacion",
-      "evento": "sustituida_actualizacion",
-      "etiqueta": "Sustituida por actualización",
-      "momento_detectado": "2026-09-18T11:06:05.679699+00:00",
-      "fecha_fuente": "2026-05-15",
-      "titulo": "Ampliación de información sobre la alerta por presencia de Listeria monocytogenes en queso fresco de vaca procedente de España (Ref. ES2026/271)",
-      "url": "https://www.aesan.gob.es/alertas/2026_38_Ampliacion_2",
-      "detalle_cambio": "Sustituida en el panel por una publicación posterior de AESAN"
-    },
-    {
-      "clave": "alimentacion:aesan-eee4ce86fa",
-      "tipo": "alimentacion",
-      "evento": "sustituida_actualizacion",
-      "etiqueta": "Sustituida por actualización",
-      "momento_detectado": "2026-09-18T10:12:43.106328+00:00",
-      "fecha_fuente": "2026-05-15",
-      "titulo": "Ampliación de información sobre la alerta por presencia de Listeria monocytogenes en queso fresco de vaca procedente de España (Ref. ES2026/271)",
-      "url": "https://www.aesan.gob.es/alertas/2026_38_Ampliacion_2",
-      "detalle_cambio": "Sustituida en el panel por una publicación posterior de AESAN"
-    },
-    {
-      "clave": "alimentacion:aesan-eee4ce86fa",
-      "tipo": "alimentacion",
-      "evento": "sustituida_actualizacion",
-      "etiqueta": "Sustituida por actualización",
-      "momento_detectado": "2026-09-18T10:08:52.475572+00:00",
-      "fecha_fuente": "2026-05-15",
-      "titulo": "Ampliación de información sobre la alerta por presencia de Listeria monocytogenes en queso fresco de vaca procedente de España (Ref. ES2026/271)",
-      "url": "https://www.aesan.gob.es/alertas/2026_38_Ampliacion_2",
-      "detalle_cambio": "Sustituida en el panel por una publicación posterior de AESAN"
     },
     {
       "clave": "alimentacion:aesan-314c5c382b",
