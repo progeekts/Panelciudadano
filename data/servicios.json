@@ -1,13 +1,13 @@
 {
-  "ultima_revision": "2026-09-18T05:49:22.289942+00:00",
-  "revision": "parcial",
-  "revision_fuentes_incidentes": "parcial",
+  "ultima_revision": "2026-09-18T09:04:49.396252+00:00",
+  "revision": "completa",
+  "revision_fuentes_incidentes": "completa",
   "salud_auxiliar": "parcial",
   "cobertura": {
     "fuentes_configuradas": 30,
-    "fuentes_respondieron": 23,
+    "fuentes_respondieron": 25,
     "fuentes_incidentes": 8,
-    "fuentes_incidentes_ok": 7,
+    "fuentes_incidentes_ok": 8,
     "territorial": {
       "Global": {
         "configuradas": 4,
@@ -15,7 +15,7 @@
       },
       "España": {
         "configuradas": 8,
-        "respondieron": 7
+        "respondieron": 8
       },
       "Cataluña": {
         "configuradas": 1,
@@ -71,7 +71,7 @@
       },
       "Región de Murcia": {
         "configuradas": 1,
-        "respondieron": 0
+        "respondieron": 1
       },
       "Navarra": {
         "configuradas": 1,
@@ -158,8 +158,8 @@
     {
       "clave": "sepe",
       "fuente": "SEPE",
-      "estado": "error",
-      "detalle": "URLError",
+      "estado": "ok",
+      "detalle": "Fuente oficial accesible",
       "ambito": "España",
       "tipo": "incidencias",
       "critica_para_resolucion": true
@@ -320,8 +320,8 @@
     {
       "clave": "murcia",
       "fuente": "Región de Murcia",
-      "estado": "error",
-      "detalle": "TimeoutError",
+      "estado": "ok",
+      "detalle": "Fuente oficial accesible",
       "ambito": "Región de Murcia",
       "tipo": "auxiliar",
       "critica_para_resolucion": false
@@ -371,6 +371,7 @@
     "Administraciones Públicas (AGE)",
     "Generalitat de Catalunya",
     "ENAIRE Sede electrónica",
+    "SEPE",
     "Ciudad Autónoma de Melilla",
     "Punto de Acceso General",
     "Agencia Tributaria (AEAT)",
@@ -385,15 +386,11 @@
     "Junta de Castilla y León",
     "Generalitat Valenciana",
     "Xunta de Galicia",
+    "Región de Murcia",
     "Gobierno de Navarra",
     "Gobierno Vasco"
   ],
   "fuentes_error": [
-    {
-      "servicio": "SEPE",
-      "error": "URLError",
-      "tipo": "incidencias"
-    },
     {
       "servicio": "Gobierno de Cantabria",
       "error": "URLError",
@@ -410,11 +407,6 @@
       "tipo": "auxiliar"
     },
     {
-      "servicio": "Región de Murcia",
-      "error": "TimeoutError",
-      "tipo": "auxiliar"
-    },
-    {
       "servicio": "Gobierno de La Rioja",
       "error": "URLError",
       "tipo": "auxiliar"
@@ -427,7 +419,7 @@
   ],
   "cambios": {
     "nuevas": 0,
-    "resueltas_detectadas": 1,
+    "resueltas_detectadas": 0,
     "retiradas_monitor": 0
   },
   "total": 2,
