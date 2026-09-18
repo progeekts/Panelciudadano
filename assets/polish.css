@@ -30,3 +30,10 @@
 .modal-card .source a{justify-self:end;color:#fff;background:rgba(255,255,255,.13);padding:8px 11px;border-radius:8px;text-decoration:none;font-weight:800}
 .modal-card .source a:hover{background:rgba(255,255,255,.2)}
 @media(max-width:500px){.modal-card .source{grid-template-columns:1fr}.modal-card .source a{justify-self:stretch;text-align:center;margin-top:7px}}
+
+/* Fichas móviles: ningún dato puede ensanchar el modal fuera del viewport. */
+.modal,.modal-card,#modalContent,.modal-info,.modal-info .detail,.modal-card .facts,.modal-card .facts span,.modal-card .source,.modal-card .source strong,.modal-card .source a{min-width:0;max-width:100%;box-sizing:border-box}
+#modalContent,.modal-card h2,.modal-lead,.modal-info,.modal-info .detail,.modal-info .detail p,.modal-card .facts span,.modal-card .source strong,.modal-card .source a{overflow-wrap:anywhere;word-break:break-word}
+.modal-card{overflow-x:hidden}
+.modal-info .detail{width:100%;overflow-x:hidden}
+@media(max-width:500px){.modal{padding:8px}.modal-card{width:100%;max-width:100%;padding:18px 16px;border-radius:16px}.modal-card h2{font-size:24px;line-height:1.18;margin-right:38px}.modal-lead{font-size:15px;line-height:1.55}.modal-info{padding:14px}.modal-info .detail{font-size:15px}.close{right:12px;top:9px}}
