@@ -83,8 +83,10 @@ def main():
                     if cr.get('tipo')=='alimentacion' and str(cr.get('referencia','') or '').strip().upper()==old_ref and ck!=k:
                         replacement=cr;break
             if replacement:
-                r['estado']='sustituida_actualizacion';r['fin_deteccion']=now;r['ultima_modificacion_detectada']=now
-                current[k]=r;events.append(event(k,'alimentacion','sustituida_actualizacion',now,r,'Sustituida en el panel por una publicación posterior de AESAN con la misma referencia oficial'))
+                if r.get('estado')!='sustituida_actualizacion':
+                    r['estado']='sustituida_actualizacion';r['fin_deteccion']=now;r['ultima_modificacion_detectada']=now
+                    events.append(event(k,'alimentacion','sustituida_actualizacion',now,r,'Sustituida en el panel por una publicación posterior de AESAN con la misma referencia oficial'))
+                current[k]=r
             else:
                 current[k]=r
         elif r.get('tipo')=='meteo' and meteo_valid and r.get('estado')=='aviso_vigente':
@@ -114,6 +116,17 @@ def main():
         if x.get('retirado_detectado'):events.append(event(k,'servicios','retirado_monitor',x['retirado_detectado'],rec))
 
     oldevents=old.get('eventos',[])
+    # Saneamiento: una sustitución AESAN es un único hecho semántico por ficha.
+    # Versiones previas del generador podían reemitirla en cada ejecución.
+    food_sub={}
+    cleaned=[]
+    for e in oldevents:
+        if e.get('tipo')=='alimentacion' and e.get('evento')=='sustituida_actualizacion':
+            k=e.get('clave')
+            if k not in food_sub or e.get('momento_detectado','')<food_sub[k].get('momento_detectado',''):
+                food_sub[k]=e
+        else:cleaned.append(e)
+    oldevents=cleaned+list(food_sub.values())
     # Dedupe por identidad+evento+momento: estable incluso al reimportar servicios.
     merged=events+oldevents; seen=set(); unique=[]
     for e in sorted(merged,key=lambda z:z.get('momento_detectado',''),reverse=True):
