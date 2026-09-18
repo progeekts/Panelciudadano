@@ -64,6 +64,8 @@ def main():
                 else:
                     kind='actualizado'; detail='La ficha oficial presenta cambios respecto a la revisión anterior'
                 events.append(event(k,t,kind,now,rec,detail))
+            elif before:
+                rec['ultima_deteccion']=before.get('ultima_deteccion',before.get('primera_deteccion',now))
             current[k]=rec
 
     meteo=load('data/meteo.json',{}); meteo_valid=meteo.get('revision') not in ('error','parcial')
@@ -85,6 +87,9 @@ def main():
              'url':x.get('url',''),'ambito':x.get('ambito',''),'estado':st,'primera_deteccion':x.get('primera_deteccion',tm),
              'ultima_deteccion':tm,'ultima_modificacion_detectada':x.get('ultima_modificacion_detectada',''),
              'fin_deteccion':x.get('resuelto_detectado') or x.get('retirado_detectado',''),'fecha_fuente':''}
+        before=prev.get(k)
+        if before and before.get('estado')==st and before.get('fin_deteccion','')==rec.get('fin_deteccion','') and before.get('ultima_modificacion_detectada','')==rec.get('ultima_modificacion_detectada',''):
+            rec=before
         current[k]=rec
         # Importa eventos con sus tiempos reales; la deduplicación posterior evita repetirlos.
         if x.get('primera_deteccion'):events.append(event(k,'servicios','incidencia_activa',x['primera_deteccion'],rec))
@@ -101,6 +106,9 @@ def main():
         if sig in seen:continue
         seen.add(sig);unique.append(e)
 
+    semantic_changed=bool(events) or set(current)!=set(prev) or any((prev.get(k,{}).get('estado'),prev.get(k,{}).get('huella'),prev.get(k,{}).get('fin_deteccion'))!=(v.get('estado'),v.get('huella'),v.get('fin_deteccion')) for k,v in current.items())
+    if not semantic_changed and OUT.exists():
+        return
     result={'ultima_revision':now,'fuentes_revision':revisions,
       'criterio':'Histórico de cambios detectados. Solo se asigna un estado terminal cuando la fuente o el módulo permiten afirmarlo de forma conservadora.',
       'total_registros':len(current),'total_eventos':len(unique[:1000]),'registros':list(current.values()),'eventos':unique[:1000]}
