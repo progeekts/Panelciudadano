@@ -51,3 +51,13 @@
  .dashboard-side{margin-top:20px;gap:10px}.source-box{padding:14px;border-radius:12px}.source-badges span{height:40px;min-width:44px}.quick,.source-health{margin-top:24px}.quick .section-title,.source-health .section-title{padding-bottom:8px}.quick-grid{gap:8px}.quick-grid a{padding:13px}.trust-strip{gap:8px;margin-top:20px}.trust-strip article{padding:10px 0}.trust{margin:16px 0 28px;padding:15px}
 }
 @media(max-width:380px){.wrap{width:min(100% - 18px,1450px)}.hero h1{font-size:26px}.stat{flex-basis:122px}.modal-card{padding:16px 14px}}
+
+/* Móvil: controles críticos completos a simple vista, sin carruseles horizontales. */
+@media(max-width:760px){
+ .summary{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;overflow:visible;padding:0;margin-bottom:12px;scroll-snap-type:none}
+ .stat{min-width:0;width:100%;min-height:76px;padding:10px 9px;display:flex;flex-direction:column;justify-content:center;align-items:flex-start}
+ .stat .num{font-size:23px;line-height:1}.stat small{font-size:10px;line-height:1.16;margin-top:6px;overflow-wrap:anywhere}.stat .icon{display:none}
+ .filters{margin:0;width:100%;padding:5px;background:#fff;border-radius:11px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:5px;overflow:visible;box-shadow:inset 0 0 0 1px #edf2f7}
+ .filter{min-width:0;width:100%;padding:8px 6px;font-size:10px;line-height:1.15;white-space:normal;text-align:center;display:flex;align-items:center;justify-content:center;min-height:40px}
+}
+@media(max-width:390px){.summary{gap:6px}.stat{min-height:72px;padding:9px 7px}.stat .num{font-size:21px}.stat small{font-size:9.5px}.filter{font-size:9.5px;padding:7px 4px}}
