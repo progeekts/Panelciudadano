@@ -31,7 +31,7 @@ def state(t,x):
 def label(s):return {'publicada':'Publicada','actualizado':'Actualizada','convocatoria_detectada':'Convocatoria detectada',
  'plazo_abierto':'Plazo abierto','plazo_proximo':'Próxima','plazo_finalizado':'Plazo finalizado',
  'aviso_vigente':'Aviso vigente','incidencia_activa':'Incidencia activa','expirado_detectado':'Dejó de estar vigente',
- 'solucionado':'Solucionada','retirado_monitor':'Retirada del monitor'}.get(s,s)
+ 'solucionado':'Solucionada','retirado_monitor':'Retirada del monitor','sustituida_actualizacion':'Sustituida por actualización'}.get(s,s)
 
 def event(k,t,kind,now,rec,detail=''):
     e={'clave':k,'tipo':t,'evento':kind,'etiqueta':label(kind),'momento_detectado':now,
@@ -69,10 +69,16 @@ def main():
             current[k]=rec
 
     meteo=load('data/meteo.json',{}); meteo_valid=meteo.get('revision') not in ('error','parcial')
+    alimentacion=load('data/alimentacion.json',{}); alimentacion_valid=alimentacion.get('revision')=='completa'
     for k,r0 in prev.items():
         if k in current or r0.get('tipo')=='servicios':continue
         r=dict(r0)
-        if r.get('tipo')=='meteo' and meteo_valid and r.get('estado')=='aviso_vigente':
+        if r.get('tipo')=='alimentacion' and alimentacion_valid:
+            # Si AESAN sustituye una ficha por una ampliación con la misma referencia, la anterior sale del panel actual,
+            # pero el histórico no afirma que la alerta haya finalizado.
+            r['estado']='sustituida_actualizacion';r['fin_deteccion']=now;r['ultima_modificacion_detectada']=now
+            current[k]=r;events.append(event(k,'alimentacion','sustituida_actualizacion',now,r,'Sustituida en el panel por una publicación posterior de AESAN'))
+        elif r.get('tipo')=='meteo' and meteo_valid and r.get('estado')=='aviso_vigente':
             r['estado']='expirado_detectado';r['fin_deteccion']=now;r['ultima_modificacion_detectada']=now
             current[k]=r;events.append(event(k,'meteo','expirado_detectado',now,r,'Ya no figura en el conjunto vigente validado por el módulo AEMET'))
         else:current[k]=r
