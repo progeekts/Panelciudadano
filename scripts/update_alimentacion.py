@@ -12,21 +12,23 @@ def get(url):
  req=urllib.request.Request(url,headers={'User-Agent':UA,'Accept-Language':'es-ES,es;q=0.9'});return urllib.request.urlopen(req,timeout=15).read().decode('utf-8',errors='replace')
 def detail(page):
  t=clean(re.sub(r'<script\\b[^>]*>.*?</script>|<style\\b[^>]*>.*?</style>',' ',page,flags=re.I|re.S))
- def field(label,stops,limit=1400):
-  m=re.search(re.escape(label)+r'\\s*:\\s*(.*?)(?=\\s+(?:'+ '|'.join(stops) +r')\\s*:|$)',t,re.I|re.S)
-  return re.sub(r'\\s+',' ',m.group(1)).strip()[:limit] if m else ''
- products=re.findall(r'Nombre del producto\\s*:\\s*(.*?)(?=\\s+Nombre de marca\\s*:)',t,re.I|re.S)
- lots=re.findall(r'(?:Número de lotes?|Lotes?)\\s*:\\s*(.*?)(?=\\s+(?:Fecha de consumo preferente|Fecha de caducidad|Peso|Temperatura|Nombre del producto)\\s*:)',t,re.I|re.S)
+ # Limitar al cuerpo útil evita que navegación/footer contaminen los campos.
+ end=re.search(r'\\barrow_back\\s+Volver a todos\\b',t,re.I)
+ if end:t=t[:end.start()]
+ def values(label,nexts,limit=1200):
+  pat=r'(?:'+label+r')\\s*:\\s*(.*?)(?=\\s+(?:'+nexts+r')\\s*:|$)'
+  vals=[re.sub(r'\\s+',' ',x).strip(' .') for x in re.findall(pat,t,re.I|re.S)]
+  return ' · '.join(dict.fromkeys(x for x in vals if x))[:limit]
+ producto=values(r'Nombre del producto',r'Nombre de marca(?: comercial)?|Marca(?: comercial)?|Aspecto del producto|N[uú]mero(?:s)? de lote(?:s)?|Fecha de',1400)
+ lotes=values(r'N[uú]mero(?:s)? de lote(?:s)?',r'Fecha de consumo preferente|Fecha de caducidad|C[oó]digo de barras|EAN|Peso de unidad|Temperatura|Nombre del producto',1400)
  dist=''
- m=re.search(r'(Según la información disponible, la distribución.*?)(?=\\s+(?:Esta información|Se recomienda)|$)',t,re.I|re.S)
- if m:dist=re.sub(r'\\s+',' ',m.group(1)).strip()[:1400]
- recs=re.findall(r'(Se recomienda.*?)(?=\\s+(?:La Agencia|Los datos|Según la información|Esta información|Se recomienda)|$)',t,re.I|re.S)
- return {
-  'producto':' · '.join(dict.fromkeys(re.sub(r'\\s+',' ',x).strip() for x in products if x.strip()))[:1200],
-  'lotes':' · '.join(dict.fromkeys(re.sub(r'\\s+',' ',x).strip() for x in lots if x.strip()))[:1200],
-  'distribucion':dist,
-  'medidas':' '.join(dict.fromkeys(x.strip() for x in recs if x.strip()))[:1800]
- }
+ m=re.search(r'(Según la información disponible, la distribución.*?)(?=\\s+(?:Esta información ha sido trasladada|Como medida de precaución|Se recomienda)|$)',t,re.I|re.S)
+ if m:dist=re.sub(r'\\s+',' ',m.group(1)).strip()[:1200]
+ rec=''
+ # Capturamos la recomendación ciudadana, no todo el cuerpo posterior.
+ candidates=re.findall(r'((?:Como medida de precaución,\\s*)?se recomienda.*?)(?=\\s+(?:EL CONSUMO|Puede ampliar|La Agencia Española|Según la información|Esta información)|$)',t,re.I|re.S)
+ if candidates:rec=re.sub(r'\\s+',' ',candidates[-1]).strip()[:1200]
+ return {'producto':producto,'lotes':lotes,'distribucion':dist,'medidas':rec}
 def clean(s):return re.sub(r'\s+',' ',html.unescape(re.sub(r'<[^>]+>',' ',s))).strip()
 def iso_date(t):
  m=re.search(r'(\d{1,2})\s+(enero|febrero|marzo|abril|mayo|junio|julio|agosto|septiembre|octubre|noviembre|diciembre)\s+(\d{4})',t,re.I);return f'{int(m.group(3)):04d}-{MONTHS[m.group(2).lower()]:02d}-{int(m.group(1)):02d}' if m else ''
