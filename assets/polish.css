@@ -37,3 +37,17 @@
 .modal-card{overflow-x:hidden}
 .modal-info .detail{width:100%;overflow-x:hidden}
 @media(max-width:500px){.modal{padding:8px}.modal-card{width:100%;max-width:100%;padding:18px 16px;border-radius:16px}.modal-card h2{font-size:24px;line-height:1.18;margin-right:38px}.modal-lead{font-size:15px;line-height:1.55}.modal-info{padding:14px}.modal-info .detail{font-size:15px}.close{right:12px;top:9px}}
+
+/* Reestructuración responsive: prioridad a situación, cambios y consulta. */
+.recent-top{margin-top:18px}.toolbar{margin-top:18px}.radar-panel{border-radius:16px}.dashboard-main{min-width:0}
+@media(max-width:760px){
+ body{background:#f5f8fc}.wrap{width:min(100% - 24px,1450px)}
+ .topbar{position:sticky}.nav-shell{padding:11px 0;gap:0}.brand{gap:10px}.mark{width:36px;height:42px;font-size:17px}.brand span{display:none}.main-nav{display:none!important}
+ .hero{padding:18px 0 12px;gap:10px}.hero h1{font-size:28px;line-height:1.08}.hero p{font-size:14px;line-height:1.45}.updated{padding:10px 12px;border-radius:10px;box-shadow:none}.updated span{font-size:10px}
+ .summary{display:flex;gap:8px;overflow-x:auto;scroll-snap-type:x proximity;padding:1px 1px 7px;margin-bottom:12px;scrollbar-width:none}.summary::-webkit-scrollbar{display:none}.stat{flex:0 0 132px;min-height:92px;padding:12px;scroll-snap-align:start;display:block}.stat .num{font-size:25px}.stat small{font-size:11px;margin-top:7px;line-height:1.25}.stat .icon{display:none}
+ .recent-top{margin-top:8px}.recent-top .section-title{padding:10px 0}.recent-top .section-title h2{font-size:20px}.recent-top .eyebrow{font-size:11px;letter-spacing:.07em}.recent-top .section-title>span{font-size:11px}.timeline-row{padding:12px 13px;gap:6px}.timeline-row strong{font-size:14px}.timeline-row small{font-size:11px}.health-note{font-size:11px;line-height:1.45}.history-toggle{width:100%}
+ .toolbar{margin:14px 0 16px;gap:8px}.search{height:46px}.search input{font-size:16px}.search-btn{height:46px}.filters{margin-inline:-12px;width:calc(100% + 24px);padding:7px 12px;border-radius:0;background:transparent;box-shadow:none;scrollbar-width:none}.filters::-webkit-scrollbar{display:none}.filter{padding:9px 13px;font-size:12px;background:#e8eef5}
+ .dashboard-grid{display:block}.radar-panel{padding:0;border:0;background:transparent;box-shadow:none;overflow:visible}.radar-panel .section-title{padding:10px 0;border-bottom:0;margin-bottom:4px}.radar-panel .section-title h2{font-size:21px}.radar-panel .section-title>div>p:not(.eyebrow){font-size:12px}.cards{padding:0;gap:10px}.card{padding:14px;border-radius:13px;box-shadow:0 3px 12px rgba(24,66,111,.04)}.card h3{font-size:17px;margin:10px 0 6px;-webkit-line-clamp:3}.card p{font-size:13px;-webkit-line-clamp:4}.card-bottom{padding-top:13px}
+ .dashboard-side{margin-top:20px;gap:10px}.source-box{padding:14px;border-radius:12px}.source-badges span{height:40px;min-width:44px}.quick,.source-health{margin-top:24px}.quick .section-title,.source-health .section-title{padding-bottom:8px}.quick-grid{gap:8px}.quick-grid a{padding:13px}.trust-strip{gap:8px;margin-top:20px}.trust-strip article{padding:10px 0}.trust{margin:16px 0 28px;padding:15px}
+}
+@media(max-width:380px){.wrap{width:min(100% - 18px,1450px)}.hero h1{font-size:26px}.stat{flex-basis:122px}.modal-card{padding:16px 14px}}
