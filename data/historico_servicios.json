@@ -1,5 +1,5 @@
 {
-  "ultima_revision": "2026-09-18T00:44:34.519281+00:00",
+  "ultima_revision": "2026-09-18T05:49:22.289942+00:00",
   "nota": "Resuelto significa que la propia fuente oficial fue revisada correctamente y dejó de publicar la incidencia. Retirado significa que Panel Ciudadano dejó de usar ese detector por falta de una señal temporal suficientemente fiable; no implica resolución del servicio.",
   "total": 7,
   "items": [
@@ -21,8 +21,8 @@
       "primera_deteccion": "2026-09-18T00:44:34.519281+00:00",
       "ultima_deteccion": "2026-09-18T00:44:34.519281+00:00",
       "ultima_modificacion_detectada": "2026-09-18T00:44:34.519281+00:00",
-      "resuelto_detectado": "",
-      "estado_historico": "activo",
+      "resuelto_detectado": "2026-09-18T05:49:22.289942+00:00",
+      "estado_historico": "resuelto",
       "fingerprint": "Increased Errors for Durable Objects and Downstream Services in Asia Pacific (APAC) Region|Cloudflare is investigating an issue causing elevated error rates for Durable Objects and downstream services in the Asia Pacific region. We are working to mitigate this issue and will provide additional updates shortly.|Investigando|Menor|2026-09-17T23:37:18.000Z"
     },
     {
@@ -128,7 +128,7 @@
       "url": "https://www.cloudflarestatus.com/incidents/9g65dxfbcjln",
       "verificado": true,
       "primera_deteccion": "2026-09-16T20:03:57.804501+00:00",
-      "ultima_deteccion": "2026-09-18T00:44:34.519281+00:00",
+      "ultima_deteccion": "2026-09-18T05:49:22.289942+00:00",
       "ultima_modificacion_detectada": "2026-09-16T20:03:57.804501+00:00",
       "resuelto_detectado": "",
       "estado_historico": "activo",
@@ -150,7 +150,7 @@
       "url": "https://sede.administracionespublicas.gob.es/ayuda/",
       "verificado": true,
       "primera_deteccion": "2026-09-16T20:03:57.804501+00:00",
-      "ultima_deteccion": "2026-09-18T00:44:34.519281+00:00",
+      "ultima_deteccion": "2026-09-18T05:49:22.289942+00:00",
       "ultima_modificacion_detectada": "2026-09-16T20:03:57.804501+00:00",
       "resuelto_detectado": "",
       "estado_historico": "activo",

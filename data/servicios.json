@@ -1,13 +1,13 @@
 {
-  "ultima_revision": "2026-09-18T00:44:34.519281+00:00",
-  "revision": "completa",
-  "revision_fuentes_incidentes": "completa",
+  "ultima_revision": "2026-09-18T05:49:22.289942+00:00",
+  "revision": "parcial",
+  "revision_fuentes_incidentes": "parcial",
   "salud_auxiliar": "parcial",
   "cobertura": {
     "fuentes_configuradas": 30,
-    "fuentes_respondieron": 25,
+    "fuentes_respondieron": 23,
     "fuentes_incidentes": 8,
-    "fuentes_incidentes_ok": 8,
+    "fuentes_incidentes_ok": 7,
     "territorial": {
       "Global": {
         "configuradas": 4,
@@ -15,7 +15,7 @@
       },
       "España": {
         "configuradas": 8,
-        "respondieron": 8
+        "respondieron": 7
       },
       "Cataluña": {
         "configuradas": 1,
@@ -71,7 +71,7 @@
       },
       "Región de Murcia": {
         "configuradas": 1,
-        "respondieron": 1
+        "respondieron": 0
       },
       "Navarra": {
         "configuradas": 1,
@@ -158,8 +158,8 @@
     {
       "clave": "sepe",
       "fuente": "SEPE",
-      "estado": "ok",
-      "detalle": "Fuente oficial accesible",
+      "estado": "error",
+      "detalle": "URLError",
       "ambito": "España",
       "tipo": "incidencias",
       "critica_para_resolucion": true
@@ -320,8 +320,8 @@
     {
       "clave": "murcia",
       "fuente": "Región de Murcia",
-      "estado": "ok",
-      "detalle": "Fuente oficial accesible",
+      "estado": "error",
+      "detalle": "TimeoutError",
       "ambito": "Región de Murcia",
       "tipo": "auxiliar",
       "critica_para_resolucion": false
@@ -371,7 +371,6 @@
     "Administraciones Públicas (AGE)",
     "Generalitat de Catalunya",
     "ENAIRE Sede electrónica",
-    "SEPE",
     "Ciudad Autónoma de Melilla",
     "Punto de Acceso General",
     "Agencia Tributaria (AEAT)",
@@ -386,11 +385,15 @@
     "Junta de Castilla y León",
     "Generalitat Valenciana",
     "Xunta de Galicia",
-    "Región de Murcia",
     "Gobierno de Navarra",
     "Gobierno Vasco"
   ],
   "fuentes_error": [
+    {
+      "servicio": "SEPE",
+      "error": "URLError",
+      "tipo": "incidencias"
+    },
     {
       "servicio": "Gobierno de Cantabria",
       "error": "URLError",
@@ -407,6 +410,11 @@
       "tipo": "auxiliar"
     },
     {
+      "servicio": "Región de Murcia",
+      "error": "TimeoutError",
+      "tipo": "auxiliar"
+    },
+    {
       "servicio": "Gobierno de La Rioja",
       "error": "URLError",
       "tipo": "auxiliar"
@@ -418,28 +426,12 @@
     }
   ],
   "cambios": {
-    "nuevas": 1,
-    "resueltas_detectadas": 0,
+    "nuevas": 0,
+    "resueltas_detectadas": 1,
     "retiradas_monitor": 0
   },
-  "total": 3,
+  "total": 2,
   "items": [
-    {
-      "id": "cloudflare-n3n98pb4x9f4",
-      "fuente_clave": "cloudflare",
-      "tipo": "servicio",
-      "servicio": "Cloudflare",
-      "titulo": "Increased Errors for Durable Objects and Downstream Services in Asia Pacific (APAC) Region",
-      "resumen": "Cloudflare is investigating an issue causing elevated error rates for Durable Objects and downstream services in the Asia Pacific region. We are working to mitigate this issue and will provide additional updates shortly.",
-      "estado": "Investigando",
-      "impacto": "Menor",
-      "fecha": "2026-09-17T23:37:18.342Z",
-      "actualizado": "2026-09-17T23:37:18.000Z",
-      "ambito": "Global",
-      "fuente": "Cloudflare Status",
-      "url": "https://www.cloudflarestatus.com/incidents/n3n98pb4x9f4",
-      "verificado": true
-    },
     {
       "id": "cloudflare-9g65dxfbcjln",
       "fuente_clave": "cloudflare",
