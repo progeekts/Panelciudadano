@@ -1,5 +1,5 @@
 {
-  "ultima_revision": "2026-09-18T13:02:58.367490+00:00",
+  "ultima_revision": "2026-09-18T13:06:26.687404+00:00",
   "revision": "completa",
   "fuente_principal": "Agencia Española de Seguridad Alimentaria y Nutrición (AESAN)",
   "cobertura": [
@@ -19,7 +19,7 @@
       "detectadas": 20
     }
   ],
-  "detalle_enriquecido": 40,
+  "detalle_enriquecido": 39,
   "total": 40,
   "items": [
     {
@@ -380,23 +380,6 @@
       "verificado": true
     },
     {
-      "id": "aesan-9d19d93457",
-      "tipo": "alimentacion",
-      "categoria": "alergenos",
-      "categoria_nombre": "Alergias e intolerancias",
-      "titulo": "Ampliación de información sobre la alerta por presencia de almendra y huevo no declarados en postre procedente de España (Ref ES2026/327)",
-      "fecha": "2026-06-05",
-      "referencia": "ES2026/327",
-      "producto": "",
-      "lotes": "",
-      "distribucion": "Según la información disponible, la distribución ha sido en casi todo el territorio nacional. Esta información ha sido trasladada a las autoridades competentes de las comunidades autónomas a través del Sistema Coordinado de Intercambio Rápido de Información (SCIRI), con el objeto de que se verifique la retirada de los productos afectados de los canales de comercialización. Como medida de precaución, se recomienda a las personas con alergia a las almendras o al huevo que pudieran tener el producto anteriormente mencionado en sus hogares que se abstengan de consumirlo. EL CONSUMO DE ESTE PRODUCTO NO COMPORTA NINGÚN RIESGO PARA EL RESTO DE LA POBLACIÓN. Puede ampliar información de la AESAN sobre alergias, intolerancias y problemas derivados de la ingesta de gluten en los siguientes enlaces: Información a los consumidores sobre alergias alimentarias Etiquetado de sustancias que causan alergias e intolerancias Intolerancia a la lactosa Enfermedad celiaca Guía de etiquetado de alimentos que contienen cereales con gluten Información sobre la ausencia o presencia reducida de gluten arrow_back Volver a todos document.addEventListener(\"DOMContentLoaded\", function(e) { var contentLinkModalCo",
-      "medidas": "se recomienda a aquellas PERSONAS CON ALERGIA A LAS ALMENDRAS O AL HUEVO que pudieran tener el producto anteriormente mencionado en sus hogares se abstengan de consumirlo. EL CONSUMO DE ESTE PRODUCTO NO COMPORTA NINGÚN RIESGO PARA EL RESTO DE LA POBLACIÓN Fecha y hora: 05/06/2026 18:00 Como ampliación de la información transmitida el pasado 04/06/26, la comunidad autónoma de Cataluña ha informado a la Agencia Española de Seguridad Alimentaria y Nutrición, a través del Sistema Coordinado de Intercambio Rápido de Información (SCIRI), de que se amplía la retirada a todos los lotes con fecha de caducidad 30/06/2026 y a todos los lotes con fecha de caducidad 08/07/2026 del producto Delicias de Galleta María. La información que aquí se incluye es resultante del autocontrol de la propia empresa, que ha comunicado la incidencia a las autoridades competentes, en cumplimiento de la legislación y a fin de no poner a disposición de la población alimentos no seguros. La empresa responsable ha informado sobre este incidente en el siguiente enlace: https://www.yoguresnestle.es/la_lechera Los datos actualizados del producto implicado son: Nombre del producto: Delicias de Galleta María Marca: La Le",
-      "ambito": "España",
-      "fuente": "AESAN · Red de alerta alimentaria",
-      "url": "https://www.aesan.gob.es/alertas/2026_46_Ampliacion",
-      "verificado": true
-    },
-    {
       "id": "aesan-6f948c56a2",
       "tipo": "alimentacion",
       "categoria": "alergenos",
@@ -411,6 +394,23 @@
       "ambito": "España",
       "fuente": "AESAN · Red de alerta alimentaria",
       "url": "https://www.aesan.gob.es/alertas/2026_46",
+      "verificado": true
+    },
+    {
+      "id": "aesan-9d19d93457",
+      "tipo": "alimentacion",
+      "categoria": "alergenos",
+      "categoria_nombre": "Alergias e intolerancias",
+      "titulo": "Ampliación de información sobre la alerta por presencia de almendra y huevo no declarados en postre procedente de España (Ref ES2026/327)",
+      "fecha": "2026-06-05",
+      "referencia": "ES2026/327",
+      "producto": "",
+      "lotes": "",
+      "distribucion": "",
+      "medidas": "",
+      "ambito": "España",
+      "fuente": "AESAN · Red de alerta alimentaria",
+      "url": "https://www.aesan.gob.es/alertas/2026_46_Ampliacion",
       "verificado": true
     },
     {
@@ -601,7 +601,7 @@
       "verificado": true
     },
     {
-      "id": "aesan-314c5c382b",
+      "id": "aesan-eee4ce86fa",
       "tipo": "alimentacion",
       "categoria": "general",
       "categoria_nombre": "Interés para toda la población",
@@ -610,11 +610,11 @@
       "referencia": "ES2026/271",
       "producto": "",
       "lotes": "",
-      "distribucion": "Según la información disponible, la distribución se ha realizado en la mayor parte del territorio nacional. Esta información ha sido trasladada a las autoridades competentes de las comunidades autónomas a través del Sistema Coordinado de Intercambio Rápido de Información (SCIRI), con el objeto de que se verifique la retirada de los productos afectados de los canales de comercialización. Se recomienda a las personas que tengan en su domicilio productos afectados por esta alerta, se abstengan de consumirlos. En el caso de haber consumido alguno de los productos de los lotes afectados y presentar sintomatología compatible con la listeriosis —vómitos, diarrea o fiebre—, se recomienda acudir a un centro de salud. En el caso de estar embarazada, se recomienda consultar las recomendaciones de consumo durante el embarazo realizadas por la AESAN relativas a prácticas de higiene alimentaria importantes para las mujeres gestantes, así como una relación de los alimentos que se deben evitar durante el embarazo por estar asociados a determinados peligros biológicos (entre los que destaca Listeria monocytogenes ). Se recuerda la importancia de extremar las medidas de higiene para evitar la contam",
-      "medidas": "Se recomienda a las personas que tengan en su domicilio el producto incluido en esta alerta se abstengan de consumirlos. Fecha y hora: 15/05/2026 14:00 Como ampliación de la información transmitida el pasado 12/05/2026, la comunidad autónoma de Galicia ha informado a la Agencia Española de Seguridad Alimentaria y Nutrición, a través del Sistema Coordinado de Intercambio Rápido de Información (SCIRI) de lo siguiente: Se ha detectado Listeria monocytogenes en un nuevo producto, queso estilo llanero de lote 011116. Los datos actualizados de los productos implicados son: Nombre del producto: Queso estilo llanero Nombre de marca: Goya Aspecto del producto: Envase de plástico Número de lote: 011116, fecha de caducidad 21/06/26 Peso de unidad: 300 g Temperatura: Refrigerado Nombre del producto: Queso Latino (Queso fresco de vaca) Nombre de marca comercial: Goya Aspecto del producto: envase de plástico Números de lote: 011056 , fecha de caducidad: 31/05/26 021046 , fecha de caducidad: 30/05/26 Peso de unidad: 300 g Temperatura: refrigerado Se adjunta imagen disponible. Según la información disponible, la distribución se ha realizado en la mayor parte del territorio nacional. Esta informaci",
+      "distribucion": "Según la información disponible, la distribución se ha realizado en la mayor parte del territorio nacional. Esta información ha sido trasladada a las autoridades competentes de las comunidades autónomas a través del Sistema Coordinado de Intercambio Rápido de Información (SCIRI), con el objeto de que se verifique la retirada de los productos afectados de los canales de comercialización. Se recomienda a las personas que tengan en su domicilio productos afectados por dicha alerta, se abstengan de consumirlos. En el caso de haber consumido alguno de los productos de los lotes afectados y presentar sintomatología compatible con la listeriosis, como vómitos, diarrea o fiebre, se recomienda acudir a un centro de salud. En el caso de estar embarazada, se recomienda consultar las recomendaciones de consumo durante el embarazo realizadas por la AESAN relativas a prácticas de higiene alimentaria importantes para las mujeres gestantes, así como una relación de los alimentos que se deben evitar durante el embarazo por estar asociados a determinados peligros biológicos, entre los que destaca Listeria monocytogenes . Se recuerda la importancia de extremar las medidas de higiene para evitar la co",
+      "medidas": "Se recomienda a las personas que tengan en su domicilio el producto incluido en esta alerta se abstengan de consumirlos. Fecha y hora: 15/05/2026 20:00 Como ampliación de la información transmitida el pasado 15/05/2026, la comunidad autónoma de Castilla y León ha informado a la Agencia Española de Seguridad Alimentaria y Nutrición, a través del Sistema Coordinado de Intercambio Rápido de Información (SCIRI) de lo siguiente: La empresa elaboradora del producto, atendiendo al principio de precaución, ha determinado la retirada de la venta de nuevas referencias y lotes. Los datos actualizados de los productos implicados son: Nombre del producto: Queso costeño Nombre de marca: Nativo Aspecto del producto: Envase de plástico Número de lote: Todos los lotes con fechas de caducidad comprendidas entre 18/05/2026 y 04/07/2026 Peso de unidad: 300 g Temperatura: Refrigerado Se adjunta imagen disponible. Nombre del producto: Queso costeño Nombre de marca: Nativo Aspecto del producto: Barra de queso en envase de plástico Número de lote: Todos los lotes con fechas de caducidad comprendidas entre el 23/05/2026 y el 06/07/2026 Temperatura: Refrigerado Se adjunta imagen disponible. Nombre del produ",
       "ambito": "España",
       "fuente": "AESAN · Red de alerta alimentaria",
-      "url": "https://www.aesan.gob.es/alertas/2026_38_Ampliacion",
+      "url": "https://www.aesan.gob.es/alertas/2026_38_Ampliacion_2",
       "verificado": true
     },
     {
