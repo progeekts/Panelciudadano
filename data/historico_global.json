@@ -1,15 +1,15 @@
 {
-  "ultima_revision": "2026-09-18T22:51:53.280930+00:00",
+  "ultima_revision": "2026-09-18T23:15:54.808629+00:00",
   "fuentes_revision": {
     "ayudas": "2026-09-18T21:42:13.954888+00:00",
     "estafas": "2026-09-18T21:47:42.055364+00:00",
     "alimentacion": "2026-09-18T22:42:39.898477+00:00",
     "salud": "2026-09-18T21:57:46.319093+00:00",
-    "meteo": "2026-09-18T20:51:19.689353+00:00",
+    "meteo": "2026-09-18T23:15:41.685151+00:00",
     "servicios": "2026-09-18T21:11:24.770443+00:00"
   },
   "criterio": "Histórico de cambios detectados. Solo se asigna un estado terminal cuando la fuente o el módulo permiten afirmarlo de forma conservadora.",
-  "total_registros": 599,
+  "total_registros": 601,
   "total_eventos": 1000,
   "registros": [
     {
@@ -2183,6 +2183,36 @@
       "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
       "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
       "referencia": "R_12/2026"
+    },
+    {
+      "clave": "meteo:aemet-db122744baf3",
+      "tipo": "meteo",
+      "id": "aemet-db122744baf3",
+      "titulo": "Aviso de costeros de nivel amarillo",
+      "fuente": "Agencia Estatal de Meteorología (AEMET)",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260918215001_AFAZ611103COCO2110.xml",
+      "referencia": "2.49.0.0.724.0.ES.20260918215001.611103COCO21101789768201",
+      "ambito": "Costa - Litoral gaditano",
+      "estado": "aviso_vigente",
+      "huella": "65787b57acd2c6f2742a",
+      "ultima_deteccion": "2026-09-18T23:15:54.808629+00:00",
+      "fecha_fuente": "2026-09-21T00:00:00+02:00",
+      "primera_deteccion": "2026-09-18T23:15:54.808629+00:00"
+    },
+    {
+      "clave": "meteo:aemet-f71e3d444e24",
+      "tipo": "meteo",
+      "id": "aemet-f71e3d444e24",
+      "titulo": "Aviso de costeros de nivel amarillo",
+      "fuente": "Agencia Estatal de Meteorología (AEMET)",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260918215001_AFAZ611104COCO2110.xml",
+      "referencia": "2.49.0.0.724.0.ES.20260918215001.611104COCO21101789768201",
+      "ambito": "Costa - Estrecho",
+      "estado": "aviso_vigente",
+      "huella": "26c43ffd9dce69233416",
+      "ultima_deteccion": "2026-09-18T23:15:54.808629+00:00",
+      "fecha_fuente": "2026-09-21T00:00:00+02:00",
+      "primera_deteccion": "2026-09-18T23:15:54.808629+00:00"
     },
     {
       "clave": "meteo:aemet-5458c4992c7a",
@@ -9129,6 +9159,26 @@
     }
   ],
   "eventos": [
+    {
+      "clave": "meteo:aemet-db122744baf3",
+      "tipo": "meteo",
+      "evento": "aviso_vigente",
+      "etiqueta": "Aviso vigente",
+      "momento_detectado": "2026-09-18T23:15:54.808629+00:00",
+      "fecha_fuente": "2026-09-21T00:00:00+02:00",
+      "titulo": "Aviso de costeros de nivel amarillo",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260918215001_AFAZ611103COCO2110.xml"
+    },
+    {
+      "clave": "meteo:aemet-f71e3d444e24",
+      "tipo": "meteo",
+      "evento": "aviso_vigente",
+      "etiqueta": "Aviso vigente",
+      "momento_detectado": "2026-09-18T23:15:54.808629+00:00",
+      "fecha_fuente": "2026-09-21T00:00:00+02:00",
+      "titulo": "Aviso de costeros de nivel amarillo",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260918215001_AFAZ611104COCO2110.xml"
+    },
     {
       "clave": "ayudas:bdns-930507",
       "tipo": "ayudas",
@@ -19381,26 +19431,6 @@
       "fecha_fuente": "2026-09-16T16:00:00+02:00",
       "titulo": "Aviso de tormentas de nivel amarillo",
       "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260916092042_AFAZ774602TOTO1718.xml"
-    },
-    {
-      "clave": "meteo:aemet-77838a709bcb",
-      "tipo": "meteo",
-      "evento": "aviso_vigente",
-      "etiqueta": "Aviso vigente",
-      "momento_detectado": "2026-09-17T11:22:24.181186+00:00",
-      "fecha_fuente": "2026-09-16T16:00:00+02:00",
-      "titulo": "Aviso de tormentas de nivel amarillo",
-      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260916092042_AFAZ774604TOTO1718.xml"
-    },
-    {
-      "clave": "meteo:aemet-4d380bb394cd",
-      "tipo": "meteo",
-      "evento": "aviso_vigente",
-      "etiqueta": "Aviso vigente",
-      "momento_detectado": "2026-09-17T11:22:24.181186+00:00",
-      "fecha_fuente": "2026-09-17T00:00:00+02:00",
-      "titulo": "Aviso de lluvias de nivel amarillo",
-      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260916092042_AFAZ774602PRP11718.xml"
     }
   ]
 }
