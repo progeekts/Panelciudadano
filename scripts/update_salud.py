@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Radar ciudadano y conservador de alertas sanitarias AEMPS."""
 from __future__ import annotations
-import hashlib,json,re
+import hashlib,json,re,time
 from datetime import datetime,timezone
 from html import unescape
 from pathlib import Path
@@ -11,6 +11,18 @@ SOURCES=[('Alertas farmacéuticas','https://www.aemps.gob.es/category/informa/al
 def fetch(url):
  req=Request(url,headers={'User-Agent':UA,'Accept-Language':'es-ES,es;q=0.9'});return urlopen(req,timeout=20).read().decode('utf-8','replace')
 def text(s):return re.sub(r'\s+',' ',unescape(re.sub(r'<[^>]+>',' ',re.sub(r'<script\b[^>]*>.*?</script>|<style\b[^>]*>.*?</style>',' ',s,flags=re.I|re.S)))).strip()
+def detail(page):
+ t=text(page)
+ def pick(patterns,limit=1600):
+  for p in patterns:
+   m=re.search(p,t,re.I|re.S)
+   if m:return re.sub(r'\\s+',' ',m.group(1)).strip()[:limit]
+  return ''
+ return {
+  'motivo':pick([r'(?:defecto|motivo|descripción del defecto|problema detectado)\\s*[:.-]?\\s*(.*?)(?=\\s+(?:medidas|lotes?|recomendaciones|observaciones|información)\\b)']),
+  'lotes':pick([r'(?:lotes? afectados?|lote)\\s*[:.-]?\\s*(.*?)(?=\\s+(?:medidas|recomendaciones|observaciones|fecha)\\b)'],1000),
+  'medidas':pick([r'(?:medidas cautelares|medidas adoptadas|medidas|recomendaciones)\\s*[:.-]?\\s*(.*?)(?=\\s+(?:observaciones|información adicional|fecha|fuente)\\b|$)'],1800)
+ }
 def iso_date(raw):
  months={'enero':1,'febrero':2,'marzo':3,'abril':4,'mayo':5,'junio':6,'julio':7,'agosto':8,'septiembre':9,'octubre':10,'noviembre':11,'diciembre':12};m=re.search(r'(\d{1,2})\s+de\s+([a-záéíóú]+)\s+de\s+(20\d{2})',raw,re.I)
  if not m:return None
@@ -26,7 +38,10 @@ def parse(page,name,cat):
   if cat=='farmaceutica' and not (re.search(r'\bR[_ ]?\d+/20\d{2}\b',body,re.I) or 'alerta farmacéutica' in low):continue
   if cat=='producto_sanitario' and not any(k in low for k in ('retirada','riesgo','fallo','seguridad','falsific')):continue
   if cat=='medicamento_ilegal' and not any(k in low for k in ('retira','retirada','prohibición','medicamento ilegal')):continue
-  url=link.group(1).rstrip('/');mr=re.search(r'(R[_ ]?\d+/20\d{2}|(?:PS|ICM)[^\s,;)]*\s*\d+/20\d{2})',body,re.I);items.append({'id':'aemps-'+hashlib.sha1(url.encode()).hexdigest()[:10],'tipo':'salud','categoria':cat,'categoria_nombre':name,'titulo':title,'fecha':date,'referencia':mr.group(1).strip() if mr else '','ambito':'España','fuente':'Agencia Española de Medicamentos y Productos Sanitarios (AEMPS)','url':url,'verificado':True})
+  url=link.group(1).rstrip('/');info={}
+  try:time.sleep(.2);info=detail(fetch(url))
+  except Exception:pass
+  mr=re.search(r'(R[_ ]?\d+/20\d{2}|(?:PS|ICM)[^\s,;)]*\s*\d+/20\d{2})',body,re.I);items.append({'id':'aemps-'+hashlib.sha1(url.encode()).hexdigest()[:10],'tipo':'salud','categoria':cat,'categoria_nombre':name,'titulo':title,'fecha':date,'referencia':mr.group(1).strip() if mr else '','motivo':info.get('motivo',''),'lotes':info.get('lotes',''),'medidas':info.get('medidas',''),'ambito':'España','fuente':'Agencia Española de Medicamentos y Productos Sanitarios (AEMPS)','url':url,'verificado':True})
  return items
 def main():
  old={}
@@ -46,6 +61,6 @@ def main():
  for x in old.get('items',[]):
   if x.get('categoria') in failed:all_items.append(x)
  unique={x['id']:x for x in all_items};items=sorted(unique.values(),key=lambda x:x.get('fecha',''),reverse=True)[:60]
- data={'ultima_revision':datetime.now(timezone.utc).isoformat(),'revision':'completa' if ok==len(SOURCES) else 'parcial','fuente_principal':'Agencia Española de Medicamentos y Productos Sanitarios (AEMPS)','nota':'Avisos oficiales de seguridad y retirada. Panel Ciudadano no infiere que sigan activos ni sustituye las recomendaciones de la ficha oficial.','salud_fuentes':health,'total':len(items),'items':items}
+ data={'ultima_revision':datetime.now(timezone.utc).isoformat(),'revision':'completa' if ok==len(SOURCES) else 'parcial','fuente_principal':'Agencia Española de Medicamentos y Productos Sanitarios (AEMPS)','nota':'Avisos oficiales de seguridad y retirada. Panel Ciudadano no infiere que sigan activos ni sustituye las recomendaciones de la ficha oficial.','salud_fuentes':health,'detalle_enriquecido':sum(1 for x in items if x.get('motivo') or x.get('lotes') or x.get('medidas')),'total':len(items),'items':items}
  OUT.parent.mkdir(exist_ok=True);tmp=OUT.with_suffix('.tmp');tmp.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n',encoding='utf-8');tmp.replace(OUT);print(f'AEMPS: publicaciones={len(items)}; fuentes={ok}/{len(SOURCES)}; revision={data["revision"]}')
 if __name__=='__main__':main()
