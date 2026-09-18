@@ -52,7 +52,7 @@ def main():
             if not ident:continue
             k=f'{t}:{ident}'; fp=fingerprint(x); st=state(t,x); before=prev.get(k)
             rec=dict(before or {},clave=k,tipo=t,id=ident,titulo=x.get('titulo',''),fuente=x.get('fuente',data.get('fuente','')),
-                     url=x.get('url',''),ambito=x.get('ambito') or x.get('region_impacto') or '',estado=st,huella=fp,
+                     url=x.get('url',''),referencia=x.get('referencia',''),ambito=x.get('ambito') or x.get('region_impacto') or '',estado=st,huella=fp,
                      ultima_deteccion=now,fecha_fuente=source_time(t,x))
             if not before:
                 rec['primera_deteccion']=now
@@ -74,10 +74,19 @@ def main():
         if k in current or r0.get('tipo')=='servicios':continue
         r=dict(r0)
         if r.get('tipo')=='alimentacion' and alimentacion_valid:
-            # Si AESAN sustituye una ficha por una ampliación con la misma referencia, la anterior sale del panel actual,
-            # pero el histórico no afirma que la alerta haya finalizado.
-            r['estado']='sustituida_actualizacion';r['fin_deteccion']=now;r['ultima_modificacion_detectada']=now
-            current[k]=r;events.append(event(k,'alimentacion','sustituida_actualizacion',now,r,'Sustituida en el panel por una publicación posterior de AESAN'))
+            # Una desaparición de la ventana/listado AESAN NO prueba retirada ni sustitución.
+            # Solo marcamos sustitución si existe ahora otra ficha con la misma referencia oficial no vacía.
+            old_ref=str(r.get('referencia','') or '').strip().upper()
+            replacement=None
+            if old_ref:
+                for ck,cr in current.items():
+                    if cr.get('tipo')=='alimentacion' and str(cr.get('referencia','') or '').strip().upper()==old_ref and ck!=k:
+                        replacement=cr;break
+            if replacement:
+                r['estado']='sustituida_actualizacion';r['fin_deteccion']=now;r['ultima_modificacion_detectada']=now
+                current[k]=r;events.append(event(k,'alimentacion','sustituida_actualizacion',now,r,'Sustituida en el panel por una publicación posterior de AESAN con la misma referencia oficial'))
+            else:
+                current[k]=r
         elif r.get('tipo')=='meteo' and meteo_valid and r.get('estado')=='aviso_vigente':
             r['estado']='expirado_detectado';r['fin_deteccion']=now;r['ultima_modificacion_detectada']=now
             current[k]=r;events.append(event(k,'meteo','expirado_detectado',now,r,'Ya no figura en el conjunto vigente validado por el módulo AEMET'))
