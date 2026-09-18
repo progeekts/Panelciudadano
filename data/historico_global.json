@@ -1,16 +1,16 @@
 {
-  "ultima_revision": "2026-09-18T13:03:50.559614+00:00",
+  "ultima_revision": "2026-09-18T13:07:35.052152+00:00",
   "fuentes_revision": {
     "ayudas": "2026-09-18T09:04:42.813976+00:00",
     "estafas": "2026-09-18T12:20:22.995332+00:00",
-    "alimentacion": "2026-09-18T13:02:58.367490+00:00",
+    "alimentacion": "2026-09-18T13:06:26.687404+00:00",
     "salud": "2026-09-18T12:23:48.424925+00:00",
     "meteo": "2026-09-18T09:43:50.027960+00:00",
     "servicios": "2026-09-18T11:04:44.333526+00:00"
   },
   "criterio": "Histórico de cambios detectados. Solo se asigna un estado terminal cuando la fuente o el módulo permiten afirmarlo de forma conservadora.",
   "total_registros": 495,
-  "total_eventos": 886,
+  "total_eventos": 888,
   "registros": [
     {
       "clave": "ayudas:bdns-930252",
@@ -1883,21 +1883,6 @@
       "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
     },
     {
-      "clave": "alimentacion:aesan-9d19d93457",
-      "tipo": "alimentacion",
-      "id": "aesan-9d19d93457",
-      "titulo": "Ampliación de información sobre la alerta por presencia de almendra y huevo no declarados en postre procedente de España (Ref ES2026/327)",
-      "fuente": "AESAN · Red de alerta alimentaria",
-      "url": "https://www.aesan.gob.es/alertas/2026_46_Ampliacion",
-      "ambito": "España",
-      "estado": "publicada",
-      "huella": "0542035a4b40035b27c0",
-      "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
-      "fecha_fuente": "2026-06-05",
-      "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
-    },
-    {
       "clave": "alimentacion:aesan-6f948c56a2",
       "tipo": "alimentacion",
       "id": "aesan-6f948c56a2",
@@ -1907,6 +1892,21 @@
       "ambito": "España",
       "estado": "publicada",
       "huella": "aa39fbe92eeb6361f409",
+      "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
+      "fecha_fuente": "2026-06-05",
+      "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
+    },
+    {
+      "clave": "alimentacion:aesan-9d19d93457",
+      "tipo": "alimentacion",
+      "id": "aesan-9d19d93457",
+      "titulo": "Ampliación de información sobre la alerta por presencia de almendra y huevo no declarados en postre procedente de España (Ref ES2026/327)",
+      "fuente": "AESAN · Red de alerta alimentaria",
+      "url": "https://www.aesan.gob.es/alertas/2026_46_Ampliacion",
+      "ambito": "España",
+      "estado": "publicada",
+      "huella": "0542035a4b40035b27c0",
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-06-05",
       "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
@@ -2078,18 +2078,20 @@
       "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
     },
     {
-      "clave": "alimentacion:aesan-314c5c382b",
+      "clave": "alimentacion:aesan-eee4ce86fa",
       "tipo": "alimentacion",
-      "id": "aesan-314c5c382b",
+      "id": "aesan-eee4ce86fa",
       "titulo": "Ampliación de información sobre la alerta por presencia de Listeria monocytogenes en queso fresco de vaca procedente de España (Ref. ES2026/271)",
       "fuente": "AESAN · Red de alerta alimentaria",
-      "url": "https://www.aesan.gob.es/alertas/2026_38_Ampliacion",
+      "url": "https://www.aesan.gob.es/alertas/2026_38_Ampliacion_2",
       "ambito": "España",
       "estado": "publicada",
-      "huella": "58b60cf31b4f8835259a",
-      "ultima_deteccion": "2026-09-18T10:08:31.022688+00:00",
+      "huella": "29beeb1adb16570589d3",
+      "ultima_deteccion": "2026-09-18T13:07:35.052152+00:00",
       "fecha_fuente": "2026-05-15",
-      "primera_deteccion": "2026-09-18T10:08:31.022688+00:00"
+      "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
+      "ultima_modificacion_detectada": "2026-09-18T13:07:35.052152+00:00",
+      "fin_deteccion": "2026-09-18T13:03:50.559614+00:00"
     },
     {
       "clave": "alimentacion:aesan-b32e5b9cc9",
@@ -3082,20 +3084,20 @@
       "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00"
     },
     {
-      "clave": "alimentacion:aesan-eee4ce86fa",
+      "clave": "alimentacion:aesan-314c5c382b",
       "tipo": "alimentacion",
-      "id": "aesan-eee4ce86fa",
+      "id": "aesan-314c5c382b",
       "titulo": "Ampliación de información sobre la alerta por presencia de Listeria monocytogenes en queso fresco de vaca procedente de España (Ref. ES2026/271)",
       "fuente": "AESAN · Red de alerta alimentaria",
-      "url": "https://www.aesan.gob.es/alertas/2026_38_Ampliacion_2",
+      "url": "https://www.aesan.gob.es/alertas/2026_38_Ampliacion",
       "ambito": "España",
       "estado": "sustituida_actualizacion",
-      "huella": "29beeb1adb16570589d3",
-      "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
+      "huella": "58b60cf31b4f8835259a",
+      "ultima_deteccion": "2026-09-18T10:08:31.022688+00:00",
       "fecha_fuente": "2026-05-15",
-      "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T13:03:50.559614+00:00",
-      "fin_deteccion": "2026-09-18T13:03:50.559614+00:00"
+      "primera_deteccion": "2026-09-18T10:08:31.022688+00:00",
+      "fin_deteccion": "2026-09-18T13:07:35.052152+00:00",
+      "ultima_modificacion_detectada": "2026-09-18T13:07:35.052152+00:00"
     },
     {
       "clave": "meteo:aemet-dcd3ac2579df",
@@ -7320,6 +7322,28 @@
     }
   ],
   "eventos": [
+    {
+      "clave": "alimentacion:aesan-eee4ce86fa",
+      "tipo": "alimentacion",
+      "evento": "publicada",
+      "etiqueta": "Publicada",
+      "momento_detectado": "2026-09-18T13:07:35.052152+00:00",
+      "fecha_fuente": "2026-05-15",
+      "titulo": "Ampliación de información sobre la alerta por presencia de Listeria monocytogenes en queso fresco de vaca procedente de España (Ref. ES2026/271)",
+      "url": "https://www.aesan.gob.es/alertas/2026_38_Ampliacion_2",
+      "detalle_cambio": "Estado: Sustituida por actualización → Publicada"
+    },
+    {
+      "clave": "alimentacion:aesan-314c5c382b",
+      "tipo": "alimentacion",
+      "evento": "sustituida_actualizacion",
+      "etiqueta": "Sustituida por actualización",
+      "momento_detectado": "2026-09-18T13:07:35.052152+00:00",
+      "fecha_fuente": "2026-05-15",
+      "titulo": "Ampliación de información sobre la alerta por presencia de Listeria monocytogenes en queso fresco de vaca procedente de España (Ref. ES2026/271)",
+      "url": "https://www.aesan.gob.es/alertas/2026_38_Ampliacion",
+      "detalle_cambio": "Sustituida en el panel por una publicación posterior de AESAN"
+    },
     {
       "clave": "alimentacion:aesan-eee4ce86fa",
       "tipo": "alimentacion",
