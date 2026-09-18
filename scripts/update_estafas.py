@@ -43,18 +43,18 @@ def preserve(now,reason):
  data['ultima_revision']=now.isoformat();data['revision']='error';data['nota_revision']='No se pudo validar la revisión de INCIBE; se conservan los últimos datos válidos.';data['error_revision']=reason
  OUT.parent.mkdir(parents=True,exist_ok=True);tmp=OUT.with_suffix('.tmp');tmp.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n',encoding='utf-8');tmp.replace(OUT)
 def detail_info(page):
- t=clean(page)
- # Las etiquetas de la ficha oficial son estables; trabajamos sobre el texto visible ya limpio.
- def grab(label,next_labels):
+ def section(label,next_labels):
   nxt='|'.join(re.escape(x) for x in next_labels)
-  m=re.search(re.escape(label)+r'\\s+(.+?)(?=\\s+(?:'+nxt+r')\\s+|$)',t,re.I)
-  return m.group(1).strip() if m else ''
+  m=re.search(r'>\\s*'+re.escape(label)+r'\\s*<(.+?)(?=>\\s*(?:'+nxt+r')\\s*<)',page,re.I|re.S)
+  return clean(m.group(1)) if m else ''
+ def short_field(label,next_labels):
+  return section(label,next_labels)[:700]
  return {
-  'identificador':grab('Identificador',['Importancia','Recursos Afectados','Descripción']),
-  'importancia':grab('Importancia',['Recursos Afectados','Descripción']),
-  'afectados':grab('Recursos Afectados',['Descripción','Solución','Detalle'])[:700],
-  'descripcion':grab('Descripción',['Solución','Detalle'])[:1400],
-  'solucion':grab('Solución',['Detalle'])[:1800],
+  'identificador':short_field('Identificador',['Importancia','Recursos Afectados','Descripción']),
+  'importancia':short_field('Importancia',['Recursos Afectados','Descripción']),
+  'afectados':section('Recursos Afectados',['Descripción','Solución'])[:1000],
+  'descripcion':section('Descripción',['Solución','Detalle'])[:1800],
+  'solucion':section('Solución',['Detalle'])[:2400],
  }
 def detail_state(page):
  t=clean(page).lower()
