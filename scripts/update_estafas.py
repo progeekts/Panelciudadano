@@ -35,6 +35,19 @@ def preserve(now,reason):
  except Exception:data={'fuente':'INCIBE · Ciudadanía','fuente_url':LIST_URL,'total':0,'items':[]}
  data['ultima_revision']=now.isoformat();data['revision']='error';data['nota_revision']='No se pudo validar la revisión de INCIBE; se conservan los últimos datos válidos.';data['error_revision']=reason
  OUT.parent.mkdir(parents=True,exist_ok=True);tmp=OUT.with_suffix('.tmp');tmp.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n',encoding='utf-8');tmp.replace(OUT)
+def detail_info(page):
+ t=clean(page)
+ def grab(label,next_labels):
+  nxt='|'.join(re.escape(x) for x in next_labels)
+  m=re.search(re.escape(label)+r'\\s+(.+?)(?=\\s+(?:'+nxt+r')\\s+|$)',t,re.I)
+  return m.group(1).strip() if m else ''
+ return {
+  'identificador':grab('Identificador',['Importancia','Recursos Afectados','Descripción']),
+  'importancia':grab('Importancia',['Recursos Afectados','Descripción']),
+  'afectados':grab('Recursos Afectados',['Descripción','Solución','Detalle'])[:700],
+  'descripcion':grab('Descripción',['Solución','Detalle'])[:1400],
+  'solucion':grab('Solución',['Detalle'])[:1800],
+ }
 def detail_state(page):
  t=clean(page).lower()
  # Solo estados explícitos en la propia ficha; ausencia de estas frases no implica finalización.
@@ -54,10 +67,11 @@ def main():
   for path,title,date_raw,importance,summary in cards:
    published=parse_date(date_raw)
    if not published or published<cutoff or published>now+timedelta(days=1):continue
-   url_item=urllib.parse.urljoin(BASE,path);slug=path.rstrip('/').split('/')[-1];explicit=''
-   try:explicit=detail_state(get(url_item))
+   url_item=urllib.parse.urljoin(BASE,path);slug=path.rstrip('/').split('/')[-1];explicit='';info={}
+   try:
+    detail_page=get(url_item);explicit=detail_state(detail_page);info=detail_info(detail_page)
    except Exception:pass
-   items.append({'id':'incibe-'+slug,'tipo':'estafa','titulo':title,'resumen':summary or 'Aviso oficial de INCIBE sobre una campaña de fraude o suplantación.','fecha':date_raw,'fecha_iso':published.date().isoformat(),'estado':explicit or 'Publicada','importancia':importance,'ambito':'España / usuarios de Internet','fuente':'INCIBE · Ciudadanía','url':url_item,'verificado':True})
+   items.append({'id':'incibe-'+slug,'tipo':'estafa','titulo':title,'resumen':info.get('descripcion') or summary or 'Aviso oficial de INCIBE sobre una campaña de fraude o suplantación.','descripcion':info.get('descripcion',''),'afectados':info.get('afectados',''),'solucion':info.get('solucion',''),'identificador_incibe':info.get('identificador',''),'fecha':date_raw,'fecha_iso':published.date().isoformat(),'estado':explicit or 'Publicada','importancia':info.get('importancia') or importance,'ambito':'España / usuarios de Internet','fuente':'INCIBE · Ciudadanía','url':url_item,'verificado':True})
  # Si el parser deja de reconocer por completo una portada accesible, no convertirlo en "cero alertas".
  if pages_ok and cards_seen==0:preserve(now,'parser_sin_resultados');print('INCIBE: posible cambio de formato; datos anteriores conservados.');return
  unique={x['url']:x for x in items};items=sorted(unique.values(),key=lambda x:x['fecha_iso'],reverse=True);revision='completa' if pages_ok==MAX_PAGES and errors==0 else 'parcial'
