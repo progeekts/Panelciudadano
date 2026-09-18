@@ -7,3 +7,8 @@
 
 .card-change{display:inline-flex;align-items:center;width:max-content;max-width:100%;margin:-2px 0 9px;padding:4px 8px;border-radius:999px;background:#eaf5ff;color:#17639e;font-size:10px;font-weight:800;letter-spacing:.02em}
 .card-change:before{content:"";width:6px;height:6px;margin-right:5px;border-radius:50%;background:currentColor}
+
+.activity-link{cursor:pointer;transition:transform .16s ease,box-shadow .16s ease,background .16s ease}
+.activity-link:hover{transform:translateY(-1px);box-shadow:0 6px 18px rgba(18,38,63,.08)}
+.activity-link:focus-visible{outline:3px solid currentColor;outline-offset:3px}
+.activity-link>div:after{content:"Abrir aviso →";display:block;margin-top:4px;font-size:11px;font-weight:800;opacity:.65}
