@@ -1,9 +1,9 @@
 {
-  "ultima_revision": "2026-09-18T21:58:02.584785+00:00",
+  "ultima_revision": "2026-09-18T22:43:30.411985+00:00",
   "fuentes_revision": {
     "ayudas": "2026-09-18T21:42:13.954888+00:00",
     "estafas": "2026-09-18T21:47:42.055364+00:00",
-    "alimentacion": "2026-09-18T13:16:33.965948+00:00",
+    "alimentacion": "2026-09-18T22:42:39.898477+00:00",
     "salud": "2026-09-18T21:57:46.319093+00:00",
     "meteo": "2026-09-18T20:51:19.689353+00:00",
     "servicios": "2026-09-18T21:11:24.770443+00:00"
@@ -1833,22 +1833,6 @@
       "referencia": "ES2026/349"
     },
     {
-      "clave": "alimentacion:aesan-6f948c56a2",
-      "tipo": "alimentacion",
-      "id": "aesan-6f948c56a2",
-      "titulo": "Advertencia para personas con alergia a las almendras: presencia de almendras en relleno de praliné de avellana procedente de Países Bajos (Ref. ES2026/332)",
-      "fuente": "AESAN · Red de alerta alimentaria",
-      "url": "https://www.aesan.gob.es/alertas/2026_46",
-      "ambito": "España",
-      "estado": "publicada",
-      "huella": "aa39fbe92eeb6361f409",
-      "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
-      "fecha_fuente": "2026-06-05",
-      "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
-      "referencia": "ES2026/332"
-    },
-    {
       "clave": "alimentacion:aesan-9d19d93457",
       "tipo": "alimentacion",
       "id": "aesan-9d19d93457",
@@ -1863,6 +1847,22 @@
       "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
       "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
       "referencia": "ES2026/327"
+    },
+    {
+      "clave": "alimentacion:aesan-6f948c56a2",
+      "tipo": "alimentacion",
+      "id": "aesan-6f948c56a2",
+      "titulo": "Advertencia para personas con alergia a las almendras: presencia de almendras en relleno de praliné de avellana procedente de Países Bajos (Ref. ES2026/332)",
+      "fuente": "AESAN · Red de alerta alimentaria",
+      "url": "https://www.aesan.gob.es/alertas/2026_46",
+      "ambito": "España",
+      "estado": "publicada",
+      "huella": "aa39fbe92eeb6361f409",
+      "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
+      "fecha_fuente": "2026-06-05",
+      "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": "ES2026/332"
     },
     {
       "clave": "alimentacion:aesan-4f7dbbdc32",
