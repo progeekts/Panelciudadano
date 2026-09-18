@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Construye un histórico común sin inferir resoluciones que las fuentes no acreditan."""
+"""Histórico común: registra publicaciones, cambios verificables y estados terminales conservadores."""
 from __future__ import annotations
 import json, hashlib
 from datetime import datetime, timezone
@@ -11,50 +11,98 @@ def load(path,default):
     except Exception:return default
 
 def fingerprint(x):
-    fields=('titulo','estado_plazo','nivel','inicio','fin','fecha','fecha_registro','url','referencia')
-    return hashlib.sha256('|'.join(str(x.get(k,'')) for k in fields).encode()).hexdigest()[:20]
+    # Campos que pueden cambiar el significado visible de una ficha.
+    fields=('titulo','estado_plazo','estado','nivel','severidad_cap','inicio','fin','fecha','fecha_registro',
+            'resumen','descripcion','recomendacion','ambito','region_impacto','beneficiarios','presupuesto',
+            'url','referencia','mensaje_cap','categoria','categoria_nombre')
+    raw='|'.join(f'{k}={x.get(k,"")}' for k in fields)
+    return hashlib.sha256(raw.encode()).hexdigest()[:20]
 
 def source_time(t,x):
-    for k in ('fecha','fecha_registro','inicio','publicado'):
+    for k in ('actualizado','fecha','fecha_registro','inicio','publicado'):
         if x.get(k):return str(x[k])
     return ''
 
 def state(t,x):
-    if t=='ayudas':return {'Abierta':'plazo_abierto','Próxima':'plazo_proximo','Finalizada':'plazo_finalizado'}.get(x.get('estado_plazo'),'publicada')
-    if t=='meteo':return 'aviso_vigente' # el parser CAP solo publica Actual/no cancelado/no expirado
+    if t=='ayudas':return {'Abierta':'plazo_abierto','Próxima':'plazo_proximo','Finalizada':'plazo_finalizado'}.get(x.get('estado_plazo'),'convocatoria_detectada')
+    if t=='meteo':return 'aviso_vigente'
     return 'publicada'
 
-def label(s):return {'publicada':'Publicada','plazo_abierto':'Plazo abierto','plazo_proximo':'Próxima','plazo_finalizado':'Plazo finalizado','aviso_vigente':'Aviso vigente','expirado_detectado':'Dejó de estar vigente','solucionado':'Solucionado','retirado_monitor':'Retirado del monitor'}.get(s,s)
+def label(s):return {'publicada':'Publicada','actualizado':'Actualizada','convocatoria_detectada':'Convocatoria detectada',
+ 'plazo_abierto':'Plazo abierto','plazo_proximo':'Próxima','plazo_finalizado':'Plazo finalizado',
+ 'aviso_vigente':'Aviso vigente','incidencia_activa':'Incidencia activa','expirado_detectado':'Dejó de estar vigente',
+ 'solucionado':'Solucionada','retirado_monitor':'Retirada del monitor'}.get(s,s)
+
+def event(k,t,kind,now,rec,detail=''):
+    e={'clave':k,'tipo':t,'evento':kind,'etiqueta':label(kind),'momento_detectado':now,
+       'fecha_fuente':rec.get('fecha_fuente',''),'titulo':rec.get('titulo',''),'url':rec.get('url','')}
+    if detail:e['detalle_cambio']=detail
+    return e
 
 def main():
-    now=datetime.now(timezone.utc).isoformat(); old=load(OUT,{'registros':[]}); prev={r.get('clave'):r for r in old.get('registros',[]) if r.get('clave')}; current={}; events=[]
+    now=datetime.now(timezone.utc).isoformat(); old=load(OUT,{'registros':[]})
+    prev={r.get('clave'):r for r in old.get('registros',[]) if r.get('clave')}; current={}; events=[]
+    revisions={}
     for t in TYPES:
         data=load(f'data/{t}.json',{})
-        # No actualizamos ausencia si la revisión declara error.
+        revisions[t]=data.get('ultima_revision','')
         valid=data.get('revision','completa') not in ('error',)
         for x in data.get('items',[]) if valid else []:
             ident=str(x.get('id') or x.get('codigo_bdns') or x.get('url') or '').strip()
             if not ident:continue
             k=f'{t}:{ident}'; fp=fingerprint(x); st=state(t,x); before=prev.get(k)
-            rec=dict(before or {},clave=k,tipo=t,id=ident,titulo=x.get('titulo',''),fuente=x.get('fuente',data.get('fuente','')),url=x.get('url',''),ambito=x.get('ambito') or x.get('region_impacto') or 'España',estado=st,huella=fp,ultima_deteccion=now,fecha_fuente=source_time(t,x))
+            rec=dict(before or {},clave=k,tipo=t,id=ident,titulo=x.get('titulo',''),fuente=x.get('fuente',data.get('fuente','')),
+                     url=x.get('url',''),ambito=x.get('ambito') or x.get('region_impacto') or '',estado=st,huella=fp,
+                     ultima_deteccion=now,fecha_fuente=source_time(t,x))
             if not before:
-                rec['primera_deteccion']=now;events.append({'clave':k,'tipo':t,'evento':st if t in ('ayudas','meteo') else 'publicada','etiqueta':label(st if t in ('ayudas','meteo') else 'publicada'),'momento_detectado':now,'fecha_fuente':rec['fecha_fuente'],'titulo':rec['titulo'],'url':rec['url']})
+                rec['primera_deteccion']=now
+                events.append(event(k,t,st if t in ('ayudas','meteo') else 'publicada',now,rec))
             elif before.get('huella')!=fp or before.get('estado')!=st:
-                rec['ultima_modificacion_detectada']=now;events.append({'clave':k,'tipo':t,'evento':st,'etiqueta':label(st),'momento_detectado':now,'fecha_fuente':rec['fecha_fuente'],'titulo':rec['titulo'],'url':rec['url']})
+                rec['ultima_modificacion_detectada']=now
+                if before.get('estado')!=st:
+                    kind=st; detail=f'Estado: {label(before.get("estado",""))} → {label(st)}'
+                else:
+                    kind='actualizado'; detail='La ficha oficial presenta cambios respecto a la revisión anterior'
+                events.append(event(k,t,kind,now,rec,detail))
             current[k]=rec
-    # Ausencias: solo AEMET permite concluir aquí que el aviso ya no está en el conjunto vigente,
-    # y aun así lo expresamos como "dejó de estar vigente", no como cancelado.
-    meteo=load('data/meteo.json',{});meteo_valid=meteo.get('revision') not in ('error','parcial')
-    for k,r in prev.items():
-        if k in current:continue
+
+    meteo=load('data/meteo.json',{}); meteo_valid=meteo.get('revision') not in ('error','parcial')
+    for k,r0 in prev.items():
+        if k in current or r0.get('tipo')=='servicios':continue
+        r=dict(r0)
         if r.get('tipo')=='meteo' and meteo_valid and r.get('estado')=='aviso_vigente':
-            r=dict(r);r['estado']='expirado_detectado';r['fin_deteccion']=now;current[k]=r;events.append({'clave':k,'tipo':'meteo','evento':'expirado_detectado','etiqueta':label('expirado_detectado'),'momento_detectado':now,'fecha_fuente':'','titulo':r.get('titulo',''),'url':r.get('url','')})
+            r['estado']='expirado_detectado';r['fin_deteccion']=now;r['ultima_modificacion_detectada']=now
+            current[k]=r;events.append(event(k,'meteo','expirado_detectado',now,r,'Ya no figura en el conjunto vigente validado por el módulo AEMET'))
         else:current[k]=r
-    # Integra el histórico especializado de servicios, que sí dispone de semántica propia.
-    hs=load('data/historico_servicios.json',{})
+
+    # Servicios dispone de histórico especializado y timestamps propios.
+    hs=load('data/historico_servicios.json',{}); revisions['servicios']=hs.get('ultima_revision','')
     for x in hs.get('items',[]):
-        ident=str(x.get('id',''));k=f'servicios:{ident}';st={'resuelto':'solucionado','retirado':'retirado_monitor'}.get(x.get('estado_historico'),'incidencia_activa');tm=x.get('resuelto_detectado') or x.get('retirado_detectado') or x.get('ultima_modificacion_detectada') or x.get('primera_deteccion') or now
-        current[k]={'clave':k,'tipo':'servicios','id':ident,'titulo':x.get('titulo',''),'fuente':x.get('servicio',''),'url':x.get('url',''),'ambito':x.get('ambito',''),'estado':st,'primera_deteccion':x.get('primera_deteccion',tm),'ultima_deteccion':x.get('ultima_deteccion',tm),'fin_deteccion':x.get('resuelto_detectado') or x.get('retirado_detectado','')}
-    oldevents=old.get('eventos',[]);seen={(e.get('clave'),e.get('evento'),e.get('momento_detectado')) for e in oldevents};events=[e for e in events if (e.get('clave'),e.get('evento'),e.get('momento_detectado')) not in seen]+oldevents
-    result={'ultima_revision':now,'criterio':'Histórico de detecciones. La desaparición solo genera estado terminal cuando el módulo permite afirmarlo de forma conservadora.','total_registros':len(current),'total_eventos':len(events[:1000]),'registros':list(current.values()),'eventos':events[:1000]};OUT.write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+        ident=str(x.get('id','')); k=f'servicios:{ident}'
+        st={'resuelto':'solucionado','retirado':'retirado_monitor'}.get(x.get('estado_historico'),'incidencia_activa')
+        tm=x.get('ultima_deteccion') or x.get('primera_deteccion') or now
+        rec={'clave':k,'tipo':'servicios','id':ident,'titulo':x.get('titulo',''),'fuente':x.get('servicio',''),
+             'url':x.get('url',''),'ambito':x.get('ambito',''),'estado':st,'primera_deteccion':x.get('primera_deteccion',tm),
+             'ultima_deteccion':tm,'ultima_modificacion_detectada':x.get('ultima_modificacion_detectada',''),
+             'fin_deteccion':x.get('resuelto_detectado') or x.get('retirado_detectado',''),'fecha_fuente':''}
+        current[k]=rec
+        # Importa eventos con sus tiempos reales; la deduplicación posterior evita repetirlos.
+        if x.get('primera_deteccion'):events.append(event(k,'servicios','incidencia_activa',x['primera_deteccion'],rec))
+        if x.get('ultima_modificacion_detectada') and x.get('ultima_modificacion_detectada')!=x.get('primera_deteccion'):
+            events.append(event(k,'servicios','actualizado',x['ultima_modificacion_detectada'],rec,'La incidencia cambió en la fuente oficial'))
+        if x.get('resuelto_detectado'):events.append(event(k,'servicios','solucionado',x['resuelto_detectado'],rec))
+        if x.get('retirado_detectado'):events.append(event(k,'servicios','retirado_monitor',x['retirado_detectado'],rec))
+
+    oldevents=old.get('eventos',[])
+    # Dedupe por identidad+evento+momento: estable incluso al reimportar servicios.
+    merged=events+oldevents; seen=set(); unique=[]
+    for e in sorted(merged,key=lambda z:z.get('momento_detectado',''),reverse=True):
+        sig=(e.get('clave'),e.get('evento'),e.get('momento_detectado'))
+        if sig in seen:continue
+        seen.add(sig);unique.append(e)
+
+    result={'ultima_revision':now,'fuentes_revision':revisions,
+      'criterio':'Histórico de cambios detectados. Solo se asigna un estado terminal cuando la fuente o el módulo permiten afirmarlo de forma conservadora.',
+      'total_registros':len(current),'total_eventos':len(unique[:1000]),'registros':list(current.values()),'eventos':unique[:1000]}
+    OUT.write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 if __name__=='__main__':main()
