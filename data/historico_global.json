@@ -1,16 +1,16 @@
 {
-  "ultima_revision": "2026-09-18T10:08:52.475572+00:00",
+  "ultima_revision": "2026-09-18T10:12:43.106328+00:00",
   "fuentes_revision": {
     "ayudas": "2026-09-18T09:04:42.813976+00:00",
     "estafas": "2026-09-18T09:43:33.313442+00:00",
-    "alimentacion": "2026-09-18T10:07:32.002769+00:00",
+    "alimentacion": "2026-09-18T10:11:43.800997+00:00",
     "salud": "2026-09-18T10:08:39.405731+00:00",
     "meteo": "2026-09-18T09:43:50.027960+00:00",
     "servicios": "2026-09-18T09:04:49.396252+00:00"
   },
   "criterio": "Histórico de cambios detectados. Solo se asigna un estado terminal cuando la fuente o el módulo permiten afirmarlo de forma conservadora.",
   "total_registros": 495,
-  "total_eventos": 875,
+  "total_eventos": 876,
   "registros": [
     {
       "clave": "ayudas:bdns-930252",
@@ -3094,8 +3094,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-05-15",
       "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T10:08:52.475572+00:00",
-      "fin_deteccion": "2026-09-18T10:08:52.475572+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T10:12:43.106328+00:00",
+      "fin_deteccion": "2026-09-18T10:12:43.106328+00:00"
     },
     {
       "clave": "meteo:aemet-dcd3ac2579df",
@@ -7320,6 +7320,17 @@
     }
   ],
   "eventos": [
+    {
+      "clave": "alimentacion:aesan-eee4ce86fa",
+      "tipo": "alimentacion",
+      "evento": "sustituida_actualizacion",
+      "etiqueta": "Sustituida por actualización",
+      "momento_detectado": "2026-09-18T10:12:43.106328+00:00",
+      "fecha_fuente": "2026-05-15",
+      "titulo": "Ampliación de información sobre la alerta por presencia de Listeria monocytogenes en queso fresco de vaca procedente de España (Ref. ES2026/271)",
+      "url": "https://www.aesan.gob.es/alertas/2026_38_Ampliacion_2",
+      "detalle_cambio": "Sustituida en el panel por una publicación posterior de AESAN"
+    },
     {
       "clave": "alimentacion:aesan-eee4ce86fa",
       "tipo": "alimentacion",
