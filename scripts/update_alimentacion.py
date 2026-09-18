@@ -97,7 +97,8 @@ def main():
  for x in unique.values():
   k=revision_key(x);cur=grouped.get(k)
   if not cur or revision_rank(x)>revision_rank(cur):grouped[k]=x
- items=list(grouped.values());cutoff=(datetime.now(timezone.utc)-timedelta(days=180)).date().isoformat();items=[x for x in unique.values() if x.get('fecha','')>=cutoff];items.sort(key=lambda x:x.get('fecha',''),reverse=True)
+ # El panel actual conserva solo la revisión más reciente de una misma referencia oficial.
+ items=list(grouped.values());cutoff=(datetime.now(timezone.utc)-timedelta(days=180)).date().isoformat();items=[x for x in items if x.get('fecha','')>=cutoff];items.sort(key=lambda x:x.get('fecha',''),reverse=True)
  result={'ultima_revision':now,'revision':'completa' if len(ok)==len(SOURCES) else 'parcial','fuente_principal':'Agencia Española de Seguridad Alimentaria y Nutrición (AESAN)','cobertura':['Alertas de interés para toda la población','Alertas para personas con alergias o intolerancias'],'nota':'Publicaciones oficiales recientes. Cuando AESAN publica una ampliación con la misma referencia, el panel muestra la versión más reciente. No se infiere una retirada o finalización sin evidencia oficial.','salud_fuentes':health,'detalle_enriquecido':sum(1 for x in items if x.get('producto') or x.get('lotes') or x.get('distribucion') or x.get('medidas')),'total':len(items[:80]),'items':items[:80]}
  OUT.parent.mkdir(parents=True,exist_ok=True);tmp=OUT.with_suffix('.tmp');tmp.write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n',encoding='utf-8');tmp.replace(OUT);print(f'AESAN: publicaciones={result["total"]}; fuentes={len(ok)}/{len(SOURCES)}; revision={result["revision"]}')
 if __name__=='__main__':main()
