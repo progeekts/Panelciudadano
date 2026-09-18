@@ -2,6 +2,7 @@
 """Radar conservador de alertas alimentarias publicadas por AESAN."""
 from __future__ import annotations
 import hashlib,html,json,re,time,urllib.request
+from html.parser import HTMLParser
 from datetime import datetime,timezone,timedelta
 from pathlib import Path
 from urllib.parse import urljoin
@@ -10,9 +11,22 @@ SOURCES=[('general','Interés para toda la población','https://www.aesan.gob.es
 MONTHS={'enero':1,'febrero':2,'marzo':3,'abril':4,'mayo':5,'junio':6,'julio':7,'agosto':8,'septiembre':9,'octubre':10,'noviembre':11,'diciembre':12};DATE_RE=r'\d{1,2}\s+(?:enero|febrero|marzo|abril|mayo|junio|julio|agosto|septiembre|octubre|noviembre|diciembre)\s+\d{4}'
 def get(url):
  req=urllib.request.Request(url,headers={'User-Agent':UA,'Accept-Language':'es-ES,es;q=0.9'});return urllib.request.urlopen(req,timeout=15).read().decode('utf-8',errors='replace')
+class VisibleTextParser(HTMLParser):
+ def __init__(self):
+  super().__init__(convert_charrefs=True);self.parts=[];self.skip=0
+ def handle_starttag(self,tag,attrs):
+  if tag in ('script','style','noscript'):self.skip+=1
+  elif not self.skip and tag in ('p','div','li','br','h1','h2','h3','h4','dt','dd','strong','b'):self.parts.append(' ')
+ def handle_endtag(self,tag):
+  if tag in ('script','style','noscript') and self.skip:self.skip-=1
+  elif not self.skip:self.parts.append(' ')
+ def handle_data(self,data):
+  if not self.skip:self.parts.append(data)
+ def text(self):return re.sub(r'\\s+',' ',' '.join(self.parts)).strip()
+
 def detail(page):
- t=clean(re.sub(r'<script\\b[^>]*>.*?</script>|<style\\b[^>]*>.*?</style>',' ',page,flags=re.I|re.S))
- # Estrategia tolerante: AESAN cambia puntuación/maquetación; buscamos etiquetas visibles sin exigir ':'.
+ p=VisibleTextParser();p.feed(page);t=p.text()
+ # El DOM se convierte primero en texto visible; así evitamos depender de etiquetas o ':' concretos.
  def vals(label,stops,limit=1400):
   pat=r'(?:'+label+r')\\s*:?[ ]*(.*?)(?=\\s+(?:'+stops+r')\\s*:?[ ]|$)'
   out=[re.sub(r'\\s+',' ',x).strip(' .:') for x in re.findall(pat,t,re.I|re.S)]
@@ -20,11 +34,10 @@ def detail(page):
  product=vals(r'Nombre del producto',r'Nombre de marca(?: comercial)?|Marca(?: comercial)?|Aspecto del producto(?: y tipo de envase)?|N[uú]mero(?:s)? de lote(?:s)?|Fecha de consumo preferente|Fecha de caducidad|C[oó]digo de barras|EAN|Peso de unidad(?:/vol)?|Temperatura|Se adjunt',1400)
  lots=vals(r'N[uú]mero(?:s)? de lote(?:s)?',r'Fecha de consumo preferente|Fecha de caducidad|C[oó]digo de barras|EAN|Peso de unidad(?:/vol)?|Temperatura|Se adjunt|Nombre del producto',1400)
  dist=''
- m=re.search(r'(Según la información disponible, la distribución.*?)(?=\\s+(?:Esta información ha sido trasladada|Como medida de precaución|Se recomienda|Puede ampliar|arrow_back)\\b)',t,re.I|re.S)
+ m=re.search(r'(Según la información disponible, la distribución.*?)(?=\\s+(?:Esta información ha sido trasladada|Como medida de precaución|Se recomienda|Puede ampliar|Volver a todos)\\b)',t,re.I|re.S)
  if m:dist=re.sub(r'\\s+',' ',m.group(1)).strip()[:1100]
  rec=''
- # Preferimos la última recomendación, que suele ser la instrucción operativa al consumidor.
- candidates=re.findall(r'((?:Como medida de precaución,\\s*)?[Ss]e recomienda.{15,700}?)(?=\\s+(?:EL CONSUMO|Puede ampliar|arrow_back|La Agencia Española|Según la información|Esta información)|$)',t,re.I|re.S)
+ candidates=re.findall(r'((?:Como medida de precaución,\\s*)?[Ss]e recomienda.{15,700}?)(?=\\s+(?:EL CONSUMO|Puede ampliar|Volver a todos|La Agencia Española|Según la información|Esta información)|$)',t,re.I|re.S)
  if candidates:rec=re.sub(r'\\s+',' ',candidates[-1]).strip()[:900]
  return {'producto':product,'lotes':lots,'distribucion':dist,'medidas':rec}
 def clean(s):return re.sub(r'\s+',' ',html.unescape(re.sub(r'<[^>]+>',' ',s))).strip()
