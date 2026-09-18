@@ -1,16 +1,16 @@
 {
-  "ultima_revision": "2026-09-18T13:10:53.427739+00:00",
+  "ultima_revision": "2026-09-18T13:12:39.929090+00:00",
   "fuentes_revision": {
     "ayudas": "2026-09-18T09:04:42.813976+00:00",
     "estafas": "2026-09-18T12:20:22.995332+00:00",
-    "alimentacion": "2026-09-18T13:09:50.720684+00:00",
+    "alimentacion": "2026-09-18T13:11:41.117305+00:00",
     "salud": "2026-09-18T12:23:48.424925+00:00",
     "meteo": "2026-09-18T09:43:50.027960+00:00",
     "servicios": "2026-09-18T11:04:44.333526+00:00"
   },
   "criterio": "Histórico de cambios detectados. Solo se asigna un estado terminal cuando la fuente o el módulo permiten afirmarlo de forma conservadora.",
   "total_registros": 495,
-  "total_eventos": 901,
+  "total_eventos": 914,
   "registros": [
     {
       "clave": "ayudas:bdns-930252",
@@ -2915,8 +2915,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-08-26",
       "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T13:10:53.427739+00:00",
-      "fin_deteccion": "2026-09-18T13:10:53.427739+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T13:12:39.929090+00:00",
+      "fin_deteccion": "2026-09-18T13:12:39.929090+00:00"
     },
     {
       "clave": "alimentacion:aesan-cb6a216d7f",
@@ -2931,8 +2931,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-07-29",
       "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T13:10:53.427739+00:00",
-      "fin_deteccion": "2026-09-18T13:10:53.427739+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T13:12:39.929090+00:00",
+      "fin_deteccion": "2026-09-18T13:12:39.929090+00:00"
     },
     {
       "clave": "alimentacion:aesan-14b3ea0a78",
@@ -2947,8 +2947,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-06-25",
       "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T13:10:53.427739+00:00",
-      "fin_deteccion": "2026-09-18T13:10:53.427739+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T13:12:39.929090+00:00",
+      "fin_deteccion": "2026-09-18T13:12:39.929090+00:00"
     },
     {
       "clave": "alimentacion:aesan-b8c4ada616",
@@ -2963,8 +2963,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-06-19",
       "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T13:10:53.427739+00:00",
-      "fin_deteccion": "2026-09-18T13:10:53.427739+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T13:12:39.929090+00:00",
+      "fin_deteccion": "2026-09-18T13:12:39.929090+00:00"
     },
     {
       "clave": "alimentacion:aesan-e9af7a9b75",
@@ -2979,8 +2979,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-06-17",
       "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T13:10:53.427739+00:00",
-      "fin_deteccion": "2026-09-18T13:10:53.427739+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T13:12:39.929090+00:00",
+      "fin_deteccion": "2026-09-18T13:12:39.929090+00:00"
     },
     {
       "clave": "alimentacion:aesan-4075fd939b",
@@ -2995,8 +2995,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-06-04",
       "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T13:10:53.427739+00:00",
-      "fin_deteccion": "2026-09-18T13:10:53.427739+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T13:12:39.929090+00:00",
+      "fin_deteccion": "2026-09-18T13:12:39.929090+00:00"
     },
     {
       "clave": "alimentacion:aesan-f1edff383e",
@@ -3011,8 +3011,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-06-03",
       "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T13:10:53.427739+00:00",
-      "fin_deteccion": "2026-09-18T13:10:53.427739+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T13:12:39.929090+00:00",
+      "fin_deteccion": "2026-09-18T13:12:39.929090+00:00"
     },
     {
       "clave": "alimentacion:aesan-e7b4fab756",
@@ -3027,8 +3027,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-06-02",
       "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T13:10:53.427739+00:00",
-      "fin_deteccion": "2026-09-18T13:10:53.427739+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T13:12:39.929090+00:00",
+      "fin_deteccion": "2026-09-18T13:12:39.929090+00:00"
     },
     {
       "clave": "alimentacion:aesan-baea4be4e3",
@@ -3043,8 +3043,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-05-27",
       "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T13:10:53.427739+00:00",
-      "fin_deteccion": "2026-09-18T13:10:53.427739+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T13:12:39.929090+00:00",
+      "fin_deteccion": "2026-09-18T13:12:39.929090+00:00"
     },
     {
       "clave": "alimentacion:aesan-a2f2498bc7",
@@ -3059,8 +3059,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-05-25",
       "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T13:10:53.427739+00:00",
-      "fin_deteccion": "2026-09-18T13:10:53.427739+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T13:12:39.929090+00:00",
+      "fin_deteccion": "2026-09-18T13:12:39.929090+00:00"
     },
     {
       "clave": "alimentacion:aesan-9e5faf6929",
@@ -3075,8 +3075,8 @@
       "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
       "fecha_fuente": "2026-05-22",
       "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T13:10:53.427739+00:00",
-      "fin_deteccion": "2026-09-18T13:10:53.427739+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T13:12:39.929090+00:00",
+      "fin_deteccion": "2026-09-18T13:12:39.929090+00:00"
     },
     {
       "clave": "alimentacion:aesan-eee4ce86fa",
@@ -3091,8 +3091,8 @@
       "ultima_deteccion": "2026-09-18T13:07:35.052152+00:00",
       "fecha_fuente": "2026-05-15",
       "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T13:10:53.427739+00:00",
-      "fin_deteccion": "2026-09-18T13:10:53.427739+00:00"
+      "ultima_modificacion_detectada": "2026-09-18T13:12:39.929090+00:00",
+      "fin_deteccion": "2026-09-18T13:12:39.929090+00:00"
     },
     {
       "clave": "alimentacion:aesan-314c5c382b",
@@ -3107,8 +3107,8 @@
       "ultima_deteccion": "2026-09-18T10:08:31.022688+00:00",
       "fecha_fuente": "2026-05-15",
       "primera_deteccion": "2026-09-18T10:08:31.022688+00:00",
-      "fin_deteccion": "2026-09-18T13:10:53.427739+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T13:10:53.427739+00:00"
+      "fin_deteccion": "2026-09-18T13:12:39.929090+00:00",
+      "ultima_modificacion_detectada": "2026-09-18T13:12:39.929090+00:00"
     },
     {
       "clave": "meteo:aemet-dcd3ac2579df",
@@ -7333,6 +7333,149 @@
     }
   ],
   "eventos": [
+    {
+      "clave": "alimentacion:aesan-86c41ed14d",
+      "tipo": "alimentacion",
+      "evento": "sustituida_actualizacion",
+      "etiqueta": "Sustituida por actualización",
+      "momento_detectado": "2026-09-18T13:12:39.929090+00:00",
+      "fecha_fuente": "2026-08-26",
+      "titulo": "Advertencia por presencia de gluten: gluten no declarado en salsas etiquetadas \"sin gluten\" procedentes de España. (Ref. ES2026/517 )",
+      "url": "https://www.aesan.gob.es/alertas/2026_65",
+      "detalle_cambio": "Sustituida en el panel por una publicación posterior de AESAN"
+    },
+    {
+      "clave": "alimentacion:aesan-cb6a216d7f",
+      "tipo": "alimentacion",
+      "evento": "sustituida_actualizacion",
+      "etiqueta": "Sustituida por actualización",
+      "momento_detectado": "2026-09-18T13:12:39.929090+00:00",
+      "fecha_fuente": "2026-07-29",
+      "titulo": "Alerta por presencia de Salmonella spp. en salchichón procedente de España (Ref. ES2026/469)",
+      "url": "https://www.aesan.gob.es/alertas/2026_55",
+      "detalle_cambio": "Sustituida en el panel por una publicación posterior de AESAN"
+    },
+    {
+      "clave": "alimentacion:aesan-14b3ea0a78",
+      "tipo": "alimentacion",
+      "evento": "sustituida_actualizacion",
+      "etiqueta": "Sustituida por actualización",
+      "momento_detectado": "2026-09-18T13:12:39.929090+00:00",
+      "fecha_fuente": "2026-06-25",
+      "titulo": "Ampliación de información sobre la alerta por presencia de Salmonella spp. en moringa ecológica procedente de Alemania (Ref. ES2026/240)",
+      "url": "https://www.aesan.gob.es/alertas/2026_33_ampliacion_6",
+      "detalle_cambio": "Sustituida en el panel por una publicación posterior de AESAN"
+    },
+    {
+      "clave": "alimentacion:aesan-b8c4ada616",
+      "tipo": "alimentacion",
+      "evento": "sustituida_actualizacion",
+      "etiqueta": "Sustituida por actualización",
+      "momento_detectado": "2026-09-18T13:12:39.929090+00:00",
+      "fecha_fuente": "2026-06-19",
+      "titulo": "Ampliación de información sobre la alerta por presencia de Salmonella spp. en moringa ecológica procedente de Alemania (Ref. ES2026/240)",
+      "url": "https://www.aesan.gob.es/alertas/2026_33_ampliacion_5",
+      "detalle_cambio": "Sustituida en el panel por una publicación posterior de AESAN"
+    },
+    {
+      "clave": "alimentacion:aesan-e9af7a9b75",
+      "tipo": "alimentacion",
+      "evento": "sustituida_actualizacion",
+      "etiqueta": "Sustituida por actualización",
+      "momento_detectado": "2026-09-18T13:12:39.929090+00:00",
+      "fecha_fuente": "2026-06-17",
+      "titulo": "Advertencia para personas con alergia o intolerancia a los componentes de la leche: Presencia de leche en crema de cacao con avellana ecológica procedente de Italia (Ref. ES2026/358)",
+      "url": "https://www.aesan.gob.es/alertas/2026_49",
+      "detalle_cambio": "Sustituida en el panel por una publicación posterior de AESAN"
+    },
+    {
+      "clave": "alimentacion:aesan-4075fd939b",
+      "tipo": "alimentacion",
+      "evento": "sustituida_actualizacion",
+      "etiqueta": "Sustituida por actualización",
+      "momento_detectado": "2026-09-18T13:12:39.929090+00:00",
+      "fecha_fuente": "2026-06-04",
+      "titulo": "Ampliación de información sobre la alerta por presencia de almendra no declarada en postre procedente de España (Ref. ES2026/327)",
+      "url": "https://www.aesan.gob.es/alertas/2026_Ampliacion_45_2",
+      "detalle_cambio": "Sustituida en el panel por una publicación posterior de AESAN"
+    },
+    {
+      "clave": "alimentacion:aesan-f1edff383e",
+      "tipo": "alimentacion",
+      "evento": "sustituida_actualizacion",
+      "etiqueta": "Sustituida por actualización",
+      "momento_detectado": "2026-09-18T13:12:39.929090+00:00",
+      "fecha_fuente": "2026-06-03",
+      "titulo": "Ampliación de información sobre la alerta por presencia de almendra no declarada en postre procedente de España (Ref. ES2026/327)",
+      "url": "https://www.aesan.gob.es/alertas/2026_Ampliacion_45",
+      "detalle_cambio": "Sustituida en el panel por una publicación posterior de AESAN"
+    },
+    {
+      "clave": "alimentacion:aesan-e7b4fab756",
+      "tipo": "alimentacion",
+      "evento": "sustituida_actualizacion",
+      "etiqueta": "Sustituida por actualización",
+      "momento_detectado": "2026-09-18T13:12:39.929090+00:00",
+      "fecha_fuente": "2026-06-02",
+      "titulo": "Advertencia para personas con alergia a las almendras: presencia de almendras no declaradas en postre procedente de España (Ref. ES2026/327)",
+      "url": "https://www.aesan.gob.es/alertas/2026_45",
+      "detalle_cambio": "Sustituida en el panel por una publicación posterior de AESAN"
+    },
+    {
+      "clave": "alimentacion:aesan-baea4be4e3",
+      "tipo": "alimentacion",
+      "evento": "sustituida_actualizacion",
+      "etiqueta": "Sustituida por actualización",
+      "momento_detectado": "2026-09-18T13:12:39.929090+00:00",
+      "fecha_fuente": "2026-05-27",
+      "titulo": "Corrección de errores sobre la alerta por presencia de Salmonella spp. en moringa ecológica procedente de Alemania (Ref. ES2026/240)",
+      "url": "https://www.aesan.gob.es/alertas/2026_33_ampliacion_4",
+      "detalle_cambio": "Sustituida en el panel por una publicación posterior de AESAN"
+    },
+    {
+      "clave": "alimentacion:aesan-a2f2498bc7",
+      "tipo": "alimentacion",
+      "evento": "sustituida_actualizacion",
+      "etiqueta": "Sustituida por actualización",
+      "momento_detectado": "2026-09-18T13:12:39.929090+00:00",
+      "fecha_fuente": "2026-05-25",
+      "titulo": "Ampliación de información sobre la alerta por presencia de Salmonella spp. en moringa ecológica procedente de Alemania (Ref. ES2026/240)",
+      "url": "https://www.aesan.gob.es/alertas/2026_33_ampliacion_3",
+      "detalle_cambio": "Sustituida en el panel por una publicación posterior de AESAN"
+    },
+    {
+      "clave": "alimentacion:aesan-9e5faf6929",
+      "tipo": "alimentacion",
+      "evento": "sustituida_actualizacion",
+      "etiqueta": "Sustituida por actualización",
+      "momento_detectado": "2026-09-18T13:12:39.929090+00:00",
+      "fecha_fuente": "2026-05-22",
+      "titulo": "Ampliación de información sobre la alerta por presencia de Salmonella spp. en moringa ecológica procedente de Alemania (Ref. ES2026/240)",
+      "url": "https://www.aesan.gob.es/alertas/2026_33_ampliacion_2",
+      "detalle_cambio": "Sustituida en el panel por una publicación posterior de AESAN"
+    },
+    {
+      "clave": "alimentacion:aesan-eee4ce86fa",
+      "tipo": "alimentacion",
+      "evento": "sustituida_actualizacion",
+      "etiqueta": "Sustituida por actualización",
+      "momento_detectado": "2026-09-18T13:12:39.929090+00:00",
+      "fecha_fuente": "2026-05-15",
+      "titulo": "Ampliación de información sobre la alerta por presencia de Listeria monocytogenes en queso fresco de vaca procedente de España (Ref. ES2026/271)",
+      "url": "https://www.aesan.gob.es/alertas/2026_38_Ampliacion_2",
+      "detalle_cambio": "Sustituida en el panel por una publicación posterior de AESAN"
+    },
+    {
+      "clave": "alimentacion:aesan-314c5c382b",
+      "tipo": "alimentacion",
+      "evento": "sustituida_actualizacion",
+      "etiqueta": "Sustituida por actualización",
+      "momento_detectado": "2026-09-18T13:12:39.929090+00:00",
+      "fecha_fuente": "2026-05-15",
+      "titulo": "Ampliación de información sobre la alerta por presencia de Listeria monocytogenes en queso fresco de vaca procedente de España (Ref. ES2026/271)",
+      "url": "https://www.aesan.gob.es/alertas/2026_38_Ampliacion",
+      "detalle_cambio": "Sustituida en el panel por una publicación posterior de AESAN"
+    },
     {
       "clave": "alimentacion:aesan-86c41ed14d",
       "tipo": "alimentacion",
