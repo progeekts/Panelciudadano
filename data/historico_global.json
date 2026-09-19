@@ -1,11 +1,11 @@
 {
-  "ultima_revision": "2026-09-19T14:45:29.783536+00:00",
+  "ultima_revision": "2026-09-19T14:46:36.174643+00:00",
   "fuentes_revision": {
     "ayudas": "2026-09-19T11:56:14.715676+00:00",
     "estafas": "2026-09-19T12:01:41.452105+00:00",
     "alimentacion": "2026-09-19T12:36:02.983418+00:00",
     "salud": "2026-09-19T12:05:45.213611+00:00",
-    "meteo": "2026-09-19T11:30:20.392278+00:00",
+    "meteo": "2026-09-19T14:46:20.152135+00:00",
     "servicios": "2026-09-19T14:43:41.730853+00:00"
   },
   "criterio": "Histórico de cambios detectados. Solo se asigna un estado terminal cuando la fuente o el módulo permiten afirmarlo de forma conservadora.",
@@ -2385,11 +2385,13 @@
       "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260919072942_AFAZ770303PRP11913.xml",
       "referencia": "2.49.0.0.724.0.ES.20260919072942.770303PRP119131789802982",
       "ambito": "Litoral sur de Alicante",
-      "estado": "aviso_vigente",
+      "estado": "expirado_detectado",
       "huella": "10268e3fa7f03fd5951e",
       "ultima_deteccion": "2026-09-19T11:30:32.737894+00:00",
       "fecha_fuente": "2026-09-19T12:00:00+02:00",
-      "primera_deteccion": "2026-09-19T11:30:32.737894+00:00"
+      "primera_deteccion": "2026-09-19T11:30:32.737894+00:00",
+      "fin_deteccion": "2026-09-19T14:46:36.174643+00:00",
+      "ultima_modificacion_detectada": "2026-09-19T14:46:36.174643+00:00"
     },
     {
       "clave": "meteo:aemet-880edf1a142e",
@@ -2400,11 +2402,13 @@
       "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260919072122_AFAZ770301PRP11913.xml",
       "referencia": "2.49.0.0.724.0.ES.20260919072122.770301PRP119131789802482",
       "ambito": "Litoral norte de Alicante",
-      "estado": "aviso_vigente",
+      "estado": "expirado_detectado",
       "huella": "2811a0bc44deab799b4d",
       "ultima_deteccion": "2026-09-19T11:30:32.737894+00:00",
       "fecha_fuente": "2026-09-19T12:00:00+02:00",
-      "primera_deteccion": "2026-09-19T11:30:32.737894+00:00"
+      "primera_deteccion": "2026-09-19T11:30:32.737894+00:00",
+      "fin_deteccion": "2026-09-19T14:46:36.174643+00:00",
+      "ultima_modificacion_detectada": "2026-09-19T14:46:36.174643+00:00"
     },
     {
       "clave": "meteo:aemet-29346a0bc027",
@@ -2414,12 +2418,14 @@
       "fuente": "Agencia Estatal de Meteorología (AEMET)",
       "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260918090139_AFAZ774604PRP11913.xml",
       "ambito": "Litoral sur de Valencia",
-      "estado": "aviso_vigente",
+      "estado": "expirado_detectado",
       "huella": "d89bfb4e9adc63808c01",
       "ultima_deteccion": "2026-09-18T09:44:04.096849+00:00",
       "fecha_fuente": "2026-09-19T03:00:00+02:00",
       "primera_deteccion": "2026-09-18T09:44:04.096849+00:00",
-      "referencia": "2.49.0.0.724.0.ES.20260918090139.774604PRP119131789722099"
+      "referencia": "2.49.0.0.724.0.ES.20260918090139.774604PRP119131789722099",
+      "fin_deteccion": "2026-09-19T14:46:36.174643+00:00",
+      "ultima_modificacion_detectada": "2026-09-19T14:46:36.174643+00:00"
     },
     {
       "clave": "meteo:aemet-df4ec038e3c6",
@@ -2429,12 +2435,14 @@
       "fuente": "Agencia Estatal de Meteorología (AEMET)",
       "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260918090139_AFAZ770303TOTO1913.xml",
       "ambito": "Litoral sur de Alicante",
-      "estado": "aviso_vigente",
+      "estado": "expirado_detectado",
       "huella": "dbbd77822cc525a1c527",
       "ultima_deteccion": "2026-09-18T09:44:04.096849+00:00",
       "fecha_fuente": "2026-09-19T03:00:00+02:00",
       "primera_deteccion": "2026-09-18T09:44:04.096849+00:00",
-      "referencia": "2.49.0.0.724.0.ES.20260918090139.770303TOTO19131789722099"
+      "referencia": "2.49.0.0.724.0.ES.20260918090139.770303TOTO19131789722099",
+      "fin_deteccion": "2026-09-19T14:46:36.174643+00:00",
+      "ultima_modificacion_detectada": "2026-09-19T14:46:36.174643+00:00"
     },
     {
       "clave": "ayudas:bdns-930415",
@@ -9559,6 +9567,50 @@
     }
   ],
   "eventos": [
+    {
+      "clave": "meteo:aemet-e22396b1014f",
+      "tipo": "meteo",
+      "evento": "expirado_detectado",
+      "etiqueta": "Dejó de estar vigente",
+      "momento_detectado": "2026-09-19T14:46:36.174643+00:00",
+      "fecha_fuente": "2026-09-19T12:00:00+02:00",
+      "titulo": "Aviso de lluvias de nivel amarillo",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260919072942_AFAZ770303PRP11913.xml",
+      "detalle_cambio": "Ya no figura en el conjunto vigente validado por el módulo AEMET"
+    },
+    {
+      "clave": "meteo:aemet-880edf1a142e",
+      "tipo": "meteo",
+      "evento": "expirado_detectado",
+      "etiqueta": "Dejó de estar vigente",
+      "momento_detectado": "2026-09-19T14:46:36.174643+00:00",
+      "fecha_fuente": "2026-09-19T12:00:00+02:00",
+      "titulo": "Aviso de lluvias de nivel amarillo",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260919072122_AFAZ770301PRP11913.xml",
+      "detalle_cambio": "Ya no figura en el conjunto vigente validado por el módulo AEMET"
+    },
+    {
+      "clave": "meteo:aemet-29346a0bc027",
+      "tipo": "meteo",
+      "evento": "expirado_detectado",
+      "etiqueta": "Dejó de estar vigente",
+      "momento_detectado": "2026-09-19T14:46:36.174643+00:00",
+      "fecha_fuente": "2026-09-19T03:00:00+02:00",
+      "titulo": "Aviso de lluvias de nivel amarillo",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260918090139_AFAZ774604PRP11913.xml",
+      "detalle_cambio": "Ya no figura en el conjunto vigente validado por el módulo AEMET"
+    },
+    {
+      "clave": "meteo:aemet-df4ec038e3c6",
+      "tipo": "meteo",
+      "evento": "expirado_detectado",
+      "etiqueta": "Dejó de estar vigente",
+      "momento_detectado": "2026-09-19T14:46:36.174643+00:00",
+      "fecha_fuente": "2026-09-19T03:00:00+02:00",
+      "titulo": "Aviso de tormentas de nivel amarillo",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260918090139_AFAZ770303TOTO1913.xml",
+      "detalle_cambio": "Ya no figura en el conjunto vigente validado por el módulo AEMET"
+    },
     {
       "clave": "ayudas:bdns-930519",
       "tipo": "ayudas",
@@ -19817,46 +19869,6 @@
       "fecha_fuente": "2026-09-17T08:00:00+02:00",
       "titulo": "Aviso de lluvias de nivel amarillo",
       "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260916093033_AFAZ645403PRP11718.xml"
-    },
-    {
-      "clave": "meteo:aemet-2d5bd19582dd",
-      "tipo": "meteo",
-      "evento": "aviso_vigente",
-      "etiqueta": "Aviso vigente",
-      "momento_detectado": "2026-09-17T11:22:24.181186+00:00",
-      "fecha_fuente": "2026-09-17T08:00:00+02:00",
-      "titulo": "Aviso de lluvias de nivel amarillo",
-      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260916093033_AFAZ645404PRP11718.xml"
-    },
-    {
-      "clave": "meteo:aemet-4c6dc66549bb",
-      "tipo": "meteo",
-      "evento": "aviso_vigente",
-      "etiqueta": "Aviso vigente",
-      "momento_detectado": "2026-09-17T11:22:24.181186+00:00",
-      "fecha_fuente": "2026-09-17T08:00:00+02:00",
-      "titulo": "Aviso de lluvias de nivel amarillo",
-      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260916093033_AFAZ645405PRP11718.xml"
-    },
-    {
-      "clave": "meteo:aemet-44a82c1f61c6",
-      "tipo": "meteo",
-      "evento": "aviso_vigente",
-      "etiqueta": "Aviso vigente",
-      "momento_detectado": "2026-09-17T11:22:24.181186+00:00",
-      "fecha_fuente": "2026-09-17T08:00:00+02:00",
-      "titulo": "Aviso de tormentas de nivel amarillo",
-      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260916093033_AFAZ645401TOTO1718.xml"
-    },
-    {
-      "clave": "meteo:aemet-f85aeb7d26c7",
-      "tipo": "meteo",
-      "evento": "aviso_vigente",
-      "etiqueta": "Aviso vigente",
-      "momento_detectado": "2026-09-17T11:22:24.181186+00:00",
-      "fecha_fuente": "2026-09-17T08:00:00+02:00",
-      "titulo": "Aviso de tormentas de nivel amarillo",
-      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260916093033_AFAZ645402TOTO1718.xml"
     }
   ]
 }
