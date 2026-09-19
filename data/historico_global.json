@@ -1,15 +1,15 @@
 {
-  "ultima_revision": "2026-09-19T17:57:43.206785+00:00",
+  "ultima_revision": "2026-09-19T17:58:46.514590+00:00",
   "fuentes_revision": {
     "ayudas": "2026-09-19T11:56:14.715676+00:00",
     "estafas": "2026-09-19T12:01:41.452105+00:00",
     "alimentacion": "2026-09-19T12:36:02.983418+00:00",
     "salud": "2026-09-19T12:05:45.213611+00:00",
-    "meteo": "2026-09-19T14:46:20.152135+00:00",
+    "meteo": "2026-09-19T17:58:34.647509+00:00",
     "servicios": "2026-09-19T17:56:29.883877+00:00"
   },
   "criterio": "Histórico de cambios detectados. Solo se asigna un estado terminal cuando la fuente o el módulo permiten afirmarlo de forma conservadora.",
-  "total_registros": 625,
+  "total_registros": 632,
   "total_eventos": 1000,
   "registros": [
     {
@@ -2242,6 +2242,96 @@
       "primera_deteccion": "2026-09-19T11:30:32.737894+00:00"
     },
     {
+      "clave": "meteo:aemet-93c8cea3ef3d",
+      "tipo": "meteo",
+      "id": "aemet-93c8cea3ef3d",
+      "titulo": "Aviso de vientos de nivel amarillo",
+      "fuente": "Agencia Estatal de Meteorología (AEMET)",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260919170455_AFAZ611102VIRM2104.xml",
+      "referencia": "2.49.0.0.724.0.ES.20260919170455.611102VIRM21041789837495",
+      "ambito": "Campiña gaditana",
+      "estado": "aviso_vigente",
+      "huella": "65380de9ccc9336528ac",
+      "ultima_deteccion": "2026-09-19T17:58:46.514590+00:00",
+      "fecha_fuente": "2026-09-21T00:00:00+02:00",
+      "primera_deteccion": "2026-09-19T17:58:46.514590+00:00"
+    },
+    {
+      "clave": "meteo:aemet-f573583f9323",
+      "tipo": "meteo",
+      "id": "aemet-f573583f9323",
+      "titulo": "Aviso de vientos de nivel amarillo",
+      "fuente": "Agencia Estatal de Meteorología (AEMET)",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260919170455_AFAZ611103VIRM2104.xml",
+      "referencia": "2.49.0.0.724.0.ES.20260919170455.611103VIRM21041789837495",
+      "ambito": "Litoral gaditano",
+      "estado": "aviso_vigente",
+      "huella": "84f4691b5b593dd268c6",
+      "ultima_deteccion": "2026-09-19T17:58:46.514590+00:00",
+      "fecha_fuente": "2026-09-21T00:00:00+02:00",
+      "primera_deteccion": "2026-09-19T17:58:46.514590+00:00"
+    },
+    {
+      "clave": "meteo:aemet-90960df1a761",
+      "tipo": "meteo",
+      "id": "aemet-90960df1a761",
+      "titulo": "Aviso de vientos de nivel amarillo",
+      "fuente": "Agencia Estatal de Meteorología (AEMET)",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260919170455_AFAZ611104VIRM2104.xml",
+      "referencia": "2.49.0.0.724.0.ES.20260919170455.611104VIRM21041789837495",
+      "ambito": "Estrecho",
+      "estado": "aviso_vigente",
+      "huella": "ad45e298a5db6702971b",
+      "ultima_deteccion": "2026-09-19T17:58:46.514590+00:00",
+      "fecha_fuente": "2026-09-21T00:00:00+02:00",
+      "primera_deteccion": "2026-09-19T17:58:46.514590+00:00"
+    },
+    {
+      "clave": "meteo:aemet-56bae6d8f9b1",
+      "tipo": "meteo",
+      "id": "aemet-56bae6d8f9b1",
+      "titulo": "Aviso de vientos de nivel amarillo",
+      "fuente": "Agencia Estatal de Meteorología (AEMET)",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260919164532_AFAZ611102VIRM2022.xml",
+      "referencia": "2.49.0.0.724.0.ES.20260919164532.611102VIRM20221789836332",
+      "ambito": "Campiña gaditana",
+      "estado": "aviso_vigente",
+      "huella": "e2bafcd20a96f3d189e1",
+      "ultima_deteccion": "2026-09-19T17:58:46.514590+00:00",
+      "fecha_fuente": "2026-09-19T19:00:00+02:00",
+      "primera_deteccion": "2026-09-19T17:58:46.514590+00:00"
+    },
+    {
+      "clave": "meteo:aemet-d3fc66b32c88",
+      "tipo": "meteo",
+      "id": "aemet-d3fc66b32c88",
+      "titulo": "Aviso de vientos de nivel amarillo",
+      "fuente": "Agencia Estatal de Meteorología (AEMET)",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260919164532_AFAZ611103VIRM2022.xml",
+      "referencia": "2.49.0.0.724.0.ES.20260919164532.611103VIRM20221789836332",
+      "ambito": "Litoral gaditano",
+      "estado": "aviso_vigente",
+      "huella": "890e56143bf0c5b249b9",
+      "ultima_deteccion": "2026-09-19T17:58:46.514590+00:00",
+      "fecha_fuente": "2026-09-19T19:00:00+02:00",
+      "primera_deteccion": "2026-09-19T17:58:46.514590+00:00"
+    },
+    {
+      "clave": "meteo:aemet-b90dbaf6568b",
+      "tipo": "meteo",
+      "id": "aemet-b90dbaf6568b",
+      "titulo": "Aviso de vientos de nivel amarillo",
+      "fuente": "Agencia Estatal de Meteorología (AEMET)",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260919094601_AFAZ611104VIRM2022.xml",
+      "referencia": "2.49.0.0.724.0.ES.20260919094601.611104VIRM20221789811161",
+      "ambito": "Estrecho",
+      "estado": "aviso_vigente",
+      "huella": "16858aef148007a2daad",
+      "ultima_deteccion": "2026-09-19T11:30:32.737894+00:00",
+      "fecha_fuente": "2026-09-19T12:00:00+02:00",
+      "primera_deteccion": "2026-09-19T11:30:32.737894+00:00"
+    },
+    {
       "clave": "meteo:aemet-e8f2f663f3bb",
       "tipo": "meteo",
       "id": "aemet-e8f2f663f3bb",
@@ -2272,19 +2362,34 @@
       "primera_deteccion": "2026-09-19T11:30:32.737894+00:00"
     },
     {
-      "clave": "meteo:aemet-b90dbaf6568b",
+      "clave": "meteo:aemet-0f11c19175b2",
       "tipo": "meteo",
-      "id": "aemet-b90dbaf6568b",
-      "titulo": "Aviso de vientos de nivel amarillo",
+      "id": "aemet-0f11c19175b2",
+      "titulo": "Aviso de temperaturas máximas de nivel amarillo",
       "fuente": "Agencia Estatal de Meteorología (AEMET)",
-      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260919094601_AFAZ611104VIRM2022.xml",
-      "referencia": "2.49.0.0.724.0.ES.20260919094601.611104VIRM20221789811161",
-      "ambito": "Estrecho",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260919155603_AFAZ713601ATTA2019.xml",
+      "referencia": "2.49.0.0.724.0.ES.20260919155603.713601ATTA20191789833363",
+      "ambito": "Rias Baixas",
       "estado": "aviso_vigente",
-      "huella": "16858aef148007a2daad",
-      "ultima_deteccion": "2026-09-19T11:30:32.737894+00:00",
-      "fecha_fuente": "2026-09-19T12:00:00+02:00",
-      "primera_deteccion": "2026-09-19T11:30:32.737894+00:00"
+      "huella": "7948a5a1a4b33f4342b0",
+      "ultima_deteccion": "2026-09-19T17:58:46.514590+00:00",
+      "fecha_fuente": "2026-09-20T13:00:00+02:00",
+      "primera_deteccion": "2026-09-19T17:58:46.514590+00:00"
+    },
+    {
+      "clave": "meteo:aemet-84535e61f6fa",
+      "tipo": "meteo",
+      "id": "aemet-84535e61f6fa",
+      "titulo": "Aviso de temperaturas máximas de nivel amarillo",
+      "fuente": "Agencia Estatal de Meteorología (AEMET)",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260919155603_AFAZ713603ATTA2019.xml",
+      "referencia": "2.49.0.0.724.0.ES.20260919155603.713603ATTA20191789833363",
+      "ambito": "Miño de Pontevedra",
+      "estado": "aviso_vigente",
+      "huella": "57456bea80b630788352",
+      "ultima_deteccion": "2026-09-19T17:58:46.514590+00:00",
+      "fecha_fuente": "2026-09-20T13:00:00+02:00",
+      "primera_deteccion": "2026-09-19T17:58:46.514590+00:00"
     },
     {
       "clave": "meteo:aemet-3134f54cd200",
@@ -2295,11 +2400,13 @@
       "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260919094601_AFAZ611102VIRM2022.xml",
       "referencia": "2.49.0.0.724.0.ES.20260919094601.611102VIRM20221789811161",
       "ambito": "Campiña gaditana",
-      "estado": "aviso_vigente",
+      "estado": "expirado_detectado",
       "huella": "602b393f88a7caa4b8c4",
       "ultima_deteccion": "2026-09-19T11:30:32.737894+00:00",
       "fecha_fuente": "2026-09-20T00:00:00+02:00",
-      "primera_deteccion": "2026-09-19T11:30:32.737894+00:00"
+      "primera_deteccion": "2026-09-19T11:30:32.737894+00:00",
+      "fin_deteccion": "2026-09-19T17:58:46.514590+00:00",
+      "ultima_modificacion_detectada": "2026-09-19T17:58:46.514590+00:00"
     },
     {
       "clave": "meteo:aemet-56a68f491919",
@@ -2310,11 +2417,13 @@
       "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260919094601_AFAZ611103VIRM2022.xml",
       "referencia": "2.49.0.0.724.0.ES.20260919094601.611103VIRM20221789811161",
       "ambito": "Litoral gaditano",
-      "estado": "aviso_vigente",
+      "estado": "expirado_detectado",
       "huella": "336dc6d4467b709447e8",
       "ultima_deteccion": "2026-09-19T11:30:32.737894+00:00",
       "fecha_fuente": "2026-09-20T00:00:00+02:00",
-      "primera_deteccion": "2026-09-19T11:30:32.737894+00:00"
+      "primera_deteccion": "2026-09-19T11:30:32.737894+00:00",
+      "fin_deteccion": "2026-09-19T17:58:46.514590+00:00",
+      "ultima_modificacion_detectada": "2026-09-19T17:58:46.514590+00:00"
     },
     {
       "clave": "meteo:aemet-a58218e621e7",
@@ -2325,11 +2434,13 @@
       "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260918162544_AFAZ733004PRP11916.xml",
       "referencia": "2.49.0.0.724.0.ES.20260918162544.733004PRP119161789748744",
       "ambito": "Valle del Guadalentín, Lorca y Águilas",
-      "estado": "aviso_vigente",
+      "estado": "expirado_detectado",
       "huella": "027f4314061c1d0f100e",
       "ultima_deteccion": "2026-09-18T17:51:21.206003+00:00",
       "fecha_fuente": "2026-09-19T03:00:00+02:00",
-      "primera_deteccion": "2026-09-18T17:51:21.206003+00:00"
+      "primera_deteccion": "2026-09-18T17:51:21.206003+00:00",
+      "fin_deteccion": "2026-09-19T17:58:46.514590+00:00",
+      "ultima_modificacion_detectada": "2026-09-19T17:58:46.514590+00:00"
     },
     {
       "clave": "meteo:aemet-9a3bb9a423c2",
@@ -2340,11 +2451,13 @@
       "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260918162544_AFAZ733005PRP11916.xml",
       "referencia": "2.49.0.0.724.0.ES.20260918162544.733005PRP119161789748744",
       "ambito": "Campo de Cartagena y Mazarrón",
-      "estado": "aviso_vigente",
+      "estado": "expirado_detectado",
       "huella": "0807c1890ee3f674cb38",
       "ultima_deteccion": "2026-09-18T17:51:21.206003+00:00",
       "fecha_fuente": "2026-09-19T03:00:00+02:00",
-      "primera_deteccion": "2026-09-18T17:51:21.206003+00:00"
+      "primera_deteccion": "2026-09-18T17:51:21.206003+00:00",
+      "fin_deteccion": "2026-09-19T17:58:46.514590+00:00",
+      "ultima_modificacion_detectada": "2026-09-19T17:58:46.514590+00:00"
     },
     {
       "clave": "meteo:aemet-07b2a1d49962",
@@ -2355,11 +2468,13 @@
       "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260918162544_AFAZ733004TOTO1916.xml",
       "referencia": "2.49.0.0.724.0.ES.20260918162544.733004TOTO19161789748744",
       "ambito": "Valle del Guadalentín, Lorca y Águilas",
-      "estado": "aviso_vigente",
+      "estado": "expirado_detectado",
       "huella": "8a3beb222b36ffbf6740",
       "ultima_deteccion": "2026-09-18T17:51:21.206003+00:00",
       "fecha_fuente": "2026-09-19T03:00:00+02:00",
-      "primera_deteccion": "2026-09-18T17:51:21.206003+00:00"
+      "primera_deteccion": "2026-09-18T17:51:21.206003+00:00",
+      "fin_deteccion": "2026-09-19T17:58:46.514590+00:00",
+      "ultima_modificacion_detectada": "2026-09-19T17:58:46.514590+00:00"
     },
     {
       "clave": "meteo:aemet-3d5e5302f612",
@@ -2370,11 +2485,13 @@
       "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260918162544_AFAZ733005TOTO1916.xml",
       "referencia": "2.49.0.0.724.0.ES.20260918162544.733005TOTO19161789748744",
       "ambito": "Campo de Cartagena y Mazarrón",
-      "estado": "aviso_vigente",
+      "estado": "expirado_detectado",
       "huella": "e8d4621e8d12386f4ef9",
       "ultima_deteccion": "2026-09-18T17:51:21.206003+00:00",
       "fecha_fuente": "2026-09-19T03:00:00+02:00",
-      "primera_deteccion": "2026-09-18T17:51:21.206003+00:00"
+      "primera_deteccion": "2026-09-18T17:51:21.206003+00:00",
+      "fin_deteccion": "2026-09-19T17:58:46.514590+00:00",
+      "ultima_modificacion_detectada": "2026-09-19T17:58:46.514590+00:00"
     },
     {
       "clave": "meteo:aemet-e22396b1014f",
@@ -9567,6 +9684,142 @@
     }
   ],
   "eventos": [
+    {
+      "clave": "meteo:aemet-93c8cea3ef3d",
+      "tipo": "meteo",
+      "evento": "aviso_vigente",
+      "etiqueta": "Aviso vigente",
+      "momento_detectado": "2026-09-19T17:58:46.514590+00:00",
+      "fecha_fuente": "2026-09-21T00:00:00+02:00",
+      "titulo": "Aviso de vientos de nivel amarillo",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260919170455_AFAZ611102VIRM2104.xml"
+    },
+    {
+      "clave": "meteo:aemet-f573583f9323",
+      "tipo": "meteo",
+      "evento": "aviso_vigente",
+      "etiqueta": "Aviso vigente",
+      "momento_detectado": "2026-09-19T17:58:46.514590+00:00",
+      "fecha_fuente": "2026-09-21T00:00:00+02:00",
+      "titulo": "Aviso de vientos de nivel amarillo",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260919170455_AFAZ611103VIRM2104.xml"
+    },
+    {
+      "clave": "meteo:aemet-90960df1a761",
+      "tipo": "meteo",
+      "evento": "aviso_vigente",
+      "etiqueta": "Aviso vigente",
+      "momento_detectado": "2026-09-19T17:58:46.514590+00:00",
+      "fecha_fuente": "2026-09-21T00:00:00+02:00",
+      "titulo": "Aviso de vientos de nivel amarillo",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260919170455_AFAZ611104VIRM2104.xml"
+    },
+    {
+      "clave": "meteo:aemet-56bae6d8f9b1",
+      "tipo": "meteo",
+      "evento": "aviso_vigente",
+      "etiqueta": "Aviso vigente",
+      "momento_detectado": "2026-09-19T17:58:46.514590+00:00",
+      "fecha_fuente": "2026-09-19T19:00:00+02:00",
+      "titulo": "Aviso de vientos de nivel amarillo",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260919164532_AFAZ611102VIRM2022.xml"
+    },
+    {
+      "clave": "meteo:aemet-d3fc66b32c88",
+      "tipo": "meteo",
+      "evento": "aviso_vigente",
+      "etiqueta": "Aviso vigente",
+      "momento_detectado": "2026-09-19T17:58:46.514590+00:00",
+      "fecha_fuente": "2026-09-19T19:00:00+02:00",
+      "titulo": "Aviso de vientos de nivel amarillo",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260919164532_AFAZ611103VIRM2022.xml"
+    },
+    {
+      "clave": "meteo:aemet-0f11c19175b2",
+      "tipo": "meteo",
+      "evento": "aviso_vigente",
+      "etiqueta": "Aviso vigente",
+      "momento_detectado": "2026-09-19T17:58:46.514590+00:00",
+      "fecha_fuente": "2026-09-20T13:00:00+02:00",
+      "titulo": "Aviso de temperaturas máximas de nivel amarillo",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260919155603_AFAZ713601ATTA2019.xml"
+    },
+    {
+      "clave": "meteo:aemet-84535e61f6fa",
+      "tipo": "meteo",
+      "evento": "aviso_vigente",
+      "etiqueta": "Aviso vigente",
+      "momento_detectado": "2026-09-19T17:58:46.514590+00:00",
+      "fecha_fuente": "2026-09-20T13:00:00+02:00",
+      "titulo": "Aviso de temperaturas máximas de nivel amarillo",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260919155603_AFAZ713603ATTA2019.xml"
+    },
+    {
+      "clave": "meteo:aemet-3134f54cd200",
+      "tipo": "meteo",
+      "evento": "expirado_detectado",
+      "etiqueta": "Dejó de estar vigente",
+      "momento_detectado": "2026-09-19T17:58:46.514590+00:00",
+      "fecha_fuente": "2026-09-20T00:00:00+02:00",
+      "titulo": "Aviso de vientos de nivel amarillo",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260919094601_AFAZ611102VIRM2022.xml",
+      "detalle_cambio": "Ya no figura en el conjunto vigente validado por el módulo AEMET"
+    },
+    {
+      "clave": "meteo:aemet-56a68f491919",
+      "tipo": "meteo",
+      "evento": "expirado_detectado",
+      "etiqueta": "Dejó de estar vigente",
+      "momento_detectado": "2026-09-19T17:58:46.514590+00:00",
+      "fecha_fuente": "2026-09-20T00:00:00+02:00",
+      "titulo": "Aviso de vientos de nivel amarillo",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260919094601_AFAZ611103VIRM2022.xml",
+      "detalle_cambio": "Ya no figura en el conjunto vigente validado por el módulo AEMET"
+    },
+    {
+      "clave": "meteo:aemet-a58218e621e7",
+      "tipo": "meteo",
+      "evento": "expirado_detectado",
+      "etiqueta": "Dejó de estar vigente",
+      "momento_detectado": "2026-09-19T17:58:46.514590+00:00",
+      "fecha_fuente": "2026-09-19T03:00:00+02:00",
+      "titulo": "Aviso de lluvias de nivel amarillo",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260918162544_AFAZ733004PRP11916.xml",
+      "detalle_cambio": "Ya no figura en el conjunto vigente validado por el módulo AEMET"
+    },
+    {
+      "clave": "meteo:aemet-9a3bb9a423c2",
+      "tipo": "meteo",
+      "evento": "expirado_detectado",
+      "etiqueta": "Dejó de estar vigente",
+      "momento_detectado": "2026-09-19T17:58:46.514590+00:00",
+      "fecha_fuente": "2026-09-19T03:00:00+02:00",
+      "titulo": "Aviso de lluvias de nivel amarillo",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260918162544_AFAZ733005PRP11916.xml",
+      "detalle_cambio": "Ya no figura en el conjunto vigente validado por el módulo AEMET"
+    },
+    {
+      "clave": "meteo:aemet-07b2a1d49962",
+      "tipo": "meteo",
+      "evento": "expirado_detectado",
+      "etiqueta": "Dejó de estar vigente",
+      "momento_detectado": "2026-09-19T17:58:46.514590+00:00",
+      "fecha_fuente": "2026-09-19T03:00:00+02:00",
+      "titulo": "Aviso de tormentas de nivel amarillo",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260918162544_AFAZ733004TOTO1916.xml",
+      "detalle_cambio": "Ya no figura en el conjunto vigente validado por el módulo AEMET"
+    },
+    {
+      "clave": "meteo:aemet-3d5e5302f612",
+      "tipo": "meteo",
+      "evento": "expirado_detectado",
+      "etiqueta": "Dejó de estar vigente",
+      "momento_detectado": "2026-09-19T17:58:46.514590+00:00",
+      "fecha_fuente": "2026-09-19T03:00:00+02:00",
+      "titulo": "Aviso de tormentas de nivel amarillo",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260918162544_AFAZ733005TOTO1916.xml",
+      "detalle_cambio": "Ya no figura en el conjunto vigente validado por el módulo AEMET"
+    },
     {
       "clave": "meteo:aemet-e22396b1014f",
       "tipo": "meteo",
@@ -19739,136 +19992,6 @@
       "fecha_fuente": "2026-09-17T08:00:00+02:00",
       "titulo": "Aviso de lluvias de nivel amarillo",
       "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260917063901_AFAZ681302PRP11718.xml"
-    },
-    {
-      "clave": "meteo:aemet-bcce9d53a76b",
-      "tipo": "meteo",
-      "evento": "aviso_vigente",
-      "etiqueta": "Aviso vigente",
-      "momento_detectado": "2026-09-17T11:22:24.181186+00:00",
-      "fecha_fuente": "2026-09-17T08:00:00+02:00",
-      "titulo": "Aviso de tormentas de nivel amarillo",
-      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260917063901_AFAZ681302TOTO1718.xml"
-    },
-    {
-      "clave": "meteo:aemet-0bc55b1a88d2",
-      "tipo": "meteo",
-      "evento": "aviso_vigente",
-      "etiqueta": "Aviso vigente",
-      "momento_detectado": "2026-09-17T11:22:24.181186+00:00",
-      "fecha_fuente": "2026-09-17T12:00:00+02:00",
-      "titulo": "Aviso de lluvias de nivel amarillo",
-      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260917063901_AFAZ681304PRP11718.xml"
-    },
-    {
-      "clave": "meteo:aemet-0685d10dee41",
-      "tipo": "meteo",
-      "evento": "aviso_vigente",
-      "etiqueta": "Aviso vigente",
-      "momento_detectado": "2026-09-17T11:22:24.181186+00:00",
-      "fecha_fuente": "2026-09-17T12:00:00+02:00",
-      "titulo": "Aviso de tormentas de nivel amarillo",
-      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260917063901_AFAZ681304TOTO1718.xml"
-    },
-    {
-      "clave": "meteo:aemet-801eb6d338bd",
-      "tipo": "meteo",
-      "evento": "aviso_vigente",
-      "etiqueta": "Aviso vigente",
-      "momento_detectado": "2026-09-17T11:22:24.181186+00:00",
-      "fecha_fuente": "2026-09-17T00:00:00+02:00",
-      "titulo": "Aviso de lluvias de nivel amarillo",
-      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260916215304_AFAZ774603PRP11718.xml"
-    },
-    {
-      "clave": "meteo:aemet-eba3de5204fc",
-      "tipo": "meteo",
-      "evento": "aviso_vigente",
-      "etiqueta": "Aviso vigente",
-      "momento_detectado": "2026-09-17T11:22:24.181186+00:00",
-      "fecha_fuente": "2026-09-17T12:00:00+02:00",
-      "titulo": "Aviso de lluvias de nivel amarillo",
-      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260916164104_AFAZ733004PRP21718.xml"
-    },
-    {
-      "clave": "meteo:aemet-b15620998ac7",
-      "tipo": "meteo",
-      "evento": "aviso_vigente",
-      "etiqueta": "Aviso vigente",
-      "momento_detectado": "2026-09-17T11:22:24.181186+00:00",
-      "fecha_fuente": "2026-09-17T12:00:00+02:00",
-      "titulo": "Aviso de lluvias de nivel amarillo",
-      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260916164104_AFAZ733005PRP21718.xml"
-    },
-    {
-      "clave": "meteo:aemet-8bc019bcfe1a",
-      "tipo": "meteo",
-      "evento": "aviso_vigente",
-      "etiqueta": "Aviso vigente",
-      "momento_detectado": "2026-09-17T11:22:24.181186+00:00",
-      "fecha_fuente": "2026-09-17T12:00:00+02:00",
-      "titulo": "Aviso de tormentas de nivel amarillo",
-      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260916164104_AFAZ733004TOTO1718.xml"
-    },
-    {
-      "clave": "meteo:aemet-eca9c482acdc",
-      "tipo": "meteo",
-      "evento": "aviso_vigente",
-      "etiqueta": "Aviso vigente",
-      "momento_detectado": "2026-09-17T11:22:24.181186+00:00",
-      "fecha_fuente": "2026-09-17T12:00:00+02:00",
-      "titulo": "Aviso de tormentas de nivel amarillo",
-      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260916164104_AFAZ733005TOTO1718.xml"
-    },
-    {
-      "clave": "meteo:aemet-5720140899b2",
-      "tipo": "meteo",
-      "evento": "aviso_vigente",
-      "etiqueta": "Aviso vigente",
-      "momento_detectado": "2026-09-17T11:22:24.181186+00:00",
-      "fecha_fuente": "2026-09-17T12:00:00+02:00",
-      "titulo": "Aviso de tormentas de nivel amarillo",
-      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260916164039_AFAZ610404TOTO1718.xml"
-    },
-    {
-      "clave": "meteo:aemet-63fa0482c332",
-      "tipo": "meteo",
-      "evento": "aviso_vigente",
-      "etiqueta": "Aviso vigente",
-      "momento_detectado": "2026-09-17T11:22:24.181186+00:00",
-      "fecha_fuente": "2026-09-17T15:00:00+02:00",
-      "titulo": "Aviso de tormentas de nivel amarillo",
-      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260916163153_AFAZ770303TOTO1718.xml"
-    },
-    {
-      "clave": "meteo:aemet-ffc938ff7bf3",
-      "tipo": "meteo",
-      "evento": "aviso_vigente",
-      "etiqueta": "Aviso vigente",
-      "momento_detectado": "2026-09-17T11:22:24.181186+00:00",
-      "fecha_fuente": "2026-09-17T08:00:00+02:00",
-      "titulo": "Aviso de lluvias de nivel amarillo",
-      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260916093033_AFAZ645401PRP11718.xml"
-    },
-    {
-      "clave": "meteo:aemet-3ab6b3116dd2",
-      "tipo": "meteo",
-      "evento": "aviso_vigente",
-      "etiqueta": "Aviso vigente",
-      "momento_detectado": "2026-09-17T11:22:24.181186+00:00",
-      "fecha_fuente": "2026-09-17T08:00:00+02:00",
-      "titulo": "Aviso de lluvias de nivel amarillo",
-      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260916093033_AFAZ645402PRP11718.xml"
-    },
-    {
-      "clave": "meteo:aemet-a6081e7479ac",
-      "tipo": "meteo",
-      "evento": "aviso_vigente",
-      "etiqueta": "Aviso vigente",
-      "momento_detectado": "2026-09-17T11:22:24.181186+00:00",
-      "fecha_fuente": "2026-09-17T08:00:00+02:00",
-      "titulo": "Aviso de lluvias de nivel amarillo",
-      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260916093033_AFAZ645403PRP11718.xml"
     }
   ]
 }
