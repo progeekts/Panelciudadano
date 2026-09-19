@@ -1,11 +1,11 @@
 {
-  "ultima_revision": "2026-09-19T01:34:29.684573+00:00",
+  "ultima_revision": "2026-09-19T06:35:31.177969+00:00",
   "fuentes_revision": {
     "ayudas": "2026-09-18T21:42:13.954888+00:00",
     "estafas": "2026-09-18T21:47:42.055364+00:00",
     "alimentacion": "2026-09-18T22:42:39.898477+00:00",
     "salud": "2026-09-18T21:57:46.319093+00:00",
-    "meteo": "2026-09-19T01:33:47.258525+00:00",
+    "meteo": "2026-09-19T06:35:17.925881+00:00",
     "servicios": "2026-09-19T01:33:01.801000+00:00"
   },
   "criterio": "Histórico de cambios detectados. Solo se asigna un estado terminal cuando la fuente o el módulo permiten afirmarlo de forma conservadora.",
@@ -2185,21 +2185,6 @@
       "referencia": "R_12/2026"
     },
     {
-      "clave": "meteo:aemet-1c4a22d60df5",
-      "tipo": "meteo",
-      "id": "aemet-1c4a22d60df5",
-      "titulo": "Aviso de lluvias de nivel naranja",
-      "fuente": "Agencia Estatal de Meteorología (AEMET)",
-      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260919012024_AFAZ770301PRP11904.xml",
-      "referencia": "2.49.0.0.724.0.ES.20260919012024.770301PRP119041789780824",
-      "ambito": "Litoral norte de Alicante",
-      "estado": "aviso_vigente",
-      "huella": "c35eb20ea79d15e9d65a",
-      "ultima_deteccion": "2026-09-19T01:34:00.777566+00:00",
-      "fecha_fuente": "2026-09-19T03:00:00+02:00",
-      "primera_deteccion": "2026-09-19T01:34:00.777566+00:00"
-    },
-    {
       "clave": "meteo:aemet-db122744baf3",
       "tipo": "meteo",
       "id": "aemet-db122744baf3",
@@ -2468,6 +2453,23 @@
       "fecha_fuente": "2026-09-19T03:00:00+02:00",
       "primera_deteccion": "2026-09-18T09:44:04.096849+00:00",
       "referencia": "2.49.0.0.724.0.ES.20260918090139.770303TOTO19131789722099"
+    },
+    {
+      "clave": "meteo:aemet-1c4a22d60df5",
+      "tipo": "meteo",
+      "id": "aemet-1c4a22d60df5",
+      "titulo": "Aviso de lluvias de nivel naranja",
+      "fuente": "Agencia Estatal de Meteorología (AEMET)",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260919012024_AFAZ770301PRP11904.xml",
+      "referencia": "2.49.0.0.724.0.ES.20260919012024.770301PRP119041789780824",
+      "ambito": "Litoral norte de Alicante",
+      "estado": "expirado_detectado",
+      "huella": "c35eb20ea79d15e9d65a",
+      "ultima_deteccion": "2026-09-19T01:34:00.777566+00:00",
+      "fecha_fuente": "2026-09-19T03:00:00+02:00",
+      "primera_deteccion": "2026-09-19T01:34:00.777566+00:00",
+      "fin_deteccion": "2026-09-19T06:35:31.177969+00:00",
+      "ultima_modificacion_detectada": "2026-09-19T06:35:31.177969+00:00"
     },
     {
       "clave": "meteo:aemet-fa88799d55f8",
@@ -9191,6 +9193,17 @@
     }
   ],
   "eventos": [
+    {
+      "clave": "meteo:aemet-1c4a22d60df5",
+      "tipo": "meteo",
+      "evento": "expirado_detectado",
+      "etiqueta": "Dejó de estar vigente",
+      "momento_detectado": "2026-09-19T06:35:31.177969+00:00",
+      "fecha_fuente": "2026-09-19T03:00:00+02:00",
+      "titulo": "Aviso de lluvias de nivel naranja",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260919012024_AFAZ770301PRP11904.xml",
+      "detalle_cambio": "Ya no figura en el conjunto vigente validado por el módulo AEMET"
+    },
     {
       "clave": "meteo:aemet-1c4a22d60df5",
       "tipo": "meteo",
@@ -19454,16 +19467,6 @@
       "fecha_fuente": "2026-09-17T03:00:00+02:00",
       "titulo": "Aviso de tormentas de nivel amarillo",
       "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260916092529_AFAZ680203TOTO1718.xml"
-    },
-    {
-      "clave": "meteo:aemet-ba3d1b9307c3",
-      "tipo": "meteo",
-      "evento": "aviso_vigente",
-      "etiqueta": "Aviso vigente",
-      "momento_detectado": "2026-09-17T11:22:24.181186+00:00",
-      "fecha_fuente": "2026-09-17T12:00:00+02:00",
-      "titulo": "Aviso de lluvias de nivel amarillo",
-      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260916092529_AFAZ680201PRP11718.xml"
     }
   ]
 }
