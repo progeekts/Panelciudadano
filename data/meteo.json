@@ -1,12 +1,12 @@
 {
-  "ultima_revision": "2026-09-20T17:28:32.445529+00:00",
+  "ultima_revision": "2026-09-20T19:42:50.539061+00:00",
   "revision": "completa",
   "fuente_principal": "Agencia Estatal de Meteorología (AEMET)",
   "nota": "Avisos meteorológicos del canal oficial CAP. Solo mensajes Actual no cancelados, no expirados y con severidad Moderate, Severe o Extreme.",
   "feed": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/rss/CAP_AFAE_RSS.xml",
   "enlaces_cap_detectados": 14,
   "errores_detalle": 0,
-  "total": 14,
+  "total": 12,
   "items": [
     {
       "id": "aemet-c9423a545e5d",
@@ -223,42 +223,6 @@
       "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260920090740_AFAZ611104VIRM2104.xml",
       "verificado": true,
       "mensaje_cap": "Update"
-    },
-    {
-      "id": "aemet-0f11c19175b2",
-      "tipo": "meteo",
-      "titulo": "Aviso de temperaturas máximas de nivel amarillo",
-      "nivel": "Amarillo",
-      "severidad_cap": "Moderate",
-      "certeza": "Likely",
-      "ambito": "Rias Baixas",
-      "inicio": "2026-09-20T13:00:00+02:00",
-      "fin": "2026-09-20T20:59:59+02:00",
-      "descripcion": "Temperatura máxima: 34 ºC.",
-      "recomendacion": "Esté atento. Manténgase informado de la predicción meteorológica más actualizada. Se pueden producir daños moderados a personas y bienes, especialmente a aquellos vulnerables o en zonas expuestas al fenómeno.",
-      "referencia": "2.49.0.0.724.0.ES.20260919155603.713601ATTA20191789833363",
-      "fuente": "Agencia Estatal de Meteorología (AEMET)",
-      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260919155603_AFAZ713601ATTA2019.xml",
-      "verificado": true,
-      "mensaje_cap": "Alert"
-    },
-    {
-      "id": "aemet-84535e61f6fa",
-      "tipo": "meteo",
-      "titulo": "Aviso de temperaturas máximas de nivel amarillo",
-      "nivel": "Amarillo",
-      "severidad_cap": "Moderate",
-      "certeza": "Likely",
-      "ambito": "Miño de Pontevedra",
-      "inicio": "2026-09-20T13:00:00+02:00",
-      "fin": "2026-09-20T20:59:59+02:00",
-      "descripcion": "Temperatura máxima: 34 ºC.",
-      "recomendacion": "Esté atento. Manténgase informado de la predicción meteorológica más actualizada. Se pueden producir daños moderados a personas y bienes, especialmente a aquellos vulnerables o en zonas expuestas al fenómeno.",
-      "referencia": "2.49.0.0.724.0.ES.20260919155603.713603ATTA20191789833363",
-      "fuente": "Agencia Estatal de Meteorología (AEMET)",
-      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260919155603_AFAZ713603ATTA2019.xml",
-      "verificado": true,
-      "mensaje_cap": "Alert"
     }
   ]
 }
