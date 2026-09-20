@@ -1,13 +1,31 @@
 {
-  "ultima_revision": "2026-09-20T19:42:50.539061+00:00",
+  "ultima_revision": "2026-09-20T22:24:35.134988+00:00",
   "revision": "completa",
   "fuente_principal": "Agencia Estatal de Meteorología (AEMET)",
   "nota": "Avisos meteorológicos del canal oficial CAP. Solo mensajes Actual no cancelados, no expirados y con severidad Moderate, Severe o Extreme.",
   "feed": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/rss/CAP_AFAE_RSS.xml",
   "enlaces_cap_detectados": 14,
   "errores_detalle": 0,
-  "total": 12,
+  "total": 14,
   "items": [
+    {
+      "id": "aemet-e2dcbea45184",
+      "tipo": "meteo",
+      "titulo": "Aviso de temperaturas máximas de nivel amarillo",
+      "nivel": "Amarillo",
+      "severidad_cap": "Moderate",
+      "certeza": "Likely",
+      "ambito": "Miño de Ourense",
+      "inicio": "2026-09-23T13:00:00+02:00",
+      "fin": "2026-09-23T18:59:59+02:00",
+      "descripcion": "Temperatura máxima: 36 ºC.",
+      "recomendacion": "Esté atento. Manténgase informado de la predicción meteorológica más actualizada. Se pueden producir daños moderados a personas y bienes, especialmente a aquellos vulnerables o en zonas expuestas al fenómeno.",
+      "referencia": "2.49.0.0.724.0.ES.20260920215001.713202ATTA23171789941001",
+      "fuente": "Agencia Estatal de Meteorología (AEMET)",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260920215001_AFAZ713202ATTA2317.xml",
+      "verificado": true,
+      "mensaje_cap": "Alert"
+    },
     {
       "id": "aemet-c9423a545e5d",
       "tipo": "meteo",
@@ -61,6 +79,24 @@
       "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260920092248_AFAZ713202ATTA2217.xml",
       "verificado": true,
       "mensaje_cap": "Update"
+    },
+    {
+      "id": "aemet-7c19d6d123c1",
+      "tipo": "meteo",
+      "titulo": "Aviso de temperaturas máximas de nivel amarillo",
+      "nivel": "Amarillo",
+      "severidad_cap": "Moderate",
+      "certeza": "Likely",
+      "ambito": "Ampurdán",
+      "inicio": "2026-09-21T13:00:00+02:00",
+      "fin": "2026-09-21T18:59:59+02:00",
+      "descripcion": "Temperatura máxima: 34 ºC.",
+      "recomendacion": "Esté atento. Manténgase informado de la predicción meteorológica más actualizada. Se pueden producir daños moderados a personas y bienes, especialmente a aquellos vulnerables o en zonas expuestas al fenómeno.",
+      "referencia": "2.49.0.0.724.0.ES.20260920193930.691703ATTA21171789933170",
+      "fuente": "Agencia Estatal de Meteorología (AEMET)",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260920193930_AFAZ691703ATTA2117.xml",
+      "verificado": true,
+      "mensaje_cap": "Alert"
     },
     {
       "id": "aemet-0e05b55eecb4",
