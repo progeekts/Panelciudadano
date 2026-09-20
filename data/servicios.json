@@ -1,11 +1,11 @@
 {
-  "ultima_revision": "2026-09-20T05:20:24.737225+00:00",
+  "ultima_revision": "2026-09-20T10:03:28.852547+00:00",
   "revision": "parcial",
   "revision_fuentes_incidentes": "parcial",
   "salud_auxiliar": "parcial",
   "cobertura": {
     "fuentes_configuradas": 30,
-    "fuentes_respondieron": 23,
+    "fuentes_respondieron": 24,
     "fuentes_incidentes": 8,
     "fuentes_incidentes_ok": 7,
     "territorial": {
@@ -27,7 +27,7 @@
       },
       "Andalucía": {
         "configuradas": 1,
-        "respondieron": 0
+        "respondieron": 1
       },
       "Aragón": {
         "configuradas": 1,
@@ -221,8 +221,8 @@
     {
       "clave": "andalucia",
       "fuente": "Junta de Andalucía",
-      "estado": "error",
-      "detalle": "URLError",
+      "estado": "ok",
+      "detalle": "Fuente oficial accesible",
       "ambito": "Andalucía",
       "tipo": "auxiliar",
       "critica_para_resolucion": false
@@ -377,6 +377,7 @@
     "Seguridad Social",
     "DGT",
     "Ministerio de Transportes",
+    "Junta de Andalucía",
     "Gobierno de Aragón",
     "Principado de Asturias",
     "Govern de les Illes Balears",
@@ -393,11 +394,6 @@
       "servicio": "SEPE",
       "error": "HTTPError",
       "tipo": "incidencias"
-    },
-    {
-      "servicio": "Junta de Andalucía",
-      "error": "URLError",
-      "tipo": "auxiliar"
     },
     {
       "servicio": "Gobierno de Cantabria",
