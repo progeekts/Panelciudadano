@@ -1,7 +1,7 @@
 {
-  "ultima_revision": "2026-09-20T10:05:04.062639+00:00",
+  "ultima_revision": "2026-09-20T12:23:26.837754+00:00",
   "fuentes_revision": {
-    "ayudas": "2026-09-19T21:28:23.461675+00:00",
+    "ayudas": "2026-09-20T12:23:16.049450+00:00",
     "estafas": "2026-09-19T21:41:01.072297+00:00",
     "alimentacion": "2026-09-19T22:22:11.328835+00:00",
     "salud": "2026-09-19T21:48:28.139355+00:00",
@@ -9,9 +9,54 @@
     "servicios": "2026-09-20T10:03:28.852547+00:00"
   },
   "criterio": "Histórico de cambios detectados. Solo se asigna un estado terminal cuando la fuente o el módulo permiten afirmarlo de forma conservadora.",
-  "total_registros": 643,
+  "total_registros": 646,
   "total_eventos": 1000,
   "registros": [
+    {
+      "clave": "ayudas:bdns-930522",
+      "tipo": "ayudas",
+      "id": "bdns-930522",
+      "titulo": "RR por la que se convocan los premios al mejor Trabajo Fin de Grado, Trabajo Fin de Máster y Tesis de Doctorado en temáticas relacionadas con la Agenda 2030, la Cooperación al Desarrollo y la Responsabilidad Social Corporativa (RSC) 2025/2026",
+      "fuente": "SNPSAP / Base de Datos Nacional de Subvenciones",
+      "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/930522",
+      "referencia": "",
+      "ambito": "ES11 - GALICIA",
+      "estado": "plazo_abierto",
+      "huella": "4fd212316857af6328e7",
+      "ultima_deteccion": "2026-09-20T12:23:26.837754+00:00",
+      "fecha_fuente": "2026-09-19",
+      "primera_deteccion": "2026-09-20T12:23:26.837754+00:00"
+    },
+    {
+      "clave": "ayudas:bdns-930521",
+      "tipo": "ayudas",
+      "id": "bdns-930521",
+      "titulo": "SUBVENCION NOMINATIVA A FAVOR DE BAGES IMPULS, 2026",
+      "fuente": "SNPSAP / Base de Datos Nacional de Subvenciones",
+      "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/930521",
+      "referencia": "",
+      "ambito": "ES51 - CATALUÑA",
+      "estado": "plazo_abierto",
+      "huella": "e854cd835bcfd651dfa0",
+      "ultima_deteccion": "2026-09-20T12:23:26.837754+00:00",
+      "fecha_fuente": "2026-09-19",
+      "primera_deteccion": "2026-09-20T12:23:26.837754+00:00"
+    },
+    {
+      "clave": "ayudas:bdns-930520",
+      "tipo": "ayudas",
+      "id": "bdns-930520",
+      "titulo": "SUBVENCION NOMINATIVA A FAVOR DE LA FUNDACION AIGUES DE MANRESA PARA LA ORGANIZACION DEL EVENTO: LA TRANSÈQUIA 2026",
+      "fuente": "SNPSAP / Base de Datos Nacional de Subvenciones",
+      "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/930520",
+      "referencia": "",
+      "ambito": "ES51 - CATALUÑA",
+      "estado": "plazo_abierto",
+      "huella": "1fe7aa2555f67cb117ef",
+      "ultima_deteccion": "2026-09-20T12:23:26.837754+00:00",
+      "fecha_fuente": "2026-09-19",
+      "primera_deteccion": "2026-09-20T12:23:26.837754+00:00"
+    },
     {
       "clave": "ayudas:bdns-930519",
       "tipo": "ayudas",
@@ -425,12 +470,13 @@
       "fuente": "SNPSAP / Base de Datos Nacional de Subvenciones",
       "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/930492",
       "referencia": "",
-      "ambito": "ES431 - Badajoz",
+      "ambito": "",
       "estado": "convocatoria_detectada",
-      "huella": "08bc5266027ddfecabd4",
-      "ultima_deteccion": "2026-09-18T21:42:28.065626+00:00",
+      "huella": "ac56560bf71f96522d5d",
+      "ultima_deteccion": "2026-09-20T12:23:26.837754+00:00",
       "fecha_fuente": "2026-09-18",
-      "primera_deteccion": "2026-09-18T21:42:28.065626+00:00"
+      "primera_deteccion": "2026-09-18T21:42:28.065626+00:00",
+      "ultima_modificacion_detectada": "2026-09-20T12:23:26.837754+00:00"
     },
     {
       "clave": "ayudas:bdns-930491",
@@ -440,12 +486,13 @@
       "fuente": "SNPSAP / Base de Datos Nacional de Subvenciones",
       "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/930491",
       "referencia": "",
-      "ambito": "ES42 - CASTILLA LA MANCHA",
-      "estado": "plazo_abierto",
-      "huella": "e38f613cc9c0ffdc6363",
-      "ultima_deteccion": "2026-09-18T21:42:28.065626+00:00",
+      "ambito": "",
+      "estado": "convocatoria_detectada",
+      "huella": "7d8b87ba6e8d3b1deb5d",
+      "ultima_deteccion": "2026-09-20T12:23:26.837754+00:00",
       "fecha_fuente": "2026-09-18",
-      "primera_deteccion": "2026-09-18T21:42:28.065626+00:00"
+      "primera_deteccion": "2026-09-18T21:42:28.065626+00:00",
+      "ultima_modificacion_detectada": "2026-09-20T12:23:26.837754+00:00"
     },
     {
       "clave": "ayudas:bdns-930489",
@@ -455,12 +502,13 @@
       "fuente": "SNPSAP / Base de Datos Nacional de Subvenciones",
       "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/930489",
       "referencia": "",
-      "ambito": "ES618 - Sevilla",
+      "ambito": "",
       "estado": "convocatoria_detectada",
-      "huella": "80570051f4f91437a18e",
-      "ultima_deteccion": "2026-09-18T21:42:28.065626+00:00",
+      "huella": "6bc3694dd9524114ab80",
+      "ultima_deteccion": "2026-09-20T12:23:26.837754+00:00",
       "fecha_fuente": "2026-09-18",
-      "primera_deteccion": "2026-09-18T21:42:28.065626+00:00"
+      "primera_deteccion": "2026-09-18T21:42:28.065626+00:00",
+      "ultima_modificacion_detectada": "2026-09-20T12:23:26.837754+00:00"
     },
     {
       "clave": "ayudas:bdns-930488",
@@ -1480,51 +1528,6 @@
       "primera_deteccion": "2026-09-18T21:42:28.065626+00:00"
     },
     {
-      "clave": "ayudas:bdns-930418",
-      "tipo": "ayudas",
-      "id": "bdns-930418",
-      "titulo": "Subvención a la Fundació Josep Pla para el proyecto Nos altres",
-      "fuente": "SNPSAP / Base de Datos Nacional de Subvenciones",
-      "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/930418",
-      "referencia": "",
-      "ambito": "",
-      "estado": "convocatoria_detectada",
-      "huella": "85b0bea0cff476b3d34f",
-      "ultima_deteccion": "2026-09-18T21:42:28.065626+00:00",
-      "fecha_fuente": "2026-09-18",
-      "primera_deteccion": "2026-09-18T21:42:28.065626+00:00"
-    },
-    {
-      "clave": "ayudas:bdns-930417",
-      "tipo": "ayudas",
-      "id": "bdns-930417",
-      "titulo": "Bases que regirán la concesión de ayudas económicas para la “Organización de fiestas populares en los barrios de San Sebastián” y convocatoria año 2027.",
-      "fuente": "SNPSAP / Base de Datos Nacional de Subvenciones",
-      "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/930417",
-      "referencia": "",
-      "ambito": "",
-      "estado": "convocatoria_detectada",
-      "huella": "8df0ded1ce51a41d64f2",
-      "ultima_deteccion": "2026-09-18T21:42:28.065626+00:00",
-      "fecha_fuente": "2026-09-18",
-      "primera_deteccion": "2026-09-18T21:42:28.065626+00:00"
-    },
-    {
-      "clave": "ayudas:bdns-930416",
-      "tipo": "ayudas",
-      "id": "bdns-930416",
-      "titulo": "CONVENIO I+D(IMIBIC+DIPUTACION) TALENT",
-      "fuente": "SNPSAP / Base de Datos Nacional de Subvenciones",
-      "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/930416",
-      "referencia": "",
-      "ambito": "",
-      "estado": "convocatoria_detectada",
-      "huella": "5ded089dd90472b300e7",
-      "ultima_deteccion": "2026-09-18T21:42:28.065626+00:00",
-      "fecha_fuente": "2026-09-18",
-      "primera_deteccion": "2026-09-18T21:42:28.065626+00:00"
-    },
-    {
       "clave": "estafas:incibe-campana-de-smishing-suplantando-la-seguridad-social",
       "tipo": "estafas",
       "id": "incibe-campana-de-smishing-suplantando-la-seguridad-social",
@@ -2375,6 +2378,51 @@
       "ultima_deteccion": "2026-09-19T17:58:46.514590+00:00",
       "fecha_fuente": "2026-09-20T13:00:00+02:00",
       "primera_deteccion": "2026-09-19T17:58:46.514590+00:00"
+    },
+    {
+      "clave": "ayudas:bdns-930418",
+      "tipo": "ayudas",
+      "id": "bdns-930418",
+      "titulo": "Subvención a la Fundació Josep Pla para el proyecto Nos altres",
+      "fuente": "SNPSAP / Base de Datos Nacional de Subvenciones",
+      "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/930418",
+      "referencia": "",
+      "ambito": "",
+      "estado": "convocatoria_detectada",
+      "huella": "85b0bea0cff476b3d34f",
+      "ultima_deteccion": "2026-09-18T21:42:28.065626+00:00",
+      "fecha_fuente": "2026-09-18",
+      "primera_deteccion": "2026-09-18T21:42:28.065626+00:00"
+    },
+    {
+      "clave": "ayudas:bdns-930417",
+      "tipo": "ayudas",
+      "id": "bdns-930417",
+      "titulo": "Bases que regirán la concesión de ayudas económicas para la “Organización de fiestas populares en los barrios de San Sebastián” y convocatoria año 2027.",
+      "fuente": "SNPSAP / Base de Datos Nacional de Subvenciones",
+      "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/930417",
+      "referencia": "",
+      "ambito": "",
+      "estado": "convocatoria_detectada",
+      "huella": "8df0ded1ce51a41d64f2",
+      "ultima_deteccion": "2026-09-18T21:42:28.065626+00:00",
+      "fecha_fuente": "2026-09-18",
+      "primera_deteccion": "2026-09-18T21:42:28.065626+00:00"
+    },
+    {
+      "clave": "ayudas:bdns-930416",
+      "tipo": "ayudas",
+      "id": "bdns-930416",
+      "titulo": "CONVENIO I+D(IMIBIC+DIPUTACION) TALENT",
+      "fuente": "SNPSAP / Base de Datos Nacional de Subvenciones",
+      "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/930416",
+      "referencia": "",
+      "ambito": "",
+      "estado": "convocatoria_detectada",
+      "huella": "5ded089dd90472b300e7",
+      "ultima_deteccion": "2026-09-18T21:42:28.065626+00:00",
+      "fecha_fuente": "2026-09-18",
+      "primera_deteccion": "2026-09-18T21:42:28.065626+00:00"
     },
     {
       "clave": "meteo:aemet-6935e67e47b2",
@@ -9873,6 +9921,69 @@
     }
   ],
   "eventos": [
+    {
+      "clave": "ayudas:bdns-930522",
+      "tipo": "ayudas",
+      "evento": "plazo_abierto",
+      "etiqueta": "Plazo abierto",
+      "momento_detectado": "2026-09-20T12:23:26.837754+00:00",
+      "fecha_fuente": "2026-09-19",
+      "titulo": "RR por la que se convocan los premios al mejor Trabajo Fin de Grado, Trabajo Fin de Máster y Tesis de Doctorado en temáticas relacionadas con la Agenda 2030, la Cooperación al Desarrollo y la Responsabilidad Social Corporativa (RSC) 2025/2026",
+      "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/930522"
+    },
+    {
+      "clave": "ayudas:bdns-930521",
+      "tipo": "ayudas",
+      "evento": "plazo_abierto",
+      "etiqueta": "Plazo abierto",
+      "momento_detectado": "2026-09-20T12:23:26.837754+00:00",
+      "fecha_fuente": "2026-09-19",
+      "titulo": "SUBVENCION NOMINATIVA A FAVOR DE BAGES IMPULS, 2026",
+      "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/930521"
+    },
+    {
+      "clave": "ayudas:bdns-930520",
+      "tipo": "ayudas",
+      "evento": "plazo_abierto",
+      "etiqueta": "Plazo abierto",
+      "momento_detectado": "2026-09-20T12:23:26.837754+00:00",
+      "fecha_fuente": "2026-09-19",
+      "titulo": "SUBVENCION NOMINATIVA A FAVOR DE LA FUNDACION AIGUES DE MANRESA PARA LA ORGANIZACION DEL EVENTO: LA TRANSÈQUIA 2026",
+      "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/930520"
+    },
+    {
+      "clave": "ayudas:bdns-930492",
+      "tipo": "ayudas",
+      "evento": "actualizado",
+      "etiqueta": "Actualizada",
+      "momento_detectado": "2026-09-20T12:23:26.837754+00:00",
+      "fecha_fuente": "2026-09-18",
+      "titulo": "CONVOCATORIA DE SUBVENCIONES DE LA DIPUTACIÓN DE BADAJOZ DESTINADAS A SOCIEDADES LOCALES DE CAZADORES/AS DE LA PROVINCIA DE BADAJOZ, TITULARES DE COTOS SOCIALES PARA LA RECUPERACIÓN DE LAS POBLACIONES CINEGÉTICAS DE CAZA MENOR EN LA PROVINCIA PARA EL EJER",
+      "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/930492",
+      "detalle_cambio": "La ficha oficial presenta cambios respecto a la revisión anterior"
+    },
+    {
+      "clave": "ayudas:bdns-930491",
+      "tipo": "ayudas",
+      "evento": "convocatoria_detectada",
+      "etiqueta": "Convocatoria detectada",
+      "momento_detectado": "2026-09-20T12:23:26.837754+00:00",
+      "fecha_fuente": "2026-09-18",
+      "titulo": "Convocatoria de ayudas UCLM para la colaboración con clubes y sociedades anónimas deportivas de máximo nivel de Castilla-La Mancha, año 2026",
+      "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/930491",
+      "detalle_cambio": "Estado: Plazo abierto → Convocatoria detectada"
+    },
+    {
+      "clave": "ayudas:bdns-930489",
+      "tipo": "ayudas",
+      "evento": "actualizado",
+      "etiqueta": "Actualizada",
+      "momento_detectado": "2026-09-20T12:23:26.837754+00:00",
+      "fecha_fuente": "2026-09-18",
+      "titulo": "SUBVENCIÓN NOMINATIVA 2025 ASOCIACIÓN JUVENIL EL CASTILLO",
+      "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/930489",
+      "detalle_cambio": "La ficha oficial presenta cambios respecto a la revisión anterior"
+    },
     {
       "clave": "meteo:aemet-ba249442add8",
       "tipo": "meteo",
@@ -20133,66 +20244,6 @@
       "fecha_fuente": "2026-09-17T00:00:00+02:00",
       "titulo": "Aviso de tormentas de nivel naranja",
       "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260916093033_AFAZ645402TOTO1706.xml"
-    },
-    {
-      "clave": "meteo:aemet-3586004ab421",
-      "tipo": "meteo",
-      "evento": "aviso_vigente",
-      "etiqueta": "Aviso vigente",
-      "momento_detectado": "2026-09-17T11:22:24.181186+00:00",
-      "fecha_fuente": "2026-09-17T00:00:00+02:00",
-      "titulo": "Aviso de tormentas de nivel naranja",
-      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260916093033_AFAZ645403TOTO1706.xml"
-    },
-    {
-      "clave": "meteo:aemet-52f659a52b31",
-      "tipo": "meteo",
-      "evento": "aviso_vigente",
-      "etiqueta": "Aviso vigente",
-      "momento_detectado": "2026-09-17T11:22:24.181186+00:00",
-      "fecha_fuente": "2026-09-17T00:00:00+02:00",
-      "titulo": "Aviso de tormentas de nivel naranja",
-      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260916093033_AFAZ645404TOTO1706.xml"
-    },
-    {
-      "clave": "meteo:aemet-c626f0c05ae8",
-      "tipo": "meteo",
-      "evento": "aviso_vigente",
-      "etiqueta": "Aviso vigente",
-      "momento_detectado": "2026-09-17T11:22:24.181186+00:00",
-      "fecha_fuente": "2026-09-17T00:00:00+02:00",
-      "titulo": "Aviso de tormentas de nivel naranja",
-      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260916093033_AFAZ645405TOTO1706.xml"
-    },
-    {
-      "clave": "meteo:aemet-386476b3015a",
-      "tipo": "meteo",
-      "evento": "aviso_vigente",
-      "etiqueta": "Aviso vigente",
-      "momento_detectado": "2026-09-17T11:22:24.181186+00:00",
-      "fecha_fuente": "2026-09-17T00:00:00+02:00",
-      "titulo": "Aviso de tormentas de nivel naranja",
-      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260916093033_AFAZ645501TOTO1706.xml"
-    },
-    {
-      "clave": "meteo:aemet-ef794edf5b1d",
-      "tipo": "meteo",
-      "evento": "aviso_vigente",
-      "etiqueta": "Aviso vigente",
-      "momento_detectado": "2026-09-17T11:22:24.181186+00:00",
-      "fecha_fuente": "2026-09-16T18:00:00+02:00",
-      "titulo": "Aviso de tormentas de nivel naranja",
-      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260916160225_AFAZ771203TOTO1622.xml"
-    },
-    {
-      "clave": "meteo:aemet-8faa1832c711",
-      "tipo": "meteo",
-      "evento": "aviso_vigente",
-      "etiqueta": "Aviso vigente",
-      "momento_detectado": "2026-09-17T11:22:24.181186+00:00",
-      "fecha_fuente": "2026-09-16T18:00:00+02:00",
-      "titulo": "Aviso de tormentas de nivel naranja",
-      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260916160225_AFAZ774601TOTO1622.xml"
     }
   ]
 }
