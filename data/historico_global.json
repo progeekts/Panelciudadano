@@ -1,15 +1,15 @@
 {
-  "ultima_revision": "2026-09-20T21:55:38.947783+00:00",
+  "ultima_revision": "2026-09-20T22:24:47.984054+00:00",
   "fuentes_revision": {
     "ayudas": "2026-09-20T21:34:29.969023+00:00",
     "estafas": "2026-09-20T21:45:35.351621+00:00",
     "alimentacion": "2026-09-20T13:07:52.081835+00:00",
     "salud": "2026-09-20T21:55:27.368010+00:00",
-    "meteo": "2026-09-20T19:42:50.539061+00:00",
+    "meteo": "2026-09-20T22:24:35.134988+00:00",
     "servicios": "2026-09-20T20:44:01.397527+00:00"
   },
   "criterio": "Histórico de cambios detectados. Solo se asigna un estado terminal cuando la fuente o el módulo permiten afirmarlo de forma conservadora.",
-  "total_registros": 659,
+  "total_registros": 661,
   "total_eventos": 1000,
   "registros": [
     {
@@ -2211,6 +2211,21 @@
       "referencia": "R_12/2026"
     },
     {
+      "clave": "meteo:aemet-e2dcbea45184",
+      "tipo": "meteo",
+      "id": "aemet-e2dcbea45184",
+      "titulo": "Aviso de temperaturas máximas de nivel amarillo",
+      "fuente": "Agencia Estatal de Meteorología (AEMET)",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260920215001_AFAZ713202ATTA2317.xml",
+      "referencia": "2.49.0.0.724.0.ES.20260920215001.713202ATTA23171789941001",
+      "ambito": "Miño de Ourense",
+      "estado": "aviso_vigente",
+      "huella": "37b2f5854de93d3963ac",
+      "ultima_deteccion": "2026-09-20T22:24:47.984054+00:00",
+      "fecha_fuente": "2026-09-23T13:00:00+02:00",
+      "primera_deteccion": "2026-09-20T22:24:47.984054+00:00"
+    },
+    {
       "clave": "meteo:aemet-c9423a545e5d",
       "tipo": "meteo",
       "id": "aemet-c9423a545e5d",
@@ -2254,6 +2269,21 @@
       "ultima_deteccion": "2026-09-20T10:05:04.062639+00:00",
       "fecha_fuente": "2026-09-22T13:00:00+02:00",
       "primera_deteccion": "2026-09-20T10:05:04.062639+00:00"
+    },
+    {
+      "clave": "meteo:aemet-7c19d6d123c1",
+      "tipo": "meteo",
+      "id": "aemet-7c19d6d123c1",
+      "titulo": "Aviso de temperaturas máximas de nivel amarillo",
+      "fuente": "Agencia Estatal de Meteorología (AEMET)",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260920193930_AFAZ691703ATTA2117.xml",
+      "referencia": "2.49.0.0.724.0.ES.20260920193930.691703ATTA21171789933170",
+      "ambito": "Ampurdán",
+      "estado": "aviso_vigente",
+      "huella": "34e0b370829cbb514240",
+      "ultima_deteccion": "2026-09-20T22:24:47.984054+00:00",
+      "fecha_fuente": "2026-09-21T13:00:00+02:00",
+      "primera_deteccion": "2026-09-20T22:24:47.984054+00:00"
     },
     {
       "clave": "meteo:aemet-0e05b55eecb4",
@@ -10131,6 +10161,26 @@
     }
   ],
   "eventos": [
+    {
+      "clave": "meteo:aemet-e2dcbea45184",
+      "tipo": "meteo",
+      "evento": "aviso_vigente",
+      "etiqueta": "Aviso vigente",
+      "momento_detectado": "2026-09-20T22:24:47.984054+00:00",
+      "fecha_fuente": "2026-09-23T13:00:00+02:00",
+      "titulo": "Aviso de temperaturas máximas de nivel amarillo",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260920215001_AFAZ713202ATTA2317.xml"
+    },
+    {
+      "clave": "meteo:aemet-7c19d6d123c1",
+      "tipo": "meteo",
+      "evento": "aviso_vigente",
+      "etiqueta": "Aviso vigente",
+      "momento_detectado": "2026-09-20T22:24:47.984054+00:00",
+      "fecha_fuente": "2026-09-21T13:00:00+02:00",
+      "titulo": "Aviso de temperaturas máximas de nivel amarillo",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260920193930_AFAZ691703ATTA2117.xml"
+    },
     {
       "clave": "ayudas:bdns-930533",
       "tipo": "ayudas",
@@ -20447,26 +20497,6 @@
       "fecha_fuente": "2026-09-17T03:00:00+02:00",
       "titulo": "Aviso de tormentas de nivel naranja",
       "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260916163153_AFAZ770303TOTO1713.xml"
-    },
-    {
-      "clave": "meteo:aemet-dd09de8afe0a",
-      "tipo": "meteo",
-      "evento": "aviso_vigente",
-      "etiqueta": "Aviso vigente",
-      "momento_detectado": "2026-09-17T11:22:24.181186+00:00",
-      "fecha_fuente": "2026-09-17T03:00:00+02:00",
-      "titulo": "Aviso de lluvias de nivel naranja",
-      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260916093844_AFAZ770301PRP11713.xml"
-    },
-    {
-      "clave": "meteo:aemet-c90f5d2b2884",
-      "tipo": "meteo",
-      "evento": "aviso_vigente",
-      "etiqueta": "Aviso vigente",
-      "momento_detectado": "2026-09-17T11:22:24.181186+00:00",
-      "fecha_fuente": "2026-09-17T03:00:00+02:00",
-      "titulo": "Aviso de lluvias de nivel naranja",
-      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260916093844_AFAZ770303PRP11713.xml"
     }
   ]
 }
