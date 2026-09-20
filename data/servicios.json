@@ -1,5 +1,5 @@
 {
-  "ultima_revision": "2026-09-19T22:28:08.380379+00:00",
+  "ultima_revision": "2026-09-20T00:20:16.159566+00:00",
   "revision": "parcial",
   "revision_fuentes_incidentes": "parcial",
   "salud_auxiliar": "parcial",
@@ -159,7 +159,7 @@
       "clave": "sepe",
       "fuente": "SEPE",
       "estado": "error",
-      "detalle": "HTTPError",
+      "detalle": "URLError",
       "ambito": "España",
       "tipo": "incidencias",
       "critica_para_resolucion": true
@@ -392,7 +392,7 @@
   "fuentes_error": [
     {
       "servicio": "SEPE",
-      "error": "HTTPError",
+      "error": "URLError",
       "tipo": "incidencias"
     },
     {
