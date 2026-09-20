@@ -1,9 +1,9 @@
 {
-  "ultima_revision": "2026-09-20T12:39:05.172253+00:00",
+  "ultima_revision": "2026-09-20T13:08:33.922724+00:00",
   "fuentes_revision": {
     "ayudas": "2026-09-20T12:23:16.049450+00:00",
     "estafas": "2026-09-20T12:35:08.753007+00:00",
-    "alimentacion": "2026-09-19T22:22:11.328835+00:00",
+    "alimentacion": "2026-09-20T13:07:52.081835+00:00",
     "salud": "2026-09-20T12:38:54.701521+00:00",
     "meteo": "2026-09-20T10:04:52.205469+00:00",
     "servicios": "2026-09-20T10:03:28.852547+00:00"
@@ -1688,22 +1688,6 @@
       "referencia": "ES2026/477"
     },
     {
-      "clave": "alimentacion:aesan-c3ba80ea62",
-      "tipo": "alimentacion",
-      "id": "aesan-c3ba80ea62",
-      "titulo": "Ampliación de información sobre la alerta por presencia de Salmonella spp. en salchichón procedente de España (Ref. ES2026/469)",
-      "fuente": "AESAN · Red de alerta alimentaria",
-      "url": "https://www.aesan.gob.es/alertas/2026_55_ampliacion_1",
-      "ambito": "España",
-      "estado": "publicada",
-      "huella": "786733838116457ae5b3",
-      "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
-      "fecha_fuente": "2026-07-31",
-      "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
-      "referencia": "ES2026/469"
-    },
-    {
       "clave": "alimentacion:aesan-fed50cda6a",
       "tipo": "alimentacion",
       "id": "aesan-fed50cda6a",
@@ -1718,6 +1702,22 @@
       "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
       "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
       "referencia": "ES2026/473"
+    },
+    {
+      "clave": "alimentacion:aesan-c3ba80ea62",
+      "tipo": "alimentacion",
+      "id": "aesan-c3ba80ea62",
+      "titulo": "Ampliación de información sobre la alerta por presencia de Salmonella spp. en salchichón procedente de España (Ref. ES2026/469)",
+      "fuente": "AESAN · Red de alerta alimentaria",
+      "url": "https://www.aesan.gob.es/alertas/2026_55_ampliacion_1",
+      "ambito": "España",
+      "estado": "publicada",
+      "huella": "786733838116457ae5b3",
+      "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
+      "fecha_fuente": "2026-07-31",
+      "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": "ES2026/469"
     },
     {
       "clave": "alimentacion:aesan-c66ff7c880",
@@ -1848,22 +1848,6 @@
       "referencia": "ES2026/349"
     },
     {
-      "clave": "alimentacion:aesan-6f948c56a2",
-      "tipo": "alimentacion",
-      "id": "aesan-6f948c56a2",
-      "titulo": "Advertencia para personas con alergia a las almendras: presencia de almendras en relleno de praliné de avellana procedente de Países Bajos (Ref. ES2026/332)",
-      "fuente": "AESAN · Red de alerta alimentaria",
-      "url": "https://www.aesan.gob.es/alertas/2026_46",
-      "ambito": "España",
-      "estado": "publicada",
-      "huella": "aa39fbe92eeb6361f409",
-      "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
-      "fecha_fuente": "2026-06-05",
-      "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
-      "referencia": "ES2026/332"
-    },
-    {
       "clave": "alimentacion:aesan-9d19d93457",
       "tipo": "alimentacion",
       "id": "aesan-9d19d93457",
@@ -1878,6 +1862,22 @@
       "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
       "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
       "referencia": "ES2026/327"
+    },
+    {
+      "clave": "alimentacion:aesan-6f948c56a2",
+      "tipo": "alimentacion",
+      "id": "aesan-6f948c56a2",
+      "titulo": "Advertencia para personas con alergia a las almendras: presencia de almendras en relleno de praliné de avellana procedente de Países Bajos (Ref. ES2026/332)",
+      "fuente": "AESAN · Red de alerta alimentaria",
+      "url": "https://www.aesan.gob.es/alertas/2026_46",
+      "ambito": "España",
+      "estado": "publicada",
+      "huella": "aa39fbe92eeb6361f409",
+      "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
+      "fecha_fuente": "2026-06-05",
+      "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": "ES2026/332"
     },
     {
       "clave": "alimentacion:aesan-4f7dbbdc32",
