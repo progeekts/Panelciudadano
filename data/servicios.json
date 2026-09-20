@@ -1,13 +1,13 @@
 {
-  "ultima_revision": "2026-09-20T10:03:28.852547+00:00",
-  "revision": "parcial",
-  "revision_fuentes_incidentes": "parcial",
+  "ultima_revision": "2026-09-20T14:11:04.038594+00:00",
+  "revision": "completa",
+  "revision_fuentes_incidentes": "completa",
   "salud_auxiliar": "parcial",
   "cobertura": {
     "fuentes_configuradas": 30,
-    "fuentes_respondieron": 24,
+    "fuentes_respondieron": 25,
     "fuentes_incidentes": 8,
-    "fuentes_incidentes_ok": 7,
+    "fuentes_incidentes_ok": 8,
     "territorial": {
       "Global": {
         "configuradas": 4,
@@ -15,7 +15,7 @@
       },
       "España": {
         "configuradas": 8,
-        "respondieron": 7
+        "respondieron": 8
       },
       "Cataluña": {
         "configuradas": 1,
@@ -158,8 +158,8 @@
     {
       "clave": "sepe",
       "fuente": "SEPE",
-      "estado": "error",
-      "detalle": "HTTPError",
+      "estado": "ok",
+      "detalle": "Fuente oficial accesible",
       "ambito": "España",
       "tipo": "incidencias",
       "critica_para_resolucion": true
@@ -371,6 +371,7 @@
     "Administraciones Públicas (AGE)",
     "Generalitat de Catalunya",
     "ENAIRE Sede electrónica",
+    "SEPE",
     "Ciudad Autónoma de Melilla",
     "Punto de Acceso General",
     "Agencia Tributaria (AEAT)",
@@ -390,11 +391,6 @@
     "Gobierno Vasco"
   ],
   "fuentes_error": [
-    {
-      "servicio": "SEPE",
-      "error": "HTTPError",
-      "tipo": "incidencias"
-    },
     {
       "servicio": "Gobierno de Cantabria",
       "error": "URLError",
