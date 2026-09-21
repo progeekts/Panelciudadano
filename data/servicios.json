@@ -1,11 +1,11 @@
 {
-  "ultima_revision": "2026-09-21T01:33:37.147585+00:00",
+  "ultima_revision": "2026-09-21T07:06:47.271608+00:00",
   "revision": "completa",
   "revision_fuentes_incidentes": "completa",
   "salud_auxiliar": "parcial",
   "cobertura": {
     "fuentes_configuradas": 30,
-    "fuentes_respondieron": 25,
+    "fuentes_respondieron": 23,
     "fuentes_incidentes": 8,
     "fuentes_incidentes_ok": 8,
     "territorial": {
@@ -27,7 +27,7 @@
       },
       "Andalucía": {
         "configuradas": 1,
-        "respondieron": 1
+        "respondieron": 0
       },
       "Aragón": {
         "configuradas": 1,
@@ -39,7 +39,7 @@
       },
       "Illes Balears": {
         "configuradas": 1,
-        "respondieron": 1
+        "respondieron": 0
       },
       "Canarias": {
         "configuradas": 1,
@@ -221,8 +221,8 @@
     {
       "clave": "andalucia",
       "fuente": "Junta de Andalucía",
-      "estado": "ok",
-      "detalle": "Fuente oficial accesible",
+      "estado": "error",
+      "detalle": "URLError",
       "ambito": "Andalucía",
       "tipo": "auxiliar",
       "critica_para_resolucion": false
@@ -248,8 +248,8 @@
     {
       "clave": "balears",
       "fuente": "Govern de les Illes Balears",
-      "estado": "ok",
-      "detalle": "Fuente oficial accesible",
+      "estado": "error",
+      "detalle": "RemoteDisconnected",
       "ambito": "Illes Balears",
       "tipo": "auxiliar",
       "critica_para_resolucion": false
@@ -378,10 +378,8 @@
     "Seguridad Social",
     "DGT",
     "Ministerio de Transportes",
-    "Junta de Andalucía",
     "Gobierno de Aragón",
     "Principado de Asturias",
-    "Govern de les Illes Balears",
     "Gobierno de Canarias",
     "Junta de Castilla y León",
     "Generalitat Valenciana",
@@ -391,6 +389,16 @@
     "Gobierno Vasco"
   ],
   "fuentes_error": [
+    {
+      "servicio": "Junta de Andalucía",
+      "error": "URLError",
+      "tipo": "auxiliar"
+    },
+    {
+      "servicio": "Govern de les Illes Balears",
+      "error": "RemoteDisconnected",
+      "tipo": "auxiliar"
+    },
     {
       "servicio": "Gobierno de Cantabria",
       "error": "URLError",
@@ -419,7 +427,7 @@
   ],
   "cambios": {
     "nuevas": 0,
-    "resueltas_detectadas": 1,
+    "resueltas_detectadas": 0,
     "retiradas_monitor": 0
   },
   "total": 2,
