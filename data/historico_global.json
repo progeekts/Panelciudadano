@@ -1,9 +1,9 @@
 {
-  "ultima_revision": "2026-09-21T23:13:46.218957+00:00",
+  "ultima_revision": "2026-09-21T23:26:58.538396+00:00",
   "fuentes_revision": {
     "ayudas": "2026-09-21T22:35:23.806101+00:00",
     "estafas": "2026-09-21T22:46:40.305435+00:00",
-    "alimentacion": "2026-09-21T15:13:51.683748+00:00",
+    "alimentacion": "2026-09-21T23:26:37.449659+00:00",
     "salud": "2026-09-21T22:51:05.730141+00:00",
     "meteo": "2026-09-21T21:01:16.917736+00:00",
     "servicios": "2026-09-21T23:12:22.360119+00:00"
@@ -1641,22 +1641,6 @@
       "referencia": "ES2026/477"
     },
     {
-      "clave": "alimentacion:aesan-fed50cda6a",
-      "tipo": "alimentacion",
-      "id": "aesan-fed50cda6a",
-      "titulo": "Alerta por presencia de Salmonella spp. en chips de fruta procedentes de Alemania. (Ref. ES2026/473)",
-      "fuente": "AESAN · Red de alerta alimentaria",
-      "url": "https://www.aesan.gob.es/alertas/2026_56",
-      "ambito": "España",
-      "estado": "publicada",
-      "huella": "c9c62b6d1d4fb5d408e3",
-      "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
-      "fecha_fuente": "2026-07-31",
-      "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
-      "referencia": "ES2026/473"
-    },
-    {
       "clave": "alimentacion:aesan-c3ba80ea62",
       "tipo": "alimentacion",
       "id": "aesan-c3ba80ea62",
@@ -1671,6 +1655,22 @@
       "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
       "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
       "referencia": "ES2026/469"
+    },
+    {
+      "clave": "alimentacion:aesan-fed50cda6a",
+      "tipo": "alimentacion",
+      "id": "aesan-fed50cda6a",
+      "titulo": "Alerta por presencia de Salmonella spp. en chips de fruta procedentes de Alemania. (Ref. ES2026/473)",
+      "fuente": "AESAN · Red de alerta alimentaria",
+      "url": "https://www.aesan.gob.es/alertas/2026_56",
+      "ambito": "España",
+      "estado": "publicada",
+      "huella": "c9c62b6d1d4fb5d408e3",
+      "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
+      "fecha_fuente": "2026-07-31",
+      "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": "ES2026/473"
     },
     {
       "clave": "salud:aemps-d269453473",
