@@ -1,7 +1,7 @@
 {
-  "ultima_revision": "2026-09-21T11:05:23.010620+00:00",
+  "ultima_revision": "2026-09-21T14:10:12.923481+00:00",
   "fuentes_revision": {
-    "ayudas": "2026-09-20T21:34:29.969023+00:00",
+    "ayudas": "2026-09-21T14:10:00.938989+00:00",
     "estafas": "2026-09-20T21:45:35.351621+00:00",
     "alimentacion": "2026-09-20T22:34:43.082693+00:00",
     "salud": "2026-09-20T21:55:27.368010+00:00",
@@ -441,11 +441,12 @@
       "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/930505",
       "referencia": "",
       "ambito": "ES432 - Cáceres",
-      "estado": "plazo_proximo",
-      "huella": "f7a81ada56f3ce4cd189",
-      "ultima_deteccion": "2026-09-18T21:42:28.065626+00:00",
+      "estado": "plazo_abierto",
+      "huella": "118ec377114c0a870c14",
+      "ultima_deteccion": "2026-09-21T14:10:12.923481+00:00",
       "fecha_fuente": "2026-09-18",
-      "primera_deteccion": "2026-09-18T21:42:28.065626+00:00"
+      "primera_deteccion": "2026-09-18T21:42:28.065626+00:00",
+      "ultima_modificacion_detectada": "2026-09-21T14:10:12.923481+00:00"
     },
     {
       "clave": "ayudas:bdns-930504",
@@ -10329,6 +10330,17 @@
     }
   ],
   "eventos": [
+    {
+      "clave": "ayudas:bdns-930505",
+      "tipo": "ayudas",
+      "evento": "plazo_abierto",
+      "etiqueta": "Plazo abierto",
+      "momento_detectado": "2026-09-21T14:10:12.923481+00:00",
+      "fecha_fuente": "2026-09-18",
+      "titulo": "BASES REGULADORAS Y CONVOCATORIA PARA OTORGAR LOS PREMIOS DEL CERTAMEN DE TEATRO NO PROFESIONAL \"CIUDAD DE CORIA\". EJERCICIO 2026",
+      "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/930505",
+      "detalle_cambio": "Estado: Próxima → Plazo abierto"
+    },
     {
       "clave": "meteo:aemet-e0de95076a0b",
       "tipo": "meteo",
@@ -20664,16 +20676,6 @@
       "fecha_fuente": "2026-05-22",
       "titulo": "Ampliación de información sobre la alerta por presencia de Salmonella spp. en moringa ecológica procedente de Alemania (Ref. ES2026/240)",
       "url": "https://www.aesan.gob.es/alertas/2026_33_ampliacion_2"
-    },
-    {
-      "clave": "alimentacion:aesan-089c2afe42",
-      "tipo": "alimentacion",
-      "evento": "publicada",
-      "etiqueta": "Publicada",
-      "momento_detectado": "2026-09-17T11:22:24.181186+00:00",
-      "fecha_fuente": "2026-05-19",
-      "titulo": "Ampliación de información sobre la alerta por presencia de Listeria monocytogenes en queso fresco de vaca procedente de España (Ref. ES2026/271)",
-      "url": "https://www.aesan.gob.es/alertas/2026_38_Ampliacion_3"
     }
   ]
 }
