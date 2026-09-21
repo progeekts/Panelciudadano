@@ -1,5 +1,5 @@
 {
-  "ultima_revision": "2026-09-20T23:10:21.679495+00:00",
+  "ultima_revision": "2026-09-21T01:33:37.147585+00:00",
   "revision": "completa",
   "revision_fuentes_incidentes": "completa",
   "salud_auxiliar": "parcial",
@@ -418,28 +418,12 @@
     }
   ],
   "cambios": {
-    "nuevas": 1,
-    "resueltas_detectadas": 0,
+    "nuevas": 0,
+    "resueltas_detectadas": 1,
     "retiradas_monitor": 0
   },
-  "total": 3,
+  "total": 2,
   "items": [
-    {
-      "id": "github-f6yrxnz5f7bs",
-      "fuente_clave": "github",
-      "tipo": "servicio",
-      "servicio": "GitHub",
-      "titulo": "Incident with Pull Requests",
-      "resumen": "A git fileserver issue caused a brief delay in creating some merge commits - we've isolated the underlying server and already observed recovery.",
-      "estado": "Monitorizando",
-      "impacto": "Menor",
-      "fecha": "2026-09-20T22:13:37.889Z",
-      "actualizado": "2026-09-20T22:32:02.627Z",
-      "ambito": "Global",
-      "fuente": "GitHub Status",
-      "url": "https://stspg.io/cx8xcm6k8f9s",
-      "verificado": true
-    },
     {
       "id": "cloudflare-9g65dxfbcjln",
       "fuente_clave": "cloudflare",
