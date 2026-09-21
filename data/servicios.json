@@ -1,11 +1,11 @@
 {
-  "ultima_revision": "2026-09-21T07:06:47.271608+00:00",
+  "ultima_revision": "2026-09-21T14:30:22.756490+00:00",
   "revision": "completa",
   "revision_fuentes_incidentes": "completa",
   "salud_auxiliar": "parcial",
   "cobertura": {
     "fuentes_configuradas": 30,
-    "fuentes_respondieron": 23,
+    "fuentes_respondieron": 24,
     "fuentes_incidentes": 8,
     "fuentes_incidentes_ok": 8,
     "territorial": {
@@ -39,7 +39,7 @@
       },
       "Illes Balears": {
         "configuradas": 1,
-        "respondieron": 0
+        "respondieron": 1
       },
       "Canarias": {
         "configuradas": 1,
@@ -248,8 +248,8 @@
     {
       "clave": "balears",
       "fuente": "Govern de les Illes Balears",
-      "estado": "error",
-      "detalle": "RemoteDisconnected",
+      "estado": "ok",
+      "detalle": "Fuente oficial accesible",
       "ambito": "Illes Balears",
       "tipo": "auxiliar",
       "critica_para_resolucion": false
@@ -380,6 +380,7 @@
     "Ministerio de Transportes",
     "Gobierno de Aragón",
     "Principado de Asturias",
+    "Govern de les Illes Balears",
     "Gobierno de Canarias",
     "Junta de Castilla y León",
     "Generalitat Valenciana",
@@ -392,11 +393,6 @@
     {
       "servicio": "Junta de Andalucía",
       "error": "URLError",
-      "tipo": "auxiliar"
-    },
-    {
-      "servicio": "Govern de les Illes Balears",
-      "error": "RemoteDisconnected",
       "tipo": "auxiliar"
     },
     {
