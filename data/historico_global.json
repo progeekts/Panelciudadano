@@ -1,11 +1,11 @@
 {
-  "ultima_revision": "2026-09-21T01:35:00.608995+00:00",
+  "ultima_revision": "2026-09-21T05:27:00.152696+00:00",
   "fuentes_revision": {
     "ayudas": "2026-09-20T21:34:29.969023+00:00",
     "estafas": "2026-09-20T21:45:35.351621+00:00",
     "alimentacion": "2026-09-20T22:34:43.082693+00:00",
     "salud": "2026-09-20T21:55:27.368010+00:00",
-    "meteo": "2026-09-21T00:28:54.854539+00:00",
+    "meteo": "2026-09-21T05:26:48.878156+00:00",
     "servicios": "2026-09-21T01:33:37.147585+00:00"
   },
   "criterio": "Histórico de cambios detectados. Solo se asigna un estado terminal cuando la fuente o el módulo permiten afirmarlo de forma conservadora.",
@@ -2384,11 +2384,13 @@
       "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260920090740_AFAZ611102VIRM2104.xml",
       "referencia": "2.49.0.0.724.0.ES.20260920090740.611102VIRM21041789895260",
       "ambito": "Campiña gaditana",
-      "estado": "aviso_vigente",
+      "estado": "expirado_detectado",
       "huella": "a9b62b7af928814c00d0",
       "ultima_deteccion": "2026-09-20T10:05:04.062639+00:00",
       "fecha_fuente": "2026-09-20T11:00:00+02:00",
-      "primera_deteccion": "2026-09-20T10:05:04.062639+00:00"
+      "primera_deteccion": "2026-09-20T10:05:04.062639+00:00",
+      "fin_deteccion": "2026-09-21T05:27:00.152696+00:00",
+      "ultima_modificacion_detectada": "2026-09-21T05:27:00.152696+00:00"
     },
     {
       "clave": "meteo:aemet-6fd0e6f230f0",
@@ -2399,11 +2401,13 @@
       "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260920090740_AFAZ611103VIRM2104.xml",
       "referencia": "2.49.0.0.724.0.ES.20260920090740.611103VIRM21041789895260",
       "ambito": "Litoral gaditano",
-      "estado": "aviso_vigente",
+      "estado": "expirado_detectado",
       "huella": "d62796eb583a1999f66b",
       "ultima_deteccion": "2026-09-20T10:05:04.062639+00:00",
       "fecha_fuente": "2026-09-20T11:00:00+02:00",
-      "primera_deteccion": "2026-09-20T10:05:04.062639+00:00"
+      "primera_deteccion": "2026-09-20T10:05:04.062639+00:00",
+      "fin_deteccion": "2026-09-21T05:27:00.152696+00:00",
+      "ultima_modificacion_detectada": "2026-09-21T05:27:00.152696+00:00"
     },
     {
       "clave": "meteo:aemet-5ae7bf529450",
@@ -2414,11 +2418,13 @@
       "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260920090740_AFAZ611104VIRM2104.xml",
       "referencia": "2.49.0.0.724.0.ES.20260920090740.611104VIRM21041789895260",
       "ambito": "Estrecho",
-      "estado": "aviso_vigente",
+      "estado": "expirado_detectado",
       "huella": "fe5c899534fcfe2350c7",
       "ultima_deteccion": "2026-09-20T10:05:04.062639+00:00",
       "fecha_fuente": "2026-09-20T11:00:00+02:00",
-      "primera_deteccion": "2026-09-20T10:05:04.062639+00:00"
+      "primera_deteccion": "2026-09-20T10:05:04.062639+00:00",
+      "fin_deteccion": "2026-09-21T05:27:00.152696+00:00",
+      "ultima_modificacion_detectada": "2026-09-21T05:27:00.152696+00:00"
     },
     {
       "clave": "ayudas:bdns-930431",
@@ -10176,6 +10182,39 @@
     }
   ],
   "eventos": [
+    {
+      "clave": "meteo:aemet-9ca350bb89b3",
+      "tipo": "meteo",
+      "evento": "expirado_detectado",
+      "etiqueta": "Dejó de estar vigente",
+      "momento_detectado": "2026-09-21T05:27:00.152696+00:00",
+      "fecha_fuente": "2026-09-20T11:00:00+02:00",
+      "titulo": "Aviso de vientos de nivel amarillo",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260920090740_AFAZ611102VIRM2104.xml",
+      "detalle_cambio": "Ya no figura en el conjunto vigente validado por el módulo AEMET"
+    },
+    {
+      "clave": "meteo:aemet-6fd0e6f230f0",
+      "tipo": "meteo",
+      "evento": "expirado_detectado",
+      "etiqueta": "Dejó de estar vigente",
+      "momento_detectado": "2026-09-21T05:27:00.152696+00:00",
+      "fecha_fuente": "2026-09-20T11:00:00+02:00",
+      "titulo": "Aviso de vientos de nivel amarillo",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260920090740_AFAZ611103VIRM2104.xml",
+      "detalle_cambio": "Ya no figura en el conjunto vigente validado por el módulo AEMET"
+    },
+    {
+      "clave": "meteo:aemet-5ae7bf529450",
+      "tipo": "meteo",
+      "evento": "expirado_detectado",
+      "etiqueta": "Dejó de estar vigente",
+      "momento_detectado": "2026-09-21T05:27:00.152696+00:00",
+      "fecha_fuente": "2026-09-20T11:00:00+02:00",
+      "titulo": "Aviso de vientos de nivel amarillo",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260920090740_AFAZ611104VIRM2104.xml",
+      "detalle_cambio": "Ya no figura en el conjunto vigente validado por el módulo AEMET"
+    },
     {
       "clave": "servicios:github-f6yrxnz5f7bs",
       "tipo": "servicios",
@@ -20482,36 +20521,6 @@
       "fecha_fuente": "2026-03-19",
       "titulo": "CUROSURF 240, 1 vial de 3 ml (NR: 59600, CN: 778191)",
       "url": "https://www.aemps.gob.es/informa/curosurf-240-1-vial-de-3-ml-nr-59600-cn-778191"
-    },
-    {
-      "clave": "salud:aemps-b9537a3339",
-      "tipo": "salud",
-      "evento": "publicada",
-      "etiqueta": "Publicada",
-      "momento_detectado": "2026-09-17T11:22:24.181186+00:00",
-      "fecha_fuente": "2026-03-06",
-      "titulo": "IKERVIS 1 mg/ml colirio en emulsion 30 envases unidosis de 0,3 ml (NR: 115990001, CN: 707966)",
-      "url": "https://www.aemps.gob.es/informa/ikervis-1-mg-ml-colirio-en-emulsion-30-envases-unidosis-de-03-ml-nr-115990001-cn-707966"
-    },
-    {
-      "clave": "meteo:aemet-31c945b8df18",
-      "tipo": "meteo",
-      "evento": "aviso_vigente",
-      "etiqueta": "Aviso vigente",
-      "momento_detectado": "2026-09-17T11:22:24.181186+00:00",
-      "fecha_fuente": "2026-09-17T10:00:00+02:00",
-      "titulo": "Aviso de lluvias de nivel rojo",
-      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260917080807_AFAZ733005PRP11710.xml"
-    },
-    {
-      "clave": "meteo:aemet-141660460601",
-      "tipo": "meteo",
-      "evento": "aviso_vigente",
-      "etiqueta": "Aviso vigente",
-      "momento_detectado": "2026-09-17T11:22:24.181186+00:00",
-      "fecha_fuente": "2026-09-17T00:00:00+02:00",
-      "titulo": "Aviso de lluvias de nivel naranja",
-      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260916093033_AFAZ645301PRP11722.xml"
     }
   ]
 }
