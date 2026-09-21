@@ -1,7 +1,7 @@
 {
   "fuente": "SNPSAP / BDNS",
   "fuente_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/inicio",
-  "ultima_revision": "2026-09-20T21:34:29.969023+00:00",
+  "ultima_revision": "2026-09-21T14:10:00.938989+00:00",
   "total": 100,
   "con_metadatos": 100,
   "enriquecidas": 30,
@@ -638,7 +638,7 @@
       "inicio_solicitud": "2026-09-21",
       "fin_solicitud": "2026-10-02",
       "solicitud_indefinida": false,
-      "estado_plazo": "Próxima",
+      "estado_plazo": "Abierta",
       "finalidad": "Cultura",
       "sede_electronica": "",
       "fuente": "SNPSAP / Base de Datos Nacional de Subvenciones",
