@@ -1,15 +1,15 @@
 {
-  "ultima_revision": "2026-09-21T15:14:12.397394+00:00",
+  "ultima_revision": "2026-09-21T17:00:23.444002+00:00",
   "fuentes_revision": {
     "ayudas": "2026-09-21T14:10:00.938989+00:00",
     "estafas": "2026-09-21T14:29:56.929376+00:00",
     "alimentacion": "2026-09-21T15:13:51.683748+00:00",
     "salud": "2026-09-21T14:33:52.043418+00:00",
-    "meteo": "2026-09-21T11:05:05.866563+00:00",
+    "meteo": "2026-09-21T17:00:07.099226+00:00",
     "servicios": "2026-09-21T14:30:22.756490+00:00"
   },
   "criterio": "Histórico de cambios detectados. Solo se asigna un estado terminal cuando la fuente o el módulo permiten afirmarlo de forma conservadora.",
-  "total_registros": 671,
+  "total_registros": 676,
   "total_eventos": 1000,
   "registros": [
     {
@@ -1920,19 +1920,79 @@
       "primera_deteccion": "2026-09-21T11:05:23.010620+00:00"
     },
     {
-      "clave": "meteo:aemet-955aec9b8ba2",
+      "clave": "meteo:aemet-68a4127ec1f1",
       "tipo": "meteo",
-      "id": "aemet-955aec9b8ba2",
+      "id": "aemet-68a4127ec1f1",
       "titulo": "Aviso de temperaturas máximas de nivel amarillo",
       "fuente": "Agencia Estatal de Meteorología (AEMET)",
-      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260921092251_AFAZ711504ATTA2217.xml",
-      "referencia": "2.49.0.0.724.0.ES.20260921092251.711504ATTA22171789982571",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260921165522_AFAZ711503ATTA2217.xml",
+      "referencia": "2.49.0.0.724.0.ES.20260921165522.711503ATTA22171790009722",
+      "ambito": "Interior de A Coruña",
+      "estado": "aviso_vigente",
+      "huella": "acd3c275f288cbf44f33",
+      "ultima_deteccion": "2026-09-21T17:00:23.444002+00:00",
+      "fecha_fuente": "2026-09-22T13:00:00+02:00",
+      "primera_deteccion": "2026-09-21T17:00:23.444002+00:00"
+    },
+    {
+      "clave": "meteo:aemet-7df81652aa71",
+      "tipo": "meteo",
+      "id": "aemet-7df81652aa71",
+      "titulo": "Aviso de temperaturas máximas de nivel amarillo",
+      "fuente": "Agencia Estatal de Meteorología (AEMET)",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260921165522_AFAZ711504ATTA2217.xml",
+      "referencia": "2.49.0.0.724.0.ES.20260921165522.711504ATTA22171790009722",
       "ambito": "Suroeste de A Coruña",
       "estado": "aviso_vigente",
-      "huella": "64bd6ceeabd14d3d7060",
-      "ultima_deteccion": "2026-09-21T11:05:23.010620+00:00",
+      "huella": "7dc8b99c16b6200a8b2f",
+      "ultima_deteccion": "2026-09-21T17:00:23.444002+00:00",
       "fecha_fuente": "2026-09-22T13:00:00+02:00",
-      "primera_deteccion": "2026-09-21T11:05:23.010620+00:00"
+      "primera_deteccion": "2026-09-21T17:00:23.444002+00:00"
+    },
+    {
+      "clave": "meteo:aemet-450182c6ab9b",
+      "tipo": "meteo",
+      "id": "aemet-450182c6ab9b",
+      "titulo": "Aviso de temperaturas máximas de nivel amarillo",
+      "fuente": "Agencia Estatal de Meteorología (AEMET)",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260921165522_AFAZ713202ATTA2217.xml",
+      "referencia": "2.49.0.0.724.0.ES.20260921165522.713202ATTA22171790009722",
+      "ambito": "Miño de Ourense",
+      "estado": "aviso_vigente",
+      "huella": "70ab1e57f50059aceba5",
+      "ultima_deteccion": "2026-09-21T17:00:23.444002+00:00",
+      "fecha_fuente": "2026-09-22T13:00:00+02:00",
+      "primera_deteccion": "2026-09-21T17:00:23.444002+00:00"
+    },
+    {
+      "clave": "meteo:aemet-7657f93b9b1f",
+      "tipo": "meteo",
+      "id": "aemet-7657f93b9b1f",
+      "titulo": "Aviso de temperaturas máximas de nivel amarillo",
+      "fuente": "Agencia Estatal de Meteorología (AEMET)",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260921165522_AFAZ713601ATTA2217.xml",
+      "referencia": "2.49.0.0.724.0.ES.20260921165522.713601ATTA22171790009722",
+      "ambito": "Rias Baixas",
+      "estado": "aviso_vigente",
+      "huella": "4b03abfa8f657112f53b",
+      "ultima_deteccion": "2026-09-21T17:00:23.444002+00:00",
+      "fecha_fuente": "2026-09-22T13:00:00+02:00",
+      "primera_deteccion": "2026-09-21T17:00:23.444002+00:00"
+    },
+    {
+      "clave": "meteo:aemet-99d88b6ac492",
+      "tipo": "meteo",
+      "id": "aemet-99d88b6ac492",
+      "titulo": "Aviso de temperaturas máximas de nivel amarillo",
+      "fuente": "Agencia Estatal de Meteorología (AEMET)",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260921165522_AFAZ713603ATTA2217.xml",
+      "referencia": "2.49.0.0.724.0.ES.20260921165522.713603ATTA22171790009722",
+      "ambito": "Miño de Pontevedra",
+      "estado": "aviso_vigente",
+      "huella": "d54c4887f3b284fee885",
+      "ultima_deteccion": "2026-09-21T17:00:23.444002+00:00",
+      "fecha_fuente": "2026-09-22T13:00:00+02:00",
+      "primera_deteccion": "2026-09-21T17:00:23.444002+00:00"
     },
     {
       "clave": "meteo:aemet-8f550532a10c",
@@ -1945,21 +2005,6 @@
       "ambito": "Noroeste de Ourense",
       "estado": "aviso_vigente",
       "huella": "4e2af4d1b1d0f03c9ccd",
-      "ultima_deteccion": "2026-09-21T11:05:23.010620+00:00",
-      "fecha_fuente": "2026-09-22T13:00:00+02:00",
-      "primera_deteccion": "2026-09-21T11:05:23.010620+00:00"
-    },
-    {
-      "clave": "meteo:aemet-3ecc515145b9",
-      "tipo": "meteo",
-      "id": "aemet-3ecc515145b9",
-      "titulo": "Aviso de temperaturas máximas de nivel amarillo",
-      "fuente": "Agencia Estatal de Meteorología (AEMET)",
-      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260921092251_AFAZ713202ATTA2217.xml",
-      "referencia": "2.49.0.0.724.0.ES.20260921092251.713202ATTA22171789982571",
-      "ambito": "Miño de Ourense",
-      "estado": "aviso_vigente",
-      "huella": "0b7f652c75f22b5310af",
       "ultima_deteccion": "2026-09-21T11:05:23.010620+00:00",
       "fecha_fuente": "2026-09-22T13:00:00+02:00",
       "primera_deteccion": "2026-09-21T11:05:23.010620+00:00"
@@ -1995,6 +2040,40 @@
       "primera_deteccion": "2026-09-21T11:05:23.010620+00:00"
     },
     {
+      "clave": "meteo:aemet-955aec9b8ba2",
+      "tipo": "meteo",
+      "id": "aemet-955aec9b8ba2",
+      "titulo": "Aviso de temperaturas máximas de nivel amarillo",
+      "fuente": "Agencia Estatal de Meteorología (AEMET)",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260921092251_AFAZ711504ATTA2217.xml",
+      "referencia": "2.49.0.0.724.0.ES.20260921092251.711504ATTA22171789982571",
+      "ambito": "Suroeste de A Coruña",
+      "estado": "expirado_detectado",
+      "huella": "64bd6ceeabd14d3d7060",
+      "ultima_deteccion": "2026-09-21T11:05:23.010620+00:00",
+      "fecha_fuente": "2026-09-22T13:00:00+02:00",
+      "primera_deteccion": "2026-09-21T11:05:23.010620+00:00",
+      "fin_deteccion": "2026-09-21T17:00:23.444002+00:00",
+      "ultima_modificacion_detectada": "2026-09-21T17:00:23.444002+00:00"
+    },
+    {
+      "clave": "meteo:aemet-3ecc515145b9",
+      "tipo": "meteo",
+      "id": "aemet-3ecc515145b9",
+      "titulo": "Aviso de temperaturas máximas de nivel amarillo",
+      "fuente": "Agencia Estatal de Meteorología (AEMET)",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260921092251_AFAZ713202ATTA2217.xml",
+      "referencia": "2.49.0.0.724.0.ES.20260921092251.713202ATTA22171789982571",
+      "ambito": "Miño de Ourense",
+      "estado": "expirado_detectado",
+      "huella": "0b7f652c75f22b5310af",
+      "ultima_deteccion": "2026-09-21T11:05:23.010620+00:00",
+      "fecha_fuente": "2026-09-22T13:00:00+02:00",
+      "primera_deteccion": "2026-09-21T11:05:23.010620+00:00",
+      "fin_deteccion": "2026-09-21T17:00:23.444002+00:00",
+      "ultima_modificacion_detectada": "2026-09-21T17:00:23.444002+00:00"
+    },
+    {
       "clave": "meteo:aemet-7c19d6d123c1",
       "tipo": "meteo",
       "id": "aemet-7c19d6d123c1",
@@ -2003,11 +2082,13 @@
       "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260920193930_AFAZ691703ATTA2117.xml",
       "referencia": "2.49.0.0.724.0.ES.20260920193930.691703ATTA21171789933170",
       "ambito": "Ampurdán",
-      "estado": "aviso_vigente",
+      "estado": "expirado_detectado",
       "huella": "34e0b370829cbb514240",
       "ultima_deteccion": "2026-09-20T22:24:47.984054+00:00",
       "fecha_fuente": "2026-09-21T13:00:00+02:00",
-      "primera_deteccion": "2026-09-20T22:24:47.984054+00:00"
+      "primera_deteccion": "2026-09-20T22:24:47.984054+00:00",
+      "fin_deteccion": "2026-09-21T17:00:23.444002+00:00",
+      "ultima_modificacion_detectada": "2026-09-21T17:00:23.444002+00:00"
     },
     {
       "clave": "meteo:aemet-0e05b55eecb4",
@@ -2018,11 +2099,13 @@
       "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260920091415_AFAZ711504ATTA2117.xml",
       "referencia": "2.49.0.0.724.0.ES.20260920091415.711504ATTA21171789895655",
       "ambito": "Suroeste de A Coruña",
-      "estado": "aviso_vigente",
+      "estado": "expirado_detectado",
       "huella": "aab4c588fc1e6c0f81a1",
       "ultima_deteccion": "2026-09-20T10:05:04.062639+00:00",
       "fecha_fuente": "2026-09-21T13:00:00+02:00",
-      "primera_deteccion": "2026-09-20T10:05:04.062639+00:00"
+      "primera_deteccion": "2026-09-20T10:05:04.062639+00:00",
+      "fin_deteccion": "2026-09-21T17:00:23.444002+00:00",
+      "ultima_modificacion_detectada": "2026-09-21T17:00:23.444002+00:00"
     },
     {
       "clave": "meteo:aemet-8ae55cc537d9",
@@ -2033,11 +2116,13 @@
       "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260920091415_AFAZ713202ATTA2117.xml",
       "referencia": "2.49.0.0.724.0.ES.20260920091415.713202ATTA21171789895655",
       "ambito": "Miño de Ourense",
-      "estado": "aviso_vigente",
+      "estado": "expirado_detectado",
       "huella": "fd8797819f40344607c2",
       "ultima_deteccion": "2026-09-20T10:05:04.062639+00:00",
       "fecha_fuente": "2026-09-21T13:00:00+02:00",
-      "primera_deteccion": "2026-09-20T10:05:04.062639+00:00"
+      "primera_deteccion": "2026-09-20T10:05:04.062639+00:00",
+      "fin_deteccion": "2026-09-21T17:00:23.444002+00:00",
+      "ultima_modificacion_detectada": "2026-09-21T17:00:23.444002+00:00"
     },
     {
       "clave": "meteo:aemet-4904693963f6",
@@ -2048,11 +2133,13 @@
       "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260920091415_AFAZ713601ATTA2117.xml",
       "referencia": "2.49.0.0.724.0.ES.20260920091415.713601ATTA21171789895655",
       "ambito": "Rias Baixas",
-      "estado": "aviso_vigente",
+      "estado": "expirado_detectado",
       "huella": "a84c074a26525946a034",
       "ultima_deteccion": "2026-09-20T10:05:04.062639+00:00",
       "fecha_fuente": "2026-09-21T13:00:00+02:00",
-      "primera_deteccion": "2026-09-20T10:05:04.062639+00:00"
+      "primera_deteccion": "2026-09-20T10:05:04.062639+00:00",
+      "fin_deteccion": "2026-09-21T17:00:23.444002+00:00",
+      "ultima_modificacion_detectada": "2026-09-21T17:00:23.444002+00:00"
     },
     {
       "clave": "meteo:aemet-2dc15ace5f81",
@@ -2063,11 +2150,13 @@
       "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260920091415_AFAZ713603ATTA2117.xml",
       "referencia": "2.49.0.0.724.0.ES.20260920091415.713603ATTA21171789895655",
       "ambito": "Miño de Pontevedra",
-      "estado": "aviso_vigente",
+      "estado": "expirado_detectado",
       "huella": "be586f6c66b3f046394b",
       "ultima_deteccion": "2026-09-20T10:05:04.062639+00:00",
       "fecha_fuente": "2026-09-21T13:00:00+02:00",
-      "primera_deteccion": "2026-09-20T10:05:04.062639+00:00"
+      "primera_deteccion": "2026-09-20T10:05:04.062639+00:00",
+      "fin_deteccion": "2026-09-21T17:00:23.444002+00:00",
+      "ultima_modificacion_detectada": "2026-09-21T17:00:23.444002+00:00"
     },
     {
       "clave": "alimentacion:aesan-ee55391540",
@@ -10330,6 +10419,133 @@
     }
   ],
   "eventos": [
+    {
+      "clave": "meteo:aemet-68a4127ec1f1",
+      "tipo": "meteo",
+      "evento": "aviso_vigente",
+      "etiqueta": "Aviso vigente",
+      "momento_detectado": "2026-09-21T17:00:23.444002+00:00",
+      "fecha_fuente": "2026-09-22T13:00:00+02:00",
+      "titulo": "Aviso de temperaturas máximas de nivel amarillo",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260921165522_AFAZ711503ATTA2217.xml"
+    },
+    {
+      "clave": "meteo:aemet-7df81652aa71",
+      "tipo": "meteo",
+      "evento": "aviso_vigente",
+      "etiqueta": "Aviso vigente",
+      "momento_detectado": "2026-09-21T17:00:23.444002+00:00",
+      "fecha_fuente": "2026-09-22T13:00:00+02:00",
+      "titulo": "Aviso de temperaturas máximas de nivel amarillo",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260921165522_AFAZ711504ATTA2217.xml"
+    },
+    {
+      "clave": "meteo:aemet-450182c6ab9b",
+      "tipo": "meteo",
+      "evento": "aviso_vigente",
+      "etiqueta": "Aviso vigente",
+      "momento_detectado": "2026-09-21T17:00:23.444002+00:00",
+      "fecha_fuente": "2026-09-22T13:00:00+02:00",
+      "titulo": "Aviso de temperaturas máximas de nivel amarillo",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260921165522_AFAZ713202ATTA2217.xml"
+    },
+    {
+      "clave": "meteo:aemet-7657f93b9b1f",
+      "tipo": "meteo",
+      "evento": "aviso_vigente",
+      "etiqueta": "Aviso vigente",
+      "momento_detectado": "2026-09-21T17:00:23.444002+00:00",
+      "fecha_fuente": "2026-09-22T13:00:00+02:00",
+      "titulo": "Aviso de temperaturas máximas de nivel amarillo",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260921165522_AFAZ713601ATTA2217.xml"
+    },
+    {
+      "clave": "meteo:aemet-99d88b6ac492",
+      "tipo": "meteo",
+      "evento": "aviso_vigente",
+      "etiqueta": "Aviso vigente",
+      "momento_detectado": "2026-09-21T17:00:23.444002+00:00",
+      "fecha_fuente": "2026-09-22T13:00:00+02:00",
+      "titulo": "Aviso de temperaturas máximas de nivel amarillo",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260921165522_AFAZ713603ATTA2217.xml"
+    },
+    {
+      "clave": "meteo:aemet-955aec9b8ba2",
+      "tipo": "meteo",
+      "evento": "expirado_detectado",
+      "etiqueta": "Dejó de estar vigente",
+      "momento_detectado": "2026-09-21T17:00:23.444002+00:00",
+      "fecha_fuente": "2026-09-22T13:00:00+02:00",
+      "titulo": "Aviso de temperaturas máximas de nivel amarillo",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260921092251_AFAZ711504ATTA2217.xml",
+      "detalle_cambio": "Ya no figura en el conjunto vigente validado por el módulo AEMET"
+    },
+    {
+      "clave": "meteo:aemet-3ecc515145b9",
+      "tipo": "meteo",
+      "evento": "expirado_detectado",
+      "etiqueta": "Dejó de estar vigente",
+      "momento_detectado": "2026-09-21T17:00:23.444002+00:00",
+      "fecha_fuente": "2026-09-22T13:00:00+02:00",
+      "titulo": "Aviso de temperaturas máximas de nivel amarillo",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260921092251_AFAZ713202ATTA2217.xml",
+      "detalle_cambio": "Ya no figura en el conjunto vigente validado por el módulo AEMET"
+    },
+    {
+      "clave": "meteo:aemet-7c19d6d123c1",
+      "tipo": "meteo",
+      "evento": "expirado_detectado",
+      "etiqueta": "Dejó de estar vigente",
+      "momento_detectado": "2026-09-21T17:00:23.444002+00:00",
+      "fecha_fuente": "2026-09-21T13:00:00+02:00",
+      "titulo": "Aviso de temperaturas máximas de nivel amarillo",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260920193930_AFAZ691703ATTA2117.xml",
+      "detalle_cambio": "Ya no figura en el conjunto vigente validado por el módulo AEMET"
+    },
+    {
+      "clave": "meteo:aemet-0e05b55eecb4",
+      "tipo": "meteo",
+      "evento": "expirado_detectado",
+      "etiqueta": "Dejó de estar vigente",
+      "momento_detectado": "2026-09-21T17:00:23.444002+00:00",
+      "fecha_fuente": "2026-09-21T13:00:00+02:00",
+      "titulo": "Aviso de temperaturas máximas de nivel amarillo",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260920091415_AFAZ711504ATTA2117.xml",
+      "detalle_cambio": "Ya no figura en el conjunto vigente validado por el módulo AEMET"
+    },
+    {
+      "clave": "meteo:aemet-8ae55cc537d9",
+      "tipo": "meteo",
+      "evento": "expirado_detectado",
+      "etiqueta": "Dejó de estar vigente",
+      "momento_detectado": "2026-09-21T17:00:23.444002+00:00",
+      "fecha_fuente": "2026-09-21T13:00:00+02:00",
+      "titulo": "Aviso de temperaturas máximas de nivel amarillo",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260920091415_AFAZ713202ATTA2117.xml",
+      "detalle_cambio": "Ya no figura en el conjunto vigente validado por el módulo AEMET"
+    },
+    {
+      "clave": "meteo:aemet-4904693963f6",
+      "tipo": "meteo",
+      "evento": "expirado_detectado",
+      "etiqueta": "Dejó de estar vigente",
+      "momento_detectado": "2026-09-21T17:00:23.444002+00:00",
+      "fecha_fuente": "2026-09-21T13:00:00+02:00",
+      "titulo": "Aviso de temperaturas máximas de nivel amarillo",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260920091415_AFAZ713601ATTA2117.xml",
+      "detalle_cambio": "Ya no figura en el conjunto vigente validado por el módulo AEMET"
+    },
+    {
+      "clave": "meteo:aemet-2dc15ace5f81",
+      "tipo": "meteo",
+      "evento": "expirado_detectado",
+      "etiqueta": "Dejó de estar vigente",
+      "momento_detectado": "2026-09-21T17:00:23.444002+00:00",
+      "fecha_fuente": "2026-09-21T13:00:00+02:00",
+      "titulo": "Aviso de temperaturas máximas de nivel amarillo",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260920091415_AFAZ713603ATTA2117.xml",
+      "detalle_cambio": "Ya no figura en el conjunto vigente validado por el módulo AEMET"
+    },
     {
       "clave": "ayudas:bdns-930505",
       "tipo": "ayudas",
@@ -20556,126 +20772,6 @@
       "fecha_fuente": "2026-06-15",
       "titulo": "Alerta por presencia de Listeria monocytogenes en bloc de foie gras de pato procedente de Bulgaria (Ref. ES2026/350)",
       "url": "https://www.aesan.gob.es/alertas/2026_48"
-    },
-    {
-      "clave": "alimentacion:aesan-9d19d93457",
-      "tipo": "alimentacion",
-      "evento": "publicada",
-      "etiqueta": "Publicada",
-      "momento_detectado": "2026-09-17T11:22:24.181186+00:00",
-      "fecha_fuente": "2026-06-05",
-      "titulo": "Ampliación de información sobre la alerta por presencia de almendra y huevo no declarados en postre procedente de España (Ref ES2026/327)",
-      "url": "https://www.aesan.gob.es/alertas/2026_46_Ampliacion"
-    },
-    {
-      "clave": "alimentacion:aesan-6f948c56a2",
-      "tipo": "alimentacion",
-      "evento": "publicada",
-      "etiqueta": "Publicada",
-      "momento_detectado": "2026-09-17T11:22:24.181186+00:00",
-      "fecha_fuente": "2026-06-05",
-      "titulo": "Advertencia para personas con alergia a las almendras: presencia de almendras en relleno de praliné de avellana procedente de Países Bajos (Ref. ES2026/332)",
-      "url": "https://www.aesan.gob.es/alertas/2026_46"
-    },
-    {
-      "clave": "alimentacion:aesan-4075fd939b",
-      "tipo": "alimentacion",
-      "evento": "publicada",
-      "etiqueta": "Publicada",
-      "momento_detectado": "2026-09-17T11:22:24.181186+00:00",
-      "fecha_fuente": "2026-06-04",
-      "titulo": "Ampliación de información sobre la alerta por presencia de almendra no declarada en postre procedente de España (Ref. ES2026/327)",
-      "url": "https://www.aesan.gob.es/alertas/2026_Ampliacion_45_2"
-    },
-    {
-      "clave": "alimentacion:aesan-f1edff383e",
-      "tipo": "alimentacion",
-      "evento": "publicada",
-      "etiqueta": "Publicada",
-      "momento_detectado": "2026-09-17T11:22:24.181186+00:00",
-      "fecha_fuente": "2026-06-03",
-      "titulo": "Ampliación de información sobre la alerta por presencia de almendra no declarada en postre procedente de España (Ref. ES2026/327)",
-      "url": "https://www.aesan.gob.es/alertas/2026_Ampliacion_45"
-    },
-    {
-      "clave": "alimentacion:aesan-4f7dbbdc32",
-      "tipo": "alimentacion",
-      "evento": "publicada",
-      "etiqueta": "Publicada",
-      "momento_detectado": "2026-09-17T11:22:24.181186+00:00",
-      "fecha_fuente": "2026-06-02",
-      "titulo": "Alerta por presencia de Listeria monocytogenes en queso fresco de vaca procedente de España (Ref. ES2026/300)",
-      "url": "https://www.aesan.gob.es/alertas/2026_44"
-    },
-    {
-      "clave": "alimentacion:aesan-e7b4fab756",
-      "tipo": "alimentacion",
-      "evento": "publicada",
-      "etiqueta": "Publicada",
-      "momento_detectado": "2026-09-17T11:22:24.181186+00:00",
-      "fecha_fuente": "2026-06-02",
-      "titulo": "Advertencia para personas con alergia a las almendras: presencia de almendras no declaradas en postre procedente de España (Ref. ES2026/327)",
-      "url": "https://www.aesan.gob.es/alertas/2026_45"
-    },
-    {
-      "clave": "alimentacion:aesan-188cd33cfe",
-      "tipo": "alimentacion",
-      "evento": "publicada",
-      "etiqueta": "Publicada",
-      "momento_detectado": "2026-09-17T11:22:24.181186+00:00",
-      "fecha_fuente": "2026-05-30",
-      "titulo": "Alerta por posible presencia de partículas de aluminio en cereales para el desayuno con chocolate procedentes de Portugal. (Ref. ES2026/323)",
-      "url": "https://www.aesan.gob.es/alertas/2026_43"
-    },
-    {
-      "clave": "alimentacion:aesan-15e36adebe",
-      "tipo": "alimentacion",
-      "evento": "publicada",
-      "etiqueta": "Publicada",
-      "momento_detectado": "2026-09-17T11:22:24.181186+00:00",
-      "fecha_fuente": "2026-05-29",
-      "titulo": "Alerta por presencia de Listeria monocytogenes en queso fresco de vaca procedente de España (Ref. ES2026/322)",
-      "url": "https://www.aesan.gob.es/alertas/2026_42"
-    },
-    {
-      "clave": "alimentacion:aesan-80a316afb4",
-      "tipo": "alimentacion",
-      "evento": "publicada",
-      "etiqueta": "Publicada",
-      "momento_detectado": "2026-09-17T11:22:24.181186+00:00",
-      "fecha_fuente": "2026-05-29",
-      "titulo": "Advertencia para personas con alergia a la soja o a los cacahuetes: Presencia de soja y cacahuetes en barritas proteicas procedentes de Países Bajos (Ref. ES2026/312)",
-      "url": "https://www.aesan.gob.es/alertas/2026_41"
-    },
-    {
-      "clave": "alimentacion:aesan-baea4be4e3",
-      "tipo": "alimentacion",
-      "evento": "publicada",
-      "etiqueta": "Publicada",
-      "momento_detectado": "2026-09-17T11:22:24.181186+00:00",
-      "fecha_fuente": "2026-05-27",
-      "titulo": "Corrección de errores sobre la alerta por presencia de Salmonella spp. en moringa ecológica procedente de Alemania (Ref. ES2026/240)",
-      "url": "https://www.aesan.gob.es/alertas/2026_33_ampliacion_4"
-    },
-    {
-      "clave": "alimentacion:aesan-a2f2498bc7",
-      "tipo": "alimentacion",
-      "evento": "publicada",
-      "etiqueta": "Publicada",
-      "momento_detectado": "2026-09-17T11:22:24.181186+00:00",
-      "fecha_fuente": "2026-05-25",
-      "titulo": "Ampliación de información sobre la alerta por presencia de Salmonella spp. en moringa ecológica procedente de Alemania (Ref. ES2026/240)",
-      "url": "https://www.aesan.gob.es/alertas/2026_33_ampliacion_3"
-    },
-    {
-      "clave": "alimentacion:aesan-9e5faf6929",
-      "tipo": "alimentacion",
-      "evento": "publicada",
-      "etiqueta": "Publicada",
-      "momento_detectado": "2026-09-17T11:22:24.181186+00:00",
-      "fecha_fuente": "2026-05-22",
-      "titulo": "Ampliación de información sobre la alerta por presencia de Salmonella spp. en moringa ecológica procedente de Alemania (Ref. ES2026/240)",
-      "url": "https://www.aesan.gob.es/alertas/2026_33_ampliacion_2"
     }
   ]
 }
