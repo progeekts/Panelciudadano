@@ -1,12 +1,12 @@
 {
-  "ultima_revision": "2026-09-21T00:29:09.309672+00:00",
+  "ultima_revision": "2026-09-21T01:35:00.608995+00:00",
   "fuentes_revision": {
     "ayudas": "2026-09-20T21:34:29.969023+00:00",
     "estafas": "2026-09-20T21:45:35.351621+00:00",
     "alimentacion": "2026-09-20T22:34:43.082693+00:00",
     "salud": "2026-09-20T21:55:27.368010+00:00",
     "meteo": "2026-09-21T00:28:54.854539+00:00",
-    "servicios": "2026-09-20T23:10:21.679495+00:00"
+    "servicios": "2026-09-21T01:33:37.147585+00:00"
   },
   "criterio": "Histórico de cambios detectados. Solo se asigna un estado terminal cuando la fuente o el módulo permiten afirmarlo de forma conservadora.",
   "total_registros": 662,
@@ -10062,11 +10062,11 @@
       "fuente": "GitHub",
       "url": "https://stspg.io/cx8xcm6k8f9s",
       "ambito": "Global",
-      "estado": "incidencia_activa",
+      "estado": "solucionado",
       "primera_deteccion": "2026-09-20T23:10:21.679495+00:00",
       "ultima_deteccion": "2026-09-20T23:10:21.679495+00:00",
       "ultima_modificacion_detectada": "2026-09-20T23:10:21.679495+00:00",
-      "fin_deteccion": "",
+      "fin_deteccion": "2026-09-21T01:33:37.147585+00:00",
       "fecha_fuente": ""
     },
     {
@@ -10176,6 +10176,16 @@
     }
   ],
   "eventos": [
+    {
+      "clave": "servicios:github-f6yrxnz5f7bs",
+      "tipo": "servicios",
+      "evento": "solucionado",
+      "etiqueta": "Solucionada",
+      "momento_detectado": "2026-09-21T01:33:37.147585+00:00",
+      "fecha_fuente": "",
+      "titulo": "Incident with Pull Requests",
+      "url": "https://stspg.io/cx8xcm6k8f9s"
+    },
     {
       "clave": "servicios:github-f6yrxnz5f7bs",
       "tipo": "servicios",
@@ -20502,16 +20512,6 @@
       "fecha_fuente": "2026-09-17T00:00:00+02:00",
       "titulo": "Aviso de lluvias de nivel naranja",
       "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260916093033_AFAZ645301PRP11722.xml"
-    },
-    {
-      "clave": "meteo:aemet-c8e566f5d34f",
-      "tipo": "meteo",
-      "evento": "aviso_vigente",
-      "etiqueta": "Aviso vigente",
-      "momento_detectado": "2026-09-17T11:22:24.181186+00:00",
-      "fecha_fuente": "2026-09-17T00:00:00+02:00",
-      "titulo": "Aviso de tormentas de nivel naranja",
-      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260916093033_AFAZ645301TOTO1722.xml"
     }
   ]
 }
