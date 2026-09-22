@@ -64,7 +64,7 @@ jobs:
           mkdir -p dist
           cp index.html metodologia.html privacidad.html dist/
           cp -R assets dist/assets
-          cp -R data dist/data
+          cp -R data dist/data\n          python scripts/update_source_health.py --data-dir data --out dist/data/source_health.json
 
           cat > dist/.htaccess <<'EOF'
           Options -Indexes
