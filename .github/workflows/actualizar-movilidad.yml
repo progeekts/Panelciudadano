@@ -26,6 +26,8 @@ jobs:
           python-version: '3.12'
       - name: Consultar incidencias oficiales DGT
         run: python scripts/update_movilidad.py
+      - name: Validar datos antes de publicar
+        run: python scripts/validate_data.py data/movilidad.json
       - name: Publicar cambios si existen
         run: |
           if git status --porcelain -- data/movilidad.json | grep -q .; then
