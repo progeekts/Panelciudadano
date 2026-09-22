@@ -1,15 +1,15 @@
 {
-  "ultima_revision": "2026-09-22T18:50:12.206465+00:00",
+  "ultima_revision": "2026-09-22T21:14:18.658658+00:00",
   "fuentes_revision": {
     "ayudas": "2026-09-22T12:37:55.170967+00:00",
     "estafas": "2026-09-22T12:47:46.350065+00:00",
     "alimentacion": "2026-09-22T13:31:46.359442+00:00",
     "salud": "2026-09-22T12:51:31.234656+00:00",
     "meteo": "2026-09-22T18:49:58.288108+00:00",
-    "servicios": "2026-09-22T17:44:41.216837+00:00"
+    "servicios": "2026-09-22T21:12:43.867541+00:00"
   },
   "criterio": "Histórico de cambios detectados. Solo se asigna un estado terminal cuando la fuente o el módulo permiten afirmarlo de forma conservadora.",
-  "total_registros": 817,
+  "total_registros": 818,
   "total_eventos": 1000,
   "registros": [
     {
@@ -12442,6 +12442,21 @@
       "fin_deteccion": "2026-09-17T23:08:37.603449+00:00"
     },
     {
+      "clave": "servicios:cloudflare-tl0vrgjy99r0",
+      "tipo": "servicios",
+      "id": "cloudflare-tl0vrgjy99r0",
+      "titulo": "Cloudflare One Clients are incorrectly challenged on some sites",
+      "fuente": "Cloudflare",
+      "url": "https://www.cloudflarestatus.com/incidents/tl0vrgjy99r0",
+      "ambito": "Global",
+      "estado": "incidencia_activa",
+      "primera_deteccion": "2026-09-22T21:12:43.867541+00:00",
+      "ultima_deteccion": "2026-09-22T21:12:43.867541+00:00",
+      "ultima_modificacion_detectada": "2026-09-22T21:12:43.867541+00:00",
+      "fin_deteccion": "",
+      "fecha_fuente": ""
+    },
+    {
       "clave": "servicios:cloudflare-dcmwvjwfyhjg",
       "tipo": "servicios",
       "id": "cloudflare-dcmwvjwfyhjg",
@@ -12578,6 +12593,16 @@
     }
   ],
   "eventos": [
+    {
+      "clave": "servicios:cloudflare-tl0vrgjy99r0",
+      "tipo": "servicios",
+      "evento": "incidencia_activa",
+      "etiqueta": "Incidencia activa",
+      "momento_detectado": "2026-09-22T21:12:43.867541+00:00",
+      "fecha_fuente": "",
+      "titulo": "Cloudflare One Clients are incorrectly challenged on some sites",
+      "url": "https://www.cloudflarestatus.com/incidents/tl0vrgjy99r0"
+    },
     {
       "clave": "meteo:aemet-4e485fae76f5",
       "tipo": "meteo",
@@ -22952,16 +22977,6 @@
       "fecha_fuente": "",
       "titulo": "Aviso de lluvias de nivel amarillo",
       "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260916092753_AFAZ733002PRP11718.xml"
-    },
-    {
-      "clave": "meteo:aemet-937961aef8e0",
-      "tipo": "meteo",
-      "evento": "expirado_detectado",
-      "etiqueta": "Dejó de estar vigente",
-      "momento_detectado": "2026-09-17T23:08:37.603449+00:00",
-      "fecha_fuente": "",
-      "titulo": "Aviso de lluvias de nivel amarillo",
-      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260916092753_AFAZ733003PRP11718.xml"
     }
   ]
 }
