@@ -1,15 +1,15 @@
 {
-  "ultima_revision": "2026-09-21T23:41:23.999754+00:00",
+  "ultima_revision": "2026-09-22T00:03:29.368573+00:00",
   "fuentes_revision": {
     "ayudas": "2026-09-21T22:35:23.806101+00:00",
     "estafas": "2026-09-21T22:46:40.305435+00:00",
     "alimentacion": "2026-09-21T23:26:37.449659+00:00",
     "salud": "2026-09-21T22:51:05.730141+00:00",
-    "meteo": "2026-09-21T21:01:16.917736+00:00",
+    "meteo": "2026-09-22T00:03:15.713593+00:00",
     "servicios": "2026-09-21T23:12:22.360119+00:00"
   },
   "criterio": "Histórico de cambios detectados. Solo se asigna un estado terminal cuando la fuente o el módulo permiten afirmarlo de forma conservadora.",
-  "total_registros": 776,
+  "total_registros": 777,
   "total_eventos": 1000,
   "registros": [
     {
@@ -1831,6 +1831,21 @@
       "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
       "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
       "referencia": "R_12/2026"
+    },
+    {
+      "clave": "meteo:aemet-0ed1ba0d89ec",
+      "tipo": "meteo",
+      "id": "aemet-0ed1ba0d89ec",
+      "titulo": "Aviso de temperaturas máximas de nivel amarillo",
+      "fuente": "Agencia Estatal de Meteorología (AEMET)",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260921215001_AFAZ659004ATTA2418.xml",
+      "referencia": "2.49.0.0.724.0.ES.20260921215001.659004ATTA24181790027401",
+      "ambito": "Este, sur y oeste de Gran Canaria",
+      "estado": "aviso_vigente",
+      "huella": "4bcc1101765989b1acb0",
+      "ultima_deteccion": "2026-09-22T00:03:29.368573+00:00",
+      "fecha_fuente": "2026-09-24T11:00:00+01:00",
+      "primera_deteccion": "2026-09-22T00:03:29.368573+00:00"
     },
     {
       "clave": "meteo:aemet-e0de95076a0b",
@@ -11919,6 +11934,16 @@
     }
   ],
   "eventos": [
+    {
+      "clave": "meteo:aemet-0ed1ba0d89ec",
+      "tipo": "meteo",
+      "evento": "aviso_vigente",
+      "etiqueta": "Aviso vigente",
+      "momento_detectado": "2026-09-22T00:03:29.368573+00:00",
+      "fecha_fuente": "2026-09-24T11:00:00+01:00",
+      "titulo": "Aviso de temperaturas máximas de nivel amarillo",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260921215001_AFAZ659004ATTA2418.xml"
+    },
     {
       "clave": "ayudas:bdns-930796",
       "tipo": "ayudas",
@@ -22262,16 +22287,6 @@
       "fecha_fuente": "2026-09-16",
       "titulo": "RESOLUCION CONVOCATORIA DE SUBVENCIONES PARA LA CONTRATACION DE PERSONAS DESOCUPADAS PARA 2026",
       "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/929952"
-    },
-    {
-      "clave": "ayudas:bdns-929951",
-      "tipo": "ayudas",
-      "evento": "publicada",
-      "etiqueta": "Publicada",
-      "momento_detectado": "2026-09-17T11:22:24.181186+00:00",
-      "fecha_fuente": "2026-09-16",
-      "titulo": "CONVOCATORIA SUBV. DESTINADAS AL FOMENTO DE LA ADQUISICIÓN O AUTOPROMOCIÓN DE PRIMERA VIVIENDA PARA JÓVENES EN LA ISLA DE LA PALMA",
-      "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/929951"
     }
   ]
 }
