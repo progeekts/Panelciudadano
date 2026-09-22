@@ -25,3 +25,54 @@ clip-path:polygon(0 42%,7% 35%,14% 41%,20% 29%,27% 39%,34% 33%,40% 43%,47% 28%,5
 @media(max-width:1000px){.hero{grid-template-columns:1fr 260px}.dashboard-grid{grid-template-columns:1fr}.dashboard-side{position:static;grid-template-columns:1fr 1fr}.card{padding-left:175px}.card:after{width:145px!important}}
 @media(max-width:760px){.wrap{width:min(100% - 20px,1500px)}.hero{grid-template-columns:1fr;padding:24px 14px 18px;min-height:0}.hero h1{font-size:38px}.hero-side{grid-template-columns:1fr 1fr}.hero .toolbar{display:flex}.hero .filters{overflow:auto}.summary{grid-template-columns:repeat(2,1fr);border-radius:12px;margin-top:10px;padding:8px}.stat{grid-template-columns:42px 1fr;min-height:100px;padding:11px}.stat .icon{width:38px;height:38px}.stat .num{font-size:27px}.dashboard-side{grid-template-columns:1fr}.card{padding:12px 12px 12px 122px;min-height:112px}.card:after{left:8px;top:8px;width:102px!important;height:calc(100% - 16px)!important}.section-title h2{font-size:25px}.list-tools .view-chip{display:none}.spain-filter{grid-template-columns:1fr}}
 @media(max-width:460px){.hero-side{grid-template-columns:1fr}.card{padding-left:12px;padding-top:104px}.card:after{width:calc(100% - 16px)!important;height:88px!important}.summary{grid-template-columns:1fr 1fr}}
+
+/* RC2.1 — corrección móvil + recursos visuales reales */
+.hero{
+ background-image:
+ linear-gradient(90deg,rgba(3,39,74,.88) 0%,rgba(4,49,91,.62) 52%,rgba(3,39,74,.48) 100%),
+ url("https://commons.wikimedia.org/wiki/Special:Redirect/file/Metropolis_at_night_(Unsplash).jpg");
+ background-size:cover;background-position:center 47%;background-repeat:no-repeat
+}
+.hero:before{background:linear-gradient(180deg,rgba(1,25,49,.06),rgba(1,24,47,.34))!important;clip-path:none!important}
+.territory-box{display:none!important}
+.card:after{background-size:cover!important;background-position:center!important;background-repeat:no-repeat!important}
+.card:nth-child(6n+1):after{background-image:linear-gradient(rgba(7,47,81,.06),rgba(7,47,81,.06)),url("https://commons.wikimedia.org/wiki/Special:Redirect/file/Summer_thermometer.jpg")!important}
+.card:nth-child(6n+2):after{background-image:linear-gradient(rgba(5,37,70,.10),rgba(5,37,70,.10)),url("https://commons.wikimedia.org/wiki/Special:Redirect/file/Laptop_image.jpg")!important}
+.card:nth-child(6n+3):after{background-image:url("https://commons.wikimedia.org/wiki/Special:Redirect/file/Dijon_mustard.jpg")!important}
+.card:nth-child(6n+4):after{background-image:linear-gradient(135deg,#dcebf5,#8fb8d2)!important}
+.card:nth-child(6n+5):after{background-image:linear-gradient(135deg,#0d3150,#184f78)!important}
+.card:nth-child(6n+6):after{background-image:linear-gradient(135deg,#dcecf8,#a6c9e2)!important}
+@media(max-width:760px){
+ body{overflow-x:hidden}
+ .topbar{position:relative!important}
+ .nav-shell{min-height:72px!important;padding:0 4px}
+ .brand{gap:9px}.brand strong{font-size:18px!important}.brand span{display:none!important}
+ main#inicio{padding-top:0!important}
+ .hero{padding:24px 16px 18px!important;display:block!important;background-position:57% center;min-height:auto!important}
+ .hero-copy{max-width:100%;overflow:hidden}
+ .hero h1{font-size:clamp(29px,8.1vw,34px)!important;line-height:1.04!important;letter-spacing:-.035em!important;max-width:100%!important;margin:0 0 10px!important}
+ .hero h1 br{display:none}
+ .hero p{font-size:15px!important;line-height:1.35!important;max-width:92%;white-space:normal;overflow:visible}
+ .hero-side{display:grid!important;grid-template-columns:1fr 1fr!important;gap:8px!important;margin-top:20px}
+ .updated,.territory-card{min-height:78px!important;padding:11px 13px!important;border-radius:11px!important}
+ .updated span,.territory-card span{font-size:11px!important}.updated strong,.territory-card strong{font-size:14px!important}
+ .hero .toolbar{display:grid!important;grid-template-columns:1fr 96px!important;gap:8px!important;margin-top:14px!important}
+ .hero .search{grid-column:1;height:50px!important;min-width:0}
+ .hero .search input{font-size:14px!important;min-width:0}
+ .hero .search-btn{grid-column:2;height:50px!important;min-width:0!important;padding:0 10px!important;border-radius:14px!important;font-size:14px!important;color:#fff!important}
+ .hero .filters{grid-column:1/-1!important;display:flex!important;overflow-x:auto!important;flex-wrap:nowrap!important;padding:2px 0 5px!important;scrollbar-width:none}
+ .hero .filters::-webkit-scrollbar{display:none}.filter{flex:0 0 auto!important;padding:8px 13px!important;font-size:11px!important}
+ .summary{margin:10px 0 12px!important;display:flex!important;overflow-x:auto!important;gap:8px!important;padding:8px!important;border-radius:12px!important;scroll-snap-type:x proximity}
+ .stat{flex:0 0 155px!important;min-height:92px!important;display:grid!important;grid-template-columns:38px 1fr!important;padding:10px!important;scroll-snap-align:start}
+ .stat .num{font-size:25px!important}.stat small{font-size:10px!important}
+ .dashboard-grid{display:block!important}.radar-panel{padding:13px 10px!important}.dashboard-side{display:grid!important;margin-top:12px}
+ .section-title{align-items:flex-start!important}.section-title h2{font-size:24px!important}.list-tools{max-width:115px}
+ .card{padding:10px 10px 10px 116px!important;min-height:105px!important}
+ .card:after{left:7px!important;top:7px!important;width:98px!important;height:calc(100% - 14px)!important}
+ .card h3{font-size:14px!important}.card p{font-size:10px!important}.card-bottom{font-size:9px!important}
+}
+@media(max-width:390px){
+ .hero h1{font-size:28px!important}.hero-side{grid-template-columns:1fr!important}
+ .hero .toolbar{grid-template-columns:1fr 86px!important}.hero .search-btn{font-size:13px!important}
+ .card{padding-left:105px!important}.card:after{width:88px!important}
+}
