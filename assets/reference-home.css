@@ -30,15 +30,15 @@ clip-path:polygon(0 42%,7% 35%,14% 41%,20% 29%,27% 39%,34% 33%,40% 43%,47% 28%,5
 .hero{
  background-image:
  linear-gradient(90deg,rgba(3,39,74,.88) 0%,rgba(4,49,91,.62) 52%,rgba(3,39,74,.48) 100%),
- url("https://commons.wikimedia.org/wiki/Special:Redirect/file/Metropolis_at_night_(Unsplash).jpg");
+ url("images/hero-madrid.jpg");
  background-size:cover;background-position:center 47%;background-repeat:no-repeat
 }
 .hero:before{background:linear-gradient(180deg,rgba(1,25,49,.06),rgba(1,24,47,.34))!important;clip-path:none!important}
 .territory-box{display:none!important}
 .card:after{background-size:cover!important;background-position:center!important;background-repeat:no-repeat!important}
-.card:nth-child(6n+1):after{background-image:linear-gradient(rgba(7,47,81,.06),rgba(7,47,81,.06)),url("https://commons.wikimedia.org/wiki/Special:Redirect/file/Summer_thermometer.jpg")!important}
-.card:nth-child(6n+2):after{background-image:linear-gradient(rgba(5,37,70,.10),rgba(5,37,70,.10)),url("https://commons.wikimedia.org/wiki/Special:Redirect/file/Laptop_image.jpg")!important}
-.card:nth-child(6n+3):after{background-image:url("https://commons.wikimedia.org/wiki/Special:Redirect/file/Dijon_mustard.jpg")!important}
+.card:nth-child(6n+1):after{background-image:linear-gradient(rgba(7,47,81,.06),rgba(7,47,81,.06)),url("images/alert-heat.jpg")!important}
+.card:nth-child(6n+2):after{background-image:linear-gradient(rgba(5,37,70,.10),rgba(5,37,70,.10)),url("images/alert-cloud.jpg")!important}
+.card:nth-child(6n+3):after{background-image:url("images/alert-mustard.jpg")!important}
 .card:nth-child(6n+4):after{background-image:linear-gradient(135deg,#dcebf5,#8fb8d2)!important}
 .card:nth-child(6n+5):after{background-image:linear-gradient(135deg,#0d3150,#184f78)!important}
 .card:nth-child(6n+6):after{background-image:linear-gradient(135deg,#dcecf8,#a6c9e2)!important}
