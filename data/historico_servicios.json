@@ -1,5 +1,5 @@
 {
-  "ultima_revision": "2026-09-22T13:02:46.684717+00:00",
+  "ultima_revision": "2026-09-22T13:21:31.143132+00:00",
   "nota": "Resuelto significa que la propia fuente oficial fue revisada correctamente y dejó de publicar la incidencia. Retirado significa que Panel Ciudadano dejó de usar ese detector por falta de una señal temporal suficientemente fiable; no implica resolución del servicio.",
   "total": 9,
   "items": [
@@ -166,17 +166,17 @@
       "estado": "Identificada",
       "impacto": "Menor",
       "fecha": "2026-08-27T18:46:19.000Z",
-      "actualizado": "2026-09-01T08:29:56.000Z",
+      "actualizado": "2026-09-01T08:29:56.953Z",
       "ambito": "Global",
       "fuente": "Cloudflare Status",
       "url": "https://www.cloudflarestatus.com/incidents/9g65dxfbcjln",
       "verificado": true,
       "primera_deteccion": "2026-09-16T20:03:57.804501+00:00",
-      "ultima_deteccion": "2026-09-22T13:02:46.684717+00:00",
-      "ultima_modificacion_detectada": "2026-09-16T20:03:57.804501+00:00",
+      "ultima_deteccion": "2026-09-22T13:21:31.143132+00:00",
+      "ultima_modificacion_detectada": "2026-09-22T13:21:31.143132+00:00",
       "resuelto_detectado": "",
       "estado_historico": "activo",
-      "fingerprint": "Incorrect geo location for some Cloudflare WARP users|We are continuing to work on a fix for this issue.|Identificada|Menor|2026-09-01T08:29:56.000Z",
+      "fingerprint": "Incorrect geo location for some Cloudflare WARP users|We are continuing to work on a fix for this issue.|Identificada|Menor|2026-09-01T08:29:56.953Z",
       "fuente_clave": "cloudflare"
     },
     {
@@ -194,7 +194,7 @@
       "url": "https://sede.administracionespublicas.gob.es/ayuda/",
       "verificado": true,
       "primera_deteccion": "2026-09-16T20:03:57.804501+00:00",
-      "ultima_deteccion": "2026-09-22T13:02:46.684717+00:00",
+      "ultima_deteccion": "2026-09-22T13:21:31.143132+00:00",
       "ultima_modificacion_detectada": "2026-09-16T20:03:57.804501+00:00",
       "resuelto_detectado": "",
       "estado_historico": "activo",

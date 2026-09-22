@@ -1,5 +1,5 @@
 {
-  "ultima_revision": "2026-09-22T13:02:46.684717+00:00",
+  "ultima_revision": "2026-09-22T13:21:31.143132+00:00",
   "revision": "completa",
   "revision_fuentes_incidentes": "completa",
   "salud_auxiliar": "parcial",
@@ -427,7 +427,7 @@
   ],
   "cambios": {
     "nuevas": 0,
-    "resueltas_detectadas": 1,
+    "resueltas_detectadas": 0,
     "retiradas_monitor": 0
   },
   "total": 2,
@@ -442,7 +442,7 @@
       "estado": "Identificada",
       "impacto": "Menor",
       "fecha": "2026-08-27T18:46:19.000Z",
-      "actualizado": "2026-09-01T08:29:56.000Z",
+      "actualizado": "2026-09-01T08:29:56.953Z",
       "ambito": "Global",
       "fuente": "Cloudflare Status",
       "url": "https://www.cloudflarestatus.com/incidents/9g65dxfbcjln",
