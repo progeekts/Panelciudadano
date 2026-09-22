@@ -18,6 +18,16 @@ def parse(v):
  if not v:return None
  try:return datetime.fromisoformat(str(v).replace("Z","+00:00")).astimezone(timezone.utc)
  except Exception:return None
+
+
+def validate_output(out):
+ required={"generado","estado_general","resumen","modulos","nota"}
+ missing=required-set(out)
+ if missing: raise ValueError(f"Faltan campos de salud: {sorted(missing)}")
+ if len(out["modulos"]) != len(MODULES): raise ValueError("Número de módulos inesperado")
+ ids=[m.get("id") for m in out["modulos"]]
+ if len(ids)!=len(set(ids)): raise ValueError("Módulos duplicados")
+
 def main():
  ap=argparse.ArgumentParser();ap.add_argument("--data-dir",default="data");ap.add_argument("--out",default="data/source_health.json");a=ap.parse_args()
  now=datetime.now(timezone.utc); rows=[]
@@ -38,6 +48,6 @@ def main():
  overall="ok" if counts["partial"]+counts["stale"]+counts["error"]+counts["unknown"]==0 else ("degraded" if counts["ok"] else "unavailable")
  out={"generado":now.isoformat(),"estado_general":overall,"resumen":counts,"modulos":rows,
  "nota":"El estado técnico indica si Panel Ciudadano ha podido revisar sus fuentes recientemente. No describe por sí mismo la existencia o ausencia de incidencias ciudadanas."}
- target=Path(a.out);target.parent.mkdir(parents=True,exist_ok=True);target.write_text(json.dumps(out,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+ validate_output(out)\n target=Path(a.out);target.parent.mkdir(parents=True,exist_ok=True);target.write_text(json.dumps(out,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
  print(f"Salud de fuentes: {overall}; "+", ".join(f"{k}={v}" for k,v in counts.items()))
 if __name__=="__main__":main()
