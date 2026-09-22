@@ -27,6 +27,8 @@ jobs:
           fetch-depth: 0
       - name: Generar histórico común
         run: python scripts/update_historico_global.py
+      - name: Validar datos antes de publicar
+        run: python scripts/validate_data.py data/historico_global.json
       - name: Publicar cambios
         run: |
           if git diff --quiet -- data/historico_global.json && [ -z "$(git ls-files --others --exclude-standard -- data/historico_global.json)" ]; then
