@@ -1,15 +1,15 @@
 {
-  "ultima_revision": "2026-09-22T12:38:07.080696+00:00",
+  "ultima_revision": "2026-09-22T12:43:52.782180+00:00",
   "fuentes_revision": {
     "ayudas": "2026-09-22T12:37:55.170967+00:00",
     "estafas": "2026-09-21T22:46:40.305435+00:00",
     "alimentacion": "2026-09-21T23:26:37.449659+00:00",
     "salud": "2026-09-21T22:51:05.730141+00:00",
     "meteo": "2026-09-22T09:53:40.270351+00:00",
-    "servicios": "2026-09-22T07:39:02.751144+00:00"
+    "servicios": "2026-09-22T12:41:56.684724+00:00"
   },
   "criterio": "Histórico de cambios detectados. Solo se asigna un estado terminal cuando la fuente o el módulo permiten afirmarlo de forma conservadora.",
-  "total_registros": 810,
+  "total_registros": 811,
   "total_eventos": 1000,
   "registros": [
     {
@@ -12334,6 +12334,21 @@
       "fin_deteccion": "2026-09-17T23:08:37.603449+00:00"
     },
     {
+      "clave": "servicios:cloudflare-dcmwvjwfyhjg",
+      "tipo": "servicios",
+      "id": "cloudflare-dcmwvjwfyhjg",
+      "titulo": "Partial visibility of Workers and Durable Objects analytics for Fedramp High customers",
+      "fuente": "Cloudflare",
+      "url": "https://www.cloudflarestatus.com/incidents/dcmwvjwfyhjg",
+      "ambito": "Global",
+      "estado": "incidencia_activa",
+      "primera_deteccion": "2026-09-22T12:41:56.684724+00:00",
+      "ultima_deteccion": "2026-09-22T12:41:56.684724+00:00",
+      "ultima_modificacion_detectada": "2026-09-22T12:41:56.684724+00:00",
+      "fin_deteccion": "",
+      "fecha_fuente": ""
+    },
+    {
       "clave": "servicios:github-f6yrxnz5f7bs",
       "tipo": "servicios",
       "id": "github-f6yrxnz5f7bs",
@@ -12455,6 +12470,16 @@
     }
   ],
   "eventos": [
+    {
+      "clave": "servicios:cloudflare-dcmwvjwfyhjg",
+      "tipo": "servicios",
+      "evento": "incidencia_activa",
+      "etiqueta": "Incidencia activa",
+      "momento_detectado": "2026-09-22T12:41:56.684724+00:00",
+      "fecha_fuente": "",
+      "titulo": "Partial visibility of Workers and Durable Objects analytics for Fedramp High customers",
+      "url": "https://www.cloudflarestatus.com/incidents/dcmwvjwfyhjg"
+    },
     {
       "clave": "ayudas:bdns-930810",
       "tipo": "ayudas",
@@ -22818,16 +22843,6 @@
       "fecha_fuente": "",
       "titulo": "Aviso de tormentas de nivel amarillo",
       "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260916092042_AFAZ770301TOTO1718.xml"
-    },
-    {
-      "clave": "meteo:aemet-465b4d9d4d2f",
-      "tipo": "meteo",
-      "evento": "expirado_detectado",
-      "etiqueta": "Dejó de estar vigente",
-      "momento_detectado": "2026-09-17T23:08:37.603449+00:00",
-      "fecha_fuente": "",
-      "titulo": "Aviso de tormentas de nivel amarillo",
-      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260916092042_AFAZ770302TOTO1718.xml"
     }
   ]
 }
