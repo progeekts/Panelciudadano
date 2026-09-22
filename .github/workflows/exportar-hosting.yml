@@ -66,6 +66,17 @@ jobs:
           cp index.html metodologia.html privacidad.html dist/
           cp -R assets dist/assets
           cp -R data dist/data
+
+          # Recursos visuales locales: evitamos depender de hotlinking en producción.
+          mkdir -p dist/assets/images
+          curl -L --fail --retry 3 --max-time 60 -o dist/assets/images/hero-madrid.jpg "https://commons.wikimedia.org/wiki/Special:Redirect/file/Metropolis_at_night_(Unsplash).jpg"
+          curl -L --fail --retry 3 --max-time 60 -o dist/assets/images/alert-heat.jpg "https://commons.wikimedia.org/wiki/Special:Redirect/file/Summer_thermometer.jpg"
+          curl -L --fail --retry 3 --max-time 60 -o dist/assets/images/alert-cloud.jpg "https://commons.wikimedia.org/wiki/Special:Redirect/file/Laptop_image.jpg"
+          curl -L --fail --retry 3 --max-time 60 -o dist/assets/images/alert-mustard.jpg "https://commons.wikimedia.org/wiki/Special:Redirect/file/Dijon_mustard.jpg"
+          test -s dist/assets/images/hero-madrid.jpg
+          test -s dist/assets/images/alert-heat.jpg
+          test -s dist/assets/images/alert-cloud.jpg
+          test -s dist/assets/images/alert-mustard.jpg
           python scripts/update_source_health.py --data-dir data --out dist/data/source_health.json
           python -m json.tool dist/data/source_health.json >/dev/null
           test -s dist/index.html
