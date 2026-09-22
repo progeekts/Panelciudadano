@@ -22,5 +22,5 @@
   return{state,tone,facts:facts.slice(0,4)}
  }
  function render(){const host=document.querySelector('#citizenPulse');if(!host)return;const s=build();if(!s){host.hidden=true;return}host.hidden=false;host.className='citizen-pulse '+s.tone;host.innerHTML=`<div class="pulse-kicker">PULSO CIUDADANO</div><div class="pulse-main"><div><strong>${s.state}</strong><p>${s.facts.join(' · ')}</p></div><span class="pulse-note">Síntesis de Panel Ciudadano</span></div><small>Se genera a partir de estados y niveles publicados por las fuentes. No sustituye sus avisos oficiales.</small>`}
- document.addEventListener('panel:data-ready',render);window.addEventListener('load',()=>setTimeout(render,1600));
+ document.addEventListener('panel:data-ready',render);document.addEventListener('panel:ready',render);window.addEventListener('load',()=>setTimeout(render,1600));
 })();
