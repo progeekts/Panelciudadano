@@ -1,4 +1,4 @@
-name: Exportar web para hosting
+name: Exportar y desplegar web
 
 on:
   workflow_dispatch:
@@ -18,13 +18,13 @@ permissions:
   contents: read
 
 concurrency:
-  group: exportar-hosting
+  group: desplegar-hosting
   cancel-in-progress: true
 
 jobs:
-  exportar:
+  exportar-y-desplegar:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 10
     steps:
       - name: Descargar repositorio
         uses: actions/checkout@v4
@@ -59,13 +59,7 @@ jobs:
 
           cat > dist/DEPLOY.txt <<'EOF'
           Panel Ciudadano - paquete estático exportable
-
-          Sube TODO el contenido de este directorio a la raíz pública del hosting.
-          No requiere PHP, Node, Python ni base de datos.
-          La web consume únicamente archivos relativos incluidos en el paquete.
-
-          Para Apache puedes conservar .htaccess.
-          En Nginx u otros servidores puedes ignorarlo.
+          Generado automáticamente desde el repositorio.
           EOF
 
       - name: Publicar artefacto descargable
@@ -75,3 +69,44 @@ jobs:
           path: dist/
           if-no-files-found: error
           retention-days: 30
+
+      - name: Comprobar configuración SFTP
+        id: sftp
+        shell: bash
+        env:
+          HOST: ${{ secrets.DEPLOY_HOST }}
+          USERNAME: ${{ secrets.DEPLOY_USER }}
+          PASSWORD: ${{ secrets.DEPLOY_PASSWORD }}
+          PORT: ${{ secrets.DEPLOY_PORT }}
+          REMOTE_PATH: ${{ secrets.DEPLOY_PATH }}
+        run: |
+          if [ -n "$HOST" ] && [ -n "$USERNAME" ] && [ -n "$PASSWORD" ] && [ -n "$REMOTE_PATH" ]; then
+            echo "enabled=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "enabled=false" >> "$GITHUB_OUTPUT"
+            echo "::notice::Paquete generado. Despliegue SFTP omitido porque faltan secretos DEPLOY_*."
+          fi
+
+      - name: Instalar cliente SFTP
+        if: steps.sftp.outputs.enabled == 'true'
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq lftp
+
+      - name: Desplegar por SFTP
+        if: steps.sftp.outputs.enabled == 'true'
+        shell: bash
+        env:
+          DEPLOY_HOST: ${{ secrets.DEPLOY_HOST }}
+          DEPLOY_USER: ${{ secrets.DEPLOY_USER }}
+          DEPLOY_PASSWORD: ${{ secrets.DEPLOY_PASSWORD }}
+          DEPLOY_PORT: ${{ secrets.DEPLOY_PORT }}
+          DEPLOY_PATH: ${{ secrets.DEPLOY_PATH }}
+        run: |
+          set -euo pipefail
+          PORT="${DEPLOY_PORT:-22}"
+          lftp -u "$DEPLOY_USER","$DEPLOY_PASSWORD" "sftp://$DEPLOY_HOST:$PORT" <<EOF
+          set sftp:auto-confirm yes
+          set net:max-retries 2
+          set net:timeout 20
+          mirror --reverse --delete --verbose dist/ "$DEPLOY_PATH"
+          bye
+          EOF
