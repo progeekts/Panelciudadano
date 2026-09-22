@@ -2,6 +2,17 @@ name: Exportar y desplegar web
 
 on:
   workflow_dispatch:
+  workflow_run:
+    workflows:
+      - "Actualizar servicios digitales"
+      - "Actualizar ayudas BDNS"
+      - "Actualizar estafas"
+      - "Actualizar alimentación"
+      - "Actualizar salud"
+      - "Actualizar meteorología"
+      - "Actualizar movilidad"
+      - "Actualizar histórico global"
+    types: [completed]
   push:
     branches: [main]
     paths:
@@ -23,6 +34,7 @@ concurrency:
 
 jobs:
   exportar-y-desplegar:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
