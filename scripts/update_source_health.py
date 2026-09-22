@@ -37,7 +37,10 @@ def main():
    d=json.loads(p.read_text(encoding="utf-8"));rev=parse(d.get("ultima_revision"))
    declared=str(d.get("revision_fuentes_incidentes") if key=="servicios" else d.get("revision","completa")).lower()
    age=(now-rev).total_seconds()/3600 if rev else None
-   if age is not None and age < -0.25:status="unknown";detail="La fecha de revisión está en el futuro; reloj no verificable"\n   elif declared=="error":status="error";detail="La última consulta no pudo validarse"
+   if age is not None and age < -0.25:
+    status="unknown";detail="La fecha de revisión está en el futuro; reloj no verificable"
+   elif declared=="error":
+    status="error";detail="La última consulta no pudo validarse"
    elif age is None:status="unknown";detail="Sin fecha de revisión verificable"
    elif age>maxh:status="stale";detail=f"Última revisión hace {age:.1f} h; supera el umbral de {maxh} h"
    elif declared=="parcial":status="partial";detail="La fuente respondió de forma parcial"
