@@ -25,6 +25,8 @@ jobs:
           python-version: '3.12'
       - name: Consultar alertas oficiales AEMPS
         run: python scripts/update_salud.py
+      - name: Validar datos antes de publicar
+        run: python scripts/validate_data.py data/salud.json
       - name: Publicar cambios si existen
         run: |
           git config user.name "github-actions[bot]"
