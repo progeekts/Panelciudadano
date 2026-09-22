@@ -57,10 +57,13 @@ jobs:
           </IfModule>
           EOF
 
-          cat > dist/DEPLOY.txt <<'EOF'
+          cat > dist/DEPLOY.txt <<EOF
           Panel Ciudadano - paquete estático exportable
-          Generado automáticamente desde el repositorio.
+          Commit: $GITHUB_SHA
+          Generado: $(date -u +'%Y-%m-%dT%H:%M:%SZ')
           EOF
+
+          printf '%s' "$GITHUB_SHA" > dist/deploy-version.txt
 
       - name: Publicar artefacto descargable
         uses: actions/upload-artifact@v4
@@ -110,3 +113,29 @@ jobs:
           mirror --reverse --delete --verbose dist/ "$DEPLOY_PATH"
           bye
           EOF
+
+      - name: Verificar publicación
+        if: steps.sftp.outputs.enabled == 'true'
+        shell: bash
+        env:
+          EXPECTED_SHA: ${{ github.sha }}
+        run: |
+          set -euo pipefail
+          BASE_URL="https://progeekts.es/panelciudadano"
+
+          # El hosting/CDN puede tardar unos segundos en reflejar el nuevo fichero.
+          for attempt in 1 2 3 4 5 6; do
+            STATUS="$(curl -L -sS -o /tmp/index.html -w '%{http_code}' --connect-timeout 10 --max-time 20 "$BASE_URL/")" || STATUS="000"
+            VERSION="$(curl -L -fsS --connect-timeout 10 --max-time 20 "$BASE_URL/deploy-version.txt?ts=$(date +%s)" 2>/dev/null || true)"
+
+            if [ "$STATUS" = "200" ] && [ "$VERSION" = "$EXPECTED_SHA" ]; then
+              echo "Publicación verificada: HTTP 200 y versión $EXPECTED_SHA."
+              exit 0
+            fi
+
+            echo "Intento $attempt/6: HTTP=$STATUS versión_publicada=$VERSION"
+            sleep 10
+          done
+
+          echo "::error::El SFTP terminó, pero la versión publicada no coincide con el commit esperado o la portada no responde HTTP 200."
+          exit 1
