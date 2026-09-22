@@ -1,5 +1,5 @@
 {
-  "ultima_revision": "2026-09-22T13:21:31.143132+00:00",
+  "ultima_revision": "2026-09-22T17:44:41.216837+00:00",
   "revision": "completa",
   "revision_fuentes_incidentes": "completa",
   "salud_auxiliar": "parcial",
@@ -442,7 +442,7 @@
       "estado": "Identificada",
       "impacto": "Menor",
       "fecha": "2026-08-27T18:46:19.000Z",
-      "actualizado": "2026-09-01T08:29:56.953Z",
+      "actualizado": "2026-09-01T08:29:56.000Z",
       "ambito": "Global",
       "fuente": "Cloudflare Status",
       "url": "https://www.cloudflarestatus.com/incidents/9g65dxfbcjln",
