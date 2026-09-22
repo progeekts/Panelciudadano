@@ -1,13 +1,13 @@
 {
-  "ultima_revision": "2026-09-22T21:12:43.867541+00:00",
-  "revision": "completa",
-  "revision_fuentes_incidentes": "completa",
+  "ultima_revision": "2026-09-22T23:46:19.285237+00:00",
+  "revision": "parcial",
+  "revision_fuentes_incidentes": "parcial",
   "salud_auxiliar": "parcial",
   "cobertura": {
     "fuentes_configuradas": 30,
-    "fuentes_respondieron": 23,
+    "fuentes_respondieron": 22,
     "fuentes_incidentes": 8,
-    "fuentes_incidentes_ok": 8,
+    "fuentes_incidentes_ok": 7,
     "territorial": {
       "Global": {
         "configuradas": 4,
@@ -15,7 +15,7 @@
       },
       "España": {
         "configuradas": 8,
-        "respondieron": 8
+        "respondieron": 7
       },
       "Cataluña": {
         "configuradas": 1,
@@ -158,8 +158,8 @@
     {
       "clave": "sepe",
       "fuente": "SEPE",
-      "estado": "ok",
-      "detalle": "Fuente oficial accesible",
+      "estado": "error",
+      "detalle": "URLError",
       "ambito": "España",
       "tipo": "incidencias",
       "critica_para_resolucion": true
@@ -371,7 +371,6 @@
     "Administraciones Públicas (AGE)",
     "Generalitat de Catalunya",
     "ENAIRE Sede electrónica",
-    "SEPE",
     "Ciudad Autónoma de Melilla",
     "Punto de Acceso General",
     "Agencia Tributaria (AEAT)",
@@ -389,6 +388,11 @@
     "Gobierno Vasco"
   ],
   "fuentes_error": [
+    {
+      "servicio": "SEPE",
+      "error": "URLError",
+      "tipo": "incidencias"
+    },
     {
       "servicio": "Junta de Andalucía",
       "error": "URLError",
@@ -426,7 +430,7 @@
     }
   ],
   "cambios": {
-    "nuevas": 1,
+    "nuevas": 0,
     "resueltas_detectadas": 0,
     "retiradas_monitor": 0
   },
