@@ -26,6 +26,8 @@ jobs:
           python-version: '3.12'
       - name: Consultar avisos oficiales AEMET
         run: python scripts/update_meteo.py
+      - name: Validar datos antes de publicar
+        run: python scripts/validate_data.py data/meteo.json
       - name: Publicar cambios si existen
         run: |
           if git status --porcelain -- data/meteo.json | grep -q .; then
