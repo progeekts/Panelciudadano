@@ -66,6 +66,10 @@ jobs:
           cp -R assets dist/assets
           cp -R data dist/data
           python scripts/update_source_health.py --data-dir data --out dist/data/source_health.json
+          python -m json.tool dist/data/source_health.json >/dev/null
+          test -s dist/index.html
+          test -s dist/data/data.js
+          test -s dist/data/source_health.json
 
           cat > dist/.htaccess <<'EOF'
           Options -Indexes
