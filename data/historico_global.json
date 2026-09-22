@@ -1,15 +1,15 @@
 {
-  "ultima_revision": "2026-09-22T21:24:19.798083+00:00",
+  "ultima_revision": "2026-09-22T22:03:39.907728+00:00",
   "fuentes_revision": {
     "ayudas": "2026-09-22T12:37:55.170967+00:00",
     "estafas": "2026-09-22T12:47:46.350065+00:00",
     "alimentacion": "2026-09-22T13:31:46.359442+00:00",
     "salud": "2026-09-22T12:51:31.234656+00:00",
-    "meteo": "2026-09-22T18:49:58.288108+00:00",
+    "meteo": "2026-09-22T22:03:24.450252+00:00",
     "servicios": "2026-09-22T21:12:43.867541+00:00"
   },
   "criterio": "Histórico de cambios detectados. Solo se asigna un estado terminal cuando la fuente o el módulo permiten afirmarlo de forma conservadora.",
-  "total_registros": 818,
+  "total_registros": 820,
   "total_eventos": 1000,
   "registros": [
     {
@@ -1829,6 +1829,36 @@
       "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
       "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
       "referencia": "R_12/2026"
+    },
+    {
+      "clave": "meteo:aemet-64eeb1be6fe3",
+      "tipo": "meteo",
+      "id": "aemet-64eeb1be6fe3",
+      "titulo": "Aviso de temperaturas máximas de nivel amarillo",
+      "fuente": "Agencia Estatal de Meteorología (AEMET)",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260922215001_AFAZ659004ATTA2518.xml",
+      "referencia": "2.49.0.0.724.0.ES.20260922215001.659004ATTA25181790113801",
+      "ambito": "Este, sur y oeste de Gran Canaria",
+      "estado": "aviso_vigente",
+      "huella": "4ecec71bb110989dffc7",
+      "ultima_deteccion": "2026-09-22T22:03:39.907728+00:00",
+      "fecha_fuente": "2026-09-25T11:00:00+01:00",
+      "primera_deteccion": "2026-09-22T22:03:39.907728+00:00"
+    },
+    {
+      "clave": "meteo:aemet-60ec308e09aa",
+      "tipo": "meteo",
+      "id": "aemet-60ec308e09aa",
+      "titulo": "Aviso de temperaturas máximas de nivel amarillo",
+      "fuente": "Agencia Estatal de Meteorología (AEMET)",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260922215001_AFAZ659603ATTA2518.xml",
+      "referencia": "2.49.0.0.724.0.ES.20260922215001.659603ATTA25181790113801",
+      "ambito": "Este, sur y oeste de Tenerife",
+      "estado": "aviso_vigente",
+      "huella": "c96e499703bdc9a07de3",
+      "ultima_deteccion": "2026-09-22T22:03:39.907728+00:00",
+      "fecha_fuente": "2026-09-25T11:00:00+01:00",
+      "primera_deteccion": "2026-09-22T22:03:39.907728+00:00"
     },
     {
       "clave": "meteo:aemet-4e485fae76f5",
@@ -12594,6 +12624,26 @@
   ],
   "eventos": [
     {
+      "clave": "meteo:aemet-64eeb1be6fe3",
+      "tipo": "meteo",
+      "evento": "aviso_vigente",
+      "etiqueta": "Aviso vigente",
+      "momento_detectado": "2026-09-22T22:03:39.907728+00:00",
+      "fecha_fuente": "2026-09-25T11:00:00+01:00",
+      "titulo": "Aviso de temperaturas máximas de nivel amarillo",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260922215001_AFAZ659004ATTA2518.xml"
+    },
+    {
+      "clave": "meteo:aemet-60ec308e09aa",
+      "tipo": "meteo",
+      "evento": "aviso_vigente",
+      "etiqueta": "Aviso vigente",
+      "momento_detectado": "2026-09-22T22:03:39.907728+00:00",
+      "fecha_fuente": "2026-09-25T11:00:00+01:00",
+      "titulo": "Aviso de temperaturas máximas de nivel amarillo",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260922215001_AFAZ659603ATTA2518.xml"
+    },
+    {
       "clave": "servicios:cloudflare-tl0vrgjy99r0",
       "tipo": "servicios",
       "evento": "incidencia_activa",
@@ -22957,26 +23007,6 @@
       "fecha_fuente": "",
       "titulo": "Aviso de tormentas de nivel amarillo",
       "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260916092753_AFAZ733003TOTO1718.xml"
-    },
-    {
-      "clave": "meteo:aemet-d48b5e42db95",
-      "tipo": "meteo",
-      "evento": "expirado_detectado",
-      "etiqueta": "Dejó de estar vigente",
-      "momento_detectado": "2026-09-17T23:08:37.603449+00:00",
-      "fecha_fuente": "",
-      "titulo": "Aviso de lluvias de nivel amarillo",
-      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260916092753_AFAZ733001PRP11718.xml"
-    },
-    {
-      "clave": "meteo:aemet-aa88690bdc68",
-      "tipo": "meteo",
-      "evento": "expirado_detectado",
-      "etiqueta": "Dejó de estar vigente",
-      "momento_detectado": "2026-09-17T23:08:37.603449+00:00",
-      "fecha_fuente": "",
-      "titulo": "Aviso de lluvias de nivel amarillo",
-      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260916092753_AFAZ733002PRP11718.xml"
     }
   ]
 }
