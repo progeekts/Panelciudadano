@@ -25,6 +25,8 @@ jobs:
           python-version: '3.12'
       - name: Consultar estados oficiales
         run: python scripts/update_servicios.py
+      - name: Validar datos antes de publicar
+        run: python scripts/validate_data.py data/servicios.json data/historico_servicios.json
       - name: Publicar cambios si existen
         run: |
           git config user.name "github-actions[bot]"
