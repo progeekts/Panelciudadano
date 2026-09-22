@@ -1,67 +1,57 @@
 # Despliegue fuera de GitHub Pages
 
-Panel Ciudadano está preparado para funcionar como una web estática independiente de GitHub Pages.
+Panel Ciudadano separa la recopilación de datos de la web pública. GitHub puede seguir ejecutando los recolectores mientras un hosting externo sirve únicamente la copia estática.
 
-## Arquitectura
+## Despliegue automático por SFTP
 
-Hay dos partes separadas:
+El workflow `Exportar y desplegar web` genera el paquete `panel-ciudadano-web` y, cuando están configurados los secretos, sincroniza automáticamente `dist/` con el directorio público del hosting.
 
-1. **Actualización de datos**
-   - Los scripts de `scripts/` consultan las fuentes.
-   - GitHub Actions ejecuta esos scripts.
-   - Los resultados se guardan en `data/`.
+### Secrets necesarios
 
-2. **Web pública**
-   - `index.html`, `metodologia.html` y `privacidad.html`.
-   - `assets/` contiene estilos y JavaScript.
-   - `data/` contiene los datos que consume la interfaz.
-   - No necesita PHP, Node, Python ni base de datos en el hosting.
+En el repositorio abre **Settings → Secrets and variables → Actions → New repository secret** y crea:
 
-Esto permite mantener GitHub como motor de actualización y alojar la web pública en cualquier hosting estático.
+- `DEPLOY_HOST` — servidor SFTP facilitado por el hosting. Ejemplo de formato: `ftp.example.net` o `ssh.example.net`. No incluyas `sftp://`.
+- `DEPLOY_USER` — usuario SFTP.
+- `DEPLOY_PASSWORD` — contraseña del usuario SFTP.
+- `DEPLOY_PATH` — ruta remota exacta donde debe publicarse Panel Ciudadano, por ejemplo `/www/panel/`. Debe ser la carpeta pública asignada al dominio o subdominio.
+- `DEPLOY_PORT` — opcional. Puerto SFTP. Si se omite, el workflow usa `22`.
 
-## Obtener el paquete para hosting
+No guardes estas credenciales en archivos del repositorio.
 
-1. Ve a **Actions**.
-2. Ejecuta o abre el workflow **Exportar web para hosting**.
-3. Descarga el artefacto **panel-ciudadano-web**.
-4. Descomprime el ZIP.
-5. Sube su contenido al directorio público del hosting.
+## Primera puesta en marcha
 
-El paquete contiene solo los archivos necesarios para publicar la web.
+1. Crea primero el dominio o subdominio en el hosting.
+2. Confirma cuál es su carpeta raíz pública.
+3. Confirma que el proveedor permite SFTP.
+4. Crea los secretos anteriores.
+5. Ve a **Actions → Exportar y desplegar web → Run workflow**.
+6. Comprueba el resultado del paso **Desplegar por SFTP**.
+7. Abre el dominio y verifica la portada, los estilos y varias fichas.
 
-## Hosting compatible
+Hasta que los secretos estén creados, el workflow no falla: genera el artefacto descargable y omite el despliegue externo.
 
-Funciona en cualquier servidor capaz de servir archivos estáticos por HTTPS, por ejemplo:
+## Funcionamiento posterior
 
-- hosting tradicional Apache;
-- Nginx;
-- OVH;
-- Cloudflare Pages;
-- Netlify;
-- Vercel como sitio estático;
-- almacenamiento web estático equivalente.
+Cuando cambia la interfaz o `data/`, el workflow vuelve a generar la web y sincroniza el hosting. Además existe una ejecución programada cada hora como respaldo.
 
-## Actualizaciones
+La opción `--delete` mantiene el hosting como espejo del paquete público: elimina del directorio remoto los archivos que ya no existan en `dist/`. Por eso `DEPLOY_PATH` debe apuntar a una carpeta dedicada exclusivamente a Panel Ciudadano.
 
-Los workflows de recopilación pueden seguir ejecutándose en GitHub y modificando `data/`.
+## Qué se publica
 
-El workflow de exportación genera periódicamente un nuevo paquete con la versión más reciente.
+Solo:
 
-Si quieres automatizar también la subida al hosting, puede añadirse posteriormente un despliegue mediante SFTP/FTP/rsync o el mecanismo que proporcione el proveedor.
+- `index.html`
+- `metodologia.html`
+- `privacidad.html`
+- `assets/`
+- `data/`
+- `.htaccess`
+- `DEPLOY.txt`
 
-## Rutas
-
-La web utiliza rutas relativas, por lo que no está ligada al dominio de GitHub Pages.
-
-Para instalarla en la raíz de un dominio o subdominio basta con copiar el contenido del paquete manteniendo la estructura de carpetas.
+No se suben `scripts/`, `.github/`, los workflows ni el código de recopilación.
 
 ## Seguridad
 
-El paquete incluye un `.htaccess` opcional para Apache con:
+El paquete incluye un `.htaccess` opcional para Apache con desactivación del listado de directorios, UTF-8, cabeceras básicas de seguridad y reglas de caché.
 
-- desactivación del listado de directorios;
-- UTF-8 por defecto;
-- cabeceras básicas de seguridad;
-- caché corta para datos dinámicos y moderada para recursos estáticos.
-
-Si el servidor no usa Apache, el archivo puede ignorarse.
+Las credenciales quedan en GitHub Actions Secrets y se referencian como `secrets.DEPLOY_*`; no deben escribirse directamente en el YAML.
