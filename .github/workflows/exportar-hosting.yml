@@ -22,6 +22,7 @@ on:
       - 'assets/**'
       - 'data/**'
       - '.github/workflows/exportar-hosting.yml'
+      - 'scripts/update_source_health.py'
   schedule:
     - cron: '20 * * * *'
 
