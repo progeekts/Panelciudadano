@@ -1,11 +1,11 @@
 {
-  "ultima_revision": "2026-09-22T07:39:02.751144+00:00",
+  "ultima_revision": "2026-09-22T12:41:56.684724+00:00",
   "revision": "completa",
   "revision_fuentes_incidentes": "completa",
   "salud_auxiliar": "parcial",
   "cobertura": {
     "fuentes_configuradas": 30,
-    "fuentes_respondieron": 23,
+    "fuentes_respondieron": 22,
     "fuentes_incidentes": 8,
     "fuentes_incidentes_ok": 8,
     "territorial": {
@@ -75,7 +75,7 @@
       },
       "Navarra": {
         "configuradas": 1,
-        "respondieron": 1
+        "respondieron": 0
       },
       "País Vasco": {
         "configuradas": 1,
@@ -329,8 +329,8 @@
     {
       "clave": "navarra",
       "fuente": "Gobierno de Navarra",
-      "estado": "ok",
-      "detalle": "Fuente oficial accesible",
+      "estado": "error",
+      "detalle": "TimeoutError",
       "ambito": "Navarra",
       "tipo": "auxiliar",
       "critica_para_resolucion": false
@@ -385,7 +385,6 @@
     "Generalitat Valenciana",
     "Xunta de Galicia",
     "Región de Murcia",
-    "Gobierno de Navarra",
     "Gobierno Vasco"
   ],
   "fuentes_error": [
@@ -415,6 +414,11 @@
       "tipo": "auxiliar"
     },
     {
+      "servicio": "Gobierno de Navarra",
+      "error": "TimeoutError",
+      "tipo": "auxiliar"
+    },
+    {
       "servicio": "Gobierno de La Rioja",
       "error": "URLError",
       "tipo": "auxiliar"
@@ -426,12 +430,28 @@
     }
   ],
   "cambios": {
-    "nuevas": 0,
+    "nuevas": 1,
     "resueltas_detectadas": 0,
     "retiradas_monitor": 0
   },
-  "total": 2,
+  "total": 3,
   "items": [
+    {
+      "id": "cloudflare-dcmwvjwfyhjg",
+      "fuente_clave": "cloudflare",
+      "tipo": "servicio",
+      "servicio": "Cloudflare",
+      "titulo": "Partial visibility of Workers and Durable Objects analytics for Fedramp High customers",
+      "resumen": "A fix has been implemented and we are monitoring the results.",
+      "estado": "Monitorizando",
+      "impacto": "Menor",
+      "fecha": "2026-09-22T09:36:11.000Z",
+      "actualizado": "2026-09-22T10:35:33.000Z",
+      "ambito": "Global",
+      "fuente": "Cloudflare Status",
+      "url": "https://www.cloudflarestatus.com/incidents/dcmwvjwfyhjg",
+      "verificado": true
+    },
     {
       "id": "cloudflare-9g65dxfbcjln",
       "fuente_clave": "cloudflare",
