@@ -135,3 +135,12 @@ main#inicio{padding-top:0}
  .hero .toolbar{display:flex;margin:6px 0 0;flex-wrap:wrap}.hero .search{flex:1 1 100%}.hero .search-btn{flex:0 0 100%}.hero .filters{flex:1 1 100%}
  .summary{margin-top:10px;padding:0;background:transparent;box-shadow:none}.dashboard-side{grid-template-columns:1fr}
 }
+
+/* RC1.3 mapa provincial integrado */
+.spain-filter{padding:10px 10px 8px;overflow:hidden}.map-help{text-align:center;font-size:10px;color:#637c96;font-weight:750;margin:1px 0 4px}
+.spain-filter svg{width:100%;height:auto;max-height:none;aspect-ratio:640/470;overflow:visible}
+.province-region{cursor:pointer;outline:none}.province-region polygon,.province-region ellipse{fill:#cfe4f7;stroke:#fff;stroke-width:3;transition:fill .14s,transform .14s,filter .14s;transform-box:fill-box;transform-origin:center}
+.province-region:hover polygon,.province-region:hover ellipse,.province-region:focus polygon,.province-region:focus ellipse{fill:#8fc2ee;filter:drop-shadow(0 2px 3px rgba(20,83,140,.2));transform:scale(1.04)}
+.province-region.active polygon,.province-region.active ellipse{fill:#1677cf;stroke:#0d5ca5;stroke-width:4}
+.islands .province-region ellipse{fill:#cfe4f7}
+.province-list{display:none!important}
