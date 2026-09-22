@@ -71,6 +71,20 @@ jobs:
           test -s dist/index.html
           test -s dist/data/data.js
           test -s dist/data/source_health.json
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          required = ["ayudas","estafas","servicios","alimentacion","salud","meteo","movilidad"]
+          for name in required:
+              p=Path("dist/data")/f"{name}.json"
+              if not p.is_file() or p.stat().st_size == 0:
+                  raise SystemExit(f"Falta fichero de datos: {p}")
+              json.loads(p.read_text(encoding="utf-8"))
+          print("RC1: JSON principales válidos")
+          PY
+          grep -q 'assets/all-view.js' dist/index.html
+          grep -q 'assets/operational-health.js' dist/index.html
+          grep -q 'id="alertsPagination"' dist/index.html
 
           cat > dist/.htaccess <<'EOF'
           Options -Indexes
