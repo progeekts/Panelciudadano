@@ -1,9 +1,9 @@
 {
-  "ultima_revision": "2026-09-22T22:28:05.465725+00:00",
+  "ultima_revision": "2026-09-22T23:06:38.478688+00:00",
   "fuentes_revision": {
     "ayudas": "2026-09-22T22:10:03.676437+00:00",
     "estafas": "2026-09-22T22:23:04.786064+00:00",
-    "alimentacion": "2026-09-22T13:31:46.359442+00:00",
+    "alimentacion": "2026-09-22T23:06:18.818181+00:00",
     "salud": "2026-09-22T22:27:51.529449+00:00",
     "meteo": "2026-09-22T22:03:24.450252+00:00",
     "servicios": "2026-09-22T21:12:43.867541+00:00"
@@ -1655,6 +1655,22 @@
       "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
       "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
       "referencia": "ES2026/473"
+    },
+    {
+      "clave": "alimentacion:aesan-c3ba80ea62",
+      "tipo": "alimentacion",
+      "id": "aesan-c3ba80ea62",
+      "titulo": "Ampliación de información sobre la alerta por presencia de Salmonella spp. en salchichón procedente de España (Ref. ES2026/469)",
+      "fuente": "AESAN · Red de alerta alimentaria",
+      "url": "https://www.aesan.gob.es/alertas/2026_55_ampliacion_1",
+      "ambito": "España",
+      "estado": "publicada",
+      "huella": "786733838116457ae5b3",
+      "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
+      "fecha_fuente": "2026-07-31",
+      "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": "ES2026/469"
     },
     {
       "clave": "salud:aemps-d269453473",
@@ -3842,22 +3858,6 @@
       "primera_deteccion": "2026-09-22T09:53:53.958373+00:00",
       "fin_deteccion": "2026-09-22T18:50:12.206465+00:00",
       "ultima_modificacion_detectada": "2026-09-22T18:50:12.206465+00:00"
-    },
-    {
-      "clave": "alimentacion:aesan-c3ba80ea62",
-      "tipo": "alimentacion",
-      "id": "aesan-c3ba80ea62",
-      "titulo": "Ampliación de información sobre la alerta por presencia de Salmonella spp. en salchichón procedente de España (Ref. ES2026/469)",
-      "fuente": "AESAN · Red de alerta alimentaria",
-      "url": "https://www.aesan.gob.es/alertas/2026_55_ampliacion_1",
-      "ambito": "España",
-      "estado": "publicada",
-      "huella": "786733838116457ae5b3",
-      "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
-      "fecha_fuente": "2026-07-31",
-      "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
-      "referencia": "ES2026/469"
     },
     {
       "clave": "ayudas:bdns-930707",
