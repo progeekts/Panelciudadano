@@ -1,5 +1,5 @@
 {
-  "ultima_revision": "2026-09-22T12:41:56.684724+00:00",
+  "ultima_revision": "2026-09-22T12:49:36.782558+00:00",
   "revision": "completa",
   "revision_fuentes_incidentes": "completa",
   "salud_auxiliar": "parcial",
@@ -430,7 +430,7 @@
     }
   ],
   "cambios": {
-    "nuevas": 1,
+    "nuevas": 0,
     "resueltas_detectadas": 0,
     "retiradas_monitor": 0
   },
