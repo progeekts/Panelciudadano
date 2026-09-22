@@ -121,6 +121,28 @@ jobs:
         if: steps.sftp.outputs.enabled == 'true'
         run: sudo apt-get update -qq && sudo apt-get install -y -qq lftp
 
+      - name: Guardar copia de la versión pública actual
+        if: steps.sftp.outputs.enabled == 'true'
+        shell: bash
+        env:
+          DEPLOY_HOST: ${{ secrets.DEPLOY_HOST }}
+          DEPLOY_USER: ${{ secrets.DEPLOY_USER }}
+          DEPLOY_PASSWORD: ${{ secrets.DEPLOY_PASSWORD }}
+          DEPLOY_PORT: ${{ secrets.DEPLOY_PORT }}
+          DEPLOY_PATH: ${{ secrets.DEPLOY_PATH }}
+        run: |
+          set -euo pipefail
+          PORT="${DEPLOY_PORT:-22}"
+          rm -rf previous
+          mkdir -p previous
+          lftp -u "$DEPLOY_USER","$DEPLOY_PASSWORD" "sftp://$DEPLOY_HOST:$PORT" <<EOF
+          set sftp:auto-confirm yes
+          set net:max-retries 2
+          set net:timeout 20
+          mirror --verbose "$DEPLOY_PATH" previous/
+          bye
+          EOF
+
       - name: Desplegar por SFTP
         if: steps.sftp.outputs.enabled == 'true'
         shell: bash
@@ -142,7 +164,9 @@ jobs:
           EOF
 
       - name: Verificar publicación
+        id: verify
         if: steps.sftp.outputs.enabled == 'true'
+        continue-on-error: true
         shell: bash
         env:
           EXPECTED_SHA: ${{ steps.version.outputs.sha }}
@@ -165,4 +189,51 @@ jobs:
           done
 
           echo "::error::El SFTP terminó, pero la versión publicada no coincide con el commit esperado o la portada no responde HTTP 200."
+          exit 1
+
+      - name: Recuperar versión pública anterior
+        if: steps.sftp.outputs.enabled == 'true' && steps.verify.outcome == 'failure'
+        shell: bash
+        env:
+          DEPLOY_HOST: ${{ secrets.DEPLOY_HOST }}
+          DEPLOY_USER: ${{ secrets.DEPLOY_USER }}
+          DEPLOY_PASSWORD: ${{ secrets.DEPLOY_PASSWORD }}
+          DEPLOY_PORT: ${{ secrets.DEPLOY_PORT }}
+          DEPLOY_PATH: ${{ secrets.DEPLOY_PATH }}
+        run: |
+          set -euo pipefail
+          PORT="${DEPLOY_PORT:-22}"
+          if [ ! -s previous/index.html ]; then
+            echo "::error::No existe una copia anterior válida con index.html; no se realiza rollback automático."
+            exit 1
+          fi
+          echo "::warning::La nueva publicación no superó la verificación. Restaurando la versión pública anterior."
+          lftp -u "$DEPLOY_USER","$DEPLOY_PASSWORD" "sftp://$DEPLOY_HOST:$PORT" <<EOF
+          set sftp:auto-confirm yes
+          set net:max-retries 2
+          set net:timeout 20
+          mirror --reverse --delete --verbose previous/ "$DEPLOY_PATH"
+          bye
+          EOF
+
+      - name: Verificar recuperación
+        if: steps.sftp.outputs.enabled == 'true' && steps.verify.outcome == 'failure'
+        shell: bash
+        run: |
+          set -euo pipefail
+          BASE_URL="https://progeekts.es/panelciudadano"
+          for attempt in 1 2 3 4 5 6; do
+            STATUS="$(curl -L -sS -o /tmp/rollback-index.html -w '%{http_code}' --connect-timeout 10 --max-time 20 "$BASE_URL/?rollback=$(date +%s)")" || STATUS="000"
+            if [ "$STATUS" = "200" ] && [ -s /tmp/rollback-index.html ]; then
+              echo "Rollback verificado: la versión anterior vuelve a responder HTTP 200."
+              break
+            fi
+            echo "Comprobando recuperación ($attempt/6): HTTP=$STATUS"
+            sleep 10
+          done
+          if [ "$STATUS" != "200" ]; then
+            echo "::error::La recuperación automática no pudo verificarse."
+            exit 1
+          fi
+          echo "::error::La publicación nueva falló y se restauró la versión anterior. Se marca el workflow como fallido para hacerlo visible."
           exit 1
