@@ -1,0 +1,77 @@
+name: Exportar web para hosting
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'index.html'
+      - 'metodologia.html'
+      - 'privacidad.html'
+      - 'assets/**'
+      - 'data/**'
+      - '.github/workflows/exportar-hosting.yml'
+  schedule:
+    - cron: '20 * * * *'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: exportar-hosting
+  cancel-in-progress: true
+
+jobs:
+  exportar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Descargar repositorio
+        uses: actions/checkout@v4
+
+      - name: Preparar paquete estático
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm -rf dist
+          mkdir -p dist
+          cp index.html metodologia.html privacidad.html dist/
+          cp -R assets dist/assets
+          cp -R data dist/data
+
+          cat > dist/.htaccess <<'EOF'
+          Options -Indexes
+          AddDefaultCharset UTF-8
+
+          <IfModule mod_headers.c>
+            Header set X-Content-Type-Options "nosniff"
+            Header set Referrer-Policy "strict-origin-when-cross-origin"
+            Header set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+          </IfModule>
+
+          <IfModule mod_expires.c>
+            ExpiresActive On
+            ExpiresByType text/css "access plus 1 hour"
+            ExpiresByType application/javascript "access plus 1 hour"
+            ExpiresByType application/json "access plus 5 minutes"
+          </IfModule>
+          EOF
+
+          cat > dist/DEPLOY.txt <<'EOF'
+          Panel Ciudadano - paquete estático exportable
+
+          Sube TODO el contenido de este directorio a la raíz pública del hosting.
+          No requiere PHP, Node, Python ni base de datos.
+          La web consume únicamente archivos relativos incluidos en el paquete.
+
+          Para Apache puedes conservar .htaccess.
+          En Nginx u otros servidores puedes ignorarlo.
+          EOF
+
+      - name: Publicar artefacto descargable
+        uses: actions/upload-artifact@v4
+        with:
+          name: panel-ciudadano-web
+          path: dist/
+          if-no-files-found: error
+          retention-days: 30
