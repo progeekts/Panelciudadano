@@ -106,3 +106,32 @@ footer{background:#fff;border-top:1px solid var(--line);padding:22px 0;color:var
  .hero .toolbar{display:flex;margin:4px 0 0;flex-wrap:wrap}
  .hero .search{flex:1 1 100%}.hero .search-btn{flex:0 0 100%}.hero .filters{flex:1 1 100%}
 }
+
+/* RC1.2 · aspecto final aprobado + mapa territorial */
+main#inicio{padding-top:0}
+.hero{margin:0 calc(50% - 50vw);width:100vw;border-radius:0;min-height:430px;padding:38px max(34px,calc((100vw - 1450px)/2 + 24px)) 26px;grid-template-columns:minmax(0,1.35fr) minmax(250px,.65fr);grid-template-rows:auto auto;align-items:start;background:linear-gradient(90deg,rgba(3,31,61,.86),rgba(10,58,103,.55)),radial-gradient(circle at 80% 30%,rgba(63,145,224,.3),transparent 35%),linear-gradient(180deg,#264e72 0%,#365a78 42%,#102f4d 100%);box-shadow:none}
+.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(4,22,40,.42),transparent 42%),linear-gradient(112deg,transparent 46%,rgba(255,255,255,.04) 46% 47%,transparent 47%);pointer-events:none}
+.hero-copy{align-self:start}.hero-side{justify-self:end;display:grid;gap:12px;min-width:245px}.hero h1{font-size:clamp(42px,5vw,64px);max-width:760px;margin-top:4px}.hero p{font-size:19px}
+.updated,.territory-card{background:rgba(14,54,91,.66);border:1px solid rgba(255,255,255,.2);backdrop-filter:blur(8px);border-radius:14px;padding:14px 16px;color:#fff;box-shadow:none;width:100%;text-align:left}
+.territory-card{cursor:pointer;font:inherit}.territory-card span,.territory-card strong{display:block}.territory-card span{font-size:11px;color:#dbeafe;font-weight:700}.territory-card strong{font-size:14px;margin-top:3px}
+.hero .toolbar{grid-column:1/-1;position:relative;z-index:3;margin:16px 0 0;display:grid;grid-template-columns:minmax(320px,1fr) auto;gap:10px;align-items:center;align-self:end}
+.hero .search{height:58px}.hero .search-btn{height:58px}.hero .filters{grid-column:1/-1}
+.summary{position:relative;z-index:5;margin-top:-12px;background:#fff;padding:10px 12px 12px;border-radius:16px;box-shadow:0 10px 30px rgba(14,53,92,.08)}
+.citizen-pulse{margin:16px 0 18px!important}
+.radar-panel .section-title{align-items:flex-start}.cards{grid-template-columns:1fr}.card{min-height:0;padding:14px 16px}.card h3{font-size:17px}.card p{-webkit-line-clamp:2}
+.card{display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:16px}.card .meta,.card h3,.card p{grid-column:1}.card .card-bottom{grid-column:1/-1}.card:after{content:"";align-self:center;justify-self:end;width:9px;height:9px;border-radius:50%;background:#d9e4ef;grid-column:2;grid-row:1/4}
+.dashboard-grid{grid-template-columns:minmax(0,2.25fr) minmax(310px,.85fr)}
+.spain-filter{margin-top:14px;padding:12px;border:1px solid var(--line);border-radius:14px;background:#f7fbff}
+.spain-filter svg{width:100%;height:auto;display:block;max-height:190px}.spain-shape{fill:#cfe3f6;stroke:#9ec3e6;stroke-width:4}
+.province-list{display:flex;flex-wrap:wrap;gap:7px;margin-top:10px;max-height:120px;overflow:auto}
+.province-list button{border:1px solid #d9e5f0;background:#fff;border-radius:999px;padding:6px 9px;font:inherit;font-size:10px;font-weight:750;color:#1d466d;cursor:pointer}
+.province-list button.active{background:#0f66c3;color:#fff;border-color:#0f66c3}
+.province-dot{fill:#2a7ccc;opacity:.75;cursor:pointer}.province-dot.active{fill:#0b4f91;opacity:1;stroke:#fff;stroke-width:3}
+.clear-territory{margin-top:10px;width:100%;border:1px solid var(--line);background:#fff;border-radius:10px;padding:9px 10px;font:inherit;font-size:11px;font-weight:800;color:#0f66c3;cursor:pointer}
+@media(max-width:1120px){.dashboard-grid{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.dashboard-side{grid-template-columns:1fr 1fr}}
+@media(max-width:780px){
+ .hero{margin:0 calc(50% - 50vw);width:100vw;min-height:0;padding:24px 18px 20px;grid-template-columns:1fr;grid-template-rows:auto auto auto}
+ .hero-side{justify-self:stretch;min-width:0}.hero h1{font-size:38px}.hero p{font-size:15px}
+ .hero .toolbar{display:flex;margin:6px 0 0;flex-wrap:wrap}.hero .search{flex:1 1 100%}.hero .search-btn{flex:0 0 100%}.hero .filters{flex:1 1 100%}
+ .summary{margin-top:10px;padding:0;background:transparent;box-shadow:none}.dashboard-side{grid-template-columns:1fr}
+}
