@@ -85,6 +85,18 @@ jobs:
           grep -q 'assets/all-view.js' dist/index.html
           grep -q 'assets/operational-health.js' dist/index.html
           grep -q 'id="alertsPagination"' dist/index.html
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          h=json.loads(Path("dist/data/source_health.json").read_text(encoding="utf-8"))
+          expected={"servicios","movilidad","meteo","ayudas","estafas","alimentacion","salud"}
+          found={m.get("id") for m in h.get("modulos",[])}
+          if found != expected:
+              raise SystemExit(f"RC1: módulos de salud inesperados: {sorted(found)}")
+          if h.get("estado_general") not in {"ok","degraded","unavailable"}:
+              raise SystemExit("RC1: estado_general no reconocido")
+          print(f"RC1: diagnóstico operativo válido ({h['estado_general']})")
+          PY
 
           cat > dist/.htaccess <<'EOF'
           Options -Indexes
