@@ -1,7 +1,7 @@
 {
   "fuente": "INCIBE · Ciudadanía",
   "fuente_url": "https://www.incibe.es/ciudadania/avisos",
-  "ultima_revision": "2026-09-22T22:23:04.786064+00:00",
+  "ultima_revision": "2026-09-23T12:57:48.436067+00:00",
   "revision": "completa",
   "paginas_previstas": 3,
   "fuentes_consultadas": 3,
@@ -9,7 +9,7 @@
   "detalle_enriquecido": 0,
   "criterio": "Avisos oficiales de fraude/suplantación publicados en los últimos 120 días",
   "nota_estado": "“Publicada” indica que INCIBE mantiene una ficha oficial reciente. Solo se muestra “Activa” o “Finalizada” cuando la propia ficha contiene una indicación explícita que el detector puede validar.",
-  "total": 4,
+  "total": 3,
   "items": [
     {
       "id": "incibe-campana-de-smishing-suplantando-la-seguridad-social",
@@ -63,24 +63,6 @@
       "ambito": "España / usuarios de Internet",
       "fuente": "INCIBE · Ciudadanía",
       "url": "https://www.incibe.es/ciudadania/avisos/suplantan-la-policia-nacional-la-guardia-civil-y-incibe-traves-de-notificaciones",
-      "verificado": true
-    },
-    {
-      "id": "incibe-la-agencia-tributaria-no-ha-emitido-ninguna-comunicacion-dirigida-usted",
-      "tipo": "estafa",
-      "titulo": "La Agencia Tributaria NO ha emitido ninguna comunicación dirigida a usted",
-      "resumen": "Publicado el 26/05/2026 Desde INCIBE se ha detectado una campaña de suplantación a la Agencia Estatal de Administración...",
-      "descripcion": "Publicado el 26/05/2026 Desde INCIBE se ha detectado una campaña de suplantación a la Agencia Estatal de Administración...",
-      "afectados": "",
-      "solucion": "",
-      "identificador_incibe": "",
-      "fecha": "26/05/2026",
-      "fecha_iso": "2026-05-26",
-      "estado": "Publicada",
-      "importancia": "",
-      "ambito": "España / usuarios de Internet",
-      "fuente": "INCIBE · Ciudadanía",
-      "url": "https://www.incibe.es/ciudadania/avisos/la-agencia-tributaria-no-ha-emitido-ninguna-comunicacion-dirigida-usted",
       "verificado": true
     }
   ]
