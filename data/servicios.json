@@ -1,21 +1,17 @@
 {
-  "ultima_revision": "2026-09-23T04:37:11.970250+00:00",
-  "revision": "completa",
-  "revision_fuentes_incidentes": "completa",
+  "ultima_revision": "2026-09-23T07:55:56.047077+00:00",
+  "revision": "parcial",
+  "revision_fuentes_incidentes": "parcial",
   "salud_auxiliar": "parcial",
   "cobertura": {
-    "fuentes_configuradas": 30,
-    "fuentes_respondieron": 23,
-    "fuentes_incidentes": 8,
-    "fuentes_incidentes_ok": 8,
+    "fuentes_configuradas": 26,
+    "fuentes_respondieron": 18,
+    "fuentes_incidentes": 4,
+    "fuentes_incidentes_ok": 3,
     "territorial": {
-      "Global": {
-        "configuradas": 4,
-        "respondieron": 4
-      },
       "España": {
         "configuradas": 8,
-        "respondieron": 8
+        "respondieron": 7
       },
       "Cataluña": {
         "configuradas": 1,
@@ -93,42 +89,6 @@
   },
   "salud_fuentes": [
     {
-      "clave": "github",
-      "fuente": "GitHub",
-      "estado": "ok",
-      "detalle": "API oficial de estado respondió",
-      "ambito": "Global",
-      "tipo": "incidencias",
-      "critica_para_resolucion": true
-    },
-    {
-      "clave": "cloudflare",
-      "fuente": "Cloudflare",
-      "estado": "ok",
-      "detalle": "API oficial de estado respondió",
-      "ambito": "Global",
-      "tipo": "incidencias",
-      "critica_para_resolucion": true
-    },
-    {
-      "clave": "atlassian",
-      "fuente": "Atlassian",
-      "estado": "ok",
-      "detalle": "API oficial de estado respondió",
-      "ambito": "Global",
-      "tipo": "incidencias",
-      "critica_para_resolucion": true
-    },
-    {
-      "clave": "digitalocean",
-      "fuente": "DigitalOcean",
-      "estado": "ok",
-      "detalle": "API oficial de estado respondió",
-      "ambito": "Global",
-      "tipo": "incidencias",
-      "critica_para_resolucion": true
-    },
-    {
       "clave": "age",
       "fuente": "Administraciones Públicas (AGE)",
       "estado": "ok",
@@ -158,8 +118,8 @@
     {
       "clave": "sepe",
       "fuente": "SEPE",
-      "estado": "ok",
-      "detalle": "Fuente oficial accesible",
+      "estado": "error",
+      "detalle": "URLError",
       "ambito": "España",
       "tipo": "incidencias",
       "critica_para_resolucion": true
@@ -364,14 +324,9 @@
     }
   ],
   "fuentes_ok": [
-    "GitHub",
-    "Cloudflare",
-    "Atlassian",
-    "DigitalOcean",
     "Administraciones Públicas (AGE)",
     "Generalitat de Catalunya",
     "ENAIRE Sede electrónica",
-    "SEPE",
     "Ciudad Autónoma de Melilla",
     "Punto de Acceso General",
     "Agencia Tributaria (AEAT)",
@@ -389,6 +344,11 @@
     "Gobierno Vasco"
   ],
   "fuentes_error": [
+    {
+      "servicio": "SEPE",
+      "error": "URLError",
+      "tipo": "incidencias"
+    },
     {
       "servicio": "Junta de Andalucía",
       "error": "URLError",
@@ -430,40 +390,8 @@
     "resueltas_detectadas": 0,
     "retiradas_monitor": 0
   },
-  "total": 3,
+  "total": 1,
   "items": [
-    {
-      "id": "cloudflare-tl0vrgjy99r0",
-      "fuente_clave": "cloudflare",
-      "tipo": "servicio",
-      "servicio": "Cloudflare",
-      "titulo": "Cloudflare One Clients are incorrectly challenged on some sites",
-      "resumen": "Cloudflare is investigating an issue where Cloudflare One Client customers are incorrectly challenged while visiting some websites.",
-      "estado": "Investigando",
-      "impacto": "Menor",
-      "fecha": "2026-09-22T19:23:17.000Z",
-      "actualizado": "2026-09-22T19:23:17.000Z",
-      "ambito": "Global",
-      "fuente": "Cloudflare Status",
-      "url": "https://www.cloudflarestatus.com/incidents/tl0vrgjy99r0",
-      "verificado": true
-    },
-    {
-      "id": "cloudflare-9g65dxfbcjln",
-      "fuente_clave": "cloudflare",
-      "tipo": "servicio",
-      "servicio": "Cloudflare",
-      "titulo": "Incorrect geo location for some Cloudflare WARP users",
-      "resumen": "We are continuing to work on a fix for this issue.",
-      "estado": "Identificada",
-      "impacto": "Menor",
-      "fecha": "2026-08-27T18:46:19.000Z",
-      "actualizado": "2026-09-01T08:29:56.000Z",
-      "ambito": "Global",
-      "fuente": "Cloudflare Status",
-      "url": "https://www.cloudflarestatus.com/incidents/9g65dxfbcjln",
-      "verificado": true
-    },
     {
       "id": "age-correo-consultas",
       "fuente_clave": "age",
