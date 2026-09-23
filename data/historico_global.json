@@ -1,8 +1,8 @@
 {
-  "ultima_revision": "2026-09-23T12:46:03.792716+00:00",
+  "ultima_revision": "2026-09-23T12:58:42.641612+00:00",
   "fuentes_revision": {
     "ayudas": "2026-09-23T12:45:45.993829+00:00",
-    "estafas": "2026-09-22T22:23:04.786064+00:00",
+    "estafas": "2026-09-23T12:57:48.436067+00:00",
     "alimentacion": "2026-09-22T23:06:18.818181+00:00",
     "salud": "2026-09-22T22:27:51.529449+00:00",
     "meteo": "2026-09-23T09:56:30.275920+00:00",
@@ -1572,22 +1572,6 @@
       "referencia": ""
     },
     {
-      "clave": "estafas:incibe-la-agencia-tributaria-no-ha-emitido-ninguna-comunicacion-dirigida-usted",
-      "tipo": "estafas",
-      "id": "incibe-la-agencia-tributaria-no-ha-emitido-ninguna-comunicacion-dirigida-usted",
-      "titulo": "La Agencia Tributaria NO ha emitido ninguna comunicación dirigida a usted",
-      "fuente": "INCIBE · Ciudadanía",
-      "url": "https://www.incibe.es/ciudadania/avisos/la-agencia-tributaria-no-ha-emitido-ninguna-comunicacion-dirigida-usted",
-      "ambito": "España / usuarios de Internet",
-      "estado": "publicada",
-      "huella": "671fd486190dd2bd05ab",
-      "ultima_deteccion": "2026-09-18T12:22:59.463447+00:00",
-      "fecha_fuente": "26/05/2026",
-      "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T12:22:59.463447+00:00",
-      "referencia": ""
-    },
-    {
       "clave": "alimentacion:aesan-b66dd02111",
       "tipo": "alimentacion",
       "id": "aesan-b66dd02111",
@@ -1842,6 +1826,22 @@
       "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
       "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
       "referencia": "R_12/2026"
+    },
+    {
+      "clave": "estafas:incibe-la-agencia-tributaria-no-ha-emitido-ninguna-comunicacion-dirigida-usted",
+      "tipo": "estafas",
+      "id": "incibe-la-agencia-tributaria-no-ha-emitido-ninguna-comunicacion-dirigida-usted",
+      "titulo": "La Agencia Tributaria NO ha emitido ninguna comunicación dirigida a usted",
+      "fuente": "INCIBE · Ciudadanía",
+      "url": "https://www.incibe.es/ciudadania/avisos/la-agencia-tributaria-no-ha-emitido-ninguna-comunicacion-dirigida-usted",
+      "ambito": "España / usuarios de Internet",
+      "estado": "publicada",
+      "huella": "671fd486190dd2bd05ab",
+      "ultima_deteccion": "2026-09-18T12:22:59.463447+00:00",
+      "fecha_fuente": "26/05/2026",
+      "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
+      "ultima_modificacion_detectada": "2026-09-18T12:22:59.463447+00:00",
+      "referencia": ""
     },
     {
       "clave": "ayudas:bdns-930986",
