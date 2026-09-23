@@ -1,12 +1,12 @@
 {
-  "ultima_revision": "2026-09-23T07:57:56.700448+00:00",
+  "ultima_revision": "2026-09-23T08:06:13.026340+00:00",
   "fuentes_revision": {
     "ayudas": "2026-09-22T22:10:03.676437+00:00",
     "estafas": "2026-09-22T22:23:04.786064+00:00",
     "alimentacion": "2026-09-22T23:06:18.818181+00:00",
     "salud": "2026-09-22T22:27:51.529449+00:00",
     "meteo": "2026-09-23T05:08:46.905672+00:00",
-    "servicios": "2026-09-23T07:55:56.047077+00:00"
+    "servicios": "2026-09-23T08:04:23.824991+00:00"
   },
   "criterio": "Histórico de cambios detectados. Solo se asigna un estado terminal cuando la fuente o el módulo permiten afirmarlo de forma conservadora.",
   "total_registros": 912,
@@ -13990,19 +13990,30 @@
       "clave": "servicios:age-correo-consultas",
       "tipo": "servicios",
       "id": "age-correo-consultas",
-      "titulo": "Incidencia en el sistema de correo de consultas de Administraciones Públicas",
+      "titulo": "Incidencia en el sistema de correo de consultas",
       "fuente": "Administraciones Públicas",
       "url": "https://sede.administracionespublicas.gob.es/ayuda/",
       "ambito": "España",
       "estado": "incidencia_activa",
       "primera_deteccion": "2026-09-16T20:03:57.804501+00:00",
-      "ultima_deteccion": "2026-09-18T05:49:22.289942+00:00",
-      "ultima_modificacion_detectada": "2026-09-16T20:03:57.804501+00:00",
+      "ultima_deteccion": "2026-09-23T08:04:23.824991+00:00",
+      "ultima_modificacion_detectada": "2026-09-23T08:04:23.824991+00:00",
       "fin_deteccion": "",
       "fecha_fuente": ""
     }
   ],
   "eventos": [
+    {
+      "clave": "servicios:age-correo-consultas",
+      "tipo": "servicios",
+      "evento": "actualizado",
+      "etiqueta": "Actualizada",
+      "momento_detectado": "2026-09-23T08:04:23.824991+00:00",
+      "fecha_fuente": "",
+      "titulo": "Incidencia en el sistema de correo de consultas",
+      "url": "https://sede.administracionespublicas.gob.es/ayuda/",
+      "detalle_cambio": "La incidencia cambió en la fuente oficial"
+    },
     {
       "clave": "ayudas:bdns-931085",
       "tipo": "ayudas",
@@ -24377,16 +24388,6 @@
       "fecha_fuente": "",
       "titulo": "Aviso de lluvias de nivel naranja",
       "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260916093844_AFAZ774604PRP21713.xml"
-    },
-    {
-      "clave": "meteo:aemet-2ce49158ab81",
-      "tipo": "meteo",
-      "evento": "expirado_detectado",
-      "etiqueta": "Dejó de estar vigente",
-      "momento_detectado": "2026-09-17T23:08:37.603449+00:00",
-      "fecha_fuente": "",
-      "titulo": "Aviso de lluvias de nivel naranja",
-      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260916164104_AFAZ733004PRP11710.xml"
     }
   ]
 }
