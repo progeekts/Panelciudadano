@@ -1,6 +1,6 @@
 {
-  "ultima_revision": "2026-09-23T07:55:56.047077+00:00",
-  "nota": "Resuelto significa que la propia fuente oficial fue revisada correctamente y dejó de publicar la incidencia. Retirado significa que Panel Ciudadano dejó de usar ese detector por falta de una señal temporal suficientemente fiable; no implica resolución del servicio.",
+  "ultima_revision": "2026-09-23T08:04:23.824991+00:00",
+  "nota": "Resuelto solo se registra cuando el detector oficial correspondiente respondió correctamente y dejó de publicar la incidencia. Un error técnico de consulta nunca se presenta como caída del servicio.",
   "total": 2,
   "items": [
     {
@@ -30,10 +30,10 @@
       "id": "age-correo-consultas",
       "tipo": "servicio",
       "servicio": "Administraciones Públicas",
-      "titulo": "Incidencia en el sistema de correo de consultas de Administraciones Públicas",
-      "resumen": "La sede oficial avisa de problemas que pueden afectar a la recepción y envío de comunicaciones relacionadas con consultas.",
+      "titulo": "Incidencia en el sistema de correo de consultas",
+      "resumen": "La sede oficial comunica problemas en su sistema de correo electrónico de consultas.",
       "estado": "Activa",
-      "impacto": "No indicado",
+      "impacto": "Consultas y comunicaciones",
       "fecha": "",
       "actualizado": "",
       "ambito": "España",
@@ -41,11 +41,11 @@
       "url": "https://sede.administracionespublicas.gob.es/ayuda/",
       "verificado": true,
       "primera_deteccion": "2026-09-16T20:03:57.804501+00:00",
-      "ultima_deteccion": "2026-09-23T07:55:56.047077+00:00",
-      "ultima_modificacion_detectada": "2026-09-16T20:03:57.804501+00:00",
+      "ultima_deteccion": "2026-09-23T08:04:23.824991+00:00",
+      "ultima_modificacion_detectada": "2026-09-23T08:04:23.824991+00:00",
       "resuelto_detectado": "",
       "estado_historico": "activo",
-      "fingerprint": "Incidencia en el sistema de correo de consultas de Administraciones Públicas|La sede oficial avisa de problemas que pueden afectar a la recepción y envío de comunicaciones relacionadas con consultas.|Activa|No indicado|",
+      "fingerprint": "Incidencia en el sistema de correo de consultas|La sede oficial comunica problemas en su sistema de correo electrónico de consultas.|Activa|Consultas y comunicaciones|",
       "fuente_clave": "age"
     }
   ]

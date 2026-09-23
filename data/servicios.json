@@ -1,16 +1,20 @@
 {
-  "ultima_revision": "2026-09-23T07:55:56.047077+00:00",
-  "revision": "parcial",
-  "revision_fuentes_incidentes": "parcial",
+  "ultima_revision": "2026-09-23T08:04:23.824991+00:00",
+  "revision": "completa",
+  "revision_fuentes_incidentes": "completa",
   "salud_auxiliar": "parcial",
   "cobertura": {
-    "fuentes_configuradas": 26,
+    "detectores_configurados": 4,
+    "detectores_respondieron": 4,
+    "comprobaciones_cobertura": 21,
+    "comprobaciones_respondieron": 14,
+    "fuentes_configuradas": 25,
     "fuentes_respondieron": 18,
     "fuentes_incidentes": 4,
-    "fuentes_incidentes_ok": 3,
+    "fuentes_incidentes_ok": 4,
     "territorial": {
       "España": {
-        "configuradas": 8,
+        "configuradas": 7,
         "respondieron": 7
       },
       "Cataluña": {
@@ -94,7 +98,7 @@
       "estado": "ok",
       "detalle": "Fuente oficial accesible",
       "ambito": "España",
-      "tipo": "incidencias",
+      "tipo": "detector",
       "critica_para_resolucion": true
     },
     {
@@ -103,25 +107,16 @@
       "estado": "ok",
       "detalle": "Fuente oficial accesible",
       "ambito": "Cataluña",
-      "tipo": "incidencias",
+      "tipo": "detector",
       "critica_para_resolucion": true
-    },
-    {
-      "clave": "enaire",
-      "fuente": "ENAIRE Sede electrónica",
-      "estado": "ok",
-      "detalle": "Fuente oficial accesible",
-      "ambito": "España",
-      "tipo": "auxiliar",
-      "critica_para_resolucion": false
     },
     {
       "clave": "sepe",
       "fuente": "SEPE",
-      "estado": "error",
-      "detalle": "URLError",
+      "estado": "ok",
+      "detalle": "Fuente oficial accesible",
       "ambito": "España",
-      "tipo": "incidencias",
+      "tipo": "detector",
       "critica_para_resolucion": true
     },
     {
@@ -130,7 +125,7 @@
       "estado": "ok",
       "detalle": "Fuente oficial accesible",
       "ambito": "Melilla",
-      "tipo": "incidencias",
+      "tipo": "detector",
       "critica_para_resolucion": true
     },
     {
@@ -139,7 +134,7 @@
       "estado": "ok",
       "detalle": "Fuente oficial accesible",
       "ambito": "España",
-      "tipo": "auxiliar",
+      "tipo": "cobertura",
       "critica_para_resolucion": false
     },
     {
@@ -148,7 +143,7 @@
       "estado": "ok",
       "detalle": "Fuente oficial accesible",
       "ambito": "España",
-      "tipo": "auxiliar",
+      "tipo": "cobertura",
       "critica_para_resolucion": false
     },
     {
@@ -157,7 +152,7 @@
       "estado": "ok",
       "detalle": "Fuente oficial accesible",
       "ambito": "España",
-      "tipo": "auxiliar",
+      "tipo": "cobertura",
       "critica_para_resolucion": false
     },
     {
@@ -166,7 +161,7 @@
       "estado": "ok",
       "detalle": "Fuente oficial accesible",
       "ambito": "España",
-      "tipo": "auxiliar",
+      "tipo": "cobertura",
       "critica_para_resolucion": false
     },
     {
@@ -175,7 +170,7 @@
       "estado": "ok",
       "detalle": "Fuente oficial accesible",
       "ambito": "España",
-      "tipo": "auxiliar",
+      "tipo": "cobertura",
       "critica_para_resolucion": false
     },
     {
@@ -184,7 +179,7 @@
       "estado": "error",
       "detalle": "URLError",
       "ambito": "Andalucía",
-      "tipo": "auxiliar",
+      "tipo": "cobertura",
       "critica_para_resolucion": false
     },
     {
@@ -193,7 +188,7 @@
       "estado": "ok",
       "detalle": "Fuente oficial accesible",
       "ambito": "Aragón",
-      "tipo": "auxiliar",
+      "tipo": "cobertura",
       "critica_para_resolucion": false
     },
     {
@@ -202,7 +197,7 @@
       "estado": "error",
       "detalle": "URLError",
       "ambito": "Asturias",
-      "tipo": "auxiliar",
+      "tipo": "cobertura",
       "critica_para_resolucion": false
     },
     {
@@ -211,7 +206,7 @@
       "estado": "ok",
       "detalle": "Fuente oficial accesible",
       "ambito": "Illes Balears",
-      "tipo": "auxiliar",
+      "tipo": "cobertura",
       "critica_para_resolucion": false
     },
     {
@@ -220,7 +215,7 @@
       "estado": "ok",
       "detalle": "Fuente oficial accesible",
       "ambito": "Canarias",
-      "tipo": "auxiliar",
+      "tipo": "cobertura",
       "critica_para_resolucion": false
     },
     {
@@ -229,7 +224,7 @@
       "estado": "error",
       "detalle": "URLError",
       "ambito": "Cantabria",
-      "tipo": "auxiliar",
+      "tipo": "cobertura",
       "critica_para_resolucion": false
     },
     {
@@ -238,7 +233,7 @@
       "estado": "ok",
       "detalle": "Fuente oficial accesible",
       "ambito": "Castilla y León",
-      "tipo": "auxiliar",
+      "tipo": "cobertura",
       "critica_para_resolucion": false
     },
     {
@@ -247,7 +242,7 @@
       "estado": "error",
       "detalle": "HTTPError",
       "ambito": "Castilla-La Mancha",
-      "tipo": "auxiliar",
+      "tipo": "cobertura",
       "critica_para_resolucion": false
     },
     {
@@ -256,7 +251,7 @@
       "estado": "ok",
       "detalle": "Fuente oficial accesible",
       "ambito": "Comunitat Valenciana",
-      "tipo": "auxiliar",
+      "tipo": "cobertura",
       "critica_para_resolucion": false
     },
     {
@@ -265,7 +260,7 @@
       "estado": "ok",
       "detalle": "Fuente oficial accesible",
       "ambito": "Galicia",
-      "tipo": "auxiliar",
+      "tipo": "cobertura",
       "critica_para_resolucion": false
     },
     {
@@ -274,7 +269,7 @@
       "estado": "error",
       "detalle": "HTTPError",
       "ambito": "Comunidad de Madrid",
-      "tipo": "auxiliar",
+      "tipo": "cobertura",
       "critica_para_resolucion": false
     },
     {
@@ -283,7 +278,7 @@
       "estado": "ok",
       "detalle": "Fuente oficial accesible",
       "ambito": "Región de Murcia",
-      "tipo": "auxiliar",
+      "tipo": "cobertura",
       "critica_para_resolucion": false
     },
     {
@@ -292,7 +287,7 @@
       "estado": "ok",
       "detalle": "Fuente oficial accesible",
       "ambito": "Navarra",
-      "tipo": "auxiliar",
+      "tipo": "cobertura",
       "critica_para_resolucion": false
     },
     {
@@ -301,7 +296,7 @@
       "estado": "ok",
       "detalle": "Fuente oficial accesible",
       "ambito": "País Vasco",
-      "tipo": "auxiliar",
+      "tipo": "cobertura",
       "critica_para_resolucion": false
     },
     {
@@ -310,7 +305,7 @@
       "estado": "error",
       "detalle": "URLError",
       "ambito": "La Rioja",
-      "tipo": "auxiliar",
+      "tipo": "cobertura",
       "critica_para_resolucion": false
     },
     {
@@ -319,70 +314,52 @@
       "estado": "error",
       "detalle": "URLError",
       "ambito": "Ceuta",
-      "tipo": "auxiliar",
+      "tipo": "cobertura",
       "critica_para_resolucion": false
     }
   ],
-  "fuentes_ok": [
-    "Administraciones Públicas (AGE)",
-    "Generalitat de Catalunya",
-    "ENAIRE Sede electrónica",
-    "Ciudad Autónoma de Melilla",
-    "Punto de Acceso General",
-    "Agencia Tributaria (AEAT)",
-    "Seguridad Social",
-    "DGT",
-    "Ministerio de Transportes",
-    "Gobierno de Aragón",
-    "Govern de les Illes Balears",
-    "Gobierno de Canarias",
-    "Junta de Castilla y León",
-    "Generalitat Valenciana",
-    "Xunta de Galicia",
-    "Región de Murcia",
-    "Gobierno de Navarra",
-    "Gobierno Vasco"
-  ],
   "fuentes_error": [
-    {
-      "servicio": "SEPE",
-      "error": "URLError",
-      "tipo": "incidencias"
-    },
     {
       "servicio": "Junta de Andalucía",
       "error": "URLError",
-      "tipo": "auxiliar"
+      "tipo": "cobertura",
+      "ambito": "Andalucía"
     },
     {
       "servicio": "Principado de Asturias",
       "error": "URLError",
-      "tipo": "auxiliar"
+      "tipo": "cobertura",
+      "ambito": "Asturias"
     },
     {
       "servicio": "Gobierno de Cantabria",
       "error": "URLError",
-      "tipo": "auxiliar"
+      "tipo": "cobertura",
+      "ambito": "Cantabria"
     },
     {
       "servicio": "Junta de Castilla-La Mancha",
       "error": "HTTPError",
-      "tipo": "auxiliar"
+      "tipo": "cobertura",
+      "ambito": "Castilla-La Mancha"
     },
     {
       "servicio": "Comunidad de Madrid",
       "error": "HTTPError",
-      "tipo": "auxiliar"
+      "tipo": "cobertura",
+      "ambito": "Comunidad de Madrid"
     },
     {
       "servicio": "Gobierno de La Rioja",
       "error": "URLError",
-      "tipo": "auxiliar"
+      "tipo": "cobertura",
+      "ambito": "La Rioja"
     },
     {
       "servicio": "Ciudad Autónoma de Ceuta",
       "error": "URLError",
-      "tipo": "auxiliar"
+      "tipo": "cobertura",
+      "ambito": "Ceuta"
     }
   ],
   "cambios": {
@@ -397,10 +374,10 @@
       "fuente_clave": "age",
       "tipo": "servicio",
       "servicio": "Administraciones Públicas",
-      "titulo": "Incidencia en el sistema de correo de consultas de Administraciones Públicas",
-      "resumen": "La sede oficial avisa de problemas que pueden afectar a la recepción y envío de comunicaciones relacionadas con consultas.",
+      "titulo": "Incidencia en el sistema de correo de consultas",
+      "resumen": "La sede oficial comunica problemas en su sistema de correo electrónico de consultas.",
       "estado": "Activa",
-      "impacto": "No indicado",
+      "impacto": "Consultas y comunicaciones",
       "fecha": "",
       "actualizado": "",
       "ambito": "España",
