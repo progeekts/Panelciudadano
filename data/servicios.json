@@ -1,5 +1,5 @@
 {
-  "ultima_revision": "2026-09-23T08:04:23.824991+00:00",
+  "ultima_revision": "2026-09-23T09:52:59.829042+00:00",
   "revision": "completa",
   "revision_fuentes_incidentes": "completa",
   "salud_auxiliar": "parcial",
@@ -7,15 +7,15 @@
     "detectores_configurados": 4,
     "detectores_respondieron": 4,
     "comprobaciones_cobertura": 21,
-    "comprobaciones_respondieron": 14,
+    "comprobaciones_respondieron": 13,
     "fuentes_configuradas": 25,
-    "fuentes_respondieron": 18,
+    "fuentes_respondieron": 17,
     "fuentes_incidentes": 4,
     "fuentes_incidentes_ok": 4,
     "territorial": {
       "España": {
         "configuradas": 7,
-        "respondieron": 7
+        "respondieron": 6
       },
       "Cataluña": {
         "configuradas": 1,
@@ -158,8 +158,8 @@
     {
       "clave": "dgt",
       "fuente": "DGT",
-      "estado": "ok",
-      "detalle": "Fuente oficial accesible",
+      "estado": "error",
+      "detalle": "TimeoutError",
       "ambito": "España",
       "tipo": "cobertura",
       "critica_para_resolucion": false
@@ -319,6 +319,12 @@
     }
   ],
   "fuentes_error": [
+    {
+      "servicio": "DGT",
+      "error": "TimeoutError",
+      "tipo": "cobertura",
+      "ambito": "España"
+    },
     {
       "servicio": "Junta de Andalucía",
       "error": "URLError",
