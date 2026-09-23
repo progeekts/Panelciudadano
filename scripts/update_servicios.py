@@ -4,9 +4,10 @@ from __future__ import annotations
 import html,json,re,urllib.request
 from datetime import datetime,timezone
 from pathlib import Path
-OUT=Path('data/servicios.json');HISTORY=Path('data/historico_servicios.json');UA='PanelCiudadano/1.8 (+GitHub Pages; monitor de estado)'
+OUT=Path('data/servicios.json');HISTORY=Path('data/historico_servicios.json');UA='PanelCiudadano/1.9 (+GitHub Pages; monitor de estado)'
 DEPRECATED_DETECTORS={'enaire-sede-mantenimiento':'Retirado del monitor porque la señal disponible no aporta una vigencia temporal suficientemente fiable.'}
-STATUS_SOURCES=[('github','GitHub','https://www.githubstatus.com/api/v2/incidents/unresolved.json','https://www.githubstatus.com/','Global'),('cloudflare','Cloudflare','https://www.cloudflarestatus.com/api/v2/incidents/unresolved.json','https://www.cloudflarestatus.com/','Global'),('atlassian','Atlassian','https://status.atlassian.com/api/v2/incidents/unresolved.json','https://status.atlassian.com/','Global'),('digitalocean','DigitalOcean','https://status.digitalocean.com/api/v2/incidents/unresolved.json','https://status.digitalocean.com/','Global')]
+# Solo fuentes de España. Se eliminan detectores globales (GitHub, Cloudflare, Atlassian, DigitalOcean).
+STATUS_SOURCES=[]
 PUBLIC_PAGES=[('pag','Punto de Acceso General','https://sede.administracion.gob.es/','España'),('aeat','Agencia Tributaria (AEAT)','https://sede.agenciatributaria.gob.es/','España'),('seg-social','Seguridad Social','https://sede.seg-social.gob.es/','España'),('dgt','DGT','https://sede.dgt.gob.es/','España'),('transportes','Ministerio de Transportes','https://sede.transportes.gob.es/','España')]
 AUTONOMIC_PAGES=[('andalucia','Junta de Andalucía','https://juntadeandalucia.es/servicios/sede.html','Andalucía'),('aragon','Gobierno de Aragón','https://www.aragon.es/tramites','Aragón'),('asturias','Principado de Asturias','https://sede.asturias.es/','Asturias'),('balears','Govern de les Illes Balears','https://www.caib.es/seucaib/','Illes Balears'),('canarias','Gobierno de Canarias','https://sede.gobiernodecanarias.org/sede/','Canarias'),('cantabria','Gobierno de Cantabria','https://sede.cantabria.es/','Cantabria'),('castilla-leon','Junta de Castilla y León','https://www.tramitacastillayleon.jcyl.es/','Castilla y León'),('castilla-mancha','Junta de Castilla-La Mancha','https://www.jccm.es/sede','Castilla-La Mancha'),('gva','Generalitat Valenciana','https://sede.gva.es/','Comunitat Valenciana'),('galicia','Xunta de Galicia','https://sede.xunta.gal/','Galicia'),('madrid','Comunidad de Madrid','https://sede.comunidad.madrid/','Comunidad de Madrid'),('murcia','Región de Murcia','https://sede.carm.es/','Región de Murcia'),('navarra','Gobierno de Navarra','https://www.navarra.es/es/tramites','Navarra'),('euskadi','Gobierno Vasco','https://www.euskadi.eus/sede-electronica/','País Vasco'),('rioja','Gobierno de La Rioja','https://web.larioja.org/sede-electronica','La Rioja'),('ceuta','Ciudad Autónoma de Ceuta','https://sede.ceuta.es/','Ceuta'),('melilla','Ciudad Autónoma de Melilla','https://sede.melilla.es/','Melilla')]
 STATUS_ES={'investigating':'Investigando','identified':'Identificada','monitoring':'Monitorizando'};IMPACT_ES={'none':'Sin impacto indicado','minor':'Menor','major':'Importante','critical':'Crítica'}
@@ -54,11 +55,14 @@ def fingerprint(x):return '|'.join(str(x.get(k,'')).strip() for k in ('titulo','
 def infer_source_key(x):
  if x.get('fuente_clave'):return x['fuente_clave']
  iid=str(x.get('id') or '')
- for prefix,key in [('cloudflare-','cloudflare'),('github-','github'),('atlassian-','atlassian'),('digitalocean-','digitalocean'),('age-','age'),('gencat-','gencat'),('sepe-','sepe'),('melilla-','melilla'),('enaire-','enaire')]:
+ for prefix,key in [('age-','age'),('gencat-','gencat'),('sepe-','sepe'),('melilla-','melilla'),('enaire-','enaire')]:
   if iid.startswith(prefix):return key
  return ''
 def update_history(items,healthy,now):
  old=load(HISTORY,{'items':[]});records={x.get('id'):x for x in old.get('items',[]) if x.get('id')};current={x['id']:x for x in items};resolved=retired=0
+ # Retirar del histórico del monitor entradas globales que ya no forman parte de la cobertura española.
+ global_prefixes=('github-','cloudflare-','atlassian-','digitalocean-')
+ records={iid:r for iid,r in records.items() if not str(iid).startswith(global_prefixes)}
  for iid,x in current.items():
   if iid not in records:records[iid]={**x,'primera_deteccion':now,'ultima_deteccion':now,'ultima_modificacion_detectada':now,'resuelto_detectado':'','estado_historico':'activo','fingerprint':fingerprint(x)}
   else:
@@ -77,7 +81,7 @@ def main():
  for row in STATUS_SOURCES:add_status_api(items,health,*row)
  add_age_mail(items,health);add_gencat(items,health);add_enaire(health);add_sepe(items,health);add_melilla(items,health);add_public_health(health);add_autonomic_health(health);items=list({x['id']:x for x in items}.values());ok=[x['fuente'] for x in health if x['estado']=='ok'];errors=[{'servicio':x['fuente'],'error':x['detalle'],'tipo':x['tipo']} for x in health if x['estado']=='error'];critical=[x for x in health if x['tipo']=='incidencias'];critical_errors=[x for x in critical if x['estado']=='error'];healthy={x['clave'] for x in critical if x['estado']=='ok'}
  if not healthy:print('REVISIÓN INCOMPLETA: ninguna fuente de incidencias respondió; se conservan los datos anteriores.');return
- previous=load(OUT,{});previous_ids={x.get('id') for x in previous.get('items',[])};current_ids={x['id'] for x in items};territorial={}
+ previous=load(OUT,{});previous_ids={x.get('id') for x in previous.get('items',[]) if str(x.get('ambito') or '')!='Global'};current_ids={x['id'] for x in items};territorial={}
  for h in health:
   scope=h.get('ambito') or 'Sin ámbito';territorial.setdefault(scope,{'configuradas':0,'respondieron':0});territorial[scope]['configuradas']+=1;territorial[scope]['respondieron']+=h['estado']=='ok'
  resolved,retired=update_history(items,healthy,now);aux_errors=[x for x in health if x['tipo']=='auxiliar' and x['estado']=='error']
