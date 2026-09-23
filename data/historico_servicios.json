@@ -1,5 +1,5 @@
 {
-  "ultima_revision": "2026-09-23T09:52:59.829042+00:00",
+  "ultima_revision": "2026-09-23T14:55:02.068099+00:00",
   "nota": "Resuelto solo se registra cuando el detector oficial correspondiente respondió correctamente y dejó de publicar la incidencia. Un error técnico de consulta nunca se presenta como caída del servicio.",
   "total": 2,
   "items": [
@@ -41,7 +41,7 @@
       "url": "https://sede.administracionespublicas.gob.es/ayuda/",
       "verificado": true,
       "primera_deteccion": "2026-09-16T20:03:57.804501+00:00",
-      "ultima_deteccion": "2026-09-23T09:52:59.829042+00:00",
+      "ultima_deteccion": "2026-09-23T14:55:02.068099+00:00",
       "ultima_modificacion_detectada": "2026-09-23T08:04:23.824991+00:00",
       "resuelto_detectado": "",
       "estado_historico": "activo",
