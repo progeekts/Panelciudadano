@@ -1,6 +1,6 @@
 {
-  "ultima_revision": "2026-09-23T13:02:57.245856+00:00",
-  "revision": "completa",
+  "ultima_revision": "2026-09-23T22:29:46.633962+00:00",
+  "revision": "parcial",
   "fuente_principal": "Agencia Española de Medicamentos y Productos Sanitarios (AEMPS)",
   "nota": "Avisos oficiales de seguridad y retirada. Panel Ciudadano no infiere que sigan activos ni sustituye las recomendaciones de la ficha oficial.",
   "salud_fuentes": [
@@ -16,8 +16,8 @@
     },
     {
       "fuente": "Medicamentos ilegales",
-      "estado": "ok",
-      "detectadas": 0
+      "estado": "error",
+      "detalle": "URLError"
     }
   ],
   "detalle_enriquecido": 0,
