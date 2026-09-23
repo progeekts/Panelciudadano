@@ -1,15 +1,15 @@
 {
-  "ultima_revision": "2026-09-23T22:15:19.281743+00:00",
+  "ultima_revision": "2026-09-23T22:15:39.319329+00:00",
   "fuentes_revision": {
     "ayudas": "2026-09-23T12:45:45.993829+00:00",
     "estafas": "2026-09-23T12:57:48.436067+00:00",
     "alimentacion": "2026-09-23T13:45:11.982831+00:00",
     "salud": "2026-09-23T13:02:57.245856+00:00",
-    "meteo": "2026-09-23T19:01:29.150216+00:00",
+    "meteo": "2026-09-23T22:15:25.905051+00:00",
     "servicios": "2026-09-23T22:13:18.252891+00:00"
   },
   "criterio": "Histórico de cambios detectados. Solo se asigna un estado terminal cuando la fuente o el módulo permiten afirmarlo de forma conservadora.",
-  "total_registros": 973,
+  "total_registros": 976,
   "total_eventos": 1000,
   "registros": [
     {
@@ -1826,6 +1826,51 @@
       "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
       "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
       "referencia": "R_12/2026"
+    },
+    {
+      "clave": "meteo:aemet-db8a917624ea",
+      "tipo": "meteo",
+      "id": "aemet-db8a917624ea",
+      "titulo": "Aviso de temperaturas máximas de nivel amarillo",
+      "fuente": "Agencia Estatal de Meteorología (AEMET)",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260923215001_AFAZ611402ATTA2617.xml",
+      "referencia": "2.49.0.0.724.0.ES.20260923215001.611402ATTA26171790200201",
+      "ambito": "Campiña cordobesa",
+      "estado": "aviso_vigente",
+      "huella": "58ec73e3685cd2239e4c",
+      "ultima_deteccion": "2026-09-23T22:15:39.319329+00:00",
+      "fecha_fuente": "2026-09-26T13:00:00+02:00",
+      "primera_deteccion": "2026-09-23T22:15:39.319329+00:00"
+    },
+    {
+      "clave": "meteo:aemet-237b33caeaac",
+      "tipo": "meteo",
+      "id": "aemet-237b33caeaac",
+      "titulo": "Aviso de temperaturas máximas de nivel amarillo",
+      "fuente": "Agencia Estatal de Meteorología (AEMET)",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260923215001_AFAZ614102ATTA2617.xml",
+      "referencia": "2.49.0.0.724.0.ES.20260923215001.614102ATTA26171790200201",
+      "ambito": "Campiña sevillana",
+      "estado": "aviso_vigente",
+      "huella": "cbbd76e01d023d0bd4e6",
+      "ultima_deteccion": "2026-09-23T22:15:39.319329+00:00",
+      "fecha_fuente": "2026-09-26T13:00:00+02:00",
+      "primera_deteccion": "2026-09-23T22:15:39.319329+00:00"
+    },
+    {
+      "clave": "meteo:aemet-662764dea331",
+      "tipo": "meteo",
+      "id": "aemet-662764dea331",
+      "titulo": "Aviso de temperaturas máximas de nivel amarillo",
+      "fuente": "Agencia Estatal de Meteorología (AEMET)",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260923215001_AFAZ659004ATTA2618.xml",
+      "referencia": "2.49.0.0.724.0.ES.20260923215001.659004ATTA26181790200201",
+      "ambito": "Este, sur y oeste de Gran Canaria",
+      "estado": "aviso_vigente",
+      "huella": "8ca25e41c3fb5c8bf9b5",
+      "ultima_deteccion": "2026-09-23T22:15:39.319329+00:00",
+      "fecha_fuente": "2026-09-26T11:00:00+01:00",
+      "primera_deteccion": "2026-09-23T22:15:39.319329+00:00"
     },
     {
       "clave": "meteo:aemet-a140c0e991b9",
@@ -15018,6 +15063,36 @@
   ],
   "eventos": [
     {
+      "clave": "meteo:aemet-db8a917624ea",
+      "tipo": "meteo",
+      "evento": "aviso_vigente",
+      "etiqueta": "Aviso vigente",
+      "momento_detectado": "2026-09-23T22:15:39.319329+00:00",
+      "fecha_fuente": "2026-09-26T13:00:00+02:00",
+      "titulo": "Aviso de temperaturas máximas de nivel amarillo",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260923215001_AFAZ611402ATTA2617.xml"
+    },
+    {
+      "clave": "meteo:aemet-237b33caeaac",
+      "tipo": "meteo",
+      "evento": "aviso_vigente",
+      "etiqueta": "Aviso vigente",
+      "momento_detectado": "2026-09-23T22:15:39.319329+00:00",
+      "fecha_fuente": "2026-09-26T13:00:00+02:00",
+      "titulo": "Aviso de temperaturas máximas de nivel amarillo",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260923215001_AFAZ614102ATTA2617.xml"
+    },
+    {
+      "clave": "meteo:aemet-662764dea331",
+      "tipo": "meteo",
+      "evento": "aviso_vigente",
+      "etiqueta": "Aviso vigente",
+      "momento_detectado": "2026-09-23T22:15:39.319329+00:00",
+      "fecha_fuente": "2026-09-26T11:00:00+01:00",
+      "titulo": "Aviso de temperaturas máximas de nivel amarillo",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260923215001_AFAZ659004ATTA2618.xml"
+    },
+    {
       "clave": "meteo:aemet-a140c0e991b9",
       "tipo": "meteo",
       "evento": "aviso_vigente",
@@ -25427,36 +25502,6 @@
       "fecha_fuente": "2026-09-17",
       "titulo": "CONVENIO DE COLABORACIÓN ENTRE LA CONSELLERÍA DE ECONOMÍA E INDUSTRIA Y LA CÁMARA OFICIAL MINERA DE GALICIA PARA LA REALIZACIÓN DE ACTUACIONES ESPECÍFICAS DE FOMENTO DE LA MINERÍA SOSTENIBLE EN EL 2026",
       "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/930217"
-    },
-    {
-      "clave": "ayudas:bdns-930216",
-      "tipo": "ayudas",
-      "evento": "plazo_abierto",
-      "etiqueta": "Plazo abierto",
-      "momento_detectado": "2026-09-17T23:08:37.603449+00:00",
-      "fecha_fuente": "2026-09-17",
-      "titulo": "SUBVENCION NOMINATIVA A FAVOR DE LA MANCOMUNIDAD DE LA RESERVA DEL SAJA. PLAN DE DINAMIZACIÓN DEL CABALLO",
-      "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/930216"
-    },
-    {
-      "clave": "ayudas:bdns-930215",
-      "tipo": "ayudas",
-      "evento": "plazo_abierto",
-      "etiqueta": "Plazo abierto",
-      "momento_detectado": "2026-09-17T23:08:37.603449+00:00",
-      "fecha_fuente": "2026-09-17",
-      "titulo": "SUBVENCIÓN NOMINATIVA ASSOCIACIÓ COMERÇ PALLEJÀ 2026",
-      "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/930215"
-    },
-    {
-      "clave": "ayudas:bdns-930214",
-      "tipo": "ayudas",
-      "evento": "publicada",
-      "etiqueta": "Publicada",
-      "momento_detectado": "2026-09-17T23:08:37.603449+00:00",
-      "fecha_fuente": "2026-09-17",
-      "titulo": "CONVENIO ENTRE EL AYUNTAMIENTO DE ZUMARRAGA Y LA ASOCIACIÓN DE PADRES Y MADRES ALUMNOS/AS (UZIGE) JOSE MARI IPARRAGIRRE INSTITUTUA PARA AYUDAR AL SERVICIO DE AUTOBÚS",
-      "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/930214"
     }
   ]
 }
