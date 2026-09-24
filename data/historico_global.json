@@ -1,11 +1,11 @@
 {
-  "ultima_revision": "2026-09-24T14:23:05.962240+00:00",
+  "ultima_revision": "2026-09-24T15:55:07.837488+00:00",
   "fuentes_revision": {
     "ayudas": "2026-09-24T12:44:11.084193+00:00",
     "estafas": "2026-09-24T12:51:28.746379+00:00",
     "alimentacion": "2026-09-24T13:39:30.476602+00:00",
     "salud": "2026-09-24T12:56:16.822688+00:00",
-    "meteo": "2026-09-24T11:39:26.838550+00:00",
+    "meteo": "2026-09-24T15:54:55.260774+00:00",
     "servicios": "2026-09-24T11:39:26.705339+00:00"
   },
   "criterio": "Histórico de cambios detectados. Solo se asigna un estado terminal cuando la fuente o el módulo permiten afirmarlo de forma conservadora.",
