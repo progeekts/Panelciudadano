@@ -1,5 +1,5 @@
 {
-  "ultima_revision": "2026-09-24T11:39:26.705339+00:00",
+  "ultima_revision": "2026-09-24T17:03:12.180569+00:00",
   "revision": "completa",
   "revision_fuentes_incidentes": "completa",
   "salud_auxiliar": "parcial",
@@ -7,9 +7,9 @@
     "detectores_configurados": 4,
     "detectores_respondieron": 4,
     "comprobaciones_cobertura": 21,
-    "comprobaciones_respondieron": 15,
+    "comprobaciones_respondieron": 14,
     "fuentes_configuradas": 25,
-    "fuentes_respondieron": 19,
+    "fuentes_respondieron": 18,
     "fuentes_incidentes": 4,
     "fuentes_incidentes_ok": 4,
     "territorial": {
@@ -27,7 +27,7 @@
       },
       "Andalucía": {
         "configuradas": 1,
-        "respondieron": 1
+        "respondieron": 0
       },
       "Aragón": {
         "configuradas": 1,
@@ -176,8 +176,8 @@
     {
       "clave": "andalucia",
       "fuente": "Junta de Andalucía",
-      "estado": "ok",
-      "detalle": "Fuente oficial accesible",
+      "estado": "error",
+      "detalle": "URLError",
       "ambito": "Andalucía",
       "tipo": "cobertura",
       "critica_para_resolucion": false
@@ -267,7 +267,7 @@
       "clave": "madrid",
       "fuente": "Comunidad de Madrid",
       "estado": "error",
-      "detalle": "TimeoutError",
+      "detalle": "HTTPError",
       "ambito": "Comunidad de Madrid",
       "tipo": "cobertura",
       "critica_para_resolucion": false
@@ -320,6 +320,12 @@
   ],
   "fuentes_error": [
     {
+      "servicio": "Junta de Andalucía",
+      "error": "URLError",
+      "tipo": "cobertura",
+      "ambito": "Andalucía"
+    },
+    {
       "servicio": "Principado de Asturias",
       "error": "URLError",
       "tipo": "cobertura",
@@ -339,7 +345,7 @@
     },
     {
       "servicio": "Comunidad de Madrid",
-      "error": "TimeoutError",
+      "error": "HTTPError",
       "tipo": "cobertura",
       "ambito": "Comunidad de Madrid"
     },
