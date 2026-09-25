@@ -1,5 +1,5 @@
 {
-  "ultima_revision": "2026-09-25T18:29:51.014646+00:00",
+  "ultima_revision": "2026-09-25T21:47:10.792855+00:00",
   "revision": "completa",
   "revision_fuentes_incidentes": "completa",
   "salud_auxiliar": "parcial",
@@ -7,9 +7,9 @@
     "detectores_configurados": 4,
     "detectores_respondieron": 4,
     "comprobaciones_cobertura": 21,
-    "comprobaciones_respondieron": 14,
+    "comprobaciones_respondieron": 13,
     "fuentes_configuradas": 25,
-    "fuentes_respondieron": 18,
+    "fuentes_respondieron": 17,
     "fuentes_incidentes": 4,
     "fuentes_incidentes_ok": 4,
     "territorial": {
@@ -79,7 +79,7 @@
       },
       "País Vasco": {
         "configuradas": 1,
-        "respondieron": 1
+        "respondieron": 0
       },
       "La Rioja": {
         "configuradas": 1,
@@ -293,8 +293,8 @@
     {
       "clave": "euskadi",
       "fuente": "Gobierno Vasco",
-      "estado": "ok",
-      "detalle": "Fuente oficial accesible",
+      "estado": "error",
+      "detalle": "TimeoutError",
       "ambito": "País Vasco",
       "tipo": "cobertura",
       "critica_para_resolucion": false
@@ -348,6 +348,12 @@
       "error": "HTTPError",
       "tipo": "cobertura",
       "ambito": "Comunidad de Madrid"
+    },
+    {
+      "servicio": "Gobierno Vasco",
+      "error": "TimeoutError",
+      "tipo": "cobertura",
+      "ambito": "País Vasco"
     },
     {
       "servicio": "Gobierno de La Rioja",
