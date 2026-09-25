@@ -1,11 +1,11 @@
 {
-  "ultima_revision": "2026-09-25T19:28:33.096547+00:00",
+  "ultima_revision": "2026-09-25T20:29:05.582796+00:00",
   "fuentes_revision": {
     "ayudas": "2026-09-25T12:47:06.090548+00:00",
     "estafas": "2026-09-25T12:55:36.259730+00:00",
     "alimentacion": "2026-09-25T14:00:57.291167+00:00",
     "salud": "2026-09-25T13:02:34.610628+00:00",
-    "meteo": "2026-09-25T17:09:59.112728+00:00",
+    "meteo": "2026-09-25T20:28:51.129359+00:00",
     "servicios": "2026-09-25T18:29:51.014646+00:00"
   },
   "criterio": "Histórico de cambios detectados. Solo se asigna un estado terminal cuando la fuente o el módulo permiten afirmarlo de forma conservadora.",
@@ -2620,11 +2620,13 @@
       "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260925070118_AFAZ659003ATTA2518.xml",
       "referencia": "2.49.0.0.724.0.ES.20260925070118.659003ATTA25181790319678",
       "ambito": "Cumbres de Gran Canaria",
-      "estado": "aviso_vigente",
+      "estado": "expirado_detectado",
       "huella": "5890b3a012b27aa401a5",
       "ultima_deteccion": "2026-09-25T12:11:25.550098+00:00",
       "fecha_fuente": "2026-09-25T11:00:00+01:00",
-      "primera_deteccion": "2026-09-25T12:11:25.550098+00:00"
+      "primera_deteccion": "2026-09-25T12:11:25.550098+00:00",
+      "fin_deteccion": "2026-09-25T20:29:05.582796+00:00",
+      "ultima_modificacion_detectada": "2026-09-25T20:29:05.582796+00:00"
     },
     {
       "clave": "meteo:aemet-80b06f63426b",
@@ -2635,11 +2637,13 @@
       "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260925070118_AFAZ659004ATTA2518.xml",
       "referencia": "2.49.0.0.724.0.ES.20260925070118.659004ATTA25181790319678",
       "ambito": "Este, sur y oeste de Gran Canaria",
-      "estado": "aviso_vigente",
+      "estado": "expirado_detectado",
       "huella": "779d105ffd3fdf89d13e",
       "ultima_deteccion": "2026-09-25T12:11:25.550098+00:00",
       "fecha_fuente": "2026-09-25T11:00:00+01:00",
-      "primera_deteccion": "2026-09-25T12:11:25.550098+00:00"
+      "primera_deteccion": "2026-09-25T12:11:25.550098+00:00",
+      "fin_deteccion": "2026-09-25T20:29:05.582796+00:00",
+      "ultima_modificacion_detectada": "2026-09-25T20:29:05.582796+00:00"
     },
     {
       "clave": "meteo:aemet-307d8e58e698",
@@ -2650,11 +2654,13 @@
       "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260925070118_AFAZ659101ATTA2518.xml",
       "referencia": "2.49.0.0.724.0.ES.20260925070118.659101ATTA25181790319678",
       "ambito": "Lanzarote",
-      "estado": "aviso_vigente",
+      "estado": "expirado_detectado",
       "huella": "730412b98f7856801e36",
       "ultima_deteccion": "2026-09-25T12:11:25.550098+00:00",
       "fecha_fuente": "2026-09-25T11:00:00+01:00",
-      "primera_deteccion": "2026-09-25T12:11:25.550098+00:00"
+      "primera_deteccion": "2026-09-25T12:11:25.550098+00:00",
+      "fin_deteccion": "2026-09-25T20:29:05.582796+00:00",
+      "ultima_modificacion_detectada": "2026-09-25T20:29:05.582796+00:00"
     },
     {
       "clave": "meteo:aemet-3cb55036100f",
@@ -2665,11 +2671,13 @@
       "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260925070118_AFAZ659201ATTA2518.xml",
       "referencia": "2.49.0.0.724.0.ES.20260925070118.659201ATTA25181790319678",
       "ambito": "Fuerteventura",
-      "estado": "aviso_vigente",
+      "estado": "expirado_detectado",
       "huella": "f4cf528a77834b71b74c",
       "ultima_deteccion": "2026-09-25T12:11:25.550098+00:00",
       "fecha_fuente": "2026-09-25T11:00:00+01:00",
-      "primera_deteccion": "2026-09-25T12:11:25.550098+00:00"
+      "primera_deteccion": "2026-09-25T12:11:25.550098+00:00",
+      "fin_deteccion": "2026-09-25T20:29:05.582796+00:00",
+      "ultima_modificacion_detectada": "2026-09-25T20:29:05.582796+00:00"
     },
     {
       "clave": "meteo:aemet-9d8ae4f11643",
@@ -2680,11 +2688,13 @@
       "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260925070118_AFAZ659401ATTA2518.xml",
       "referencia": "2.49.0.0.724.0.ES.20260925070118.659401ATTA25181790319678",
       "ambito": "La Gomera",
-      "estado": "aviso_vigente",
+      "estado": "expirado_detectado",
       "huella": "8575a8a8bdb0eea04af6",
       "ultima_deteccion": "2026-09-25T12:11:25.550098+00:00",
       "fecha_fuente": "2026-09-25T11:00:00+01:00",
-      "primera_deteccion": "2026-09-25T12:11:25.550098+00:00"
+      "primera_deteccion": "2026-09-25T12:11:25.550098+00:00",
+      "fin_deteccion": "2026-09-25T20:29:05.582796+00:00",
+      "ultima_modificacion_detectada": "2026-09-25T20:29:05.582796+00:00"
     },
     {
       "clave": "meteo:aemet-38a4050ef3cf",
@@ -2695,11 +2705,13 @@
       "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260925070118_AFAZ659602ATTA2518.xml",
       "referencia": "2.49.0.0.724.0.ES.20260925070118.659602ATTA25181790319678",
       "ambito": "Área metropolitana de Tenerife",
-      "estado": "aviso_vigente",
+      "estado": "expirado_detectado",
       "huella": "5a28b9436fdcc18e8c0a",
       "ultima_deteccion": "2026-09-25T12:11:25.550098+00:00",
       "fecha_fuente": "2026-09-25T11:00:00+01:00",
-      "primera_deteccion": "2026-09-25T12:11:25.550098+00:00"
+      "primera_deteccion": "2026-09-25T12:11:25.550098+00:00",
+      "fin_deteccion": "2026-09-25T20:29:05.582796+00:00",
+      "ultima_modificacion_detectada": "2026-09-25T20:29:05.582796+00:00"
     },
     {
       "clave": "meteo:aemet-bb2f6034b97c",
@@ -2710,11 +2722,13 @@
       "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260925070118_AFAZ659603ATTA2518.xml",
       "referencia": "2.49.0.0.724.0.ES.20260925070118.659603ATTA25181790319678",
       "ambito": "Este, sur y oeste de Tenerife",
-      "estado": "aviso_vigente",
+      "estado": "expirado_detectado",
       "huella": "6a4da210929d1041d3de",
       "ultima_deteccion": "2026-09-25T12:11:25.550098+00:00",
       "fecha_fuente": "2026-09-25T11:00:00+01:00",
-      "primera_deteccion": "2026-09-25T12:11:25.550098+00:00"
+      "primera_deteccion": "2026-09-25T12:11:25.550098+00:00",
+      "fin_deteccion": "2026-09-25T20:29:05.582796+00:00",
+      "ultima_modificacion_detectada": "2026-09-25T20:29:05.582796+00:00"
     },
     {
       "clave": "meteo:aemet-e9c9544d3fc0",
@@ -20082,6 +20096,83 @@
   ],
   "eventos": [
     {
+      "clave": "meteo:aemet-4b2b85e71110",
+      "tipo": "meteo",
+      "evento": "expirado_detectado",
+      "etiqueta": "Dejó de estar vigente",
+      "momento_detectado": "2026-09-25T20:29:05.582796+00:00",
+      "fecha_fuente": "2026-09-25T11:00:00+01:00",
+      "titulo": "Aviso de temperaturas máximas de nivel amarillo",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260925070118_AFAZ659003ATTA2518.xml",
+      "detalle_cambio": "Ya no figura en el conjunto vigente validado por el módulo AEMET"
+    },
+    {
+      "clave": "meteo:aemet-80b06f63426b",
+      "tipo": "meteo",
+      "evento": "expirado_detectado",
+      "etiqueta": "Dejó de estar vigente",
+      "momento_detectado": "2026-09-25T20:29:05.582796+00:00",
+      "fecha_fuente": "2026-09-25T11:00:00+01:00",
+      "titulo": "Aviso de temperaturas máximas de nivel amarillo",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260925070118_AFAZ659004ATTA2518.xml",
+      "detalle_cambio": "Ya no figura en el conjunto vigente validado por el módulo AEMET"
+    },
+    {
+      "clave": "meteo:aemet-307d8e58e698",
+      "tipo": "meteo",
+      "evento": "expirado_detectado",
+      "etiqueta": "Dejó de estar vigente",
+      "momento_detectado": "2026-09-25T20:29:05.582796+00:00",
+      "fecha_fuente": "2026-09-25T11:00:00+01:00",
+      "titulo": "Aviso de temperaturas máximas de nivel amarillo",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260925070118_AFAZ659101ATTA2518.xml",
+      "detalle_cambio": "Ya no figura en el conjunto vigente validado por el módulo AEMET"
+    },
+    {
+      "clave": "meteo:aemet-3cb55036100f",
+      "tipo": "meteo",
+      "evento": "expirado_detectado",
+      "etiqueta": "Dejó de estar vigente",
+      "momento_detectado": "2026-09-25T20:29:05.582796+00:00",
+      "fecha_fuente": "2026-09-25T11:00:00+01:00",
+      "titulo": "Aviso de temperaturas máximas de nivel amarillo",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260925070118_AFAZ659201ATTA2518.xml",
+      "detalle_cambio": "Ya no figura en el conjunto vigente validado por el módulo AEMET"
+    },
+    {
+      "clave": "meteo:aemet-9d8ae4f11643",
+      "tipo": "meteo",
+      "evento": "expirado_detectado",
+      "etiqueta": "Dejó de estar vigente",
+      "momento_detectado": "2026-09-25T20:29:05.582796+00:00",
+      "fecha_fuente": "2026-09-25T11:00:00+01:00",
+      "titulo": "Aviso de temperaturas máximas de nivel amarillo",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260925070118_AFAZ659401ATTA2518.xml",
+      "detalle_cambio": "Ya no figura en el conjunto vigente validado por el módulo AEMET"
+    },
+    {
+      "clave": "meteo:aemet-38a4050ef3cf",
+      "tipo": "meteo",
+      "evento": "expirado_detectado",
+      "etiqueta": "Dejó de estar vigente",
+      "momento_detectado": "2026-09-25T20:29:05.582796+00:00",
+      "fecha_fuente": "2026-09-25T11:00:00+01:00",
+      "titulo": "Aviso de temperaturas máximas de nivel amarillo",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260925070118_AFAZ659602ATTA2518.xml",
+      "detalle_cambio": "Ya no figura en el conjunto vigente validado por el módulo AEMET"
+    },
+    {
+      "clave": "meteo:aemet-bb2f6034b97c",
+      "tipo": "meteo",
+      "evento": "expirado_detectado",
+      "etiqueta": "Dejó de estar vigente",
+      "momento_detectado": "2026-09-25T20:29:05.582796+00:00",
+      "fecha_fuente": "2026-09-25T11:00:00+01:00",
+      "titulo": "Aviso de temperaturas máximas de nivel amarillo",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260925070118_AFAZ659603ATTA2518.xml",
+      "detalle_cambio": "Ya no figura en el conjunto vigente validado por el módulo AEMET"
+    },
+    {
       "clave": "meteo:aemet-80708331563c",
       "tipo": "meteo",
       "evento": "aviso_vigente",
@@ -30297,77 +30388,6 @@
       "fecha_fuente": "2026-09-19T03:00:00+02:00",
       "titulo": "Aviso de lluvias de nivel naranja",
       "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260919012024_AFAZ770301PRP11904.xml"
-    },
-    {
-      "clave": "meteo:aemet-a9d5a5e39431",
-      "tipo": "meteo",
-      "evento": "aviso_vigente",
-      "etiqueta": "Aviso vigente",
-      "momento_detectado": "2026-09-19T01:34:00.777566+00:00",
-      "fecha_fuente": "2026-09-19T06:00:00+02:00",
-      "titulo": "Aviso de lluvias de nivel amarillo",
-      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260919012024_AFAZ770301PRP11913.xml"
-    },
-    {
-      "clave": "meteo:aemet-fa88799d55f8",
-      "tipo": "meteo",
-      "evento": "expirado_detectado",
-      "etiqueta": "Dejó de estar vigente",
-      "momento_detectado": "2026-09-19T01:34:00.777566+00:00",
-      "fecha_fuente": "2026-09-19T03:00:00+02:00",
-      "titulo": "Aviso de lluvias de nivel amarillo",
-      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260918090139_AFAZ770301PRP11913.xml",
-      "detalle_cambio": "Ya no figura en el conjunto vigente validado por el módulo AEMET"
-    },
-    {
-      "clave": "meteo:aemet-db122744baf3",
-      "tipo": "meteo",
-      "evento": "aviso_vigente",
-      "etiqueta": "Aviso vigente",
-      "momento_detectado": "2026-09-18T23:15:54.808629+00:00",
-      "fecha_fuente": "2026-09-21T00:00:00+02:00",
-      "titulo": "Aviso de costeros de nivel amarillo",
-      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260918215001_AFAZ611103COCO2110.xml"
-    },
-    {
-      "clave": "meteo:aemet-f71e3d444e24",
-      "tipo": "meteo",
-      "evento": "aviso_vigente",
-      "etiqueta": "Aviso vigente",
-      "momento_detectado": "2026-09-18T23:15:54.808629+00:00",
-      "fecha_fuente": "2026-09-21T00:00:00+02:00",
-      "titulo": "Aviso de costeros de nivel amarillo",
-      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260918215001_AFAZ611104COCO2110.xml"
-    },
-    {
-      "clave": "ayudas:bdns-930507",
-      "tipo": "ayudas",
-      "evento": "convocatoria_detectada",
-      "etiqueta": "Convocatoria detectada",
-      "momento_detectado": "2026-09-18T21:42:28.065626+00:00",
-      "fecha_fuente": "2026-09-18",
-      "titulo": "Convocatoria para la concesión de subvenciones para financiar la mejora del servicio de TRANSPORTE PÚBLICO en municipios de La Serranía y El Rincón de Ademuz.",
-      "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/930507"
-    },
-    {
-      "clave": "ayudas:bdns-930506",
-      "tipo": "ayudas",
-      "evento": "plazo_proximo",
-      "etiqueta": "Próxima",
-      "momento_detectado": "2026-09-18T21:42:28.065626+00:00",
-      "fecha_fuente": "2026-09-18",
-      "titulo": "Convocatoria de un contrato predoctoral, modalidad apoyo a la incorporación del talento, para personal investigador en formación en el marco del Plan Propio de I+D+i, cofinanciada por el Fondo Social Europeo Plus (FSE+)",
-      "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/930506"
-    },
-    {
-      "clave": "ayudas:bdns-930505",
-      "tipo": "ayudas",
-      "evento": "plazo_proximo",
-      "etiqueta": "Próxima",
-      "momento_detectado": "2026-09-18T21:42:28.065626+00:00",
-      "fecha_fuente": "2026-09-18",
-      "titulo": "BASES REGULADORAS Y CONVOCATORIA PARA OTORGAR LOS PREMIOS DEL CERTAMEN DE TEATRO NO PROFESIONAL \"CIUDAD DE CORIA\". EJERCICIO 2026",
-      "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/930505"
     }
   ]
 }
