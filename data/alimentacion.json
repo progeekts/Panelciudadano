@@ -1,5 +1,5 @@
 {
-  "ultima_revision": "2026-09-25T23:22:22.909384+00:00",
+  "ultima_revision": "2026-09-26T13:16:18.583615+00:00",
   "revision": "completa",
   "fuente_principal": "Agencia Española de Seguridad Alimentaria y Nutrición (AESAN)",
   "cobertura": [
@@ -142,23 +142,6 @@
       "verificado": true
     },
     {
-      "id": "aesan-fed50cda6a",
-      "tipo": "alimentacion",
-      "categoria": "general",
-      "categoria_nombre": "Interés para toda la población",
-      "titulo": "Alerta por presencia de Salmonella spp. en chips de fruta procedentes de Alemania. (Ref. ES2026/473)",
-      "fecha": "2026-07-31",
-      "referencia": "ES2026/473",
-      "producto": "",
-      "lotes": "",
-      "distribucion": "",
-      "medidas": "",
-      "ambito": "España",
-      "fuente": "AESAN · Red de alerta alimentaria",
-      "url": "https://www.aesan.gob.es/alertas/2026_56",
-      "verificado": true
-    },
-    {
       "id": "aesan-c3ba80ea62",
       "tipo": "alimentacion",
       "categoria": "general",
@@ -173,6 +156,23 @@
       "ambito": "España",
       "fuente": "AESAN · Red de alerta alimentaria",
       "url": "https://www.aesan.gob.es/alertas/2026_55_ampliacion_1",
+      "verificado": true
+    },
+    {
+      "id": "aesan-fed50cda6a",
+      "tipo": "alimentacion",
+      "categoria": "general",
+      "categoria_nombre": "Interés para toda la población",
+      "titulo": "Alerta por presencia de Salmonella spp. en chips de fruta procedentes de Alemania. (Ref. ES2026/473)",
+      "fecha": "2026-07-31",
+      "referencia": "ES2026/473",
+      "producto": "",
+      "lotes": "",
+      "distribucion": "",
+      "medidas": "",
+      "ambito": "España",
+      "fuente": "AESAN · Red de alerta alimentaria",
+      "url": "https://www.aesan.gob.es/alertas/2026_56",
       "verificado": true
     },
     {
@@ -278,23 +278,6 @@
       "verificado": true
     },
     {
-      "id": "aesan-4143d559a5",
-      "tipo": "alimentacion",
-      "categoria": "general",
-      "categoria_nombre": "Interés para toda la población",
-      "titulo": "Alerta por presencia de ácido cianhídrico en semillas de lino procedentes de La India (Ref. ES2026/349)",
-      "fecha": "2026-06-15",
-      "referencia": "ES2026/349",
-      "producto": "",
-      "lotes": "",
-      "distribucion": "",
-      "medidas": "",
-      "ambito": "España",
-      "fuente": "AESAN · Red de alerta alimentaria",
-      "url": "https://www.aesan.gob.es/alertas/2026_47",
-      "verificado": true
-    },
-    {
       "id": "aesan-09b065345b",
       "tipo": "alimentacion",
       "categoria": "general",
@@ -312,20 +295,20 @@
       "verificado": true
     },
     {
-      "id": "aesan-9d19d93457",
+      "id": "aesan-4143d559a5",
       "tipo": "alimentacion",
-      "categoria": "alergenos",
-      "categoria_nombre": "Alergias e intolerancias",
-      "titulo": "Ampliación de información sobre la alerta por presencia de almendra y huevo no declarados en postre procedente de España (Ref ES2026/327)",
-      "fecha": "2026-06-05",
-      "referencia": "ES2026/327",
+      "categoria": "general",
+      "categoria_nombre": "Interés para toda la población",
+      "titulo": "Alerta por presencia de ácido cianhídrico en semillas de lino procedentes de La India (Ref. ES2026/349)",
+      "fecha": "2026-06-15",
+      "referencia": "ES2026/349",
       "producto": "",
       "lotes": "",
       "distribucion": "",
       "medidas": "",
       "ambito": "España",
       "fuente": "AESAN · Red de alerta alimentaria",
-      "url": "https://www.aesan.gob.es/alertas/2026_46_Ampliacion",
+      "url": "https://www.aesan.gob.es/alertas/2026_47",
       "verificado": true
     },
     {
@@ -343,6 +326,23 @@
       "ambito": "España",
       "fuente": "AESAN · Red de alerta alimentaria",
       "url": "https://www.aesan.gob.es/alertas/2026_46",
+      "verificado": true
+    },
+    {
+      "id": "aesan-9d19d93457",
+      "tipo": "alimentacion",
+      "categoria": "alergenos",
+      "categoria_nombre": "Alergias e intolerancias",
+      "titulo": "Ampliación de información sobre la alerta por presencia de almendra y huevo no declarados en postre procedente de España (Ref ES2026/327)",
+      "fecha": "2026-06-05",
+      "referencia": "ES2026/327",
+      "producto": "",
+      "lotes": "",
+      "distribucion": "",
+      "medidas": "",
+      "ambito": "España",
+      "fuente": "AESAN · Red de alerta alimentaria",
+      "url": "https://www.aesan.gob.es/alertas/2026_46_Ampliacion",
       "verificado": true
     },
     {
