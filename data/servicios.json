@@ -1,21 +1,21 @@
 {
-  "ultima_revision": "2026-09-26T05:24:53.483708+00:00",
-  "revision": "parcial",
-  "revision_fuentes_incidentes": "parcial",
+  "ultima_revision": "2026-09-26T10:11:10.101422+00:00",
+  "revision": "completa",
+  "revision_fuentes_incidentes": "completa",
   "salud_auxiliar": "parcial",
   "cobertura": {
     "detectores_configurados": 4,
-    "detectores_respondieron": 3,
+    "detectores_respondieron": 4,
     "comprobaciones_cobertura": 21,
     "comprobaciones_respondieron": 14,
     "fuentes_configuradas": 25,
-    "fuentes_respondieron": 17,
+    "fuentes_respondieron": 18,
     "fuentes_incidentes": 4,
-    "fuentes_incidentes_ok": 3,
+    "fuentes_incidentes_ok": 4,
     "territorial": {
       "España": {
         "configuradas": 7,
-        "respondieron": 6
+        "respondieron": 7
       },
       "Cataluña": {
         "configuradas": 1,
@@ -113,8 +113,8 @@
     {
       "clave": "sepe",
       "fuente": "SEPE",
-      "estado": "error",
-      "detalle": "URLError",
+      "estado": "ok",
+      "detalle": "Fuente oficial accesible",
       "ambito": "España",
       "tipo": "detector",
       "critica_para_resolucion": true
@@ -319,12 +319,6 @@
     }
   ],
   "fuentes_error": [
-    {
-      "servicio": "SEPE",
-      "error": "URLError",
-      "tipo": "detector",
-      "ambito": "España"
-    },
     {
       "servicio": "Junta de Andalucía",
       "error": "URLError",
