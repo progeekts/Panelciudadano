@@ -1,7 +1,7 @@
 {
-  "ultima_revision": "2026-09-26T21:30:54.743242+00:00",
+  "ultima_revision": "2026-09-26T21:59:01.773167+00:00",
   "fuentes_revision": {
-    "ayudas": "2026-09-26T12:14:58.752765+00:00",
+    "ayudas": "2026-09-26T21:58:20.333981+00:00",
     "estafas": "2026-09-26T12:23:06.446002+00:00",
     "alimentacion": "2026-09-26T13:16:18.583615+00:00",
     "salud": "2026-09-26T12:30:46.068519+00:00",
@@ -9,9 +9,54 @@
     "servicios": "2026-09-26T21:29:11.303839+00:00"
   },
   "criterio": "Histórico de cambios detectados. Solo se asigna un estado terminal cuando la fuente o el módulo permiten afirmarlo de forma conservadora.",
-  "total_registros": 1440,
+  "total_registros": 1443,
   "total_eventos": 1000,
   "registros": [
+    {
+      "clave": "ayudas:bdns-931837",
+      "tipo": "ayudas",
+      "id": "bdns-931837",
+      "titulo": "SUBVENCIÓN NOMINATIVA CAMPUS INTERNACIONALIZACIÓN UNIV LOYOLA",
+      "fuente": "SNPSAP / Base de Datos Nacional de Subvenciones",
+      "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/931837",
+      "referencia": "",
+      "ambito": "ES61 - ANDALUCIA",
+      "estado": "convocatoria_detectada",
+      "huella": "432f836031619f9f58e6",
+      "ultima_deteccion": "2026-09-26T21:59:01.773167+00:00",
+      "fecha_fuente": "2026-09-26",
+      "primera_deteccion": "2026-09-26T21:59:01.773167+00:00"
+    },
+    {
+      "clave": "ayudas:bdns-931836",
+      "tipo": "ayudas",
+      "id": "bdns-931836",
+      "titulo": "SUBVENCIÓN NOMINATIVA CAMPUS INTER. 2026 JAÉN",
+      "fuente": "SNPSAP / Base de Datos Nacional de Subvenciones",
+      "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/931836",
+      "referencia": "",
+      "ambito": "ES61 - ANDALUCIA",
+      "estado": "convocatoria_detectada",
+      "huella": "85cd6e6b8b349418ceb7",
+      "ultima_deteccion": "2026-09-26T21:59:01.773167+00:00",
+      "fecha_fuente": "2026-09-26",
+      "primera_deteccion": "2026-09-26T21:59:01.773167+00:00"
+    },
+    {
+      "clave": "ayudas:bdns-931835",
+      "tipo": "ayudas",
+      "id": "bdns-931835",
+      "titulo": "SUBVENCIÓN NOMINATIVA 2026 CAMPUES INTERNACIONALIZACIÓN UNIV CÓRDOBA",
+      "fuente": "SNPSAP / Base de Datos Nacional de Subvenciones",
+      "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/931835",
+      "referencia": "",
+      "ambito": "ES61 - ANDALUCIA",
+      "estado": "convocatoria_detectada",
+      "huella": "7763008b138e1d86d9ed",
+      "ultima_deteccion": "2026-09-26T21:59:01.773167+00:00",
+      "fecha_fuente": "2026-09-26",
+      "primera_deteccion": "2026-09-26T21:59:01.773167+00:00"
+    },
     {
       "clave": "ayudas:bdns-931834",
       "tipo": "ayudas",
@@ -425,12 +470,13 @@
       "fuente": "SNPSAP / Base de Datos Nacional de Subvenciones",
       "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/931805",
       "referencia": "",
-      "ambito": "ES522 - Castellón / Castelló",
-      "estado": "plazo_finalizado",
-      "huella": "e3e7f788f6fc182da0fd",
-      "ultima_deteccion": "2026-09-25T22:22:16.260737+00:00",
+      "ambito": "",
+      "estado": "convocatoria_detectada",
+      "huella": "a24cf70b93371117fdb6",
+      "ultima_deteccion": "2026-09-26T21:59:01.773167+00:00",
       "fecha_fuente": "2026-09-25",
-      "primera_deteccion": "2026-09-25T22:22:16.260737+00:00"
+      "primera_deteccion": "2026-09-25T22:22:16.260737+00:00",
+      "ultima_modificacion_detectada": "2026-09-26T21:59:01.773167+00:00"
     },
     {
       "clave": "ayudas:bdns-931804",
@@ -440,12 +486,13 @@
       "fuente": "SNPSAP / Base de Datos Nacional de Subvenciones",
       "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/931804",
       "referencia": "",
-      "ambito": "ES24 - ARAGON",
-      "estado": "plazo_finalizado",
-      "huella": "7a5827c83984901b71a9",
-      "ultima_deteccion": "2026-09-25T22:22:16.260737+00:00",
+      "ambito": "",
+      "estado": "convocatoria_detectada",
+      "huella": "631db8e5efffaf02c6f4",
+      "ultima_deteccion": "2026-09-26T21:59:01.773167+00:00",
       "fecha_fuente": "2026-09-25",
-      "primera_deteccion": "2026-09-25T22:22:16.260737+00:00"
+      "primera_deteccion": "2026-09-25T22:22:16.260737+00:00",
+      "ultima_modificacion_detectada": "2026-09-26T21:59:01.773167+00:00"
     },
     {
       "clave": "ayudas:bdns-931803",
@@ -455,12 +502,13 @@
       "fuente": "SNPSAP / Base de Datos Nacional de Subvenciones",
       "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/931803",
       "referencia": "",
-      "ambito": "ES51 - CATALUÑA",
+      "ambito": "",
       "estado": "convocatoria_detectada",
-      "huella": "2e9205134a87e473b45e",
-      "ultima_deteccion": "2026-09-25T22:22:16.260737+00:00",
+      "huella": "4f3af7912949e4a5472e",
+      "ultima_deteccion": "2026-09-26T21:59:01.773167+00:00",
       "fecha_fuente": "2026-09-25",
-      "primera_deteccion": "2026-09-25T22:22:16.260737+00:00"
+      "primera_deteccion": "2026-09-25T22:22:16.260737+00:00",
+      "ultima_modificacion_detectada": "2026-09-26T21:59:01.773167+00:00"
     },
     {
       "clave": "ayudas:bdns-931802",
@@ -1476,51 +1524,6 @@
       "primera_deteccion": "2026-09-25T22:22:16.260737+00:00"
     },
     {
-      "clave": "ayudas:bdns-931734",
-      "tipo": "ayudas",
-      "id": "bdns-931734",
-      "titulo": "CONVOCATORIA DE SUBVENCIONES DIRIGIDAS A ENTIDADES DEL MUNICIPIO DE AVINYÓ, ÁMBITO DE LA DINAMIZACIÓN DEL MUNICIPIO. AÑO 2026.",
-      "fuente": "SNPSAP / Base de Datos Nacional de Subvenciones",
-      "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/931734",
-      "referencia": "",
-      "ambito": "",
-      "estado": "convocatoria_detectada",
-      "huella": "bf8a71462df302d3805e",
-      "ultima_deteccion": "2026-09-25T22:22:16.260737+00:00",
-      "fecha_fuente": "2026-09-25",
-      "primera_deteccion": "2026-09-25T22:22:16.260737+00:00"
-    },
-    {
-      "clave": "ayudas:bdns-931733",
-      "tipo": "ayudas",
-      "id": "bdns-931733",
-      "titulo": "CONVOCATORIA DE SUBVENCIONES DIRIGIDAS A ENTIDADES DEL MUNICIPIO DE AVINYÓ, DEL ÁMBITO DE LA CULTURA POPULAR. AÑO 2026.",
-      "fuente": "SNPSAP / Base de Datos Nacional de Subvenciones",
-      "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/931733",
-      "referencia": "",
-      "ambito": "",
-      "estado": "convocatoria_detectada",
-      "huella": "e55a3cc0da99164c114b",
-      "ultima_deteccion": "2026-09-25T22:22:16.260737+00:00",
-      "fecha_fuente": "2026-09-25",
-      "primera_deteccion": "2026-09-25T22:22:16.260737+00:00"
-    },
-    {
-      "clave": "ayudas:bdns-931732",
-      "tipo": "ayudas",
-      "id": "bdns-931732",
-      "titulo": "CONVOCATORIA SUBVENCIONES DIRIGIDAS A ENTIDADES DEL MUNICIPIO DE AVINYÓ, DEL ÁMBITO DE LAS ARTES. AÑO 2026.",
-      "fuente": "SNPSAP / Base de Datos Nacional de Subvenciones",
-      "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/931732",
-      "referencia": "",
-      "ambito": "",
-      "estado": "convocatoria_detectada",
-      "huella": "c2849a3c2e0395a431c8",
-      "ultima_deteccion": "2026-09-25T22:22:16.260737+00:00",
-      "fecha_fuente": "2026-09-25",
-      "primera_deteccion": "2026-09-25T22:22:16.260737+00:00"
-    },
-    {
       "clave": "estafas:incibe-campana-de-smishing-suplantando-la-seguridad-social",
       "tipo": "estafas",
       "id": "incibe-campana-de-smishing-suplantando-la-seguridad-social",
@@ -2474,6 +2477,51 @@
       "ultima_deteccion": "2026-09-26T12:25:59.576193+00:00",
       "fecha_fuente": "2026-09-27T18:00:00+02:00",
       "primera_deteccion": "2026-09-26T12:25:59.576193+00:00"
+    },
+    {
+      "clave": "ayudas:bdns-931734",
+      "tipo": "ayudas",
+      "id": "bdns-931734",
+      "titulo": "CONVOCATORIA DE SUBVENCIONES DIRIGIDAS A ENTIDADES DEL MUNICIPIO DE AVINYÓ, ÁMBITO DE LA DINAMIZACIÓN DEL MUNICIPIO. AÑO 2026.",
+      "fuente": "SNPSAP / Base de Datos Nacional de Subvenciones",
+      "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/931734",
+      "referencia": "",
+      "ambito": "",
+      "estado": "convocatoria_detectada",
+      "huella": "bf8a71462df302d3805e",
+      "ultima_deteccion": "2026-09-25T22:22:16.260737+00:00",
+      "fecha_fuente": "2026-09-25",
+      "primera_deteccion": "2026-09-25T22:22:16.260737+00:00"
+    },
+    {
+      "clave": "ayudas:bdns-931733",
+      "tipo": "ayudas",
+      "id": "bdns-931733",
+      "titulo": "CONVOCATORIA DE SUBVENCIONES DIRIGIDAS A ENTIDADES DEL MUNICIPIO DE AVINYÓ, DEL ÁMBITO DE LA CULTURA POPULAR. AÑO 2026.",
+      "fuente": "SNPSAP / Base de Datos Nacional de Subvenciones",
+      "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/931733",
+      "referencia": "",
+      "ambito": "",
+      "estado": "convocatoria_detectada",
+      "huella": "e55a3cc0da99164c114b",
+      "ultima_deteccion": "2026-09-25T22:22:16.260737+00:00",
+      "fecha_fuente": "2026-09-25",
+      "primera_deteccion": "2026-09-25T22:22:16.260737+00:00"
+    },
+    {
+      "clave": "ayudas:bdns-931732",
+      "tipo": "ayudas",
+      "id": "bdns-931732",
+      "titulo": "CONVOCATORIA SUBVENCIONES DIRIGIDAS A ENTIDADES DEL MUNICIPIO DE AVINYÓ, DEL ÁMBITO DE LAS ARTES. AÑO 2026.",
+      "fuente": "SNPSAP / Base de Datos Nacional de Subvenciones",
+      "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/931732",
+      "referencia": "",
+      "ambito": "",
+      "estado": "convocatoria_detectada",
+      "huella": "c2849a3c2e0395a431c8",
+      "ultima_deteccion": "2026-09-25T22:22:16.260737+00:00",
+      "fecha_fuente": "2026-09-25",
+      "primera_deteccion": "2026-09-25T22:22:16.260737+00:00"
     },
     {
       "clave": "meteo:aemet-4d022be9475b",
@@ -22318,6 +22366,69 @@
   ],
   "eventos": [
     {
+      "clave": "ayudas:bdns-931837",
+      "tipo": "ayudas",
+      "evento": "convocatoria_detectada",
+      "etiqueta": "Convocatoria detectada",
+      "momento_detectado": "2026-09-26T21:59:01.773167+00:00",
+      "fecha_fuente": "2026-09-26",
+      "titulo": "SUBVENCIÓN NOMINATIVA CAMPUS INTERNACIONALIZACIÓN UNIV LOYOLA",
+      "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/931837"
+    },
+    {
+      "clave": "ayudas:bdns-931836",
+      "tipo": "ayudas",
+      "evento": "convocatoria_detectada",
+      "etiqueta": "Convocatoria detectada",
+      "momento_detectado": "2026-09-26T21:59:01.773167+00:00",
+      "fecha_fuente": "2026-09-26",
+      "titulo": "SUBVENCIÓN NOMINATIVA CAMPUS INTER. 2026 JAÉN",
+      "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/931836"
+    },
+    {
+      "clave": "ayudas:bdns-931835",
+      "tipo": "ayudas",
+      "evento": "convocatoria_detectada",
+      "etiqueta": "Convocatoria detectada",
+      "momento_detectado": "2026-09-26T21:59:01.773167+00:00",
+      "fecha_fuente": "2026-09-26",
+      "titulo": "SUBVENCIÓN NOMINATIVA 2026 CAMPUES INTERNACIONALIZACIÓN UNIV CÓRDOBA",
+      "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/931835"
+    },
+    {
+      "clave": "ayudas:bdns-931805",
+      "tipo": "ayudas",
+      "evento": "convocatoria_detectada",
+      "etiqueta": "Convocatoria detectada",
+      "momento_detectado": "2026-09-26T21:59:01.773167+00:00",
+      "fecha_fuente": "2026-09-25",
+      "titulo": "Convenio Asociación Gitana Castellón: Programa socio-educativo igualdad e inclusión pueblo gitano",
+      "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/931805",
+      "detalle_cambio": "Estado: Plazo finalizado → Convocatoria detectada"
+    },
+    {
+      "clave": "ayudas:bdns-931804",
+      "tipo": "ayudas",
+      "evento": "convocatoria_detectada",
+      "etiqueta": "Convocatoria detectada",
+      "momento_detectado": "2026-09-26T21:59:01.773167+00:00",
+      "fecha_fuente": "2026-09-25",
+      "titulo": "Subvención Patricia Araus López, torneos de Pádel.",
+      "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/931804",
+      "detalle_cambio": "Estado: Plazo finalizado → Convocatoria detectada"
+    },
+    {
+      "clave": "ayudas:bdns-931803",
+      "tipo": "ayudas",
+      "evento": "actualizado",
+      "etiqueta": "Actualizada",
+      "momento_detectado": "2026-09-26T21:59:01.773167+00:00",
+      "fecha_fuente": "2026-09-25",
+      "titulo": "Subvención excluida de concurrencia pública en el ámbito del patrimonio cultural - Ajuntament de Guissona",
+      "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/931803",
+      "detalle_cambio": "La ficha oficial presenta cambios respecto a la revisión anterior"
+    },
+    {
       "clave": "meteo:aemet-542a550b5b39",
       "tipo": "meteo",
       "evento": "aviso_vigente",
@@ -32520,66 +32631,6 @@
       "fecha_fuente": "2026-09-21",
       "titulo": "Acuerdo de la Junta de Castilla y León por el que se autoriza la concesión directa de una subvención a autónomos y pymes en las localidades afectadas por evacuación por los incendios forestales en el verano de 2026. Remesa VI",
       "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/930737"
-    },
-    {
-      "clave": "ayudas:bdns-930736",
-      "tipo": "ayudas",
-      "evento": "convocatoria_detectada",
-      "etiqueta": "Convocatoria detectada",
-      "momento_detectado": "2026-09-21T22:35:34.351313+00:00",
-      "fecha_fuente": "2026-09-21",
-      "titulo": "(4557/2026) CONVOCATORIA SUBVENCIÓN NOMINATIVA RONDALLA PEÑA FRAGATINA DESTINADA A COLABORAR EN LA FINANCIACIÓN DE GASTOS DERIVADOS DE LA ESCUELA DE JOTA 2026.",
-      "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/930736"
-    },
-    {
-      "clave": "ayudas:bdns-930735",
-      "tipo": "ayudas",
-      "evento": "convocatoria_detectada",
-      "etiqueta": "Convocatoria detectada",
-      "momento_detectado": "2026-09-21T22:35:34.351313+00:00",
-      "fecha_fuente": "2026-09-21",
-      "titulo": "SS SUBVENCIÓN NOMINATIVA A CÁRITAS, DIOCESIS DE CARTAGENA PARA EL AÑO 2026",
-      "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/930735"
-    },
-    {
-      "clave": "ayudas:bdns-930734",
-      "tipo": "ayudas",
-      "evento": "convocatoria_detectada",
-      "etiqueta": "Convocatoria detectada",
-      "momento_detectado": "2026-09-21T22:35:34.351313+00:00",
-      "fecha_fuente": "2026-09-21",
-      "titulo": "DECRETO 123/2025 CONVENIO COLABORACIÓN ASOCIACIÓN PALMEÑA DE AYUDA AL DROGODEPENDIENTE GUADALQUIVIR",
-      "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/930734"
-    },
-    {
-      "clave": "ayudas:bdns-930733",
-      "tipo": "ayudas",
-      "evento": "convocatoria_detectada",
-      "etiqueta": "Convocatoria detectada",
-      "momento_detectado": "2026-09-21T22:35:34.351313+00:00",
-      "fecha_fuente": "2026-09-21",
-      "titulo": "CONVENIO DE COLABORACIÓN ENTRE EL AYUNTAMIENTO DE SANTIAGO DE COMPOSTELA Y EL ILUSTRE COLEGIO DE LA ABOGACÍA DE SANTIAGO DE COMPOSTELA  2026",
-      "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/930733"
-    },
-    {
-      "clave": "ayudas:bdns-930732",
-      "tipo": "ayudas",
-      "evento": "convocatoria_detectada",
-      "etiqueta": "Convocatoria detectada",
-      "momento_detectado": "2026-09-21T22:35:34.351313+00:00",
-      "fecha_fuente": "2026-09-21",
-      "titulo": "BASES CONVOCATORIA DE SUBVENCIONES A ENTIDADES Y CLUBES DEPORTIVOS EJERCICIO 2026",
-      "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/930732"
-    },
-    {
-      "clave": "ayudas:bdns-930731",
-      "tipo": "ayudas",
-      "evento": "convocatoria_detectada",
-      "etiqueta": "Convocatoria detectada",
-      "momento_detectado": "2026-09-21T22:35:34.351313+00:00",
-      "fecha_fuente": "2026-09-21",
-      "titulo": "ACUERDO DE JUNTA DE GOBIERNO LOCAL DE 9 DE SEPTIEMBRE DE 2026 POR EL QUE SE APRUEBAN LAS BASES REGULADORAS DEL XXII PREMIO DE NOVELA CAROLINA CORONADO CIUDAD DE ALMENDRALEJO 2027",
-      "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/930731"
     }
   ]
 }
