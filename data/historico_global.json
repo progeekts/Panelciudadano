@@ -1,15 +1,15 @@
 {
-  "ultima_revision": "2026-09-27T05:11:35.392508+00:00",
+  "ultima_revision": "2026-09-27T07:04:36.989540+00:00",
   "fuentes_revision": {
     "ayudas": "2026-09-26T21:58:20.333981+00:00",
     "estafas": "2026-09-26T22:09:16.515156+00:00",
     "alimentacion": "2026-09-26T23:02:23.869598+00:00",
     "salud": "2026-09-26T22:13:22.198576+00:00",
-    "meteo": "2026-09-27T01:22:33.032586+00:00",
+    "meteo": "2026-09-27T07:04:23.165724+00:00",
     "servicios": "2026-09-27T05:09:46.740057+00:00"
   },
   "criterio": "Histórico de cambios detectados. Solo se asigna un estado terminal cuando la fuente o el módulo permiten afirmarlo de forma conservadora.",
-  "total_registros": 1457,
+  "total_registros": 1461,
   "total_eventos": 1000,
   "registros": [
     {
@@ -2537,6 +2537,66 @@
       "ultima_deteccion": "2026-09-26T12:25:59.576193+00:00",
       "fecha_fuente": "2026-09-28T14:00:00+02:00",
       "primera_deteccion": "2026-09-26T12:25:59.576193+00:00"
+    },
+    {
+      "clave": "meteo:aemet-45c4b64d273c",
+      "tipo": "meteo",
+      "id": "aemet-45c4b64d273c",
+      "titulo": "Aviso de tormentas de nivel amarillo",
+      "fuente": "Agencia Estatal de Meteorología (AEMET)",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260927064820_AFAZ663904TOTO2722.xml",
+      "referencia": "2.49.0.0.724.0.ES.20260927064820.663904TOTO27221790491700",
+      "ambito": "Cantabria del Ebro",
+      "estado": "aviso_vigente",
+      "huella": "ead89ce5bf915711528f",
+      "ultima_deteccion": "2026-09-27T07:04:36.989540+00:00",
+      "fecha_fuente": "2026-09-27T18:00:00+02:00",
+      "primera_deteccion": "2026-09-27T07:04:36.989540+00:00"
+    },
+    {
+      "clave": "meteo:aemet-699043824fd6",
+      "tipo": "meteo",
+      "id": "aemet-699043824fd6",
+      "titulo": "Aviso de tormentas de nivel amarillo",
+      "fuente": "Agencia Estatal de Meteorología (AEMET)",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260927064520_AFAZ670901TOTO2722.xml",
+      "referencia": "2.49.0.0.724.0.ES.20260927064520.670901TOTO27221790491520",
+      "ambito": "Cordillera Cantábrica de Burgos",
+      "estado": "aviso_vigente",
+      "huella": "a64981bc0471ab3de17d",
+      "ultima_deteccion": "2026-09-27T07:04:36.989540+00:00",
+      "fecha_fuente": "2026-09-27T18:00:00+02:00",
+      "primera_deteccion": "2026-09-27T07:04:36.989540+00:00"
+    },
+    {
+      "clave": "meteo:aemet-7212f7190f10",
+      "tipo": "meteo",
+      "id": "aemet-7212f7190f10",
+      "titulo": "Aviso de tormentas de nivel amarillo",
+      "fuente": "Agencia Estatal de Meteorología (AEMET)",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260927064520_AFAZ673401TOTO2722.xml",
+      "referencia": "2.49.0.0.724.0.ES.20260927064520.673401TOTO27221790491520",
+      "ambito": "Cordillera Cantábrica de Palencia",
+      "estado": "aviso_vigente",
+      "huella": "aac360da38763f865f53",
+      "ultima_deteccion": "2026-09-27T07:04:36.989540+00:00",
+      "fecha_fuente": "2026-09-27T18:00:00+02:00",
+      "primera_deteccion": "2026-09-27T07:04:36.989540+00:00"
+    },
+    {
+      "clave": "meteo:aemet-a120532545fa",
+      "tipo": "meteo",
+      "id": "aemet-a120532545fa",
+      "titulo": "Aviso de tormentas de nivel amarillo",
+      "fuente": "Agencia Estatal de Meteorología (AEMET)",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260927062133_AFAZ663903TOTO2722.xml",
+      "referencia": "2.49.0.0.724.0.ES.20260927062133.663903TOTO27221790490093",
+      "ambito": "Centro y valle de Villaverde",
+      "estado": "aviso_vigente",
+      "huella": "2461d838e5bd5691510b",
+      "ultima_deteccion": "2026-09-27T07:04:36.989540+00:00",
+      "fecha_fuente": "2026-09-27T18:00:00+02:00",
+      "primera_deteccion": "2026-09-27T07:04:36.989540+00:00"
     },
     {
       "clave": "meteo:aemet-638e6e67bf97",
@@ -22576,6 +22636,46 @@
   ],
   "eventos": [
     {
+      "clave": "meteo:aemet-45c4b64d273c",
+      "tipo": "meteo",
+      "evento": "aviso_vigente",
+      "etiqueta": "Aviso vigente",
+      "momento_detectado": "2026-09-27T07:04:36.989540+00:00",
+      "fecha_fuente": "2026-09-27T18:00:00+02:00",
+      "titulo": "Aviso de tormentas de nivel amarillo",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260927064820_AFAZ663904TOTO2722.xml"
+    },
+    {
+      "clave": "meteo:aemet-699043824fd6",
+      "tipo": "meteo",
+      "evento": "aviso_vigente",
+      "etiqueta": "Aviso vigente",
+      "momento_detectado": "2026-09-27T07:04:36.989540+00:00",
+      "fecha_fuente": "2026-09-27T18:00:00+02:00",
+      "titulo": "Aviso de tormentas de nivel amarillo",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260927064520_AFAZ670901TOTO2722.xml"
+    },
+    {
+      "clave": "meteo:aemet-7212f7190f10",
+      "tipo": "meteo",
+      "evento": "aviso_vigente",
+      "etiqueta": "Aviso vigente",
+      "momento_detectado": "2026-09-27T07:04:36.989540+00:00",
+      "fecha_fuente": "2026-09-27T18:00:00+02:00",
+      "titulo": "Aviso de tormentas de nivel amarillo",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260927064520_AFAZ673401TOTO2722.xml"
+    },
+    {
+      "clave": "meteo:aemet-a120532545fa",
+      "tipo": "meteo",
+      "evento": "aviso_vigente",
+      "etiqueta": "Aviso vigente",
+      "momento_detectado": "2026-09-27T07:04:36.989540+00:00",
+      "fecha_fuente": "2026-09-27T18:00:00+02:00",
+      "titulo": "Aviso de tormentas de nivel amarillo",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260927062133_AFAZ663903TOTO2722.xml"
+    },
+    {
       "clave": "meteo:aemet-4ca3442a1e8d",
       "tipo": "meteo",
       "evento": "aviso_vigente",
@@ -32801,46 +32901,6 @@
       "fecha_fuente": "2026-09-21",
       "titulo": "Convocatoria de ayudas para la adquisición de libros de texto y material escolar, curso 2026/2027",
       "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/930756"
-    },
-    {
-      "clave": "ayudas:bdns-930755",
-      "tipo": "ayudas",
-      "evento": "convocatoria_detectada",
-      "etiqueta": "Convocatoria detectada",
-      "momento_detectado": "2026-09-21T22:35:34.351313+00:00",
-      "fecha_fuente": "2026-09-21",
-      "titulo": "Convocatoria para la concesión de premios para el VII Concurso de Fotografía “OBJETIVO PARADAS”, para el año 2026",
-      "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/930755"
-    },
-    {
-      "clave": "ayudas:bdns-930754",
-      "tipo": "ayudas",
-      "evento": "convocatoria_detectada",
-      "etiqueta": "Convocatoria detectada",
-      "momento_detectado": "2026-09-21T22:35:34.351313+00:00",
-      "fecha_fuente": "2026-09-21",
-      "titulo": "OTORGAMIENTO DE UNA SUBVENCIÓN POR CONCESIÓN DIRECTA A LA ASOCIACIÓN PAS A PAS HACIA LA INCLUSIÓN DE LAS PERSONAS CON AUTISMO, CON CIF G55299481",
-      "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/930754"
-    },
-    {
-      "clave": "ayudas:bdns-930752",
-      "tipo": "ayudas",
-      "evento": "convocatoria_detectada",
-      "etiqueta": "Convocatoria detectada",
-      "momento_detectado": "2026-09-21T22:35:34.351313+00:00",
-      "fecha_fuente": "2026-09-21",
-      "titulo": "SUBVENCIÓN NOMINATIVA 2026 COMITÉ LOCAL CRUZ ROJA IBI",
-      "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/930752"
-    },
-    {
-      "clave": "ayudas:bdns-930751",
-      "tipo": "ayudas",
-      "evento": "convocatoria_detectada",
-      "etiqueta": "Convocatoria detectada",
-      "momento_detectado": "2026-09-21T22:35:34.351313+00:00",
-      "fecha_fuente": "2026-09-21",
-      "titulo": "Resolución del Vicerrector de Innovación Social, Empleabilidad y Emprendimiento de la Universidad de Granada, de 15 de septiembre de 2026 por la que se publican las bases reguladoras y se convoca el X Concurso de Ideas “UGR Emprendedora”",
-      "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/930751"
     }
   ]
 }
