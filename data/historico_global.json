@@ -1,7 +1,7 @@
 {
-  "ultima_revision": "2026-09-27T12:58:34.129909+00:00",
+  "ultima_revision": "2026-09-27T13:02:40.070931+00:00",
   "fuentes_revision": {
-    "ayudas": "2026-09-26T21:58:20.333981+00:00",
+    "ayudas": "2026-09-27T13:02:28.335847+00:00",
     "estafas": "2026-09-26T22:09:16.515156+00:00",
     "alimentacion": "2026-09-26T23:02:23.869598+00:00",
     "salud": "2026-09-26T22:13:22.198576+00:00",
@@ -9,9 +9,24 @@
     "servicios": "2026-09-27T10:42:06.386249+00:00"
   },
   "criterio": "Histórico de cambios detectados. Solo se asigna un estado terminal cuando la fuente o el módulo permiten afirmarlo de forma conservadora.",
-  "total_registros": 1612,
+  "total_registros": 1613,
   "total_eventos": 1000,
   "registros": [
+    {
+      "clave": "ayudas:bdns-931838",
+      "tipo": "ayudas",
+      "id": "bdns-931838",
+      "titulo": "Convocatoria ayudas garantía alimentaria para afrontar efectos económicos derivados del conflicto en Oriente Medio",
+      "fuente": "SNPSAP / Base de Datos Nacional de Subvenciones",
+      "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/931838",
+      "referencia": "",
+      "ambito": "ES53 - ILLES BALEARS",
+      "estado": "convocatoria_detectada",
+      "huella": "e45fff6adc139a87eb56",
+      "ultima_deteccion": "2026-09-27T13:02:40.070931+00:00",
+      "fecha_fuente": "2026-09-27",
+      "primera_deteccion": "2026-09-27T13:02:40.070931+00:00"
+    },
     {
       "clave": "ayudas:bdns-931837",
       "tipo": "ayudas",
@@ -455,12 +470,13 @@
       "fuente": "SNPSAP / Base de Datos Nacional de Subvenciones",
       "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/931806",
       "referencia": "",
-      "ambito": "ES - ESPAÑA",
-      "estado": "plazo_abierto",
-      "huella": "d0ad8bd37c5005b11467",
-      "ultima_deteccion": "2026-09-25T22:22:16.260737+00:00",
+      "ambito": "",
+      "estado": "convocatoria_detectada",
+      "huella": "91852f45deb4a86f1152",
+      "ultima_deteccion": "2026-09-27T13:02:40.070931+00:00",
       "fecha_fuente": "2026-09-25",
-      "primera_deteccion": "2026-09-25T22:22:16.260737+00:00"
+      "primera_deteccion": "2026-09-25T22:22:16.260737+00:00",
+      "ultima_modificacion_detectada": "2026-09-27T13:02:40.070931+00:00"
     },
     {
       "clave": "ayudas:bdns-931805",
@@ -1504,21 +1520,6 @@
       "ambito": "",
       "estado": "convocatoria_detectada",
       "huella": "11344d6a6a6a0e4f3251",
-      "ultima_deteccion": "2026-09-25T22:22:16.260737+00:00",
-      "fecha_fuente": "2026-09-25",
-      "primera_deteccion": "2026-09-25T22:22:16.260737+00:00"
-    },
-    {
-      "clave": "ayudas:bdns-931735",
-      "tipo": "ayudas",
-      "id": "bdns-931735",
-      "titulo": "CONVOCATORIA SUBVENCIONES DIRIGIDAS A ENTIDADES DEL MUNICIPIO DE AVINYÓ, DEL ÁMBITO DE EDUCACIÓN. AÑO 2026",
-      "fuente": "SNPSAP / Base de Datos Nacional de Subvenciones",
-      "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/931735",
-      "referencia": "",
-      "ambito": "",
-      "estado": "convocatoria_detectada",
-      "huella": "ff5d7a998f6a8471161c",
       "ultima_deteccion": "2026-09-25T22:22:16.260737+00:00",
       "fecha_fuente": "2026-09-25",
       "primera_deteccion": "2026-09-25T22:22:16.260737+00:00"
@@ -4652,6 +4653,21 @@
       "ultima_deteccion": "2026-09-26T12:25:59.576193+00:00",
       "fecha_fuente": "2026-09-27T18:00:00+02:00",
       "primera_deteccion": "2026-09-26T12:25:59.576193+00:00"
+    },
+    {
+      "clave": "ayudas:bdns-931735",
+      "tipo": "ayudas",
+      "id": "bdns-931735",
+      "titulo": "CONVOCATORIA SUBVENCIONES DIRIGIDAS A ENTIDADES DEL MUNICIPIO DE AVINYÓ, DEL ÁMBITO DE EDUCACIÓN. AÑO 2026",
+      "fuente": "SNPSAP / Base de Datos Nacional de Subvenciones",
+      "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/931735",
+      "referencia": "",
+      "ambito": "",
+      "estado": "convocatoria_detectada",
+      "huella": "ff5d7a998f6a8471161c",
+      "ultima_deteccion": "2026-09-25T22:22:16.260737+00:00",
+      "fecha_fuente": "2026-09-25",
+      "primera_deteccion": "2026-09-25T22:22:16.260737+00:00"
     },
     {
       "clave": "meteo:aemet-4ca3442a1e8d",
@@ -24949,6 +24965,27 @@
   ],
   "eventos": [
     {
+      "clave": "ayudas:bdns-931838",
+      "tipo": "ayudas",
+      "evento": "convocatoria_detectada",
+      "etiqueta": "Convocatoria detectada",
+      "momento_detectado": "2026-09-27T13:02:40.070931+00:00",
+      "fecha_fuente": "2026-09-27",
+      "titulo": "Convocatoria ayudas garantía alimentaria para afrontar efectos económicos derivados del conflicto en Oriente Medio",
+      "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/931838"
+    },
+    {
+      "clave": "ayudas:bdns-931806",
+      "tipo": "ayudas",
+      "evento": "convocatoria_detectada",
+      "etiqueta": "Convocatoria detectada",
+      "momento_detectado": "2026-09-27T13:02:40.070931+00:00",
+      "fecha_fuente": "2026-09-25",
+      "titulo": "Resolución de la Dirección General del Instituto de la Juventud, por la que se convocan ayudas del Programa\n«Erasmus+», línea de Juventud, correspondientes a la ronda de octubre de 2026",
+      "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/931806",
+      "detalle_cambio": "Estado: Plazo abierto → Convocatoria detectada"
+    },
+    {
       "clave": "meteo:aemet-35f0c54d328d",
       "tipo": "meteo",
       "evento": "aviso_vigente",
@@ -35187,26 +35224,6 @@
       "fecha_fuente": "2026-09-22",
       "titulo": "DECRETO 40/2025 CONVENIO COLABORACIÓN CLUB ARS PALMA DEL RÍO",
       "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/931044"
-    },
-    {
-      "clave": "ayudas:bdns-931043",
-      "tipo": "ayudas",
-      "evento": "convocatoria_detectada",
-      "etiqueta": "Convocatoria detectada",
-      "momento_detectado": "2026-09-22T22:10:18.391598+00:00",
-      "fecha_fuente": "2026-09-22",
-      "titulo": "Convocatoria de la concesión de subvenciones a proyectos de solidaridad en el ámbito de la cooperación internacional al desarrollo, ejercicio 2026",
-      "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/931043"
-    },
-    {
-      "clave": "ayudas:bdns-931042",
-      "tipo": "ayudas",
-      "evento": "convocatoria_detectada",
-      "etiqueta": "Convocatoria detectada",
-      "momento_detectado": "2026-09-22T22:10:18.391598+00:00",
-      "fecha_fuente": "2026-09-22",
-      "titulo": "Resolución de 22 de septiembre de 2026 de la Presidencia de la Agencia Estatal de Investigación, por la que se aprueba la convocatoria 2026 de ayudas del Programa de Doctorados Industriales (actividades no económicas de organismos de investigación).",
-      "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/931042"
     }
   ]
 }
