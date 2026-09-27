@@ -1,7 +1,7 @@
 {
-  "ultima_revision": "2026-09-27T21:18:00.876040+00:00",
+  "ultima_revision": "2026-09-27T22:12:31.671036+00:00",
   "fuentes_revision": {
-    "ayudas": "2026-09-27T13:02:28.335847+00:00",
+    "ayudas": "2026-09-27T22:12:17.593954+00:00",
     "estafas": "2026-09-27T13:15:03.302514+00:00",
     "alimentacion": "2026-09-27T14:09:36.548001+00:00",
     "salud": "2026-09-27T13:21:43.230430+00:00",
@@ -9,9 +9,24 @@
     "servicios": "2026-09-27T19:43:18.315903+00:00"
   },
   "criterio": "Histórico de cambios detectados. Solo se asigna un estado terminal cuando la fuente o el módulo permiten afirmarlo de forma conservadora.",
-  "total_registros": 1679,
+  "total_registros": 1680,
   "total_eventos": 1000,
   "registros": [
+    {
+      "clave": "ayudas:bdns-931839",
+      "tipo": "ayudas",
+      "id": "bdns-931839",
+      "titulo": "Bases programa Bono Consumo Ondara 2026",
+      "fuente": "SNPSAP / Base de Datos Nacional de Subvenciones",
+      "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/931839",
+      "referencia": "",
+      "ambito": "ES521 - Alicante / Alacant",
+      "estado": "convocatoria_detectada",
+      "huella": "e61526f01a94aef619eb",
+      "ultima_deteccion": "2026-09-27T22:12:31.671036+00:00",
+      "fecha_fuente": "2026-09-27",
+      "primera_deteccion": "2026-09-27T22:12:31.671036+00:00"
+    },
     {
       "clave": "ayudas:bdns-931838",
       "tipo": "ayudas",
@@ -455,12 +470,13 @@
       "fuente": "SNPSAP / Base de Datos Nacional de Subvenciones",
       "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/931807",
       "referencia": "",
-      "ambito": "ES521 - Alicante / Alacant",
+      "ambito": "",
       "estado": "convocatoria_detectada",
-      "huella": "5b5c7ea14ff648b466bf",
-      "ultima_deteccion": "2026-09-25T22:22:16.260737+00:00",
+      "huella": "20b29b387a1c12f54f2b",
+      "ultima_deteccion": "2026-09-27T22:12:31.671036+00:00",
       "fecha_fuente": "2026-09-25",
-      "primera_deteccion": "2026-09-25T22:22:16.260737+00:00"
+      "primera_deteccion": "2026-09-25T22:22:16.260737+00:00",
+      "ultima_modificacion_detectada": "2026-09-27T22:12:31.671036+00:00"
     },
     {
       "clave": "ayudas:bdns-931806",
@@ -1505,21 +1521,6 @@
       "ambito": "",
       "estado": "convocatoria_detectada",
       "huella": "8f94fe69a56bc01b0bfa",
-      "ultima_deteccion": "2026-09-25T22:22:16.260737+00:00",
-      "fecha_fuente": "2026-09-25",
-      "primera_deteccion": "2026-09-25T22:22:16.260737+00:00"
-    },
-    {
-      "clave": "ayudas:bdns-931736",
-      "tipo": "ayudas",
-      "id": "bdns-931736",
-      "titulo": "Subvención nominativa AFA CEIP Germans Ochando",
-      "fuente": "SNPSAP / Base de Datos Nacional de Subvenciones",
-      "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/931736",
-      "referencia": "",
-      "ambito": "",
-      "estado": "convocatoria_detectada",
-      "huella": "11344d6a6a6a0e4f3251",
       "ultima_deteccion": "2026-09-25T22:22:16.260737+00:00",
       "fecha_fuente": "2026-09-25",
       "primera_deteccion": "2026-09-25T22:22:16.260737+00:00"
@@ -5043,6 +5044,21 @@
       "ultima_deteccion": "2026-09-26T12:25:59.576193+00:00",
       "fecha_fuente": "2026-09-27T18:00:00+02:00",
       "primera_deteccion": "2026-09-26T12:25:59.576193+00:00"
+    },
+    {
+      "clave": "ayudas:bdns-931736",
+      "tipo": "ayudas",
+      "id": "bdns-931736",
+      "titulo": "Subvención nominativa AFA CEIP Germans Ochando",
+      "fuente": "SNPSAP / Base de Datos Nacional de Subvenciones",
+      "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/931736",
+      "referencia": "",
+      "ambito": "",
+      "estado": "convocatoria_detectada",
+      "huella": "11344d6a6a6a0e4f3251",
+      "ultima_deteccion": "2026-09-25T22:22:16.260737+00:00",
+      "fecha_fuente": "2026-09-25",
+      "primera_deteccion": "2026-09-25T22:22:16.260737+00:00"
     },
     {
       "clave": "meteo:aemet-68db1d20d863",
@@ -26035,6 +26051,27 @@
   ],
   "eventos": [
     {
+      "clave": "ayudas:bdns-931839",
+      "tipo": "ayudas",
+      "evento": "convocatoria_detectada",
+      "etiqueta": "Convocatoria detectada",
+      "momento_detectado": "2026-09-27T22:12:31.671036+00:00",
+      "fecha_fuente": "2026-09-27",
+      "titulo": "Bases programa Bono Consumo Ondara 2026",
+      "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/931839"
+    },
+    {
+      "clave": "ayudas:bdns-931807",
+      "tipo": "ayudas",
+      "evento": "actualizado",
+      "etiqueta": "Actualizada",
+      "momento_detectado": "2026-09-27T22:12:31.671036+00:00",
+      "fecha_fuente": "2026-09-25",
+      "titulo": "BONO CONSUMO 2026",
+      "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/931807",
+      "detalle_cambio": "La ficha oficial presenta cambios respecto a la revisión anterior"
+    },
+    {
       "clave": "meteo:aemet-1b6372c2e1d9",
       "tipo": "meteo",
       "evento": "aviso_vigente",
@@ -36282,28 +36319,6 @@
       "fecha_fuente": "2026-09-23T11:00:00+01:00",
       "titulo": "Aviso de temperaturas máximas de nivel amarillo",
       "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260922092829_AFAZ659101ATTA2318.xml",
-      "detalle_cambio": "Ya no figura en el conjunto vigente validado por el módulo AEMET"
-    },
-    {
-      "clave": "meteo:aemet-b211cad8f73d",
-      "tipo": "meteo",
-      "evento": "expirado_detectado",
-      "etiqueta": "Dejó de estar vigente",
-      "momento_detectado": "2026-09-23T19:01:43.020600+00:00",
-      "fecha_fuente": "2026-09-23T11:00:00+01:00",
-      "titulo": "Aviso de temperaturas máximas de nivel amarillo",
-      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260922092829_AFAZ659201ATTA2318.xml",
-      "detalle_cambio": "Ya no figura en el conjunto vigente validado por el módulo AEMET"
-    },
-    {
-      "clave": "meteo:aemet-3e23920d935b",
-      "tipo": "meteo",
-      "evento": "expirado_detectado",
-      "etiqueta": "Dejó de estar vigente",
-      "momento_detectado": "2026-09-23T19:01:43.020600+00:00",
-      "fecha_fuente": "2026-09-23T11:00:00+01:00",
-      "titulo": "Aviso de temperaturas máximas de nivel amarillo",
-      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260922070036_AFAZ659004ATTA2318.xml",
       "detalle_cambio": "Ya no figura en el conjunto vigente validado por el módulo AEMET"
     }
   ]
