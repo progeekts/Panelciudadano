@@ -1,15 +1,15 @@
 {
-  "ultima_revision": "2026-09-28T15:29:21.324325+00:00",
+  "ultima_revision": "2026-09-28T15:52:32.472775+00:00",
   "fuentes_revision": {
     "ayudas": "2026-09-28T15:29:08.036283+00:00",
-    "estafas": "2026-09-27T22:31:41.073031+00:00",
+    "estafas": "2026-09-28T15:49:30.567968+00:00",
     "alimentacion": "2026-09-27T23:12:18.293137+00:00",
     "salud": "2026-09-27T22:36:38.926648+00:00",
     "meteo": "2026-09-28T11:58:29.061774+00:00",
     "servicios": "2026-09-28T07:35:59.676285+00:00"
   },
   "criterio": "Histórico de cambios detectados. Solo se asigna un estado terminal cuando la fuente o el módulo permiten afirmarlo de forma conservadora.",
-  "total_registros": 1894,
+  "total_registros": 1895,
   "total_eventos": 1000,
   "registros": [
     {
@@ -1511,6 +1511,21 @@
       "ultima_deteccion": "2026-09-28T15:29:21.324325+00:00",
       "fecha_fuente": "2026-09-28",
       "primera_deteccion": "2026-09-28T15:29:21.324325+00:00"
+    },
+    {
+      "clave": "estafas:incibe-correos-y-sms-suplantan-la-dgt-para-robar-tus-datos-con-falsas-multas",
+      "tipo": "estafas",
+      "id": "incibe-correos-y-sms-suplantan-la-dgt-para-robar-tus-datos-con-falsas-multas",
+      "titulo": "Correos y SMS suplantan a la DGT para robar tus datos con falsas multas",
+      "fuente": "INCIBE · Ciudadanía",
+      "url": "https://www.incibe.es/ciudadania/avisos/correos-y-sms-suplantan-la-dgt-para-robar-tus-datos-con-falsas-multas",
+      "referencia": "",
+      "ambito": "España / usuarios de Internet",
+      "estado": "publicada",
+      "huella": "a84a93408a1a9ce6023c",
+      "ultima_deteccion": "2026-09-28T15:52:32.472775+00:00",
+      "fecha_fuente": "28/09/2026",
+      "primera_deteccion": "2026-09-28T15:52:32.472775+00:00"
     },
     {
       "clave": "estafas:incibe-campana-de-smishing-suplantando-la-seguridad-social",
@@ -29575,6 +29590,16 @@
   ],
   "eventos": [
     {
+      "clave": "estafas:incibe-correos-y-sms-suplantan-la-dgt-para-robar-tus-datos-con-falsas-multas",
+      "tipo": "estafas",
+      "evento": "publicada",
+      "etiqueta": "Publicada",
+      "momento_detectado": "2026-09-28T15:52:32.472775+00:00",
+      "fecha_fuente": "28/09/2026",
+      "titulo": "Correos y SMS suplantan a la DGT para robar tus datos con falsas multas",
+      "url": "https://www.incibe.es/ciudadania/avisos/correos-y-sms-suplantan-la-dgt-para-robar-tus-datos-con-falsas-multas"
+    },
+    {
       "clave": "ayudas:bdns-932103",
       "tipo": "ayudas",
       "evento": "convocatoria_detectada",
@@ -39896,16 +39921,6 @@
       "fecha_fuente": "2026-09-24",
       "titulo": "Resolución de 12 de mayo de 2026, de la Concejal-Delegada de Deportes del Ayuntamiento de Arroyo de la Encomienda, por la que se aprueba el Convenio de Colaboración con el C.B.La Flecha, Final Four (FA) de Liga Autonómica de CYL UEMC, Junior masculino",
       "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/931577"
-    },
-    {
-      "clave": "ayudas:bdns-931576",
-      "tipo": "ayudas",
-      "evento": "convocatoria_detectada",
-      "etiqueta": "Convocatoria detectada",
-      "momento_detectado": "2026-09-24T22:25:31.580670+00:00",
-      "fecha_fuente": "2026-09-24",
-      "titulo": "Subvención Directa al Club FAYNA CLUB DEPORTIVO DE PATINAJE 2026, para la promoción deportiva.",
-      "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/931576"
     }
   ]
 }
