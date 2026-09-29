@@ -1,9 +1,9 @@
 {
-  "ultima_revision": "2026-09-29T23:15:03.254807+00:00",
+  "ultima_revision": "2026-09-29T23:51:43.396834+00:00",
   "fuentes_revision": {
     "ayudas": "2026-09-29T22:58:34.825823+00:00",
     "estafas": "2026-09-29T23:08:35.436852+00:00",
-    "alimentacion": "2026-09-29T14:56:04.280449+00:00",
+    "alimentacion": "2026-09-29T23:50:36.786451+00:00",
     "salud": "2026-09-29T23:14:50.884839+00:00",
     "meteo": "2026-09-29T21:22:34.329579+00:00",
     "servicios": "2026-09-29T20:41:09.902213+00:00"
@@ -1687,22 +1687,6 @@
       "referencia": "ES2026/477"
     },
     {
-      "clave": "alimentacion:aesan-c3ba80ea62",
-      "tipo": "alimentacion",
-      "id": "aesan-c3ba80ea62",
-      "titulo": "Ampliación de información sobre la alerta por presencia de Salmonella spp. en salchichón procedente de España (Ref. ES2026/469)",
-      "fuente": "AESAN · Red de alerta alimentaria",
-      "url": "https://www.aesan.gob.es/alertas/2026_55_ampliacion_1",
-      "ambito": "España",
-      "estado": "publicada",
-      "huella": "786733838116457ae5b3",
-      "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
-      "fecha_fuente": "2026-07-31",
-      "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
-      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
-      "referencia": "ES2026/469"
-    },
-    {
       "clave": "alimentacion:aesan-fed50cda6a",
       "tipo": "alimentacion",
       "id": "aesan-fed50cda6a",
@@ -1717,6 +1701,22 @@
       "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
       "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
       "referencia": "ES2026/473"
+    },
+    {
+      "clave": "alimentacion:aesan-c3ba80ea62",
+      "tipo": "alimentacion",
+      "id": "aesan-c3ba80ea62",
+      "titulo": "Ampliación de información sobre la alerta por presencia de Salmonella spp. en salchichón procedente de España (Ref. ES2026/469)",
+      "fuente": "AESAN · Red de alerta alimentaria",
+      "url": "https://www.aesan.gob.es/alertas/2026_55_ampliacion_1",
+      "ambito": "España",
+      "estado": "publicada",
+      "huella": "786733838116457ae5b3",
+      "ultima_deteccion": "2026-09-18T09:03:54.906934+00:00",
+      "fecha_fuente": "2026-07-31",
+      "primera_deteccion": "2026-09-17T11:22:24.181186+00:00",
+      "ultima_modificacion_detectada": "2026-09-18T09:03:54.906934+00:00",
+      "referencia": "ES2026/469"
     },
     {
       "clave": "alimentacion:aesan-c66ff7c880",
