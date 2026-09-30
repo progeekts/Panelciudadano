@@ -11,9 +11,7 @@ on:
       - Actualizar avisos meteorológicos
       - Actualizar movilidad DGT
     types: [completed]
-  schedule:
-    - cron: '50 7,20 * * *'
-permissions:
+
   contents: write
 concurrency:
   group: historico-global
