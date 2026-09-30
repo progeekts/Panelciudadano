@@ -2,10 +2,7 @@ name: Actualizar alertas sanitarias
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '55 7,19 * * *'
 
-permissions:
   contents: write
 
 concurrency:
