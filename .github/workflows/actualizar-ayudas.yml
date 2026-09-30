@@ -2,11 +2,7 @@ name: Actualizar radar de ayudas
 
 on:
   workflow_dispatch:
-  schedule:
-    # 07:15 y 19:15 UTC. La web muestra la hora real de revisión guardada en los datos.
-    - cron: '15 7,19 * * *'
 
-permissions:
   contents: write
 
 concurrency:
