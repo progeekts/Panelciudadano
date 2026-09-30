@@ -2,10 +2,7 @@ name: Actualizar radar de estafas
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '35 7,19 * * *'
 
-permissions:
   contents: write
 
 concurrency:
