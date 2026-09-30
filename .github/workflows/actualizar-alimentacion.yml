@@ -2,10 +2,7 @@ name: Actualizar alertas alimentarias
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '25 8,20 * * *'
 
-permissions:
   contents: write
 
 concurrency:
