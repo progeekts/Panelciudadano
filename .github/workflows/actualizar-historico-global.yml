@@ -1,18 +1,10 @@
 name: Actualizar histórico global
 on:
   workflow_dispatch:
-  workflow_run:
-    workflows:
-      - Actualizar radar de ayudas
-      - Actualizar radar de estafas
-      - Actualizar servicios digitales
-      - Actualizar alertas alimentarias
-      - Actualizar alertas sanitarias
-      - Actualizar avisos meteorológicos
-      - Actualizar movilidad DGT
-    types: [completed]
 
+permissions:
   contents: write
+
 concurrency:
   group: historico-global
   cancel-in-progress: false
