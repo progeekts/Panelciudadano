@@ -2,28 +2,8 @@ name: Exportar y desplegar web
 
 on:
   workflow_dispatch:
-  workflow_run:
-    workflows:
-      - "Actualizar servicios digitales"
-      - "Actualizar radar de ayudas"
-      - "Actualizar radar de estafas"
-      - "Actualizar alertas alimentarias"
-      - "Actualizar alertas sanitarias"
-      - "Actualizar avisos meteorológicos"
-      - "Actualizar movilidad DGT"
-      - "Actualizar histórico global"
-    types: [completed]
-  push:
-    branches: [main]
-    paths:
-      - 'index.html'
-      - 'metodologia.html'
-      - 'privacidad.html'
-      - 'assets/**'
-      - 'data/**'
-      - '.github/workflows/exportar-hosting.yml'
-      - 'scripts/update_source_health.py'
 
+permissions:
   contents: read
 
 concurrency:
