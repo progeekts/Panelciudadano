@@ -3,6 +3,7 @@ name: Actualizar movilidad DGT
 on:
   workflow_dispatch:
 
+permissions:
   contents: write
 
 concurrency:
