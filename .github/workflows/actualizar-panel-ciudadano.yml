@@ -1,0 +1,78 @@
+name: Actualizar Panel Ciudadano (4 veces al día)
+
+on:
+  schedule:
+    # UTC: 05, 11, 17 y 23. En invierno equivale a 06, 12, 18 y 00 en España peninsular.
+    # En horario de verano se desplaza una hora local.
+    - cron: '0 5,11,17,23 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: panel-ciudadano-actualizacion
+  cancel-in-progress: false
+
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Descargar repositorio
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Actualizar módulos independientemente
+        shell: bash
+        run: |
+          set -uo pipefail
+          failed=()
+          run_module() {
+            local module="$1"
+            shift
+            local files=("$@")
+            echo "::group::Actualizando $module"
+            if python "scripts/update_${module}.py" && python scripts/validate_data.py "${files[@]}"; then
+              echo "Módulo $module: revisión finalizada"
+            else
+              echo "::warning::Módulo $module falló. Se conservan sus archivos anteriores."
+              git restore -- "${files[@]}"
+              failed+=("$module")
+            fi
+            echo "::endgroup::"
+          }
+          run_module ayudas data/ayudas.json
+          run_module estafas data/estafas.json
+          run_module alimentacion data/alimentacion.json
+          run_module salud data/salud.json
+          run_module meteo data/meteo.json
+          run_module movilidad data/movilidad.json
+          run_module servicios data/servicios.json data/historico_servicios.json
+          run_module historico_global data/historico_global.json
+          if (( ${#failed[@]} )); then
+            printf 'Fuentes con error: %s\n' "${failed[*]}"
+            echo "::warning::Revisar las fuentes fallidas: ${failed[*]}"
+          fi
+      - name: Publicar únicamente los cambios de datos
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/*.json
+          if git diff --cached --quiet; then
+            echo "Sin cambios en los archivos públicos"
+            exit 0
+          fi
+          git commit -m "Datos: revisión programada del Panel Ciudadano"
+          for i in 1 2 3; do
+            if git pull --rebase origin main && git push origin HEAD:main; then exit 0; fi
+            git rebase --abort 2>/dev/null || true
+            sleep $((i * 3))
+          done
+          exit 1
