@@ -3,6 +3,7 @@ name: Actualizar avisos meteorológicos
 on:
   workflow_dispatch:
 
+permissions:
   contents: write
 
 concurrency:
