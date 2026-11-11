@@ -6,13 +6,13 @@ from datetime import datetime,timezone
 from pathlib import Path
 
 MODULES={
- "servicios":("Servicios digitales",2),
- "movilidad":("Movilidad · DGT",2),
- "meteo":("Meteorología · AEMET",2),
- "ayudas":("Ayudas · BDNS",30),
- "estafas":("Estafas · INCIBE",30),
- "alimentacion":("Alimentación · AESAN",30),
- "salud":("Salud · AEMPS",30),
+ "servicios":("Servicios digitales",10),
+ "movilidad":("Movilidad · DGT",10),
+ "meteo":("Meteorología · AEMET",10),
+ "ayudas":("Ayudas · BDNS",12),
+ "estafas":("Estafas · INCIBE",12),
+ "alimentacion":("Alimentación · AESAN",12),
+ "salud":("Salud · AEMPS",12),
 }
 def parse(v):
  if not v:return None
