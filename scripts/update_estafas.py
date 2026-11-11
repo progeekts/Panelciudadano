@@ -47,7 +47,7 @@ def detail_info(page):
  labels=['Identificador','Importancia','Recursos Afectados','Descripción','Solución','Detalle']
  def between(label,next_labels):
   end='|'.join(re.escape(x) for x in next_labels)
-  m=re.search(r'\b'+re.escape(label)+r'\b\s*(.*?)(?=\s*\b(?:'+end+r')\b|$),t,re.I|re.S)
+  m=re.search(r'\b'+re.escape(label)+r'\b\s*(.*?)(?=\s*\b(?:'+end+r')\b|$)',t,re.I|re.S)
   return re.sub(r'\s+',' ',m.group(1)).strip() if m else ''
  return {
   'identificador':between('Identificador',['Importancia','Recursos Afectados','Descripción'])[:120],
