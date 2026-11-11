@@ -3,6 +3,7 @@ name: Actualizar alertas sanitarias
 on:
   workflow_dispatch:
 
+permissions:
   contents: write
 
 concurrency:
