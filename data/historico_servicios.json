@@ -1,5 +1,5 @@
 {
-  "ultima_revision": "2026-09-30T00:19:47.057660+00:00",
+  "ultima_revision": "2026-11-11T12:38:04.806496+00:00",
   "nota": "Resuelto solo se registra cuando el detector oficial correspondiente respondió correctamente y dejó de publicar la incidencia. Un error técnico de consulta nunca se presenta como caída del servicio.",
   "total": 2,
   "items": [

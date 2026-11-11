@@ -1,21 +1,21 @@
 {
-  "ultima_revision": "2026-09-30T00:19:47.057660+00:00",
-  "revision": "completa",
-  "revision_fuentes_incidentes": "completa",
+  "ultima_revision": "2026-11-11T12:38:04.806496+00:00",
+  "revision": "parcial",
+  "revision_fuentes_incidentes": "parcial",
   "salud_auxiliar": "parcial",
   "cobertura": {
     "detectores_configurados": 4,
-    "detectores_respondieron": 4,
+    "detectores_respondieron": 3,
     "comprobaciones_cobertura": 21,
-    "comprobaciones_respondieron": 15,
+    "comprobaciones_respondieron": 16,
     "fuentes_configuradas": 25,
     "fuentes_respondieron": 19,
     "fuentes_incidentes": 4,
-    "fuentes_incidentes_ok": 4,
+    "fuentes_incidentes_ok": 3,
     "territorial": {
       "España": {
         "configuradas": 7,
-        "respondieron": 7
+        "respondieron": 6
       },
       "Cataluña": {
         "configuradas": 1,
@@ -83,7 +83,7 @@
       },
       "La Rioja": {
         "configuradas": 1,
-        "respondieron": 0
+        "respondieron": 1
       },
       "Ceuta": {
         "configuradas": 1,
@@ -95,8 +95,8 @@
     {
       "clave": "age",
       "fuente": "Administraciones Públicas (AGE)",
-      "estado": "ok",
-      "detalle": "Fuente oficial accesible",
+      "estado": "error",
+      "detalle": "HTTPError",
       "ambito": "España",
       "tipo": "detector",
       "critica_para_resolucion": true
@@ -302,8 +302,8 @@
     {
       "clave": "rioja",
       "fuente": "Gobierno de La Rioja",
-      "estado": "error",
-      "detalle": "URLError",
+      "estado": "ok",
+      "detalle": "Fuente oficial accesible",
       "ambito": "La Rioja",
       "tipo": "cobertura",
       "critica_para_resolucion": false
@@ -319,6 +319,12 @@
     }
   ],
   "fuentes_error": [
+    {
+      "servicio": "Administraciones Públicas (AGE)",
+      "error": "HTTPError",
+      "tipo": "detector",
+      "ambito": "España"
+    },
     {
       "servicio": "Principado de Asturias",
       "error": "URLError",
@@ -344,12 +350,6 @@
       "ambito": "Comunidad de Madrid"
     },
     {
-      "servicio": "Gobierno de La Rioja",
-      "error": "URLError",
-      "tipo": "cobertura",
-      "ambito": "La Rioja"
-    },
-    {
       "servicio": "Ciudad Autónoma de Ceuta",
       "error": "URLError",
       "tipo": "cobertura",
@@ -361,23 +361,6 @@
     "resueltas_detectadas": 0,
     "retiradas_monitor": 0
   },
-  "total": 1,
-  "items": [
-    {
-      "id": "age-correo-consultas",
-      "fuente_clave": "age",
-      "tipo": "servicio",
-      "servicio": "Administraciones Públicas",
-      "titulo": "Incidencia en el sistema de correo de consultas",
-      "resumen": "La sede oficial comunica problemas en su sistema de correo electrónico de consultas.",
-      "estado": "Activa",
-      "impacto": "Consultas y comunicaciones",
-      "fecha": "",
-      "actualizado": "",
-      "ambito": "España",
-      "fuente": "Sede de Administraciones Públicas",
-      "url": "https://sede.administracionespublicas.gob.es/ayuda/",
-      "verificado": true
-    }
-  ]
+  "total": 0,
+  "items": []
 }
