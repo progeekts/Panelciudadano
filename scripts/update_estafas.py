@@ -27,7 +27,7 @@ def extract_cards(page):
   path=m.group(1)
   if path in seen:continue
   title=clean(m.group(2))
-  if not title or len(title)<8:continue
+  if not title or len(title)<8 or title.lower() in ('leer más','leer mas','más información','más informacion'):continue
   start=max(0,m.start()-500);end=min(len(page),(links[i+1].start() if i+1<len(links) else m.end()+1800));block=clean(page[start:end]);dm=re.search(r'(?:Publicado el|Fecha de publicación)\s*(\d{1,2}/\d{1,2}/\d{4})',block,re.I)
   if not dm:continue
   importance='';im=re.search(r'Importancia\s*([1-5]\s*-\s*(?:Baja|Media|Alta|Crítica|Critica))',block,re.I)
@@ -47,8 +47,8 @@ def detail_info(page):
  labels=['Identificador','Importancia','Recursos Afectados','Descripción','Solución','Detalle']
  def between(label,next_labels):
   end='|'.join(re.escape(x) for x in next_labels)
-  m=re.search(r'\\b'+re.escape(label)+r'\\b\\s*(.*?)(?=\\s*\\b(?:'+end+r')\\b|$)',t,re.I|re.S)
-  return re.sub(r'\\s+',' ',m.group(1)).strip() if m else ''
+  m=re.search(r'\b'+re.escape(label)+r'\b\s*(.*?)(?=\s*\b(?:'+end+r')\b|$),t,re.I|re.S)
+  return re.sub(r'\s+',' ',m.group(1)).strip() if m else ''
  return {
   'identificador':between('Identificador',['Importancia','Recursos Afectados','Descripción'])[:120],
   'importancia':between('Importancia',['Recursos Afectados','Descripción'])[:120],
@@ -80,6 +80,8 @@ def main():
     time.sleep(.35);detail_page=get(url_item);explicit=detail_state(detail_page);info=detail_info(detail_page)
    except Exception:pass
    # Si la ficha no puede enriquecerse desde GitHub Actions, conservamos un resumen útil del listado sin inventar contenido.
+   if title.strip().lower() in ('leer más','leer mas','más información','más informacion'):
+    continue
    if not info.get('descripcion'):info['descripcion']=summary
    items.append({'id':'incibe-'+slug,'tipo':'estafa','titulo':title,'resumen':info.get('descripcion') or summary or 'Aviso oficial de INCIBE sobre una campaña de fraude o suplantación.','descripcion':info.get('descripcion',''),'afectados':info.get('afectados',''),'solucion':info.get('solucion',''),'identificador_incibe':info.get('identificador',''),'fecha':date_raw,'fecha_iso':published.date().isoformat(),'estado':explicit or 'Publicada','importancia':info.get('importancia') or importance,'ambito':'España / usuarios de Internet','fuente':'INCIBE · Ciudadanía','url':url_item,'verificado':True})
  # Si el parser deja de reconocer por completo una portada accesible, no convertirlo en "cero alertas".
