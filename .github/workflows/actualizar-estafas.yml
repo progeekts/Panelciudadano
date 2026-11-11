@@ -3,6 +3,7 @@ name: Actualizar radar de estafas
 on:
   workflow_dispatch:
 
+permissions:
   contents: write
 
 concurrency:
