@@ -3,6 +3,7 @@ name: Actualizar servicios digitales
 on:
   workflow_dispatch:
 
+permissions:
   contents: write
 
 concurrency:
