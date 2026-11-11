@@ -54,6 +54,9 @@ jobs:
           run_module movilidad data/movilidad.json
           run_module servicios data/servicios.json data/historico_servicios.json
           run_module historico_global data/historico_global.json
+          echo 'Generando diagnóstico público de frescura de las fuentes'
+          python scripts/update_source_health.py
+          python scripts/validate_data.py data/source_health.json
           if (( ${#failed[@]} )); then
             printf 'Fuentes con error: %s\n' "${failed[*]}"
             echo "::warning::Revisar las fuentes fallidas: ${failed[*]}"
