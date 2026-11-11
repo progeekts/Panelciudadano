@@ -27,6 +27,8 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Comprobar sintaxis de los recolectores
+        run: python -m compileall -q scripts
       - name: Actualizar módulos independientemente
         shell: bash
         run: |
